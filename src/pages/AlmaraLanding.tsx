@@ -4,7 +4,7 @@ import { Footer } from "@/components/Footer";
 
 const AlmaraLanding = () => {
   return (
-    <div className="relative w-full almara-gradient-bg">
+    <div className="relative w-full">
       {/* Navigation */}
       <Navigation />
       
