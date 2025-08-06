@@ -11,7 +11,7 @@ export const HeroSection = () => {
         </div>
         
         {/* Subtitle */}
-        <h2 className="font-long-cang text-[34px] text-almara-subtitle-text tracking-[0em] opacity-90 my-0 py-0 font-thin">
+        <h2 className="font-long-cang text-[40px] text-almara-subtitle-text tracking-[0em] opacity-90 my-0 py-0 font-thin">
           A SEA OF OPPORTUNITY
         </h2>
       </div>
