@@ -33,16 +33,24 @@ export const Navigation = ({ positioning = "absolute" }: NavigationProps) => {
             <li key={item.label}>
               <Link to={item.href} className={cn("flex items-center group transition-all duration-300 font-helvetica-now")}>
                 <div 
-                  className={cn(
-                    "mr-4 cursor-pointer transition-all duration-300",
-                    isActive ? "bg-almara-carmine" : "bg-transparent group-hover:bg-almara-carmine"
-                  )}
+                  className="mr-4 cursor-pointer transition-all duration-300"
                   style={{
                     width: '40px',
                     height: '40px',
                     borderRadius: '50%',
+                    backgroundColor: isActive ? 'hsl(var(--almara-carmine))' : 'transparent',
                     boxShadow: 'inset -4px -4px 8px rgba(255,255,255,0.0), inset 2px 2px 4px rgba(0,0,0,0.7)'
                   }} 
+                  onMouseEnter={(e) => {
+                    if (!isActive) {
+                      e.currentTarget.style.backgroundColor = 'hsl(var(--almara-carmine))';
+                    }
+                  }}
+                  onMouseLeave={(e) => {
+                    if (!isActive) {
+                      e.currentTarget.style.backgroundColor = 'transparent';
+                    }
+                  }}
                 />
                 <span className="text-almara-dark-text font-normal tracking-wide opacity-80 group-hover:opacity-100 transition-opacity duration-300 text-base">
                   {item.label}
