@@ -9,7 +9,7 @@ export const PageLayout = ({
   title,
   children
 }: PageLayoutProps) => {
-  return <div className="relative w-full min-h-screen" style={{backgroundImage: "url('/lovable-uploads/dbf8fdce-19eb-46e8-a735-134c70e47db1.png')"}}>
+  return <div className="relative w-full min-h-screen almara-gradient-bg">
       {/* Navigation - fixed positioned at same height as home page */}
       <Navigation positioning="fixed" />
       
