@@ -1,9 +1,17 @@
 import { PageLayout } from "@/components/PageLayout";
+import missionHero from "@/assets/mission-hero.jpg";
 
 const Mission = () => {
   return (
     <PageLayout title="Mission">
       <div className="max-w-4xl mx-auto px-8 py-16">
+        <div className="mb-12 rounded-lg overflow-hidden">
+          <img 
+            src={missionHero} 
+            alt="Zen balance and harmony" 
+            className="w-full h-64 object-cover opacity-80"
+          />
+        </div>
         <h1 className="text-4xl md:text-5xl font-long-cang text-almara-subtitle-text mb-8 text-center">
           Our Mission & Values
         </h1>

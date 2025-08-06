@@ -1,9 +1,17 @@
 import { PageLayout } from "@/components/PageLayout";
+import servicesHero from "@/assets/services-hero.jpg";
 
 const Services = () => {
   return (
     <PageLayout title="Services">
       <div className="max-w-4xl mx-auto px-8 py-16">
+        <div className="mb-12 rounded-lg overflow-hidden">
+          <img 
+            src={servicesHero} 
+            alt="Financial services collaboration" 
+            className="w-full h-64 object-cover opacity-80"
+          />
+        </div>
         <h1 className="text-4xl md:text-5xl font-long-cang text-almara-subtitle-text mb-8 text-center">
           Long-Term Partnerships Built on Trust
         </h1>

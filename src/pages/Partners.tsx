@@ -1,9 +1,17 @@
 import { PageLayout } from "@/components/PageLayout";
+import partnersHero from "@/assets/partners-hero.jpg";
 
 const Partners = () => {
   return (
     <PageLayout title="Partners">
       <div className="max-w-4xl mx-auto px-8 py-16">
+        <div className="mb-12 rounded-lg overflow-hidden">
+          <img 
+            src={partnersHero} 
+            alt="Business partnership handshake" 
+            className="w-full h-64 object-cover opacity-80"
+          />
+        </div>
         <h1 className="text-4xl md:text-5xl font-long-cang text-almara-subtitle-text mb-8 text-center">
           Our Trusted Partnerships & Clients
         </h1>

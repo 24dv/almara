@@ -1,5 +1,6 @@
 import { Navigation } from "@/components/Navigation";
 import { Footer } from "@/components/Footer";
+import { Link } from "react-router-dom";
 
 interface PageLayoutProps {
   title: string;
@@ -14,11 +15,13 @@ export const PageLayout = ({ title, children }: PageLayoutProps) => {
       
       {/* Header with Logo */}
       <header className="relative z-10 flex items-center justify-center pt-8 pb-4">
-        <img 
-          src="/lovable-uploads/889a0efd-ed5b-448b-a911-54ea486f744c.png" 
-          alt="ALMARA" 
-          className="h-5 sm:h-7 md:h-8 opacity-90" 
-        />
+        <Link to="/" className="transition-opacity hover:opacity-80">
+          <img 
+            src="/lovable-uploads/889a0efd-ed5b-448b-a911-54ea486f744c.png" 
+            alt="ALMARA" 
+            className="h-4 sm:h-5 md:h-6 opacity-90" 
+          />
+        </Link>
       </header>
       
       {/* Main Content */}
