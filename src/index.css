@@ -164,9 +164,11 @@ All colors MUST be HSL.
     left: 0;
     right: 0;
     bottom: 0;
-    background-image: var(--almara-noise);
-    mix-blend-mode: multiply;
-    opacity: 0.6;
+    background-image: url('/lovable-uploads/08276971-f3d6-48ef-af4b-9d930d4ced96.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0.8;
     pointer-events: none;
   }
 }
