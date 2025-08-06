@@ -1,33 +1,95 @@
 import { PageLayout } from "@/components/PageLayout";
-import aboutHero from "@/assets/about-hero.jpg";
 
 const About = () => {
   return (
     <PageLayout title="About">
-      <div className="max-w-4xl mx-auto px-8 py-16">
-        <div className="mb-12 rounded-lg overflow-hidden">
-          <img 
-            src={aboutHero} 
-            alt="Professional financial advisor" 
-            className="w-full h-64 object-cover opacity-80"
-          />
+      <div className="min-h-screen flex flex-col">
+        {/* Main Content Section */}
+        <div className="flex-1 flex items-center justify-center px-8 py-16">
+          <div className="max-w-2xl text-center space-y-12">
+            {/* Main Tagline */}
+            <h1 className="font-long-cang text-[32px] sm:text-[36px] md:text-[40px] text-almara-subtitle-text tracking-[0.05em] opacity-90 font-thin leading-tight">
+              IN A SEA OF OPPORTUNITIES,<br />
+              DISCERNMENT IS THE TRUE COMPASS.
+            </h1>
+            
+            {/* Description Text */}
+            <div className="space-y-6 text-almara-dark-text/80 font-helvetica-now">
+              <p className="text-base leading-relaxed">
+                At ALMARA, we guide passionate investors through the world of 
+                alternative assets: from hedge funds and private equity to real 
+                estate, litigation finance and art.
+              </p>
+              <p className="text-base leading-relaxed">
+                Blending deep market expertise with a creative spark, we build 
+                strategies as unique as you are. With our network of specialist 
+                partners and top-tier advisors, we uncover distinct opportunities 
+                and drive lasting portfolio value.
+              </p>
+            </div>
+          </div>
         </div>
-        <h1 className="text-4xl md:text-5xl font-long-cang text-almara-subtitle-text mb-8 text-center">
-          A trusted steward bringing wisdom and vision to your wealth journey
-        </h1>
-        <div className="prose prose-lg mx-auto text-almara-dark-text/80 font-helvetica-now">
-          <p className="text-xl leading-relaxed mb-8">
-            Over 25 years, I've navigated the intricate world of family offices and alternative investments across Luxembourg, Monaco, Hong Kong, and Lisbon, building deep expertise in hedge funds, private equity, real estate, and litigation funding.
-          </p>
-          <p className="leading-relaxed mb-6">
-            My journey has been one of cultivating relationships and understanding the nuanced needs of sophisticated investors. Through hands-on experience managing complex portfolios and strategic partnerships, I've developed both the breadth of network and strategic skill set essential for navigating today's investment landscape.
-          </p>
-          <p className="leading-relaxed mb-6">
-            What sets ALMARA apart is not just technical expertise, but the warmth and personal attention that comes from treating each client relationship as a trusted stewardship. I believe in fostering conversations that feel genuine and collaborative, where your goals become our shared mission.
-          </p>
-          <p className="leading-relaxed">
-            This isn't just about managing wealth—it's about being your trusted partner in building something meaningful and enduring. Every decision is made with intention, every strategy crafted with both wisdom and care.
-          </p>
+
+        {/* Founder Section */}
+        <div className="bg-almara-dark-text/5 py-20">
+          <div className="max-w-6xl mx-auto px-8">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+              {/* Founder Image */}
+              <div className="flex justify-center lg:justify-end">
+                <div className="w-80 h-80 rounded-lg overflow-hidden">
+                  <img 
+                    src="/lovable-uploads/3f98f6a2-7c73-465b-89c1-9ffd619f5b8f.png" 
+                    alt="Tom Meganck - Founder" 
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+              </div>
+              
+              {/* Founder Info */}
+              <div className="space-y-8">
+                <div>
+                  <h2 className="font-long-cang text-[28px] text-almara-subtitle-text mb-2">
+                    Tom Meganck
+                  </h2>
+                  <p className="text-almara-dark-text/60 font-helvetica-now text-sm uppercase tracking-wider">
+                    FOUNDER
+                  </p>
+                </div>
+                
+                <div className="space-y-6 text-almara-dark-text/80 font-helvetica-now">
+                  <p className="text-base leading-relaxed">
+                    With a career spanning over two decades, Tom 
+                    Meganck has guided ultra-high-net-worth 
+                    families, entrepreneurs, and institutions across 
+                    complex financial landscapes. His expertise 
+                    blends private banking, alternative investments, 
+                    and multi-jurisdictional structuring with a uniquely 
+                    personal approach.
+                  </p>
+                  
+                  <div className="space-y-2 text-sm">
+                    <p>Background info 01</p>
+                    <p>Background info 02</p>
+                    <p>Background info 03</p>
+                    <p>Background info 04</p>
+                  </div>
+                  
+                  <p className="text-base leading-relaxed">
+                    His expertise blends private banking, alternative 
+                    investments, and multi-jurisdictional structuring 
+                    with a uniquely personal approach.
+                  </p>
+                </div>
+                
+                {/* Call to Action */}
+                <div className="pt-4">
+                  <button className="bg-almara-dark-text/20 hover:bg-almara-dark-text/30 text-almara-dark-text px-8 py-3 rounded font-helvetica-now text-sm uppercase tracking-wider transition-colors duration-300">
+                    request a call
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </PageLayout>
