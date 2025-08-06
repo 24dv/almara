@@ -41,7 +41,7 @@ const About = () => {
             {/* Founder Info */}
             <div className="space-y-12 max-w-xl">
               <div className="space-y-4">
-                <h2 className="font-museo-moderno text-[32px] lg:text-[36px] text-almara-subtitle-text">
+                <h2 className="font-museo-moderno text-[32px] lg:text-[36px] text-almara-subtitle-text text-[#363636]">
                   Tom Meganck
                 </h2>
                 <p className="text-almara-dark-text/60 font-helvetica-now text-sm uppercase tracking-wider">
