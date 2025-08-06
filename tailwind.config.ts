@@ -70,7 +70,7 @@ export default {
 			},
 			fontFamily: {
 				'helvetica-now': ['Inter', 'system-ui', 'sans-serif'],
-				'museo-moderno': ['"Museo Moderno"', 'system-ui', 'sans-serif'],
+				'museo-moderno': ['MuseoModerno', 'system-ui', 'sans-serif'],
 			},
 			backgroundImage: {
 				'almara-radial': 'var(--almara-radial-gradient)',
