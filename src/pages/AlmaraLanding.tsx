@@ -4,14 +4,14 @@ import { Footer } from "@/components/Footer";
 
 const AlmaraLanding = () => {
   return (
-    <div className="relative w-full h-screen overflow-hidden">
+    <div className="relative w-full">
       {/* Navigation */}
       <Navigation />
       
-      {/* Hero Section */}
+      {/* Hero Section - Full viewport height */}
       <HeroSection />
       
-      {/* Footer */}
+      {/* Footer - Only visible when scrolling */}
       <Footer />
     </div>
   );
