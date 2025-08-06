@@ -2,7 +2,7 @@ import { PageLayout } from "@/components/PageLayout";
 const About = () => {
   return <PageLayout title="About">
       {/* Main Content Section - Full Height */}
-      <section className="h-screen flex items-center justify-center px-12 py-20" style={{backgroundImage: 'url(/lovable-uploads/b064a10f-d8e7-41a9-ad8a-a047d48224c0.png)'}}>
+      <section className="h-screen flex items-center justify-center px-12 py-20">
         <div className="max-w-3xl text-center space-y-16">
           {/* Main Tagline */}
           <h1 className="font-long-cang sm:text-[36px] md:text-[40px] lg:text-[44px] text-almara-subtitle-text tracking-[0.05em] opacity-90 leading-tight font-thin text-5xl">
@@ -28,7 +28,7 @@ const About = () => {
       </section>
 
       {/* Founder Section - Full Height */}
-      <section className="h-screen flex items-center justify-center px-12 py-20" style={{backgroundImage: 'url(/lovable-uploads/b064a10f-d8e7-41a9-ad8a-a047d48224c0.png)'}}>
+      <section className="h-screen bg-almara-dark-text/5 flex items-center justify-center px-12 py-20">
         <div className="max-w-7xl mx-auto w-full">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center h-full">
             {/* Founder Image */}
