@@ -42,21 +42,21 @@ export const Navigation = ({ positioning = "absolute" }: NavigationProps) => {
                       ? 'radial-gradient(circle at center, hsl(var(--almara-carmine)) 0%, hsl(var(--almara-carmine) / 0.9) 70%, hsl(var(--almara-carmine) / 0.7) 100%)'
                       : 'transparent',
                     boxShadow: isActive 
-                      ? `inset -4px -4px 8px rgba(255,255,255,0.0), inset 2px 2px 4px rgba(0,0,0,0.7), 0 0 20px hsl(var(--almara-carmine) / 0.6), 0 0 40px hsl(var(--almara-carmine) / 0.3)`
+                      ? `0 0 15px hsl(var(--almara-carmine) / 0.6), 0 0 25px hsl(var(--almara-carmine) / 0.3), inset -4px -4px 8px rgba(255,255,255,0.0), inset 2px 2px 4px rgba(0,0,0,0.7)`
                       : 'inset -4px -4px 8px rgba(255,255,255,0.0), inset 2px 2px 4px rgba(0,0,0,0.7)',
-                    transition: 'all 0.6s cubic-bezier(0.4, 0, 0.2, 1), transform 0.3s ease-out',
-                    transform: 'scale(1)'
+                    transition: 'background 0.6s cubic-bezier(0.4, 0, 0.2, 1)',
+                    animation: isActive ? 'glow-expand-retract 1.2s ease-out' : 'none'
                   }} 
                   onMouseEnter={(e) => {
                     if (!isActive) {
                       e.currentTarget.style.background = 'radial-gradient(circle at center, hsl(var(--almara-carmine)) 0%, hsl(var(--almara-carmine) / 0.9) 70%, hsl(var(--almara-carmine) / 0.7) 100%)';
-                      e.currentTarget.style.boxShadow = 'inset -4px -4px 8px rgba(255,255,255,0.0), inset 2px 2px 4px rgba(0,0,0,0.7), 0 0 20px hsl(var(--almara-carmine) / 0.6), 0 0 40px hsl(var(--almara-carmine) / 0.3)';
-                      e.currentTarget.style.transform = 'scale(1.05)';
+                      e.currentTarget.style.animation = 'glow-expand-retract 1.2s ease-out';
                     }
                   }}
                   onMouseLeave={(e) => {
                     if (!isActive) {
                       e.currentTarget.style.background = 'transparent';
+                      e.currentTarget.style.animation = 'none';
                       e.currentTarget.style.boxShadow = 'inset -4px -4px 8px rgba(255,255,255,0.0), inset 2px 2px 4px rgba(0,0,0,0.7)';
                       e.currentTarget.style.transform = 'scale(1)';
                     }
@@ -65,10 +65,8 @@ export const Navigation = ({ positioning = "absolute" }: NavigationProps) => {
                   <div 
                     className="absolute inset-0 rounded-full"
                     style={{
-                      background: isActive 
-                        ? 'radial-gradient(circle at 30% 30%, hsl(var(--almara-carmine) / 0.8) 0%, transparent 60%)'
-                        : 'transparent',
-                      transition: 'all 0.8s cubic-bezier(0.4, 0, 0.2, 1)',
+                      background: 'radial-gradient(circle at 30% 30%, hsl(var(--almara-carmine) / 0.8) 0%, transparent 60%)',
+                      transition: 'opacity 0.8s cubic-bezier(0.4, 0, 0.2, 1)',
                       opacity: isActive ? 1 : 0
                     }}
                   />
