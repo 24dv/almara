@@ -1,4 +1,5 @@
 import { Button } from "@/components/ui/button";
+import { Link } from "react-router-dom";
 
 export const Footer = () => {
   return (
@@ -23,12 +24,12 @@ export const Footer = () => {
         
         {/* Right Side - Privacy Link */}
         <div className="flex-1 flex justify-end">
-          <a 
-            href="#privacy" 
+          <Link 
+            to="/privacy" 
             className="text-xs text-almara-dark-text/70 hover:text-almara-dark-text transition-colors duration-300 font-helvetica-now"
           >
             privacy
-          </a>
+          </Link>
         </div>
       </div>
     </footer>

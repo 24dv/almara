@@ -1,22 +1,23 @@
 import { cn } from "@/lib/utils";
+import { Link } from "react-router-dom";
 const navigationItems = [{
   label: "about",
-  href: "#about"
+  href: "/about"
 }, {
   label: "services",
-  href: "#services"
+  href: "/services"
 }, {
   label: "partners",
-  href: "#partners"
+  href: "/partners"
 }, {
   label: "mission",
-  href: "#mission"
+  href: "/mission"
 }];
 export const Navigation = () => {
   return <nav className="absolute left-8 top-[65%] -translate-y-1/2 z-50">
       <ul className="space-y-4">
         {navigationItems.map(item => <li key={item.label}>
-            <a href={item.href} className={cn("flex items-center group transition-all duration-300 font-helvetica-now")}>
+            <Link to={item.href} className={cn("flex items-center group transition-all duration-300 font-helvetica-now")}>
               <div className="mr-4 group-hover:bg-[#A60047] cursor-pointer"
                    style={{
                      width: '40px',
@@ -29,7 +30,7 @@ export const Navigation = () => {
               <span className="text-almara-dark-text font-normal tracking-wide opacity-80 group-hover:opacity-100 transition-opacity duration-300 text-base">
                 {item.label}
               </span>
-            </a>
+            </Link>
           </li>)}
       </ul>
     </nav>;
