@@ -1,28 +1,8 @@
 import { Button } from "@/components/ui/button";
-import { useState, useEffect } from "react";
 
 export const Footer = () => {
-  const [isVisible, setIsVisible] = useState(false);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      const scrollPosition = window.scrollY;
-      const windowHeight = window.innerHeight;
-      
-      // Show footer when scrolled down at least 100px
-      setIsVisible(scrollPosition > 100);
-    };
-
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
-
   return (
-    <footer className={`
-      transition-all duration-500 ease-out
-      ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-full opacity-0'}
-      fixed bottom-0 left-0 right-0 z-40 px-8 py-6
-    `}>
+    <footer className="px-8 py-6 bg-background">
       <div className="flex items-center justify-between max-w-7xl mx-auto">
         {/* Left Side - Lorem Ipsum */}
         <div className="flex-1">
