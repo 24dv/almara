@@ -33,22 +33,26 @@ export const Navigation = ({ positioning = "absolute" }: NavigationProps) => {
             <li key={item.label}>
               <Link to={item.href} className={cn("flex items-center group transition-all duration-300 font-helvetica-now")}>
                 <div 
-                  className="mr-4 cursor-pointer transition-all duration-300"
+                  className="mr-4 cursor-pointer"
                   style={{
                     width: '40px',
                     height: '40px',
                     borderRadius: '50%',
                     backgroundColor: isActive ? 'hsl(var(--almara-carmine))' : 'transparent',
-                    boxShadow: 'inset -4px -4px 8px rgba(255,255,255,0.0), inset 2px 2px 4px rgba(0,0,0,0.7)'
+                    boxShadow: 'inset -4px -4px 8px rgba(255,255,255,0.0), inset 2px 2px 4px rgba(0,0,0,0.7)',
+                    transition: 'background-color 0.4s cubic-bezier(0.4, 0, 0.2, 1), transform 0.2s ease-out',
+                    transform: 'scale(1)'
                   }} 
                   onMouseEnter={(e) => {
                     if (!isActive) {
                       e.currentTarget.style.backgroundColor = 'hsl(var(--almara-carmine))';
+                      e.currentTarget.style.transform = 'scale(1.05)';
                     }
                   }}
                   onMouseLeave={(e) => {
                     if (!isActive) {
                       e.currentTarget.style.backgroundColor = 'transparent';
+                      e.currentTarget.style.transform = 'scale(1)';
                     }
                   }}
                 />
