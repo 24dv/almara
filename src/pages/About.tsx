@@ -1,25 +1,23 @@
 import { PageLayout } from "@/components/PageLayout";
-
 const About = () => {
-  return (
-    <PageLayout title="About">
+  return <PageLayout title="About">
       {/* Main Content Section - Full Height */}
       <section className="h-screen flex items-center justify-center px-12 py-20">
         <div className="max-w-3xl text-center space-y-16">
           {/* Main Tagline */}
-          <h1 className="font-long-cang text-[32px] sm:text-[36px] md:text-[40px] lg:text-[44px] text-almara-subtitle-text tracking-[0.05em] opacity-90 font-thin leading-tight">
+          <h1 className="font-long-cang sm:text-[36px] md:text-[40px] lg:text-[44px] text-almara-subtitle-text tracking-[0.05em] opacity-90 leading-tight font-thin text-5xl">
             IN A SEA OF OPPORTUNITIES,<br />
             DISCERNMENT IS THE TRUE COMPASS.
           </h1>
           
           {/* Description Text */}
-          <div className="space-y-8 text-almara-dark-text/80 font-helvetica-now max-w-2xl mx-auto">
-            <p className="text-lg leading-relaxed">
+          <div className="space-y-8 text-almara-dark-text/80 font-helvetica-now max-w-2xl mx-auto px-[40px]">
+            <p className="leading-relaxed text-base px-0 text-[#f4eada]">
               At ALMARA, we guide passionate investors through the world of 
               alternative assets: from hedge funds and private equity to real 
               estate, litigation finance and art.
             </p>
-            <p className="text-lg leading-relaxed">
+            <p className="leading-relaxed text-base px-0 text-[#f4eada]">
               Blending deep market expertise with a creative spark, we build 
               strategies as unique as you are. With our network of specialist 
               partners and top-tier advisors, we uncover distinct opportunities 
@@ -36,11 +34,7 @@ const About = () => {
             {/* Founder Image */}
             <div className="flex justify-center lg:justify-end">
               <div className="w-96 h-96 rounded-lg overflow-hidden shadow-lg">
-                <img 
-                  src="/lovable-uploads/3f98f6a2-7c73-465b-89c1-9ffd619f5b8f.png" 
-                  alt="Tom Meganck - Founder" 
-                  className="w-full h-full object-cover"
-                />
+                <img src="/lovable-uploads/3f98f6a2-7c73-465b-89c1-9ffd619f5b8f.png" alt="Tom Meganck - Founder" className="w-full h-full object-cover" />
               </div>
             </div>
             
@@ -90,8 +84,6 @@ const About = () => {
           </div>
         </div>
       </section>
-    </PageLayout>
-  );
+    </PageLayout>;
 };
-
 export default About;
