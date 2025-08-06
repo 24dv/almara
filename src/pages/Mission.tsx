@@ -5,39 +5,47 @@ const Mission = () => {
     <PageLayout title="Mission">
       <div className="max-w-4xl mx-auto px-8 py-16">
         <h1 className="text-4xl md:text-5xl font-long-cang text-almara-subtitle-text mb-8 text-center">
-          Our Mission
+          Our Mission & Values
         </h1>
         <div className="prose prose-lg mx-auto text-almara-dark-text/80 font-helvetica-now">
           <p className="text-xl leading-relaxed mb-8 text-center">
-            To unlock the infinite potential of our oceans through innovative maritime solutions and sustainable partnerships.
+            To be your trusted steward in wealth creation, bringing intention, vision, and clarity to foster balanced growth with kindness and compassion.
           </p>
           
           <div className="not-prose grid gap-8 md:grid-cols-2 mb-12">
             <div className="bg-white/5 backdrop-blur-sm rounded-lg p-8 border border-white/10">
-              <h3 className="text-2xl font-long-cang text-almara-subtitle-text mb-4">Vision</h3>
+              <h3 className="text-2xl font-long-cang text-almara-subtitle-text mb-4">Our Mission</h3>
               <p className="text-almara-dark-text/80 leading-relaxed">
-                A world where maritime commerce thrives in harmony with ocean preservation, creating endless opportunities for sustainable growth and prosperity.
+                ALMARA serves as a holistic steward, delivering comprehensive solutions that blend wisdom with practical expertise, creating sustainable pathways for wealth creation and preservation that honor both financial objectives and personal values.
               </p>
             </div>
             
             <div className="bg-white/5 backdrop-blur-sm rounded-lg p-8 border border-white/10">
-              <h3 className="text-2xl font-long-cang text-almara-subtitle-text mb-4">Values</h3>
-              <ul className="text-almara-dark-text/80 space-y-2">
-                <li className="flex items-center">
-                  <span className="w-2 h-2 bg-almara-light-blue rounded-full mr-3"></span>
-                  Innovation & Excellence
+              <h3 className="text-2xl font-long-cang text-almara-subtitle-text mb-4">Core Values</h3>
+              <ul className="text-almara-dark-text/80 space-y-3">
+                <li className="flex items-start">
+                  <span className="w-2 h-2 bg-almara-light-blue rounded-full mr-3 mt-2"></span>
+                  <div>
+                    <strong>Wisdom:</strong> Drawing from deep experience to guide decisions with insight and perspective
+                  </div>
                 </li>
-                <li className="flex items-center">
-                  <span className="w-2 h-2 bg-almara-light-blue rounded-full mr-3"></span>
-                  Sustainability & Responsibility
+                <li className="flex items-start">
+                  <span className="w-2 h-2 bg-almara-light-blue rounded-full mr-3 mt-2"></span>
+                  <div>
+                    <strong>Grounded:</strong> Staying rooted in practical realities while pursuing ambitious goals
+                  </div>
                 </li>
-                <li className="flex items-center">
-                  <span className="w-2 h-2 bg-almara-light-blue rounded-full mr-3"></span>
-                  Partnership & Collaboration
+                <li className="flex items-start">
+                  <span className="w-2 h-2 bg-almara-light-blue rounded-full mr-3 mt-2"></span>
+                  <div>
+                    <strong>Simple:</strong> Finding clarity in complexity and elegance in solutions
+                  </div>
                 </li>
-                <li className="flex items-center">
-                  <span className="w-2 h-2 bg-almara-light-blue rounded-full mr-3"></span>
-                  Integrity & Trust
+                <li className="flex items-start">
+                  <span className="w-2 h-2 bg-almara-light-blue rounded-full mr-3 mt-2"></span>
+                  <div>
+                    <strong>Spirituality:</strong> Honoring the deeper purpose behind wealth and recognizing our interconnectedness
+                  </div>
                 </li>
               </ul>
             </div>
@@ -45,13 +53,10 @@ const Mission = () => {
           
           <div className="prose prose-lg">
             <p className="leading-relaxed mb-6">
-              At ALMARA, we believe the ocean represents humanity's greatest frontier for sustainable development. Our mission is to bridge the gap between traditional maritime practices and cutting-edge innovation, creating pathways for responsible growth that benefit both commerce and conservation.
-            </p>
-            <p className="leading-relaxed mb-6">
-              We are committed to fostering an ecosystem where maritime stakeholders can collaborate, innovate, and prosper while maintaining the highest standards of environmental stewardship and social responsibility.
+              At the heart of ALMARA's philosophy lies the principle of yin and yang—the understanding that true prosperity emerges from balance. We bring intention to every investment decision, vision to long-term planning, and clarity to complex financial landscapes.
             </p>
             <p className="leading-relaxed">
-              Through our comprehensive approach to maritime solutions, we aim to transform challenges into opportunities, turning the vast blue expanse into a sea of endless possibility for current and future generations.
+              Our approach embraces both the analytical rigor required for successful investing and the human wisdom needed to create meaningful, lasting wealth. Through kindness and compassion, we foster relationships that transcend transactions, building partnerships that enrich both financial portfolios and personal purpose.
             </p>
           </div>
         </div>
