@@ -69,9 +69,7 @@ export default {
 				'almara-accent': 'hsl(var(--almara-accent))'
 			},
 			fontFamily: {
-				'helvetica': ['Inter', 'system-ui', 'sans-serif'],
-				'museo': ['Museo Moderno', 'cursive'],
-				'long-cang': ['Museo Moderno', 'cursive'], // For backward compatibility
+				'long-cang': ['"Long Cang"', 'cursive'],
 			},
 			backgroundImage: {
 				'almara-gradient': 'var(--almara-gradient)',

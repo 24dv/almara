@@ -8,83 +8,104 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    /* New ALMARA Design System Colors */
-    --text-light: 0 0% 21%;  /* #363636 */
-    --text-dark: 0 0% 95%;   /* For dark backgrounds */
-    --primary-bg: 216 16% 71%; /* #B3BACB */
+    /* ALMARA Brand Colors */
+    --almara-cream: 43 25% 89%;
+    --almara-blue-grey: 200 15% 45%;
+    --almara-dark-grey: 210 8% 25%;
+    --almara-light-grey: 210 6% 85%;
+    --almara-accent: 35 20% 75%;
     
-    /* Background gradient - Radial Fill 100% with stops */
-    --background-gradient: radial-gradient(100% 100% at 50% 50%, hsl(0, 0%, 100%) 0%, hsl(216, 16%, 71%) 100%);
-    
-    /* Semantic tokens using new colors */
-    --background: 0 0% 100%;
-    --foreground: var(--text-light);
-    --card: 0 0% 100%;
-    --card-foreground: var(--text-light);
-    --popover: 0 0% 100%;
-    --popover-foreground: var(--text-light);
-    --primary: var(--text-light);
-    --primary-foreground: 0 0% 100%;
-    --secondary: var(--primary-bg);
-    --secondary-foreground: var(--text-light);
-    --muted: var(--primary-bg);
-    --muted-foreground: var(--text-light);
-    --accent: var(--primary-bg);
-    --accent-foreground: var(--text-light);
-    --destructive: 0 84% 60%;
-    --destructive-foreground: 0 0% 100%;
-    --border: var(--primary-bg);
-    --input: var(--primary-bg);
-    --ring: var(--text-light);
-    --radius: 0.5rem;
-    
-    /* Sidebar tokens */
-    --sidebar-background: 0 0% 98%;
-    --sidebar-foreground: var(--text-light);
-    --sidebar-primary: var(--text-light);
-    --sidebar-primary-foreground: 0 0% 98%;
-    --sidebar-accent: 0 0% 96%;
-    --sidebar-accent-foreground: var(--text-light);
-    --sidebar-border: 0 0% 90%;
-    --sidebar-ring: var(--text-light);
+    /* Semantic tokens */
+    --background: var(--almara-cream);
+    --foreground: var(--almara-dark-grey);
 
-    /* Legacy ALMARA colors for backward compatibility */
-    --almara-cream: 44 21% 92%;
-    --almara-light-grey: var(--primary-bg);
-    --almara-dark-grey: var(--text-light);
-    --almara-gradient: var(--background-gradient);
-    --almara-hero-glow: 0 20px 60px -10px hsl(var(--primary-bg) / 0.4);
-    --almara-button-glow: 0 8px 25px -5px hsl(var(--primary-bg) / 0.5);
+    --card: var(--almara-cream);
+    --card-foreground: var(--almara-dark-grey);
+
+    --popover: var(--almara-cream);
+    --popover-foreground: var(--almara-dark-grey);
+
+    --primary: var(--almara-dark-grey);
+    --primary-foreground: var(--almara-cream);
+
+    --secondary: var(--almara-light-grey);
+    --secondary-foreground: var(--almara-dark-grey);
+
+    --muted: var(--almara-light-grey);
+    --muted-foreground: var(--almara-blue-grey);
+
+    --accent: var(--almara-accent);
+    --accent-foreground: var(--almara-dark-grey);
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: var(--almara-cream);
+
+    --border: var(--almara-light-grey);
+    --input: var(--almara-light-grey);
+    --ring: var(--almara-dark-grey);
+
+    /* Custom ALMARA design tokens */
+    --almara-gradient: linear-gradient(135deg, hsl(var(--almara-cream)) 0%, hsl(var(--almara-blue-grey)) 100%);
+    --almara-radial-gradient: radial-gradient(circle at center, hsl(var(--almara-cream)) 0%, hsl(var(--almara-blue-grey)) 70%);
+    --almara-hero-shadow: 0 20px 60px -10px hsl(var(--almara-dark-grey) / 0.15);
+    --almara-button-shadow: 0 8px 25px -5px hsl(var(--almara-dark-grey) / 0.2);
+    --almara-glow: 0 0 50px hsl(var(--almara-accent) / 0.2);
+    
+    --radius: 0.75rem;
+
+    --sidebar-background: 0 0% 98%;
+
+    --sidebar-foreground: 240 5.3% 26.1%;
+
+    --sidebar-primary: 240 5.9% 10%;
+
+    --sidebar-primary-foreground: 0 0% 98%;
+
+    --sidebar-accent: 240 4.8% 95.9%;
+
+    --sidebar-accent-foreground: 240 5.9% 10%;
+
+    --sidebar-border: 220 13% 91%;
+
+    --sidebar-ring: 217.2 91.2% 59.8%;
   }
 
   .dark {
-    --background: 0 0% 4%;
-    --foreground: var(--text-dark);
-    --card: 0 0% 4%;
-    --card-foreground: var(--text-dark);
-    --popover: 0 0% 4%;
-    --popover-foreground: var(--text-dark);
-    --primary: var(--text-dark);
-    --primary-foreground: 0 0% 4%;
-    --secondary: 0 0% 15%;
-    --secondary-foreground: var(--text-dark);
-    --muted: 0 0% 15%;
-    --muted-foreground: 0 0% 64%;
-    --accent: 0 0% 15%;
-    --accent-foreground: var(--text-dark);
-    --destructive: 0 62% 30%;
-    --destructive-foreground: 0 0% 98%;
-    --border: 0 0% 15%;
-    --input: 0 0% 15%;
-    --ring: var(--text-dark);
-    --sidebar-background: 0 0% 4%;
-    --sidebar-foreground: var(--text-dark);
-    --sidebar-primary: var(--text-dark);
-    --sidebar-primary-foreground: 0 0% 4%;
-    --sidebar-accent: 0 0% 15%;
-    --sidebar-accent-foreground: var(--text-dark);
-    --sidebar-border: 0 0% 15%;
-    --sidebar-ring: 0 0% 21%;
+    --background: 222.2 84% 4.9%;
+    --foreground: 210 40% 98%;
+
+    --card: 222.2 84% 4.9%;
+    --card-foreground: 210 40% 98%;
+
+    --popover: 222.2 84% 4.9%;
+    --popover-foreground: 210 40% 98%;
+
+    --primary: 210 40% 98%;
+    --primary-foreground: 222.2 47.4% 11.2%;
+
+    --secondary: 217.2 32.6% 17.5%;
+    --secondary-foreground: 210 40% 98%;
+
+    --muted: 217.2 32.6% 17.5%;
+    --muted-foreground: 215 20.2% 65.1%;
+
+    --accent: 217.2 32.6% 17.5%;
+    --accent-foreground: 210 40% 98%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 217.2 32.6% 17.5%;
+    --input: 217.2 32.6% 17.5%;
+    --ring: 212.7 26.8% 83.9%;
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
   }
 }
 
@@ -94,74 +115,38 @@ All colors MUST be HSL.
   }
 
   body {
-    @apply text-foreground font-helvetica;
-    background: var(--background-gradient);
-    position: relative;
-    overflow-x: hidden;
+    @apply bg-background text-foreground overflow-hidden;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
   }
-
-  /* Background noise overlay - Mono noise with specified settings */
-  body::before {
+  
+  /* Custom classes for ALMARA design */
+  .almara-gradient-bg {
+    background: var(--almara-radial-gradient);
+    position: relative;
+  }
+  
+  .almara-gradient-bg::before {
     content: '';
-    position: fixed;
+    position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
-    height: 100%;
+    right: 0;
+    bottom: 0;
     background-image: 
-      radial-gradient(circle at 1px 1px, rgba(0,0,0,0.6) 1px, transparent 0);
-    background-size: 1px 1px;
+      radial-gradient(circle at 25% 25%, hsl(var(--almara-accent) / 0.1) 0%, transparent 50%),
+      radial-gradient(circle at 75% 75%, hsl(var(--almara-blue-grey) / 0.1) 0%, transparent 50%);
     pointer-events: none;
-    z-index: 1;
-    opacity: 1;
   }
-
-  /* Ensure content is above noise */
-  #root {
-    position: relative;
-    z-index: 2;
-  }
-
-  /* Typography Classes */
-  .font-helvetica {
-    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
-  }
-
-  .font-museo {
-    font-family: 'Museo Moderno', cursive;
-  }
-
-  /* Typography for different element types */
-  .text-body {
-    @apply font-helvetica font-normal text-foreground;
-  }
-
-  .text-title {
-    @apply font-museo font-normal text-foreground;
-  }
-
-  .text-subtitle {
-    @apply font-helvetica font-semibold text-foreground;
-  }
-
-  .text-button {
-    @apply font-helvetica font-semibold text-foreground;
-  }
-
-  /* Legacy ALMARA Classes for backward compatibility */
-  .almara-gradient-bg {
-    background: var(--background-gradient);
-  }
-
+  
   .font-long-cang {
-    font-family: 'Museo Moderno', cursive;
+    font-family: 'Long Cang', cursive;
   }
-
+  
   .almara-hero-shadow {
-    box-shadow: var(--almara-hero-glow);
+    box-shadow: var(--almara-hero-shadow);
   }
-
+  
   .almara-button-shadow {
-    box-shadow: var(--almara-button-glow);
+    box-shadow: var(--almara-button-shadow);
   }
 }
