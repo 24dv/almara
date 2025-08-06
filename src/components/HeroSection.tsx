@@ -7,7 +7,7 @@ export const HeroSection = () => {
       <div className="relative z-10 text-center">
         {/* ALMARA Logo */}
         <div className="mb-8">
-          <img src="/lovable-uploads/2c678d11-20a8-496a-9604-16c61d8ae172.png" alt="ALMARA" className="h-12 sm:h-16 md:h-20 lg:h-24 mx-auto opacity-90" />
+          <img src="/lovable-uploads/2c678d11-20a8-496a-9604-16c61d8ae172.png" alt="ALMARA" className="h-10 sm:h-14 md:h-18 lg:h-22 mx-auto opacity-90" />
         </div>
         
         {/* Subtitle */}
