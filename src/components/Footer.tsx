@@ -2,7 +2,7 @@ import { Button } from "@/components/ui/button";
 
 export const Footer = () => {
   return (
-    <footer className="px-8 py-6 bg-background">
+    <footer className="px-8 py-6 border-t border-[#F4EADA]">
       <div className="flex items-center justify-between max-w-7xl mx-auto">
         {/* Left Side - Lorem Ipsum */}
         <div className="flex-1">
