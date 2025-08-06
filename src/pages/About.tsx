@@ -12,7 +12,7 @@ const About = () => {
           
           {/* Description Text */}
           <div className="space-y-8 text-almara-dark-text/80 font-helvetica-now max-w-2xl mx-auto px-[40px]">
-            <p className="leading-relaxed text-base px-0 text-[#f4eada]">
+            <p className="leading-relaxed px-0 text-[#f4eada] text-base">
               At ALMARA, we guide passionate investors through the world of 
               alternative assets: from hedge funds and private equity to real 
               estate, litigation finance and art.
