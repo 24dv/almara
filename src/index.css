@@ -9,47 +9,46 @@ All colors MUST be HSL.
 @layer base {
   :root {
     /* ALMARA Brand Colors */
-    --almara-cream: 43 25% 89%;
-    --almara-blue-grey: 200 15% 45%;
-    --almara-dark-grey: 210 8% 25%;
-    --almara-light-grey: 210 6% 85%;
-    --almara-accent: 35 20% 75%;
+    --almara-dark-blue: 203 24% 28%;     /* #364B56 */
+    --almara-light-blue: 220 15% 74%;    /* #B3BACB */
+    --almara-dark-text: 0 0% 21%;        /* #363636 */
+    --almara-light-text: 43 42% 89%;     /* #F4EADA */
     
     /* Semantic tokens */
-    --background: var(--almara-cream);
-    --foreground: var(--almara-dark-grey);
+    --background: var(--almara-light-blue);
+    --foreground: var(--almara-dark-text);
 
-    --card: var(--almara-cream);
-    --card-foreground: var(--almara-dark-grey);
+    --card: var(--almara-light-blue);
+    --card-foreground: var(--almara-dark-text);
 
-    --popover: var(--almara-cream);
-    --popover-foreground: var(--almara-dark-grey);
+    --popover: var(--almara-light-blue);
+    --popover-foreground: var(--almara-dark-text);
 
-    --primary: var(--almara-dark-grey);
-    --primary-foreground: var(--almara-cream);
+    --primary: var(--almara-dark-blue);
+    --primary-foreground: var(--almara-light-text);
 
-    --secondary: var(--almara-light-grey);
-    --secondary-foreground: var(--almara-dark-grey);
+    --secondary: var(--almara-light-blue);
+    --secondary-foreground: var(--almara-dark-text);
 
-    --muted: var(--almara-light-grey);
-    --muted-foreground: var(--almara-blue-grey);
+    --muted: var(--almara-light-blue);
+    --muted-foreground: var(--almara-dark-text);
 
-    --accent: var(--almara-accent);
-    --accent-foreground: var(--almara-dark-grey);
+    --accent: var(--almara-dark-blue);
+    --accent-foreground: var(--almara-light-text);
 
     --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: var(--almara-cream);
+    --destructive-foreground: var(--almara-light-text);
 
-    --border: var(--almara-light-grey);
-    --input: var(--almara-light-grey);
-    --ring: var(--almara-dark-grey);
+    --border: var(--almara-dark-blue);
+    --input: var(--almara-light-blue);
+    --ring: var(--almara-dark-blue);
 
     /* Custom ALMARA design tokens */
-    --almara-gradient: linear-gradient(135deg, hsl(var(--almara-cream)) 0%, hsl(var(--almara-blue-grey)) 100%);
-    --almara-radial-gradient: radial-gradient(circle at center, hsl(var(--almara-cream)) 0%, hsl(var(--almara-blue-grey)) 70%);
-    --almara-hero-shadow: 0 20px 60px -10px hsl(var(--almara-dark-grey) / 0.15);
-    --almara-button-shadow: 0 8px 25px -5px hsl(var(--almara-dark-grey) / 0.2);
-    --almara-glow: 0 0 50px hsl(var(--almara-accent) / 0.2);
+    --almara-radial-gradient: radial-gradient(circle at center, hsl(var(--almara-dark-blue)) 0%, hsl(var(--almara-light-blue)) 100%);
+    --almara-hero-shadow: 0 20px 60px -10px hsl(var(--almara-dark-blue) / 0.15);
+    --almara-button-shadow: 0 8px 25px -5px hsl(var(--almara-dark-blue) / 0.2);
+    --almara-glow: 0 0 50px hsl(var(--almara-dark-blue) / 0.2);
+    --almara-noise: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)' opacity='0.6'/%3E%3C/svg%3E");
     
     --radius: 0.75rem;
 
@@ -116,7 +115,7 @@ All colors MUST be HSL.
 
   body {
     @apply bg-background text-foreground overflow-hidden;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
   }
   
   /* Custom classes for ALMARA design */
@@ -132,9 +131,9 @@ All colors MUST be HSL.
     left: 0;
     right: 0;
     bottom: 0;
-    background-image: 
-      radial-gradient(circle at 25% 25%, hsl(var(--almara-accent) / 0.1) 0%, transparent 50%),
-      radial-gradient(circle at 75% 75%, hsl(var(--almara-blue-grey) / 0.1) 0%, transparent 50%);
+    background-image: var(--almara-noise);
+    mix-blend-mode: multiply;
+    opacity: 0.6;
     pointer-events: none;
   }
   

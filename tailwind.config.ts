@@ -62,17 +62,16 @@ export default {
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
 				},
-				'almara-cream': 'hsl(var(--almara-cream))',
-				'almara-blue-grey': 'hsl(var(--almara-blue-grey))',
-				'almara-dark-grey': 'hsl(var(--almara-dark-grey))',
-				'almara-light-grey': 'hsl(var(--almara-light-grey))',
-				'almara-accent': 'hsl(var(--almara-accent))'
+				'almara-dark-blue': 'hsl(var(--almara-dark-blue))',
+				'almara-light-blue': 'hsl(var(--almara-light-blue))',
+				'almara-dark-text': 'hsl(var(--almara-dark-text))',
+				'almara-light-text': 'hsl(var(--almara-light-text))'
 			},
 			fontFamily: {
-				'long-cang': ['"Long Cang"', 'cursive'],
+				'helvetica-now': ['Inter', 'system-ui', 'sans-serif'],
+				'museo-moderno': ['"Museo Moderno"', 'system-ui', 'sans-serif'],
 			},
 			backgroundImage: {
-				'almara-gradient': 'var(--almara-gradient)',
 				'almara-radial': 'var(--almara-radial-gradient)',
 			},
 			boxShadow: {

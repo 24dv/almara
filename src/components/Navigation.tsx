@@ -16,12 +16,12 @@ export const Navigation = () => {
             <a
               href={item.href}
               className={cn(
-                "flex items-center group transition-all duration-300",
+                "flex items-center group transition-all duration-300 font-helvetica-now",
                 "hover:scale-105"
               )}
             >
-              <div className="w-3 h-3 rounded-full bg-almara-dark-grey/30 mr-4 group-hover:bg-almara-dark-grey transition-colors duration-300" />
-              <span className="text-almara-dark-grey text-sm font-medium tracking-wide opacity-80 group-hover:opacity-100 transition-opacity duration-300">
+              <div className="w-3 h-3 rounded-full bg-almara-dark-text/30 mr-4 group-hover:bg-almara-dark-text transition-colors duration-300" />
+              <span className="text-almara-dark-text text-sm font-normal tracking-wide opacity-80 group-hover:opacity-100 transition-opacity duration-300">
                 {item.label}
               </span>
             </a>
