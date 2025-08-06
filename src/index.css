@@ -133,6 +133,7 @@ All colors MUST be HSL.
     right: 0;
     bottom: 0;
     background: linear-gradient(to right, hsl(var(--almara-light-text)) 0%, transparent 50%);
+    opacity: 0.6;
     z-index: 1;
     pointer-events: none;
   }
