@@ -23,7 +23,7 @@ export const Navigation = () => {
                      height: '40px',
                      borderRadius: '50%',
                      background: 'transparent',
-                     boxShadow: 'inset 2px 2px 7px rgba(0, 0, 0, 0.9), inset 0px 0px 0px rgba(255, 255, 255, 0.2)',
+                     boxShadow: 'inset -4px -4px 8px rgba(255,255,255,0.0), inset 2px 2px 4px rgba(0,0,0,0.7)',
                      transition: 'background-color 0.3s ease'
                    }} />
               <span className="text-almara-dark-text font-normal tracking-wide opacity-80 group-hover:opacity-100 transition-opacity duration-300 text-base">
