@@ -17,9 +17,14 @@ export const Navigation = () => {
       <ul className="space-y-8">
         {navigationItems.map(item => <li key={item.label}>
             <a href={item.href} className={cn("flex items-center group transition-all duration-300 font-helvetica-now", "hover:scale-105")}>
-              <div className="w-8 h-8 rounded-full bg-transparent mr-4 transition-all duration-300 group-hover:bg-[hsl(var(--carmine-red))]" 
+              <div className="mr-4 group-hover:bg-[hsl(var(--carmine-red))] cursor-pointer" 
                    style={{
-                     boxShadow: 'inset 5px 5px 8px rgba(0, 0, 0, 0.7), inset -5px -5px 8px rgba(255, 255, 255, 0.7)'
+                     width: '60px',
+                     height: '60px',
+                     borderRadius: '50%',
+                     background: 'transparent',
+                     boxShadow: 'inset 5px 5px 8px rgba(0, 0, 0, 0.7), inset -5px -5px 8px rgba(255, 255, 255, 0.7)',
+                     transition: 'background-color 0.3s ease'
                    }} />
               <span className="text-almara-dark-text font-normal tracking-wide opacity-80 group-hover:opacity-100 transition-opacity duration-300 text-base">
                 {item.label}
