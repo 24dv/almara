@@ -19,7 +19,7 @@ export const Navigation = () => {
             <a href={item.href} className={cn("flex items-center group transition-all duration-300 font-helvetica-now", "hover:scale-105")}>
               <div className="w-8 h-8 rounded-full bg-transparent mr-4 transition-all duration-300 group-hover:bg-[hsl(var(--carmine-red))]" 
                    style={{
-                     boxShadow: 'inset 5px 5px 15px rgba(0, 0, 0, 0.2), inset -5px -5px 15px rgba(255, 255, 255, 0.7)'
+                     boxShadow: 'inset 8px 8px 20px rgba(0, 0, 0, 0.3), inset -8px -8px 20px rgba(255, 255, 255, 0.6)'
                    }} />
               <span className="text-almara-dark-text font-normal tracking-wide opacity-80 group-hover:opacity-100 transition-opacity duration-300 text-base">
                 {item.label}
