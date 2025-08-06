@@ -1,22 +1,14 @@
 import { PageLayout } from "@/components/PageLayout";
 import servicesHero from "@/assets/services-hero.jpg";
-
 const Services = () => {
-  return (
-    <PageLayout title="Services">
+  return <PageLayout title="Services">
       <div className="max-w-4xl mx-auto px-8 py-16">
         <div className="mb-12 rounded-lg overflow-hidden">
-          <img 
-            src={servicesHero} 
-            alt="Financial services collaboration" 
-            className="w-full h-64 object-cover opacity-80"
-          />
+          <img src={servicesHero} alt="Financial services collaboration" className="w-full h-64 object-cover opacity-80" />
         </div>
-        <h1 className="text-4xl md:text-5xl font-long-cang text-almara-subtitle-text mb-8 text-center">
-          Long-Term Partnerships Built on Trust
-        </h1>
+        <h1 className="text-4xl font-long-cang text-almara-subtitle-text mb-8 text-center font-thin md:text-5xl">LONG-TERM PARTNERSHIPS BUILT ON TRUST</h1>
         <div className="prose prose-lg mx-auto text-almara-dark-text/80 font-helvetica-now">
-          <p className="text-xl leading-relaxed mb-8">
+          <p className="leading-relaxed mb-8 text-base">
             Our approach combines ongoing strategic guidance with hands-on operational support, creating solutions that evolve with your needs and deliver both stability and growth.
           </p>
           
@@ -57,8 +49,6 @@ const Services = () => {
           </div>
         </div>
       </div>
-    </PageLayout>
-  );
+    </PageLayout>;
 };
-
 export default Services;
