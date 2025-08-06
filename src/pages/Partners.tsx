@@ -1,20 +1,12 @@
 import { PageLayout } from "@/components/PageLayout";
 import partnersHero from "@/assets/partners-hero.jpg";
-
 const Partners = () => {
-  return (
-    <PageLayout title="Partners">
+  return <PageLayout title="Partners">
       <div className="max-w-4xl mx-auto px-8 py-16">
         <div className="mb-12 rounded-lg overflow-hidden">
-          <img 
-            src={partnersHero} 
-            alt="Business partnership handshake" 
-            className="w-full h-64 object-cover opacity-80"
-          />
+          <img src={partnersHero} alt="Business partnership handshake" className="w-full h-64 object-cover opacity-80" />
         </div>
-        <h1 className="text-4xl md:text-5xl font-long-cang text-almara-subtitle-text mb-8 text-center">
-          Our Trusted Partnerships & Clients
-        </h1>
+        <h1 className="text-4xl md:text-5xl font-long-cang text-almara-subtitle-text mb-8 text-center">OUR TRUSTED PARTNERSHIPS &amp; CLIENTS</h1>
         <div className="prose prose-lg mx-auto text-almara-dark-text/80 font-helvetica-now">
           <p className="text-xl leading-relaxed mb-8">
             We work alongside top firms across institutions, technology, and bespoke projects, fostering relationships built on trust, expertise, and shared vision.
@@ -79,8 +71,6 @@ const Partners = () => {
           </div>
         </div>
       </div>
-    </PageLayout>
-  );
+    </PageLayout>;
 };
-
 export default Partners;
