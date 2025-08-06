@@ -10,8 +10,10 @@ interface PageLayoutProps {
 export const PageLayout = ({ title, children }: PageLayoutProps) => {
   return (
     <div className="relative w-full min-h-screen almara-gradient-bg">
-      {/* Navigation - positioned absolutely like home page */}
-      <Navigation />
+      {/* Navigation - sticky positioned at same height as home page */}
+      <div className="fixed left-8 top-[65%] -translate-y-1/2 z-50">
+        <Navigation />
+      </div>
       
       {/* Header with Logo */}
       <header className="relative z-10 flex items-center justify-center pt-8 pb-4">
