@@ -1,5 +1,6 @@
 import { cn } from "@/lib/utils";
 import { Link } from "react-router-dom";
+
 const navigationItems = [{
   label: "about",
   href: "/about"
@@ -13,8 +14,16 @@ const navigationItems = [{
   label: "mission",
   href: "/mission"
 }];
-export const Navigation = () => {
-  return <nav className="absolute left-8 top-[65%] -translate-y-1/2 z-50">
+
+interface NavigationProps {
+  positioning?: "absolute" | "fixed";
+}
+
+export const Navigation = ({ positioning = "absolute" }: NavigationProps) => {
+  return <nav className={cn(
+    "left-8 top-[65%] -translate-y-1/2 z-50",
+    positioning === "absolute" ? "absolute" : "fixed"
+  )}>
       <ul className="space-y-4">
         {navigationItems.map(item => <li key={item.label}>
             <Link to={item.href} className={cn("flex items-center group transition-all duration-300 font-helvetica-now")}>
