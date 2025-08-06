@@ -61,7 +61,24 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
-				}
+				},
+				'almara-cream': 'hsl(var(--almara-cream))',
+				'almara-blue-grey': 'hsl(var(--almara-blue-grey))',
+				'almara-dark-grey': 'hsl(var(--almara-dark-grey))',
+				'almara-light-grey': 'hsl(var(--almara-light-grey))',
+				'almara-accent': 'hsl(var(--almara-accent))'
+			},
+			fontFamily: {
+				'long-cang': ['"Long Cang"', 'cursive'],
+			},
+			backgroundImage: {
+				'almara-gradient': 'var(--almara-gradient)',
+				'almara-radial': 'var(--almara-radial-gradient)',
+			},
+			boxShadow: {
+				'almara-hero': 'var(--almara-hero-shadow)',
+				'almara-button': 'var(--almara-button-shadow)',
+				'almara-glow': 'var(--almara-glow)',
 			},
 			borderRadius: {
 				lg: 'var(--radius)',
