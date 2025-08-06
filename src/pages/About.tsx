@@ -33,8 +33,8 @@ const About = () => {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center h-full">
             {/* Founder Image */}
             <div className="flex justify-center lg:justify-end">
-              <div className="w-96 h-96 rounded-lg overflow-hidden shadow-lg">
-                <img src="/lovable-uploads/3f98f6a2-7c73-465b-89c1-9ffd619f5b8f.png" alt="Tom Meganck - Founder" className="w-full h-full object-cover" />
+              <div className="max-w-md">
+                <img src="/lovable-uploads/3f98f6a2-7c73-465b-89c1-9ffd619f5b8f.png" alt="Tom Meganck - Founder" className="w-full h-auto rounded-lg shadow-lg" />
               </div>
             </div>
             
