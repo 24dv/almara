@@ -13,7 +13,7 @@ const navigationItems = [{
   href: "#mission"
 }];
 export const Navigation = () => {
-  return <nav className="fixed left-8 top-1/2 -translate-y-1/2 z-50">
+  return <nav className="fixed left-8 top-2/3 -translate-y-1/2 z-50">
       <ul className="space-y-8">
         {navigationItems.map(item => <li key={item.label}>
             <a href={item.href} className={cn("flex items-center group transition-all duration-300 font-helvetica-now", "hover:scale-105")}>
