@@ -65,7 +65,8 @@ export default {
 				'almara-dark-blue': 'hsl(var(--almara-dark-blue))',
 				'almara-light-blue': 'hsl(var(--almara-light-blue))',
 				'almara-dark-text': 'hsl(var(--almara-dark-text))',
-				'almara-light-text': 'hsl(var(--almara-light-text))'
+				'almara-light-text': 'hsl(var(--almara-light-text))',
+				'almara-subtitle-text': 'hsl(var(--almara-subtitle-text))'
 			},
 			fontFamily: {
 				'helvetica-now': ['Inter', 'system-ui', 'sans-serif'],

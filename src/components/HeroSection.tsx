@@ -11,7 +11,7 @@ export const HeroSection = () => {
         </div>
         
         {/* Subtitle */}
-        <h2 className="font-helvetica-now font-bold text-lg sm:text-xl md:text-2xl lg:text-3xl text-almara-dark-text tracking-[0.2em] opacity-90">
+        <h2 className="font-long-cang text-[32px] text-almara-subtitle-text tracking-[0.2em] opacity-90">
           A SEA OF OPPORTUNITY
         </h2>
       </div>

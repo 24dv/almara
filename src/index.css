@@ -13,6 +13,7 @@ All colors MUST be HSL.
     --almara-light-blue: 220 15% 74%;    /* #B3BACB */
     --almara-dark-text: 0 0% 21%;        /* #363636 */
     --almara-light-text: 43 42% 89%;     /* #F4EADA */
+    --almara-subtitle-text: 43 42% 89%;  /* #F4EADA */
     
     /* Semantic tokens */
     --background: var(--almara-light-blue);
