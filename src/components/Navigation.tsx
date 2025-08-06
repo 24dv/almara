@@ -21,8 +21,8 @@ interface NavigationProps {
 
 export const Navigation = ({ positioning = "absolute" }: NavigationProps) => {
   return <nav className={cn(
-    "left-8 top-[65vh] -translate-y-1/2 z-50",
-    positioning === "absolute" ? "absolute" : "fixed"
+    "left-8 -translate-y-1/2 z-50",
+    positioning === "absolute" ? "absolute top-[65%]" : "fixed top-[60vh]"
   )}>
       <ul className="space-y-4">
         {navigationItems.map(item => <li key={item.label}>
