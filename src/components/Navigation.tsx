@@ -31,56 +31,32 @@ export const Navigation = ({ positioning = "absolute" }: NavigationProps) => {
           const isActive = location.pathname === item.href;
           return (
             <li key={item.label}>
-              <Link 
-                to={item.href} 
-                className={cn("flex items-center group transition-all duration-300 font-helvetica-now")}
-                onMouseEnter={(e) => {
-                  if (!isActive) {
-                    const circle = e.currentTarget.querySelector('.nav-circle') as HTMLElement;
-                    if (circle) {
-                      circle.style.background = 'radial-gradient(circle at center, hsl(var(--almara-carmine)) 0%, hsl(var(--almara-carmine) / 0.9) 70%, hsl(var(--almara-carmine) / 0.7) 100%)';
-                      circle.style.animation = 'glow-expand-retract 1.2s ease-out';
-                    }
-                  }
-                }}
-                onMouseLeave={(e) => {
-                  if (!isActive) {
-                    const circle = e.currentTarget.querySelector('.nav-circle') as HTMLElement;
-                    if (circle) {
-                      circle.style.background = 'transparent';
-                      circle.style.animation = 'none';
-                      circle.style.boxShadow = 'inset -4px -4px 8px rgba(255,255,255,0.0), inset 2px 2px 4px rgba(0,0,0,0.7)';
-                      circle.style.transform = 'scale(1)';
-                    }
-                  }
-                }}
-              >
+              <Link to={item.href} className={cn("flex items-center group transition-all duration-300 font-helvetica-now")}>
                 <div 
-                  className="nav-circle mr-4 cursor-pointer relative overflow-hidden"
+                  className="mr-4 cursor-pointer"
                   style={{
                     width: '40px',
                     height: '40px',
                     borderRadius: '50%',
-                    background: isActive 
-                      ? 'radial-gradient(circle at center, hsl(var(--almara-carmine)) 0%, hsl(var(--almara-carmine) / 0.9) 70%, hsl(var(--almara-carmine) / 0.7) 100%)'
-                      : 'transparent',
-                    boxShadow: isActive 
-                      ? `0 0 15px hsl(var(--almara-carmine) / 0.6), 0 0 25px hsl(var(--almara-carmine) / 0.3), inset -4px -4px 8px rgba(255,255,255,0.0), inset 2px 2px 4px rgba(0,0,0,0.7)`
-                      : 'inset -4px -4px 8px rgba(255,255,255,0.0), inset 2px 2px 4px rgba(0,0,0,0.7)',
-                    transition: 'background 0.6s cubic-bezier(0.4, 0, 0.2, 1)',
-                    animation: isActive ? 'glow-expand-retract 1.2s ease-out' : 'none'
+                    backgroundColor: isActive ? 'hsl(var(--almara-carmine))' : 'transparent',
+                    boxShadow: 'inset -4px -4px 8px rgba(255,255,255,0.0), inset 2px 2px 4px rgba(0,0,0,0.7)',
+                    transition: 'background-color 0.4s cubic-bezier(0.4, 0, 0.2, 1), transform 0.2s ease-out',
+                    transform: 'scale(1)'
                   }} 
-                >
-                  <div 
-                    className="absolute inset-0 rounded-full"
-                    style={{
-                      background: 'radial-gradient(circle at 30% 30%, hsl(var(--almara-carmine) / 0.8) 0%, transparent 60%)',
-                      transition: 'opacity 0.8s cubic-bezier(0.4, 0, 0.2, 1)',
-                      opacity: isActive ? 1 : 0
-                    }}
-                  />
-                </div>
-                <span className="text-almara-dark-text font-normal tracking-wide text-base">
+                  onMouseEnter={(e) => {
+                    if (!isActive) {
+                      e.currentTarget.style.backgroundColor = 'hsl(var(--almara-carmine))';
+                      e.currentTarget.style.transform = 'scale(1.05)';
+                    }
+                  }}
+                  onMouseLeave={(e) => {
+                    if (!isActive) {
+                      e.currentTarget.style.backgroundColor = 'transparent';
+                      e.currentTarget.style.transform = 'scale(1)';
+                    }
+                  }}
+                />
+                <span className="text-almara-dark-text font-normal tracking-wide opacity-80 group-hover:opacity-100 transition-opacity duration-300 text-base">
                   {item.label}
                 </span>
               </Link>
