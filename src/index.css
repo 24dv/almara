@@ -189,4 +189,13 @@ All colors MUST be HSL.
     opacity: 0.8;
     pointer-events: none;
   }
+
+  /* ALMARA neo shadow utility for call button */
+  .almara-call-btn {
+    box-shadow: var(--almara-button-neo-shadow);
+    transition: box-shadow 0.2s ease;
+  }
+  .almara-call-btn:hover {
+    box-shadow: var(--almara-button-neo-shadow-hover);
+  }
 }
