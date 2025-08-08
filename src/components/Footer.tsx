@@ -14,12 +14,7 @@ export const Footer = () => {
         
         {/* Center - Request a Call Button */}
         <div className="flex-shrink-0 mx-8">
-          <Button 
-            variant="secondary"
-            className="almara-button-shadow bg-almara-light-blue/80 hover:bg-almara-light-blue text-almara-dark-text border-0 px-8 py-3 rounded-full backdrop-blur-sm transition-all duration-300 hover:scale-105 font-helvetica-now font-bold"
-          >
-            request a call
-          </Button>
+          <Button variant="call" className="font-helvetica-now">request a call</Button>
         </div>
         
         {/* Right Side - Privacy Link */}

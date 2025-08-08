@@ -1,4 +1,5 @@
 import { PageLayout } from "@/components/PageLayout";
+import { Button } from "@/components/ui/button";
 const About = () => {
   return <PageLayout title="About">
       {/* Main Content Section - Full Height */}
@@ -76,9 +77,7 @@ const About = () => {
               
               {/* Call to Action */}
               <div className="pt-6">
-                <button className="bg-almara-dark-text/20 hover:bg-almara-dark-text/30 text-almara-dark-text px-10 py-4 rounded font-helvetica-now text-sm uppercase tracking-wider transition-colors duration-300">
-                  request a call
-                </button>
+                <Button variant="call" className="font-helvetica-now">request a call</Button>
               </div>
             </div>
           </div>

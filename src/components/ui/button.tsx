@@ -17,6 +17,8 @@ const buttonVariants = cva(
         secondary:
           "bg-secondary text-secondary-foreground hover:bg-secondary/80",
         ghost: "hover:bg-accent hover:text-accent-foreground",
+        call:
+          "bg-transparent text-primary-foreground lowercase rounded-[1px] shadow-[var(--almara-button-neo-shadow)] hover:shadow-[var(--almara-button-neo-shadow-hover)] transition-all px-8 py-3",
         link: "text-primary underline-offset-4 hover:underline",
       },
       size: {
