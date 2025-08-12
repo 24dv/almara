@@ -38,9 +38,10 @@ const Mission = () => {
         </div>
       </section>
 
-      {/* Values / Pillars */}
-      <section className="px-12 py-28 bg-almara-dark-text/5">
+      {/* Values / Pillars + In Practice */}
+      <section className="px-12 py-20 bg-almara-dark-text/5">
         <div className="max-w-6xl mx-auto">
+          {/* Values / Pillars */}
           <div className="text-center mb-16">
             <h2 className="font-museo-moderno text-[28px] lg:text-[32px] text-almara-dark-text">Values / Pillars</h2>
           </div>
@@ -74,13 +75,9 @@ const Mission = () => {
               </p>
             </article>
           </div>
-        </div>
-      </section>
 
-      {/* In Practice */}
-      <section className="px-12 py-28">
-        <div className="max-w-5xl mx-auto">
-          <div className="text-center mb-16">
+          {/* In Practice */}
+          <div className="text-center mt-16 mb-12">
             <h2 className="font-museo-moderno text-[28px] lg:text-[32px] text-almara-dark-text">In Practice</h2>
           </div>
 
@@ -94,6 +91,7 @@ const Mission = () => {
           </ul>
         </div>
       </section>
+
     </PageLayout>;
 };
 export default Mission;
