@@ -2,6 +2,7 @@ import { PageLayout } from "@/components/PageLayout";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import { useEffect } from "react";
+import missionHero from "@/assets/mission-hero.jpg";
 const Mission = () => {
   // SEO
   useEffect(() => {
@@ -33,6 +34,9 @@ const Mission = () => {
           <p className="leading-relaxed text-base text-[#f4eada] font-helvetica-now max-w-2xl mx-auto px-[40px]">
             Almara pairs wisdom with execution: grounded judgment, simple structures, and a quiet, steady core that guides how we steward capital, culture, and relationships.
           </p>
+          <figure className="mt-6">
+            <img src={missionHero} alt="ALMARA mission values hero mockup" loading="lazy" className="mx-auto rounded-xl shadow-xl w-full max-w-2xl h-auto object-cover" />
+          </figure>
         </div>
       </section>
 

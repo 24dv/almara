@@ -2,6 +2,19 @@ import { PageLayout } from "@/components/PageLayout";
 import { Button } from "@/components/ui/button";
 import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from "@/components/ui/tooltip";
 import { useEffect } from "react";
+import partnersHero from "@/assets/partners-hero.jpg";
+import quintetLogo from "@/assets/logos/quintet.svg";
+import degroofPetercamLogo from "@/assets/logos/degroof-petercam.svg";
+import ubpLogo from "@/assets/logos/ubp.svg";
+import cigpLogo from "@/assets/logos/cigp.svg";
+import antarcticaLogo from "@/assets/logos/antarctica.svg";
+import delioLogo from "@/assets/logos/delio.svg";
+import abboveLogo from "@/assets/logos/abbove.svg";
+import aquitaraLogo from "@/assets/logos/aquitara.svg";
+import deminorLogo from "@/assets/logos/deminor.svg";
+import firgunLogo from "@/assets/logos/firgun.svg";
+import genevaTechnologiesLogo from "@/assets/logos/geneva-technologies.svg";
+import golborneLogo from "@/assets/logos/golborne.svg";
 const Partners = () => {
   // Basic SEO
   useEffect(() => {
@@ -22,6 +35,20 @@ const Partners = () => {
     }
     link.href = window.location.href;
   }, []);
+  const logos: Record<string, string> = {
+    "Quintet": quintetLogo,
+    "Degroof Petercam": degroofPetercamLogo,
+    "UBP": ubpLogo,
+    "CIGP": cigpLogo,
+    "Antarctica": antarcticaLogo,
+    "Delio": delioLogo,
+    "Abbove": abboveLogo,
+    "Aquitara": aquitaraLogo,
+    "Deminor": deminorLogo,
+    "Firgun": firgunLogo,
+    "Geneva Technologies": genevaTechnologiesLogo,
+    "Golborne": golborneLogo,
+  };
   return <PageLayout title="Partners">
       {/* Banner 1 — Hero / Orientation */}
       <section className="h-screen flex items-center justify-center px-12 py-20">
@@ -33,7 +60,9 @@ const Partners = () => {
           <p className="leading-relaxed text-base text-[#f4eada] font-helvetica-now max-w-2xl mx-auto px-[40px]">
             We collaborate with leading institutions, technology platforms, and project specialists—activated selectively, and only when it serves the mandate.
           </p>
-
+          <figure className="mt-6">
+            <img src={partnersHero} alt="ALMARA partners network hero mockup" loading="lazy" className="mx-auto rounded-xl shadow-xl w-full max-w-2xl h-auto object-cover" />
+          </figure>
         </div>
       </section>
 
@@ -67,6 +96,7 @@ const Partners = () => {
             }].map(p => <Tooltip key={p.name}>
                   <TooltipTrigger asChild>
                     <div className="bg-white/10 backdrop-blur-sm rounded-lg px-6 py-10 border border-white/20 text-center cursor-default">
+                      <img src={logos[p.name]} alt={`${p.name} logo`} loading="lazy" className="mx-auto h-10 object-contain mb-3" />
                       <span className="block text-lg tracking-wide text-almara-dark-text">{p.name}</span>
                     </div>
                   </TooltipTrigger>
@@ -104,6 +134,7 @@ const Partners = () => {
             }].map(p => <Tooltip key={p.name}>
                   <TooltipTrigger asChild>
                     <div className="bg-white/10 backdrop-blur-sm rounded-lg px-10 py-12 border border-white/20 text-center cursor-default min-w-[220px]">
+                      <img src={logos[p.name]} alt={`${p.name} logo`} loading="lazy" className="mx-auto h-10 object-contain mb-4" />
                       <span className="block text-2xl tracking-wide text-almara-dark-text">{p.name}</span>
                     </div>
                   </TooltipTrigger>
@@ -150,6 +181,7 @@ const Partners = () => {
             }].map(p => <Tooltip key={p.name}>
                   <TooltipTrigger asChild>
                     <div className="bg-white/10 backdrop-blur-sm rounded-lg px-6 py-10 border border-white/20 text-center cursor-default">
+                      <img src={logos[p.name]} alt={`${p.name} logo`} loading="lazy" className="mx-auto h-10 object-contain mb-3" />
                       <span className="block text-lg tracking-wide text-almara-dark-text">{p.name}</span>
                     </div>
                   </TooltipTrigger>

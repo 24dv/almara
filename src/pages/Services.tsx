@@ -1,6 +1,7 @@
 import { PageLayout } from "@/components/PageLayout";
 import { Button } from "@/components/ui/button";
 import { useEffect } from "react";
+import servicesHero from "@/assets/services-hero.jpg";
 const Services = () => {
   // Basic SEO for this page
   useEffect(() => {
@@ -29,7 +30,9 @@ const Services = () => {
           <p className="leading-relaxed text-base px-[40px] text-[#f4eada] font-helvetica-now max-w-2xl mx-auto">
             Family office, alternatives, M&A, and art advisory—delivered through ongoing counsel and mandate-led execution.
           </p>
-
+          <figure className="mt-6">
+            <img src={servicesHero} alt="ALMARA services overview hero mockup" loading="lazy" className="mx-auto rounded-xl shadow-xl w-full max-w-2xl h-auto object-cover" />
+          </figure>
         </div>
       </section>
 
