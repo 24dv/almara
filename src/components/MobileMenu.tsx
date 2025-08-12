@@ -15,9 +15,9 @@ export const MobileMenu = () => {
   const location = useLocation();
 
   return (
-    <header className="lg:hidden fixed top-0 left-0 right-0 z-[60]">
-      <div className="mx-3 mt-3 rounded-xl border border-border bg-background/60 backdrop-blur-xl shadow-sm">
-        <div className="flex items-center justify-between px-4 py-3">
+    <header className="xl:hidden fixed top-0 left-0 right-0 z-[60]">
+      <div className="px-4 py-3">
+        <div className="flex items-center justify-between">
           <Link to="/" aria-label="ALMARA home" className="transition-opacity hover:opacity-80">
             <img
               src="/lovable-uploads/889a0efd-ed5b-448b-a911-54ea486f744c.png"
@@ -40,44 +40,34 @@ export const MobileMenu = () => {
 
             <SheetContent
               side="right"
-              className="w-[88%] sm:w-[420px] bg-background/80 backdrop-blur-2xl border-border"
+              className="w-full sm:w-[420px] bg-background border-none"
             >
-              <nav className="mt-8">
-                <ul className="space-y-2">
+              <nav className="mt-16 px-4">
+                <ul className="space-y-4">
                   {navigationItems.map((item) => (
-                    <li key={item.href} className="animate-fade-in">
+                    <li key={item.href}>
                       <SheetClose asChild>
                         <Link
                           to={item.href}
                           className={cn(
-                            "block px-2 py-3 text-2xl sm:text-3xl font-helvetica-now tracking-wide text-foreground/90 transition-colors story-link",
+                            "flex items-center px-1 py-2 text-xl sm:text-2xl font-helvetica-now tracking-wide text-foreground/90 transition-opacity hover:opacity-100",
                             location.pathname === item.href && "text-foreground"
                           )}
                           aria-current={location.pathname === item.href ? "page" : undefined}
                         >
-                          {item.label}
+                          <span
+                            className={cn(
+                              "mr-3 inline-block h-2.5 w-2.5 rounded-full border border-foreground/20",
+                              location.pathname === item.href && "bg-[hsl(var(--almara-carmine))] border-transparent"
+                            )}
+                          />
+                          <span className="opacity-90">{item.label}</span>
                         </Link>
                       </SheetClose>
                     </li>
                   ))}
                 </ul>
               </nav>
-
-              <div className="mt-8">
-                <SheetClose asChild>
-                  <Button
-                    variant="call"
-                    size="call"
-                    className="w-full font-helvetica-now almara-call-btn"
-                  >
-                    request a call
-                  </Button>
-                </SheetClose>
-              </div>
-
-              <div className="mt-10 text-sm text-foreground/70">
-                <p className="px-2">A sea of opportunity</p>
-              </div>
             </SheetContent>
           </Sheet>
         </div>
