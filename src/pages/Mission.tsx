@@ -2,13 +2,11 @@ import { PageLayout } from "@/components/PageLayout";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import { useEffect } from "react";
-
 const Mission = () => {
   // SEO
   useEffect(() => {
     document.title = "Mission | ALMARA";
-    const desc =
-      "We bring intention, vision and clarity to foster balanced growth—with kindness and compassion.";
+    const desc = "We bring intention, vision and clarity to foster balanced growth—with kindness and compassion.";
     let meta = document.querySelector('meta[name="description"]') as HTMLMetaElement | null;
     if (!meta) {
       meta = document.createElement("meta");
@@ -16,7 +14,6 @@ const Mission = () => {
       document.head.appendChild(meta);
     }
     meta.content = desc;
-
     let link = document.querySelector('link[rel="canonical"]') as HTMLLinkElement | null;
     if (!link) {
       link = document.createElement("link");
@@ -25,15 +22,11 @@ const Mission = () => {
     }
     link.href = window.location.href;
   }, []);
-
-  return (
-    <PageLayout title="Mission">
+  return <PageLayout title="Mission">
       {/* Banner 1 — Mission */}
       <section className="h-screen flex items-center justify-center px-12 py-20">
         <div className="max-w-3xl text-center space-y-16">
-          <h1 className="font-long-cang sm:text-[36px] md:text-[40px] lg:text-[44px] text-almara-subtitle-text tracking-[0.05em] opacity-90 leading-tight font-thin text-5xl">
-            Mission
-          </h1>
+          <h1 className="font-long-cang sm:text-[36px] md:text-[40px] lg:text-[44px] text-almara-subtitle-text tracking-[0.05em] opacity-90 leading-tight font-thin text-5xl">MISSION</h1>
           <p className="leading-relaxed text-base text-[#f4eada] font-helvetica-now max-w-2xl mx-auto px-[40px]">
             We bring intention, vision and clarity to foster balanced growth—with kindness and compassion.
           </p>
@@ -94,8 +87,6 @@ const Mission = () => {
           </div>
         </div>
       </section>
-    </PageLayout>
-  );
+    </PageLayout>;
 };
-
 export default Mission;
