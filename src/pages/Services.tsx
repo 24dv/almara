@@ -28,7 +28,7 @@ const Services = () => {
   return (
     <PageLayout title="Services">
       {/* Banner 1 — Page Intro */}
-      <section className="h-screen flex items-center justify-center px-12 py-20 bg-almara-dark-text/5">
+      <section className="h-screen flex items-center justify-center px-12 py-20">
         <div className="max-w-3xl text-center space-y-12">
           <h1 className="font-long-cang sm:text-[36px] md:text-[40px] lg:text-[44px] text-almara-subtitle-text tracking-[0.05em] opacity-90 leading-tight font-thin text-5xl">
             Services
