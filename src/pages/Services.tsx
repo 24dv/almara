@@ -24,16 +24,14 @@ const Services = () => {
   }, []);
   return <PageLayout title="Services">
       {/* Banner 1 — Page Intro */}
-      <section className="h-screen flex items-center px-12 py-20">
-        <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-          <div className="text-center md:text-left space-y-8">
-            <h1 className="font-long-cang sm:text-[36px] md:text-[40px] lg:text-[44px] text-almara-subtitle-text tracking-[0.05em] opacity-90 leading-tight font-thin text-5xl">SERVICES</h1>
-            <p className="leading-relaxed text-base px-[40px] text-[#f4eada] font-helvetica-now max-w-2xl mx-auto md:mx-0">
-              Family office, alternatives, M&A, and art advisory—delivered through ongoing counsel and mandate-led execution.
-            </p>
-          </div>
-          <figure className="mt-6 md:mt-0">
-            <img src={servicesHero} alt="ALMARA services overview hero mockup" loading="lazy" className="mx-auto md:ml-auto rounded-xl shadow-xl w-full max-w-2xl h-auto object-cover" />
+      <section className="h-screen flex items-center justify-center px-12 py-20">
+        <div className="max-w-3xl text-center space-y-16">
+          <h1 className="font-long-cang sm:text-[36px] md:text-[40px] lg:text-[44px] text-almara-subtitle-text tracking-[0.05em] opacity-90 leading-tight font-thin text-5xl">SERVICES</h1>
+          <p className="leading-relaxed text-base px-[40px] text-[#f4eada] font-helvetica-now max-w-2xl mx-auto">
+            Family office, alternatives, M&A, and art advisory—delivered through ongoing counsel and mandate-led execution.
+          </p>
+          <figure className="mt-6">
+            <img src={servicesHero} alt="ALMARA services overview hero mockup" loading="lazy" className="mx-auto rounded-xl shadow-xl w-full max-w-2xl h-auto object-cover" />
           </figure>
         </div>
       </section>
