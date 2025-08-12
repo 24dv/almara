@@ -6,7 +6,7 @@ const AlmaraLanding = () => {
   return (
     <div className="relative w-full almara-gradient-bg">
       {/* Navigation */}
-      <Navigation positioning="absolute" />
+      <Navigation positioning="fixed" />
       
       {/* Hero Section - Full viewport height */}
       <HeroSection />
