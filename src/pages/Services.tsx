@@ -1,13 +1,11 @@
 import { PageLayout } from "@/components/PageLayout";
 import { Button } from "@/components/ui/button";
 import { useEffect } from "react";
-
 const Services = () => {
   // Basic SEO for this page
   useEffect(() => {
     document.title = "Services | ALMARA";
-    const desc =
-      "Family office, alternatives, M&A, and art advisory—delivered through ongoing counsel and mandate-led execution.";
+    const desc = "Family office, alternatives, M&A, and art advisory—delivered through ongoing counsel and mandate-led execution.";
     let meta = document.querySelector('meta[name="description"]') as HTMLMetaElement | null;
     if (!meta) {
       meta = document.createElement("meta");
@@ -15,7 +13,6 @@ const Services = () => {
       document.head.appendChild(meta);
     }
     meta.content = desc;
-
     let link = document.querySelector('link[rel="canonical"]') as HTMLLinkElement | null;
     if (!link) {
       link = document.createElement("link");
@@ -24,15 +21,11 @@ const Services = () => {
     }
     link.href = window.location.href;
   }, []);
-
-  return (
-    <PageLayout title="Services">
+  return <PageLayout title="Services">
       {/* Banner 1 — Page Intro */}
       <section className="h-screen flex items-center justify-center px-12 py-20">
         <div className="max-w-3xl text-center space-y-16">
-          <h1 className="font-long-cang sm:text-[36px] md:text-[40px] lg:text-[44px] text-almara-subtitle-text tracking-[0.05em] opacity-90 leading-tight font-thin text-5xl">
-            Services
-          </h1>
+          <h1 className="font-long-cang sm:text-[36px] md:text-[40px] lg:text-[44px] text-almara-subtitle-text tracking-[0.05em] opacity-90 leading-tight font-thin text-5xl">SERVICES</h1>
           <p className="leading-relaxed text-base px-[40px] text-[#f4eada] font-helvetica-now max-w-2xl mx-auto">
             Family office, alternatives, M&A, and art advisory—delivered through ongoing counsel and mandate-led execution.
           </p>
@@ -173,8 +166,6 @@ const Services = () => {
           </div>
         </div>
       </section>
-    </PageLayout>
-  );
+    </PageLayout>;
 };
-
 export default Services;
