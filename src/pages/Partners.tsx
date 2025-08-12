@@ -41,31 +41,11 @@ const Partners = () => {
             We collaborate with leading institutions, technology platforms, and project specialists—activated selectively, and only when it serves the mandate.
           </p>
 
-          {/* Pills / anchors */}
-          <nav aria-label="Quick navigation" className="pt-2">
-            <ul className="flex flex-wrap items-center justify-center gap-3 font-helvetica-now text-sm">
-              {[
-                { href: "#institutional", label: "Institutional" },
-                { href: "#technology", label: "Technology" },
-                { href: "#projects", label: "Projects" },
-                { href: "#contact", label: "Contact" },
-              ].map((item) => (
-                <li key={item.href}>
-                  <a
-                    href={item.href}
-                    className="px-3 py-1 rounded-full border border-white/30 text-almara-dark-text/80 hover:text-almara-dark-text hover:border-white/60 transition-colors"
-                  >
-                    {item.label}
-                  </a>
-                </li>
-              ))}
-            </ul>
-          </nav>
         </div>
       </section>
 
       {/* Banner 2 — Institutional Partners */}
-      <section id="institutional" className="px-12 py-24">
+      <section className="px-12 py-24">
         <div className="max-w-7xl mx-auto">
           <div className="text-center space-y-6 mb-14">
             <h2 className="font-museo-moderno text-[28px] lg:text-[32px] text-[#363636]">Institutional Partners</h2>
@@ -104,7 +84,7 @@ const Partners = () => {
       </section>
 
       {/* Banner 3 — Technology Partners */}
-      <section id="technology" className="px-12 py-24 bg-almara-dark-text/5">
+      <section className="px-12 py-24 bg-almara-dark-text/5">
         <div className="max-w-6xl mx-auto">
           <div className="text-center space-y-6 mb-12">
             <h2 className="font-museo-moderno text-[28px] lg:text-[32px] text-[#363636]">Technology Partners</h2>
@@ -140,7 +120,7 @@ const Partners = () => {
       </section>
 
       {/* Banner 4 — Project Partners */}
-      <section id="projects" className="px-12 py-24">
+      <section className="px-12 py-24">
         <div className="max-w-7xl mx-auto">
           <div className="text-center space-y-6 mb-14">
             <h2 className="font-museo-moderno text-[28px] lg:text-[32px] text-[#363636]">Project Partners</h2>
@@ -175,7 +155,7 @@ const Partners = () => {
       </section>
 
       {/* Banner 5 — CTA */}
-      <section id="contact" className="px-12 py-28 bg-almara-dark-text/5">
+      <section className="px-12 py-28 bg-almara-dark-text/5">
         <div className="max-w-3xl mx-auto text-center space-y-8">
           <h2 className="font-museo-moderno text-[28px] lg:text-[32px] text-[#363636]">Put the network to work</h2>
           <p className="leading-relaxed text-base text-[#f4eada] font-helvetica-now">

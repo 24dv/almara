@@ -37,29 +37,11 @@ const Services = () => {
             Family office, alternatives, M&A, and art advisory—delivered through ongoing counsel and mandate-led execution.
           </p>
 
-          {/* Quick Nav */}
-          <nav aria-label="Quick navigation" className="pt-4">
-            <ul className="flex flex-wrap items-center justify-center gap-x-3 gap-y-2 text-sm text-almara-dark-text/70 font-helvetica-now">
-              <li><a href="#family-office" className="hover:text-almara-dark-text transition-colors">Family Office</a></li>
-              <li className="opacity-50">·</li>
-              <li><a href="#alternatives" className="hover:text-almara-dark-text transition-colors">Alternatives</a></li>
-              <li className="opacity-50">·</li>
-              <li><a href="#capital-mna" className="hover:text-almara-dark-text transition-colors">Capital & M&A</a></li>
-              <li className="opacity-50">·</li>
-              <li><a href="#art-advisory" className="hover:text-almara-dark-text transition-colors">Art Advisory</a></li>
-              <li className="opacity-50">·</li>
-              <li><a href="#how-we-work" className="hover:text-almara-dark-text transition-colors">How We Work</a></li>
-              <li className="opacity-50">·</li>
-              <li><a href="#perspective" className="hover:text-almara-dark-text transition-colors">Perspective</a></li>
-              <li className="opacity-50">·</li>
-              <li><a href="#contact" className="hover:text-almara-dark-text transition-colors">Contact</a></li>
-            </ul>
-          </nav>
         </div>
       </section>
 
       {/* Banner 2 — How We Work */}
-      <section id="how-we-work" className="px-12 py-24">
+      <section className="px-12 py-24">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="font-museo-moderno text-[28px] lg:text-[32px] text-[#363636]">How We Work</h2>
@@ -95,7 +77,7 @@ const Services = () => {
           </div>
           <div className="grid gap-8 md:grid-cols-2">
             {/* Family Office */}
-            <article id="family-office" className="bg-white/10 backdrop-blur-sm rounded-lg p-8 border border-white/20">
+            <article className="bg-white/10 backdrop-blur-sm rounded-lg p-8 border border-white/20">
               <h3 className="text-xl font-semibold text-almara-dark-text mb-4">Family Office</h3>
               <p className="text-almara-dark-text/80 leading-relaxed mb-4">
                 We design the architecture of bespoke wealth solutions—aligning asset management and wealth structuring.
@@ -108,7 +90,7 @@ const Services = () => {
             </article>
 
             {/* Alternatives */}
-            <article id="alternatives" className="bg-white/10 backdrop-blur-sm rounded-lg p-8 border border-white/20">
+            <article className="bg-white/10 backdrop-blur-sm rounded-lg p-8 border border-white/20">
               <h3 className="text-xl font-semibold text-almara-dark-text mb-4">Alternatives</h3>
               <p className="text-almara-dark-text/80 leading-relaxed mb-4">
                 Where opportunity meets access. Curated exposure across private markets.
@@ -122,7 +104,7 @@ const Services = () => {
             </article>
 
             {/* Capital & M&A */}
-            <article id="capital-mna" className="bg-white/10 backdrop-blur-sm rounded-lg p-8 border border-white/20">
+            <article className="bg-white/10 backdrop-blur-sm rounded-lg p-8 border border-white/20">
               <h3 className="text-xl font-semibold text-almara-dark-text mb-4">Capital Introduction & M&A</h3>
               <p className="text-almara-dark-text/80 leading-relaxed mb-4">
                 Connecting capital and opportunity—quietly and effectively.
@@ -135,7 +117,7 @@ const Services = () => {
             </article>
 
             {/* Art Advisory */}
-            <article id="art-advisory" className="bg-white/10 backdrop-blur-sm rounded-lg p-8 border border-white/20">
+            <article className="bg-white/10 backdrop-blur-sm rounded-lg p-8 border border-white/20">
               <h3 className="text-xl font-semibold text-almara-dark-text mb-4">Art Advisory</h3>
               <p className="text-almara-dark-text/80 leading-relaxed mb-4">
                 Beyond collection management—insider access to expertise and institutions.
@@ -152,7 +134,7 @@ const Services = () => {
       </section>
 
       {/* Banner 7 — Perspective */}
-      <section id="perspective" className="px-12 py-24">
+      <section className="px-12 py-24">
         <div className="max-w-4xl mx-auto text-center space-y-8 font-helvetica-now">
           <h2 className="font-museo-moderno text-[28px] lg:text-[32px] text-[#363636]">Perspective</h2>
           <p className="leading-relaxed text-base text-[#f4eada]">
@@ -180,7 +162,7 @@ const Services = () => {
       </section>
 
       {/* Banner 10 — CTA */}
-      <section id="contact" className="px-12 py-28">
+      <section className="px-12 py-28">
         <div className="max-w-3xl mx-auto text-center space-y-8">
           <h2 className="font-museo-moderno text-[28px] lg:text-[32px] text-[#363636]">Request a conversation</h2>
           <p className="leading-relaxed text-base text-[#f4eada] font-helvetica-now">
