@@ -18,7 +18,7 @@ const buttonVariants = cva(
           "bg-secondary text-secondary-foreground hover:bg-secondary/80",
         ghost: "hover:bg-accent hover:text-accent-foreground",
         call:
-          "bg-transparent text-primary-foreground lowercase rounded-[1px] almara-call-btn relative z-10 transition-all px-8 py-3",
+          "bg-transparent text-primary-foreground lowercase rounded-[1px] almara-call-btn relative z-10 transition-all px-[3rem] py-[0.85rem]",
         link: "text-primary underline-offset-4 hover:underline",
       },
       size: {
