@@ -136,8 +136,15 @@ All colors MUST be HSL.
     left: 0;
     right: 0;
     bottom: 0;
-    background: linear-gradient(to right, hsl(var(--almara-light-text)) 0%, transparent 50%);
-    opacity: 0.75;
+    /* New warm overlay: left-to-right, spans left 50%, fades from #F4EADA to transparent */
+    background-image: linear-gradient(
+      to right,
+      hsl(var(--almara-light-text) / 1) 0%,
+      hsl(var(--almara-light-text) / 0) 100%
+    );
+    background-size: 50% 100%;
+    background-position: left top;
+    background-repeat: no-repeat;
     z-index: 1;
     pointer-events: none;
   }
