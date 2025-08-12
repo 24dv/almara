@@ -22,8 +22,8 @@ const Mission = () => {
   }, []);
   return <PageLayout title="Mission">
       {/* Hero — Mission */}
-      <section className="px-6 md:px-12 py-24 md:py-32">
-        <div className="max-w-4xl mx-auto text-center space-y-10">
+      <section className="h-screen flex items-center justify-center px-12 py-20">
+        <div className="max-w-3xl text-center space-y-16">
           <h1 className="font-long-cang sm:text-[36px] md:text-[40px] lg:text-[44px] text-almara-subtitle-text tracking-[0.05em] opacity-90 leading-tight font-thin text-5xl">
             MISSION
           </h1>
@@ -39,13 +39,13 @@ const Mission = () => {
       </section>
 
       {/* Values / Pillars */}
-      <section className="px-6 md:px-12 py-16 md:py-20 bg-almara-dark-text/5">
+      <section className="px-12 py-28 bg-almara-dark-text/5">
         <div className="max-w-6xl mx-auto">
-          <div className="text-center mb-12">
+          <div className="text-center mb-16">
             <h2 className="font-museo-moderno text-[28px] lg:text-[32px] text-almara-dark-text">Values / Pillars</h2>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8 font-helvetica-now">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12 font-helvetica-now">
             <article className="rounded-lg border border-almara-light-text/20 bg-almara-light-text/10 backdrop-blur-sm p-6">
               <h3 className="text-lg text-almara-dark-text mb-2">Wisdom</h3>
               <p className="text-almara-light-text/90 leading-relaxed">
@@ -78,13 +78,13 @@ const Mission = () => {
       </section>
 
       {/* In Practice */}
-      <section className="px-6 md:px-12 py-20">
+      <section className="px-12 py-28">
         <div className="max-w-5xl mx-auto">
-          <div className="text-center mb-10">
+          <div className="text-center mb-16">
             <h2 className="font-museo-moderno text-[28px] lg:text-[32px] text-almara-dark-text">In Practice</h2>
           </div>
 
-          <ul className="grid gap-4 md:grid-cols-2 font-helvetica-now text-almara-light-text">
+          <ul className="grid gap-6 md:grid-cols-2 font-helvetica-now text-almara-light-text">
             <li className="leading-relaxed">Clarity first — define purpose, constraints, and desired outcomes before we act.</li>
             <li className="leading-relaxed">Balance — hold risk/return and time/impact in healthy tension.</li>
             <li className="leading-relaxed">Simplicity as rigour — fewer moving parts, tighter governance, better decisions.</li>
