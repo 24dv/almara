@@ -14,7 +14,7 @@ export const Footer = () => {
         
         {/* Center - Request a Call Button */}
         <div className="flex-shrink-0 mx-8">
-          <Button variant="call" className="font-helvetica-now">request a call</Button>
+          <Button variant="call" size="call" className="font-helvetica-now">request a call</Button>
         </div>
         
         {/* Right Side - Privacy Link */}

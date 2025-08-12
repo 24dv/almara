@@ -77,7 +77,7 @@ const About = () => {
               
               {/* Call to Action */}
               <div className="pt-6">
-                <Button variant="call" className="font-helvetica-now">request a call</Button>
+                <Button variant="call" size="call" className="font-helvetica-now">request a call</Button>
               </div>
             </div>
           </div>
