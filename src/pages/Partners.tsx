@@ -1,76 +1,193 @@
 import { PageLayout } from "@/components/PageLayout";
-import partnersHero from "@/assets/partners-hero.jpg";
+import { Button } from "@/components/ui/button";
+import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from "@/components/ui/tooltip";
+import { useEffect } from "react";
+
 const Partners = () => {
-  return <PageLayout title="Partners">
-      <div className="max-w-4xl mx-auto px-8 py-16">
-        <div className="mb-12 rounded-lg overflow-hidden">
-          <img src={partnersHero} alt="Business partnership handshake" className="w-full h-64 object-cover opacity-80" />
-        </div>
-        <h1 className="text-4xl md:text-5xl font-long-cang text-almara-subtitle-text mb-8 text-center">OUR TRUSTED PARTNERSHIPS &amp; CLIENTS</h1>
-        <div className="prose prose-lg mx-auto text-almara-dark-text/80 font-helvetica-now">
-          <p className="text-xl leading-relaxed mb-8">
-            We work alongside top firms across institutions, technology, and bespoke projects, fostering relationships built on trust, expertise, and shared vision.
+  // Basic SEO
+  useEffect(() => {
+    document.title = "Partners | ALMARA";
+    const desc =
+      "A curated network that amplifies outcomes. Institutional, technology, and project partners—activated selectively when it serves the mandate.";
+    let meta = document.querySelector('meta[name="description"]') as HTMLMetaElement | null;
+    if (!meta) {
+      meta = document.createElement("meta");
+      meta.name = "description";
+      document.head.appendChild(meta);
+    }
+    meta.content = desc;
+
+    let link = document.querySelector('link[rel="canonical"]') as HTMLLinkElement | null;
+    if (!link) {
+      link = document.createElement("link");
+      link.rel = "canonical";
+      document.head.appendChild(link);
+    }
+    link.href = window.location.href;
+  }, []);
+
+  return (
+    <PageLayout title="Partners">
+      {/* Banner 1 — Hero / Orientation */}
+      <section className="h-screen flex items-center justify-center px-12 py-20">
+        <div className="max-w-3xl text-center space-y-10">
+          <h1 className="font-long-cang sm:text-[36px] md:text-[40px] lg:text-[44px] text-almara-subtitle-text tracking-[0.05em] opacity-90 leading-tight font-thin text-5xl">
+            Partners
+          </h1>
+          <p className="leading-relaxed text-base text-[#f4eada] font-helvetica-now">
+            A curated network that amplifies outcomes.
           </p>
-          
-          <div className="not-prose">
-            <div className="space-y-8 mb-12">
-              <div>
-                <h3 className="text-2xl font-semibold text-almara-dark-text mb-6 text-center">Institutional Partners</h3>
-                <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
-                  <div className="bg-white/10 backdrop-blur-sm rounded-lg p-4 border border-white/20 text-center">
-                    <h4 className="text-lg font-semibold text-almara-dark-text">Quintet</h4>
-                  </div>
-                  <div className="bg-white/10 backdrop-blur-sm rounded-lg p-4 border border-white/20 text-center">
-                    <h4 className="text-lg font-semibold text-almara-dark-text">Degroof Petercam</h4>
-                  </div>
-                  <div className="bg-white/10 backdrop-blur-sm rounded-lg p-4 border border-white/20 text-center">
-                    <h4 className="text-lg font-semibold text-almara-dark-text">UBP</h4>
-                  </div>
-                  <div className="bg-white/10 backdrop-blur-sm rounded-lg p-4 border border-white/20 text-center">
-                    <h4 className="text-lg font-semibold text-almara-dark-text">CIGP</h4>
-                  </div>
-                  <div className="bg-white/10 backdrop-blur-sm rounded-lg p-4 border border-white/20 text-center">
-                    <h4 className="text-lg font-semibold text-almara-dark-text">Antarctica</h4>
-                  </div>
-                </div>
-              </div>
-              
-              <div>
-                <h3 className="text-2xl font-semibold text-almara-dark-text mb-6 text-center">Technology Partners</h3>
-                <div className="grid gap-4 md:grid-cols-2">
-                  <div className="bg-white/10 backdrop-blur-sm rounded-lg p-4 border border-white/20 text-center">
-                    <h4 className="text-lg font-semibold text-almara-dark-text">Delio</h4>
-                  </div>
-                  <div className="bg-white/10 backdrop-blur-sm rounded-lg p-4 border border-white/20 text-center">
-                    <h4 className="text-lg font-semibold text-almara-dark-text">Abbove</h4>
-                  </div>
-                </div>
-              </div>
-              
-              <div>
-                <h3 className="text-2xl font-semibold text-almara-dark-text mb-6 text-center">Project Partners</h3>
-                <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
-                  <div className="bg-white/10 backdrop-blur-sm rounded-lg p-4 border border-white/20 text-center">
-                    <h4 className="text-lg font-semibold text-almara-dark-text">Aquitara</h4>
-                  </div>
-                  <div className="bg-white/10 backdrop-blur-sm rounded-lg p-4 border border-white/20 text-center">
-                    <h4 className="text-lg font-semibold text-almara-dark-text">Deminor</h4>
-                  </div>
-                  <div className="bg-white/10 backdrop-blur-sm rounded-lg p-4 border border-white/20 text-center">
-                    <h4 className="text-lg font-semibold text-almara-dark-text">Firgun</h4>
-                  </div>
-                  <div className="bg-white/10 backdrop-blur-sm rounded-lg p-4 border border-white/20 text-center">
-                    <h4 className="text-lg font-semibold text-almara-dark-text">Genève Technologies</h4>
-                  </div>
-                  <div className="bg-white/10 backdrop-blur-sm rounded-lg p-4 border border-white/20 text-center">
-                    <h4 className="text-lg font-semibold text-almara-dark-text">Golborne</h4>
-                  </div>
-                </div>
-              </div>
+          <p className="leading-relaxed text-base text-[#f4eada] font-helvetica-now">
+            We collaborate with leading institutions, technology platforms, and project specialists—activated selectively, and only when it serves the mandate.
+          </p>
+
+          {/* Pills / anchors */}
+          <nav aria-label="Quick navigation" className="pt-2">
+            <ul className="flex flex-wrap items-center justify-center gap-3 font-helvetica-now text-sm">
+              {[
+                { href: "#institutional", label: "Institutional" },
+                { href: "#technology", label: "Technology" },
+                { href: "#projects", label: "Projects" },
+                { href: "#contact", label: "Contact" },
+              ].map((item) => (
+                <li key={item.href}>
+                  <a
+                    href={item.href}
+                    className="px-3 py-1 rounded-full border border-white/30 text-almara-dark-text/80 hover:text-almara-dark-text hover:border-white/60 transition-colors"
+                  >
+                    {item.label}
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </nav>
+        </div>
+      </section>
+
+      {/* Banner 2 — Institutional Partners */}
+      <section id="institutional" className="px-12 py-24">
+        <div className="max-w-7xl mx-auto">
+          <div className="text-center space-y-6 mb-14">
+            <h2 className="font-museo-moderno text-[28px] lg:text-[32px] text-[#363636]">Institutional Partners</h2>
+            <p className="font-helvetica-now text-almara-dark-text/80">
+              Banking and investment relationships that enable execution with discretion.
+            </p>
+          </div>
+
+          <TooltipProvider>
+            <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-5">
+              {[
+                { name: "Quintet", desc: "Private banking & investment services" },
+                { name: "Degroof Petercam", desc: "Wealth & asset management" },
+                { name: "UBP", desc: "Institutional investment capabilities" },
+                { name: "CIGP", desc: "Investment advisory & corporate finance" },
+                { name: "Antarctica", desc: "Specialised investment platform" },
+              ].map((p) => (
+                <Tooltip key={p.name}>
+                  <TooltipTrigger asChild>
+                    <div className="bg-white/10 backdrop-blur-sm rounded-lg px-6 py-10 border border-white/20 text-center cursor-default">
+                      <span className="block text-lg tracking-wide text-almara-dark-text">{p.name}</span>
+                    </div>
+                  </TooltipTrigger>
+                  <TooltipContent className="font-helvetica-now text-sm">
+                    {p.name} — {p.desc}
+                  </TooltipContent>
+                </Tooltip>
+              ))}
             </div>
+          </TooltipProvider>
+
+          <p className="text-center mt-6 text-xs text-almara-dark-text/60 font-helvetica-now">
+            Representative relationships shown; additional references available on request.
+          </p>
+        </div>
+      </section>
+
+      {/* Banner 3 — Technology Partners */}
+      <section id="technology" className="px-12 py-24 bg-almara-dark-text/5">
+        <div className="max-w-6xl mx-auto">
+          <div className="text-center space-y-6 mb-12">
+            <h2 className="font-museo-moderno text-[28px] lg:text-[32px] text-[#363636]">Technology Partners</h2>
+            <p className="font-helvetica-now text-almara-dark-text/80">
+              Infrastructure for secure sourcing, governance, and reporting.
+            </p>
+          </div>
+
+          <TooltipProvider>
+            <div className="flex flex-col sm:flex-row items-center justify-center gap-6">
+              {[
+                { name: "Delio", desc: "Private markets distribution platform" },
+                { name: "Abbove", desc: "Wealth data and consolidated oversight" },
+              ].map((p) => (
+                <Tooltip key={p.name}>
+                  <TooltipTrigger asChild>
+                    <div className="bg-white/10 backdrop-blur-sm rounded-lg px-10 py-12 border border-white/20 text-center cursor-default min-w-[220px]">
+                      <span className="block text-2xl tracking-wide text-almara-dark-text">{p.name}</span>
+                    </div>
+                  </TooltipTrigger>
+                  <TooltipContent className="font-helvetica-now text-sm">
+                    {p.name} — {p.desc}
+                  </TooltipContent>
+                </Tooltip>
+              ))}
+            </div>
+          </TooltipProvider>
+
+          <p className="text-center mt-6 text-xs text-almara-dark-text/60 font-helvetica-now">
+            Used selectively to streamline private markets distribution, data, and consolidated oversight.
+          </p>
+        </div>
+      </section>
+
+      {/* Banner 4 — Project Partners */}
+      <section id="projects" className="px-12 py-24">
+        <div className="max-w-7xl mx-auto">
+          <div className="text-center space-y-6 mb-14">
+            <h2 className="font-museo-moderno text-[28px] lg:text-[32px] text-[#363636]">Project Partners</h2>
+            <p className="font-helvetica-now text-almara-dark-text/80">
+              Specialists we mobilise for specific mandates.
+            </p>
+          </div>
+
+          <TooltipProvider>
+            <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-5">
+              {[
+                { name: "Aquitara", desc: "Sector specialist / advisory" },
+                { name: "Deminor", desc: "Investor services / claims strategy" },
+                { name: "Firgun", desc: "Venture / innovation initiatives" },
+                { name: "Geneva Technologies", desc: "Technology / engineering expertise" },
+                { name: "Golborne", desc: "Corporate advisory" },
+              ].map((p) => (
+                <Tooltip key={p.name}>
+                  <TooltipTrigger asChild>
+                    <div className="bg-white/10 backdrop-blur-sm rounded-lg px-6 py-10 border border-white/20 text-center cursor-default">
+                      <span className="block text-lg tracking-wide text-almara-dark-text">{p.name}</span>
+                    </div>
+                  </TooltipTrigger>
+                  <TooltipContent className="font-helvetica-now text-sm">
+                    {p.name} — {p.desc}
+                  </TooltipContent>
+                </Tooltip>
+              ))}
+            </div>
+          </TooltipProvider>
+        </div>
+      </section>
+
+      {/* Banner 5 — CTA */}
+      <section id="contact" className="px-12 py-28 bg-almara-dark-text/5">
+        <div className="max-w-3xl mx-auto text-center space-y-8">
+          <h2 className="font-museo-moderno text-[28px] lg:text-[32px] text-[#363636]">Put the network to work</h2>
+          <p className="leading-relaxed text-base text-[#f4eada] font-helvetica-now">
+            Tell us what you’re building; we’ll assemble the right team.
+          </p>
+          <div className="pt-2">
+            <Button variant="call" size="call" className="font-helvetica-now">request a conversation</Button>
           </div>
         </div>
-      </div>
-    </PageLayout>;
+      </section>
+    </PageLayout>
+  );
 };
+
 export default Partners;
