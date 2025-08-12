@@ -29,11 +29,11 @@ const Services = () => {
     <PageLayout title="Services">
       {/* Banner 1 — Page Intro */}
       <section className="h-screen flex items-center justify-center px-12 py-20">
-        <div className="max-w-3xl text-center space-y-12">
+        <div className="max-w-3xl text-center space-y-16">
           <h1 className="font-long-cang sm:text-[36px] md:text-[40px] lg:text-[44px] text-almara-subtitle-text tracking-[0.05em] opacity-90 leading-tight font-thin text-5xl">
             Services
           </h1>
-          <p className="leading-relaxed text-base px-0 text-[#f4eada] font-helvetica-now max-w-2xl mx-auto">
+          <p className="leading-relaxed text-base px-[40px] text-[#f4eada] font-helvetica-now max-w-2xl mx-auto">
             Family office, alternatives, M&A, and art advisory—delivered through ongoing counsel and mandate-led execution.
           </p>
 

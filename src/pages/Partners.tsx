@@ -30,14 +30,14 @@ const Partners = () => {
     <PageLayout title="Partners">
       {/* Banner 1 — Hero / Orientation */}
       <section className="h-screen flex items-center justify-center px-12 py-20">
-        <div className="max-w-3xl text-center space-y-10">
+        <div className="max-w-3xl text-center space-y-16">
           <h1 className="font-long-cang sm:text-[36px] md:text-[40px] lg:text-[44px] text-almara-subtitle-text tracking-[0.05em] opacity-90 leading-tight font-thin text-5xl">
             Partners
           </h1>
-          <p className="leading-relaxed text-base text-[#f4eada] font-helvetica-now">
+          <p className="leading-relaxed text-base text-[#f4eada] font-helvetica-now max-w-2xl mx-auto px-[40px]">
             A curated network that amplifies outcomes.
           </p>
-          <p className="leading-relaxed text-base text-[#f4eada] font-helvetica-now">
+          <p className="leading-relaxed text-base text-[#f4eada] font-helvetica-now max-w-2xl mx-auto px-[40px]">
             We collaborate with leading institutions, technology platforms, and project specialists—activated selectively, and only when it serves the mandate.
           </p>
 

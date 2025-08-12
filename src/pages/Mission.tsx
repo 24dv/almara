@@ -30,14 +30,14 @@ const Mission = () => {
     <PageLayout title="Mission">
       {/* Banner 1 — Mission */}
       <section className="h-screen flex items-center justify-center px-12 py-20">
-        <div className="max-w-3xl text-center space-y-10">
+        <div className="max-w-3xl text-center space-y-16">
           <h1 className="font-long-cang sm:text-[36px] md:text-[40px] lg:text-[44px] text-almara-subtitle-text tracking-[0.05em] opacity-90 leading-tight font-thin text-5xl">
             Mission
           </h1>
-          <p className="leading-relaxed text-base text-[#f4eada] font-helvetica-now">
+          <p className="leading-relaxed text-base text-[#f4eada] font-helvetica-now max-w-2xl mx-auto px-[40px]">
             We bring intention, vision and clarity to foster balanced growth—with kindness and compassion.
           </p>
-          <p className="leading-relaxed text-base text-[#f4eada] font-helvetica-now max-w-2xl mx-auto">
+          <p className="leading-relaxed text-base text-[#f4eada] font-helvetica-now max-w-2xl mx-auto px-[40px]">
             Almara pairs wisdom with execution: grounded judgment, simple structures, and a quiet, steady core that guides how we steward capital, culture, and relationships.
           </p>
         </div>
