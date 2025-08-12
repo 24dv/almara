@@ -1,5 +1,8 @@
 import { PageLayout } from "@/components/PageLayout";
+import { Button } from "@/components/ui/button";
+import { Link } from "react-router-dom";
 import { useEffect } from "react";
+import missionHero from "@/assets/mission-hero.jpg";
 const Mission = () => {
   // SEO
   useEffect(() => {
@@ -21,67 +24,56 @@ const Mission = () => {
     link.href = window.location.href;
   }, []);
   return <PageLayout title="Mission">
-      {/* Hero — Mission */}
+      {/* Banner 1 — Mission */}
       <section className="h-screen flex items-center justify-center px-12 py-20">
         <div className="max-w-3xl text-center space-y-16">
-          <h1 className="font-long-cang sm:text-[36px] md:text-[40px] lg:text-[44px] text-almara-subtitle-text tracking-[0.05em] opacity-90 leading-tight font-thin text-5xl">
-            MISSION
-          </h1>
-          <div className="font-helvetica-now space-y-6 text-almara-light-text">
-            <p className="leading-relaxed max-w-2xl mx-auto">
-              We bring intention, vision and clarity to foster balanced growth—with kindness and compassion.
-            </p>
-            <p className="leading-relaxed max-w-3xl mx-auto">
-              Almara pairs wisdom with execution: grounded judgment, simple structures, and a quiet, steady core that guides how we steward capital, culture, and relationships.
-            </p>
+          <h1 className="font-long-cang sm:text-[36px] md:text-[40px] lg:text-[44px] text-almara-subtitle-text tracking-[0.05em] opacity-90 leading-tight font-thin text-5xl">MISSION</h1>
+          <p className="leading-relaxed text-base text-[#f4eada] font-helvetica-now max-w-2xl mx-auto px-[40px]">
+            We bring intention, vision and clarity to foster balanced growth—with kindness and compassion.
+          </p>
+          <p className="leading-relaxed text-base text-[#f4eada] font-helvetica-now max-w-2xl mx-auto px-[40px]">
+            Almara pairs wisdom with execution: grounded judgment, simple structures, and a quiet, steady core that guides how we steward capital, culture, and relationships.
+          </p>
+          <figure className="mt-6">
+            <img src={missionHero} alt="ALMARA mission values hero mockup" loading="lazy" className="mx-auto rounded-xl shadow-xl w-full max-w-2xl h-auto object-cover" />
+          </figure>
+        </div>
+      </section>
+
+      {/* Banner 2 — Pillars */}
+      <section className="px-12 py-24 bg-almara-dark-text/5">
+        <div className="max-w-6xl mx-auto">
+          <div className="text-center mb-14">
+            <h2 className="font-museo-moderno text-[28px] lg:text-[32px] text-[#363636]">Pillars</h2>
+          </div>
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 font-helvetica-now text-almara-dark-text/80">
+            <article className="space-y-3">
+              <h3 className="text-lg text-almara-dark-text">Wisdom</h3>
+              <p>Experience distilled into judgment. We prioritise signal over noise and the long term over the immediate.</p>
+            </article>
+            <article className="space-y-3">
+              <h3 className="text-lg text-almara-dark-text">Grounded</h3>
+              <p>Calm, practical, reality-first. We work with what is, then shape what can be.</p>
+            </article>
+            <article className="space-y-3">
+              <h3 className="text-lg text-almara-dark-text">Simple</h3>
+              <p>Clarity is a discipline. We focus on the essence and remove what doesn’t serve.</p>
+            </article>
+            <article className="space-y-3">
+              <h3 className="text-lg text-almara-dark-text">Spirituality</h3>
+              <p>Meaning and care in action. Compassion and responsibility inform decisions.</p>
+            </article>
           </div>
         </div>
       </section>
 
-      {/* Values / Pillars + In Practice */}
-      <section className="px-12 py-20 bg-almara-dark-text/5">
-        <div className="max-w-6xl mx-auto">
-          {/* Values / Pillars */}
-          <div className="text-center mb-16">
-            <h2 className="font-museo-moderno text-[28px] lg:text-[32px] text-almara-dark-text">Values / Pillars</h2>
+      {/* Banner 3 — In Practice */}
+      <section className="px-12 py-24">
+        <div className="max-w-5xl mx-auto">
+          <div className="text-center mb-12">
+            <h2 className="font-museo-moderno text-[28px] lg:text-[32px] text-[#363636]">In Practice</h2>
           </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12 font-helvetica-now">
-            <article className="rounded-lg border border-almara-light-text/20 bg-almara-light-text/10 backdrop-blur-sm p-6">
-              <h3 className="text-lg text-almara-dark-text mb-2">Wisdom</h3>
-              <p className="text-almara-light-text/90 leading-relaxed">
-                Experience distilled into judgment. We prioritise signal over noise and the long term over the immediate.
-              </p>
-            </article>
-
-            <article className="rounded-lg border border-almara-light-text/20 bg-almara-light-text/10 backdrop-blur-sm p-6">
-              <h3 className="text-lg text-almara-dark-text mb-2">Grounded</h3>
-              <p className="text-almara-light-text/90 leading-relaxed">
-                Calm, practical, reality-first. We work with what is, then shape what can be.
-              </p>
-            </article>
-
-            <article className="rounded-lg border border-almara-light-text/20 bg-almara-light-text/10 backdrop-blur-sm p-6">
-              <h3 className="text-lg text-almara-dark-text mb-2">Simple</h3>
-              <p className="text-almara-light-text/90 leading-relaxed">
-                Clarity is a discipline. We focus on the essence and remove what doesn’t serve.
-              </p>
-            </article>
-
-            <article className="rounded-lg border border-almara-light-text/20 bg-almara-light-text/10 backdrop-blur-sm p-6">
-              <h3 className="text-lg text-almara-dark-text mb-2">Spirituality</h3>
-              <p className="text-almara-light-text/90 leading-relaxed">
-                Meaning and care in action. Compassion and responsibility inform decisions.
-              </p>
-            </article>
-          </div>
-
-          {/* In Practice */}
-          <div className="text-center mt-16 mb-12">
-            <h2 className="font-museo-moderno text-[28px] lg:text-[32px] text-almara-dark-text">In Practice</h2>
-          </div>
-
-          <ul className="grid gap-6 md:grid-cols-2 font-helvetica-now text-almara-light-text">
+          <ul className="grid gap-5 md:grid-cols-2 font-helvetica-now text-[#f4eada]">
             <li className="leading-relaxed">Clarity first — define purpose, constraints, and desired outcomes before we act.</li>
             <li className="leading-relaxed">Balance — hold risk/return and time/impact in healthy tension.</li>
             <li className="leading-relaxed">Simplicity as rigour — fewer moving parts, tighter governance, better decisions.</li>
@@ -89,9 +81,16 @@ const Mission = () => {
             <li className="leading-relaxed">Community & Belonging — trusted circles, shared knowledge, aligned action.</li>
             <li className="leading-relaxed">Materiality · Sensitivity · Play — respect for the tangible and the felt; keep minds open.</li>
           </ul>
+
+          {/* CTA */}
+          <div className="text-center mt-16 space-y-6">
+            <h3 className="font-museo-moderno text-[24px] lg:text-[28px] text-[#363636]">Build with intention</h3>
+            <Button asChild variant="call" size="call" className="font-helvetica-now">
+              <Link to="/services">Explore Services</Link>
+            </Button>
+          </div>
         </div>
       </section>
-
     </PageLayout>;
 };
 export default Mission;
