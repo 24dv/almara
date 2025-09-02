@@ -39,11 +39,11 @@ const Partners = () => {
   }, []);
 
   const logos: Record<string, string> = {
-    "Quintet": "/lovable-uploads/3f98f6a2-7c73-465b-89c1-9ffd619f5b8f.png",
+    "Quintet": "/lovable-uploads/ff5b3eb0-a20e-4240-91a7-affd5dff85fd.png",
     "Degroof Petercam": "/lovable-uploads/c3574845-89ba-40fc-92f2-8bb1b34e4b56.png",
     "UBP": "/lovable-uploads/75ca8d5a-9e04-492e-8048-83b8e15d144d.png",
-    "CIGP": "/lovable-uploads/2c678d11-20a8-496a-9604-16c61d8ae172.png",
-    "Antarctica": "/lovable-uploads/32eb9fab-3d27-46fd-974b-d0ab5ea47320.png",
+    "CIGP": "/lovable-uploads/820b3f6d-6998-45f0-ae8e-b47197131b55.png",
+    "Antarctica": "/lovable-uploads/21882ea6-ceb9-4b1c-a053-99616dc103cc.png",
     "Delio": delioLogo,
     "Abbove": abboveLogo,
     "Aquitara": aquitaraLogo,
