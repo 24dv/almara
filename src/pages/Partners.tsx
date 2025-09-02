@@ -56,7 +56,7 @@ const Partners = () => {
   };
 
   return (
-    <div className="relative w-full min-h-screen">
+    <div className="relative w-full min-h-screen almara-gradient-bg">
       {/* Section 1: Our Partners - Hero (includes header) */}
       <section className="h-screen flex flex-col almara-section-bg">
         {/* Navigation - fixed positioned at same height as home page */}
