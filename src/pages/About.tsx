@@ -29,7 +29,7 @@ const About = () => {
       </section>
 
       {/* Founder Section - Full Height */}
-      <section className="h-screen bg-almara-dark-text/5 flex items-center justify-center px-12 py-20">
+      <section className="h-screen bg-almara-light-text/20 flex items-center justify-center px-12 py-20">
         <div className="max-w-7xl mx-auto w-full">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center h-full">
             {/* Founder Image */}
