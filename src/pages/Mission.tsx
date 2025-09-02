@@ -41,7 +41,7 @@ const Mission = () => {
       </section>
 
       {/* Banner 2 — Pillars */}
-      <section className="px-12 py-24 bg-almara-dark-text/5">
+      <section className="px-12 py-24">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-14">
             <h2 className="font-museo-moderno text-[28px] lg:text-[32px] text-[#363636]">Pillars</h2>
