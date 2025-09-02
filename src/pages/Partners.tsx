@@ -57,23 +57,23 @@ const Partners = () => {
 
   return (
     <div className="relative w-full min-h-screen">
-      {/* Section 1: Our Partners - Hero (includes header) */}
-      <section className="h-screen flex flex-col almara-section-bg">
-        {/* Navigation - fixed positioned at same height as home page */}
-        <Navigation positioning="fixed" />
+      {/* Header with cream background */}
+      <header className="relative z-10 hidden lg:flex items-center justify-center pt-8 pb-4 bg-[hsl(var(--almara-light-text))]">
+        <Link to="/" className="transition-opacity hover:opacity-80">
+          <img src="/lovable-uploads/889a0efd-ed5b-448b-a911-54ea486f744c.png" alt="ALMARA" className="h-7 sm:h-8 md:h-9 opacity-90" />
+        </Link>
+      </header>
 
-        {/* Mobile Header/Menu */}
-        <MobileMenu />
-        
-        {/* Header with Logo (desktop only) */}
-        <header className="relative z-10 hidden lg:flex items-center justify-center pt-8 pb-4">
-          <Link to="/" className="transition-opacity hover:opacity-80">
-            <img src="/lovable-uploads/889a0efd-ed5b-448b-a911-54ea486f744c.png" alt="ALMARA" className="h-7 sm:h-8 md:h-9 opacity-90" />
-          </Link>
-        </header>
-        
+      {/* Navigation - fixed positioned at same height as home page */}
+      <Navigation positioning="fixed" />
+
+      {/* Mobile Header/Menu */}
+      <MobileMenu />
+      
+      {/* Section 1: Our Partners - Hero */}
+      <section className="h-screen flex items-center justify-center almara-section-bg">        
         {/* Main Content */}
-        <div className="flex-1 flex items-center justify-center px-12 py-20">
+        <div className="flex items-center justify-center px-12 py-20">
           <div className="max-w-4xl text-center relative">
             {/* Large background circle */}
             <div className="absolute inset-0 flex items-center justify-center">
