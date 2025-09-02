@@ -9,7 +9,7 @@ All colors MUST be HSL.
 @layer base {
   :root {
     /* ALMARA Brand Colors */
-    --almara-dark-blue: 203 24% 28%;     /* #364B56 */
+    --almara-dark-blue: 203 15% 15%;     /* Much darker, less saturated blue */
     --almara-light-blue: 220 15% 74%;    /* #B3BACB */
     --almara-dark-text: 0 0% 21%;        /* #363636 */
     --almara-light-text: 43 42% 89%;     /* #F4EADA */
@@ -47,7 +47,7 @@ All colors MUST be HSL.
     --ring: var(--almara-dark-blue);
 
     /* Custom ALMARA design tokens */
-    --almara-radial-gradient: radial-gradient(circle at center, hsl(var(--almara-dark-blue)) 0%, hsl(var(--almara-dark-blue)) 15%, hsl(var(--almara-light-blue)) 60%);
+    --almara-radial-gradient: radial-gradient(circle at center, hsl(var(--almara-dark-blue)) 0%, hsl(var(--almara-light-blue)) 100%);
     --almara-partners-gradient: radial-gradient(circle at center, hsl(var(--almara-dark-blue)) 0%, hsl(var(--almara-light-text)) 100%);
     --almara-hero-shadow: 0 20px 60px -10px hsl(var(--almara-dark-blue) / 0.15);
     --almara-button-shadow: 0 8px 25px -5px hsl(var(--almara-dark-blue) / 0.2);
@@ -230,28 +230,6 @@ All colors MUST be HSL.
   }
 
   .almara-section-bg::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-image: url('/lovable-uploads/08276971-f3d6-48ef-af4b-9d930d4ced96.png');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    opacity: 0.6;
-    z-index: 0;
-    pointer-events: none;
-  }
-
-  /* Partners page specific background without overlay */
-  .almara-partners-section-bg {
-    background: var(--almara-partners-gradient);
-    position: relative;
-  }
-
-  .almara-partners-section-bg::before {
     content: '';
     position: absolute;
     top: 0;
