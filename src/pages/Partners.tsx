@@ -122,7 +122,7 @@ const Partners = () => {
                 </button>
                 
                 {/* Hover Overlay */}
-                <div className="absolute inset-0 bg-[#364b56]/95 backdrop-blur-sm rounded-xl opacity-0 group-hover:opacity-100 transition-all duration-300 z-[200] p-6 flex flex-col justify-center">
+                <div className="absolute inset-0 bg-[hsl(var(--almara-carmine))]/95 backdrop-blur-sm rounded-xl opacity-0 group-hover:opacity-100 transition-all duration-300 z-[200] p-6 flex flex-col justify-center">
                   <h3 className="font-helvetica-now font-bold text-[#f4eada] text-sm mb-4 tracking-wide">{p.name}</h3>
                   <p className="font-helvetica-now text-[#f4eada] text-xs leading-relaxed">{p.longDesc}</p>
                 </div>
@@ -145,7 +145,7 @@ const Partners = () => {
                 </button>
                 
                 {/* Hover Overlay */}
-                <div className="absolute inset-0 bg-[#364b56]/95 backdrop-blur-sm rounded-xl opacity-0 group-hover:opacity-100 transition-all duration-300 z-[200] p-6 flex flex-col justify-center">
+                <div className="absolute inset-0 bg-[hsl(var(--almara-carmine))]/95 backdrop-blur-sm rounded-xl opacity-0 group-hover:opacity-100 transition-all duration-300 z-[200] p-6 flex flex-col justify-center">
                   <h3 className="font-helvetica-now font-bold text-[#f4eada] text-sm mb-4 tracking-wide">{p.name}</h3>
                   <p className="font-helvetica-now text-[#f4eada] text-xs leading-relaxed">{p.longDesc}</p>
                 </div>
@@ -180,7 +180,7 @@ const Partners = () => {
                 </button>
                 
                 {/* Hover Overlay */}
-                <div className="absolute inset-0 bg-[#364b56]/95 backdrop-blur-sm rounded-xl opacity-0 group-hover:opacity-100 transition-all duration-300 z-[200] p-6 flex flex-col justify-center">
+                <div className="absolute inset-0 bg-[hsl(var(--almara-carmine))]/95 backdrop-blur-sm rounded-xl opacity-0 group-hover:opacity-100 transition-all duration-300 z-[200] p-6 flex flex-col justify-center">
                   <h3 className="font-helvetica-now font-bold text-[#f4eada] text-sm mb-4 tracking-wide">{p.name}</h3>
                   <p className="font-helvetica-now text-[#f4eada] text-xs leading-relaxed">{p.longDesc}</p>
                 </div>
@@ -219,7 +219,7 @@ const Partners = () => {
                 </button>
                 
                 {/* Hover Overlay */}
-                <div className="absolute inset-0 bg-[#364b56]/95 backdrop-blur-sm rounded-xl opacity-0 group-hover:opacity-100 transition-all duration-300 z-[200] p-6 flex flex-col justify-center">
+                <div className="absolute inset-0 bg-[hsl(var(--almara-carmine))]/95 backdrop-blur-sm rounded-xl opacity-0 group-hover:opacity-100 transition-all duration-300 z-[200] p-6 flex flex-col justify-center">
                   <h3 className="font-helvetica-now font-bold text-[#f4eada] text-sm mb-4 tracking-wide">{p.name}</h3>
                   <p className="font-helvetica-now text-[#f4eada] text-xs leading-relaxed">{p.longDesc}</p>
                 </div>
@@ -243,7 +243,7 @@ const Partners = () => {
                 </button>
                 
                 {/* Hover Overlay */}
-                <div className="absolute inset-0 bg-[#364b56]/95 backdrop-blur-sm rounded-xl opacity-0 group-hover:opacity-100 transition-all duration-300 z-[200] p-6 flex flex-col justify-center">
+                <div className="absolute inset-0 bg-[hsl(var(--almara-carmine))]/95 backdrop-blur-sm rounded-xl opacity-0 group-hover:opacity-100 transition-all duration-300 z-[200] p-6 flex flex-col justify-center">
                   <h3 className="font-helvetica-now font-bold text-[#f4eada] text-sm mb-4 tracking-wide">{p.name}</h3>
                   <p className="font-helvetica-now text-[#f4eada] text-xs leading-relaxed">{p.longDesc}</p>
                 </div>
