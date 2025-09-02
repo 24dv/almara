@@ -73,8 +73,8 @@ const Partners = () => {
       {/* Section 1: Our Partners - Hero */}
       <section className="h-screen flex items-center justify-center bg-[hsl(var(--almara-light-text))] partners-gradient-bg">        
         {/* Main Content */}
-        <div className="flex items-center justify-center px-12 py-20">
-          <div className="max-w-4xl text-center relative">
+        <div className="flex items-center justify-center px-12 py-20 relative z-10">
+          <div className="max-w-4xl text-center relative z-10">
             {/* Content */}
             <div className="space-y-8">
               <h1 className="font-long-cang text-[48px] lg:text-[56px] text-almara-light-text tracking-[0.05em] opacity-90 leading-tight font-thin">
@@ -95,7 +95,7 @@ const Partners = () => {
       
       {/* Section 2: Institutional Partners */}
       <section className="h-screen flex items-center justify-center px-12 py-20 bg-[hsl(var(--almara-light-text))] partners-gradient-bg">
-        <div className="max-w-6xl mx-auto text-center">
+        <div className="max-w-6xl mx-auto text-center relative z-10">
           <div className="mb-16">
             <h2 className="font-museo-moderno text-[36px] lg:text-[42px] text-[#364b56] mb-6">Institutional Partners</h2>
             <p className="font-helvetica-now text-[#364b56] text-lg">
@@ -118,7 +118,7 @@ const Partners = () => {
               }].map(p => (
                 <Tooltip key={p.name}>
                   <TooltipTrigger asChild>
-                    <div className="bg-white/20 backdrop-blur-sm rounded-xl px-8 py-12 border border-white/30 text-center cursor-default shadow-lg">
+                    <div className="bg-white/20 backdrop-blur-sm rounded-xl px-8 py-12 border border-white/30 text-center cursor-default shadow-lg relative z-10">
                       <img src={logos[p.name]} alt={`${p.name} logo`} loading="lazy" className="mx-auto h-12 object-contain mb-4" />
                       <span className="block text-xl tracking-wide text-[#364b56] font-medium">{p.name}</span>
                     </div>
@@ -141,7 +141,7 @@ const Partners = () => {
               }].map(p => (
                 <Tooltip key={p.name}>
                   <TooltipTrigger asChild>
-                    <div className="bg-white/20 backdrop-blur-sm rounded-xl px-8 py-12 border border-white/30 text-center cursor-default shadow-lg">
+                    <div className="bg-white/20 backdrop-blur-sm rounded-xl px-8 py-12 border border-white/30 text-center cursor-default shadow-lg relative z-10">
                       <img src={logos[p.name]} alt={`${p.name} logo`} loading="lazy" className="mx-auto h-12 object-contain mb-4" />
                       <span className="block text-xl tracking-wide text-[#364b56] font-medium">{p.name}</span>
                     </div>
@@ -158,7 +158,7 @@ const Partners = () => {
 
       {/* Section 3: Technology Partners */}
       <section className="h-screen flex items-center justify-center px-12 py-20 bg-[hsl(var(--almara-light-text))] partners-gradient-bg">
-        <div className="max-w-4xl mx-auto text-center">
+        <div className="max-w-4xl mx-auto text-center relative z-10">
           <div className="mb-16">
             <h2 className="font-museo-moderno text-[36px] lg:text-[42px] text-[#364b56] mb-6">Technology Partners</h2>
             <p className="font-helvetica-now text-[#364b56] text-lg">
@@ -177,7 +177,7 @@ const Partners = () => {
               }].map(p => (
                 <Tooltip key={p.name}>
                   <TooltipTrigger asChild>
-                    <div className="bg-white/20 backdrop-blur-sm rounded-xl px-12 py-16 border border-white/30 text-center cursor-default shadow-lg">
+                    <div className="bg-white/20 backdrop-blur-sm rounded-xl px-12 py-16 border border-white/30 text-center cursor-default shadow-lg relative z-10">
                       <img src={logos[p.name]} alt={`${p.name} logo`} loading="lazy" className="mx-auto h-14 object-contain mb-6" />
                       <span className="block text-2xl tracking-wide text-[#364b56] font-medium">{p.name}</span>
                     </div>
@@ -194,7 +194,7 @@ const Partners = () => {
 
       {/* Section 4: Project Partners */}
       <section className="h-screen flex items-center justify-center px-12 py-20 bg-[hsl(var(--almara-light-text))] partners-gradient-bg">
-        <div className="max-w-6xl mx-auto text-center">
+        <div className="max-w-6xl mx-auto text-center relative z-10">
           <div className="mb-16">
             <h2 className="font-museo-moderno text-[36px] lg:text-[42px] text-[#364b56] mb-6">Project Partners</h2>
             <p className="font-helvetica-now text-[#364b56] text-lg">
@@ -217,7 +217,7 @@ const Partners = () => {
               }].map(p => (
                 <Tooltip key={p.name}>
                   <TooltipTrigger asChild>
-                    <div className="bg-white/20 backdrop-blur-sm rounded-xl px-8 py-12 border border-white/30 text-center cursor-default shadow-lg">
+                    <div className="bg-white/20 backdrop-blur-sm rounded-xl px-8 py-12 border border-white/30 text-center cursor-default shadow-lg relative z-10">
                       <img src={logos[p.name]} alt={`${p.name} logo`} loading="lazy" className="mx-auto h-12 object-contain mb-4" />
                       <span className="block text-xl tracking-wide text-[#364b56] font-medium">{p.name}</span>
                     </div>
@@ -240,7 +240,7 @@ const Partners = () => {
               }].map(p => (
                 <Tooltip key={p.name}>
                   <TooltipTrigger asChild>
-                    <div className="bg-white/20 backdrop-blur-sm rounded-xl px-8 py-12 border border-white/30 text-center cursor-default shadow-lg">
+                    <div className="bg-white/20 backdrop-blur-sm rounded-xl px-8 py-12 border border-white/30 text-center cursor-default shadow-lg relative z-10">
                       <img src={logos[p.name]} alt={`${p.name} logo`} loading="lazy" className="mx-auto h-12 object-contain mb-4" />
                       <span className="block text-xl tracking-wide text-[#364b56] font-medium">{p.name}</span>
                     </div>
@@ -257,7 +257,7 @@ const Partners = () => {
 
       {/* Section 5: Call to Action */}
       <section className="h-screen flex items-center justify-center px-12 py-20 bg-[hsl(var(--almara-light-text))] partners-gradient-bg">
-        <div className="max-w-4xl mx-auto text-center space-y-12">
+        <div className="max-w-4xl mx-auto text-center space-y-12 relative z-10">
           <div className="space-y-8">
             <h2 className="font-long-cang text-[32px] lg:text-[36px] text-[#364b56] tracking-wider leading-tight uppercase">
               Tell us what you're building,<br />
@@ -265,7 +265,7 @@ const Partners = () => {
             </h2>
           </div>
           <div className="pt-8">
-            <Button variant="call" size="call" className="font-helvetica-now text-xl px-16 py-6">
+            <Button variant="call" size="call" className="font-helvetica-now text-xl px-16 py-6 relative z-10">
               request a call
             </Button>
           </div>
