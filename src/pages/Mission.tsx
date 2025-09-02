@@ -44,13 +44,13 @@ const Mission = () => {
       <main className="relative z-10 min-h-[calc(100vh-200px)]">
       {/* Section 1 — Our Mission */}
       <section className="h-screen flex items-center justify-center px-8 lg:px-12">
-        <div className="max-w-3xl text-center space-y-8">
-          <h1 className="font-long-cang text-4xl lg:text-5xl text-[#f4eada] tracking-[0.05em] leading-tight font-thin">Our Mission</h1>
+        <div className="max-w-lg text-center space-y-8">
+          <h1 className="font-museo-moderno text-[32px] lg:text-[36px] text-[#f4eada] tracking-[0.05em] opacity-90 leading-tight">Our Mission</h1>
           <div className="space-y-6">
-            <p className="leading-relaxed text-base text-[#f4eada] font-helvetica-now max-w-2xl mx-auto">
+            <p className="leading-relaxed text-sm lg:text-base text-[#f4eada] font-helvetica-now">
               We bring intention, vision and clarity to foster balanced growth, with kindness and compassion.
             </p>
-            <p className="leading-relaxed text-base text-[#f4eada] font-helvetica-now max-w-2xl mx-auto">
+            <p className="leading-relaxed text-sm lg:text-base text-[#f4eada] font-helvetica-now">
               Almara pairs wisdom with execution: grounded judgment, simple structures, and a quiet, steady core that guides how we steward capital, culture, and relationships.
             </p>
           </div>
