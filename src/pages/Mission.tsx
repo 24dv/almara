@@ -62,27 +62,27 @@ const Mission = () => {
       {/* Section 2 — Our Pillars */}
       <section className="h-screen flex items-center justify-center px-8 lg:px-12 mission-section-gradient">
         <div className="max-w-2xl mx-auto">
-          <div className="text-center mb-16">
-            <div className="inline-block border-2 border-purple-400 px-8 py-4 mb-12">
+          <div className="text-center mb-8">
+            <div className="inline-block border-2 border-purple-400 px-8 py-4 mb-8">
               <h2 className="font-museo-moderno text-[32px] lg:text-[36px] text-[#f4eada] tracking-[0.05em] opacity-90 leading-tight">Our Pillars</h2>
             </div>
           </div>
           <div className="space-y-8 font-helvetica-now text-[#f4eada]">
             <article className="text-center space-y-4">
               <h3 className="font-helvetica-now text-xl tracking-wider font-bold text-[#b3bacb]">wisdom</h3>
-              <p className="text-base leading-relaxed max-w-lg mx-auto">Experience distilled into judgment. We prioritise signal over noise and the long term over the immediate.</p>
+              <p className="text-base leading-relaxed max-w-sm mx-auto">Experience distilled into judgment. We prioritise signal over noise and the long term over the immediate.</p>
             </article>
             <article className="text-center space-y-4">
               <h3 className="font-helvetica-now text-xl tracking-wider font-bold text-[#b3bacb]">grounded</h3>
-              <p className="text-base leading-relaxed max-w-lg mx-auto">Calm, practical, reality-first. We work with what is, then shape what can be.</p>
+              <p className="text-base leading-relaxed max-w-sm mx-auto">Calm, practical, reality-first. We work with what is, then shape what can be.</p>
             </article>
             <article className="text-center space-y-4">
               <h3 className="font-helvetica-now text-xl tracking-wider font-bold text-[#b3bacb]">simple</h3>
-              <p className="text-base leading-relaxed max-w-lg mx-auto">Clarity is a discipline. We focus on the essence and remove what doesn't serve.</p>
+              <p className="text-base leading-relaxed max-w-sm mx-auto">Clarity is a discipline. We focus on the essence and remove what doesn't serve.</p>
             </article>
             <article className="text-center space-y-4">
               <h3 className="font-helvetica-now text-xl tracking-wider font-bold text-[#b3bacb]">spirituality</h3>
-              <p className="text-base leading-relaxed max-w-lg mx-auto">Meaning and care in action. Compassion and responsibility inform decisions.</p>
+              <p className="text-base leading-relaxed max-w-sm mx-auto">Meaning and care in action. Compassion and responsibility inform decisions.</p>
             </article>
           </div>
         </div>
