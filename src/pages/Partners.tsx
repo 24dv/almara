@@ -57,8 +57,8 @@ const Partners = () => {
 
   return (
     <div className="relative w-full min-h-screen almara-gradient-bg">
-      {/* Header with cream background and texture overlay */}
-      <header className="relative z-10 hidden lg:flex items-center justify-center pt-8 pb-4 almara-section-bg">
+      {/* Header with cream background */}
+      <header className="relative z-10 hidden lg:flex items-center justify-center pt-8 pb-4 bg-[hsl(var(--almara-light-text))]">
         <Link to="/" className="transition-opacity hover:opacity-80">
           <img src="/lovable-uploads/889a0efd-ed5b-448b-a911-54ea486f744c.png" alt="ALMARA" className="h-7 sm:h-8 md:h-9 opacity-90" />
         </Link>
