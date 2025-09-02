@@ -43,7 +43,7 @@ const Mission = () => {
       {/* Main Content */}
       <main className="relative z-10 min-h-[calc(100vh-200px)]">
       {/* Section 1 — Our Mission */}
-      <section className="h-screen flex items-center justify-center px-8 lg:px-12">
+      <section className="h-screen flex items-center justify-center px-8 lg:px-12 mission-section-gradient">
         <div className="max-w-lg text-center space-y-8">
           <h1 className="font-museo-moderno text-[32px] lg:text-[36px] text-[#f4eada] tracking-[0.05em] opacity-90 leading-tight">Our Mission</h1>
           <div className="space-y-6">
@@ -58,7 +58,7 @@ const Mission = () => {
       </section>
 
       {/* Section 2 — Our Pillars */}
-      <section className="h-screen flex items-center justify-center px-8 lg:px-12">
+      <section className="h-screen flex items-center justify-center px-8 lg:px-12 mission-section-gradient">
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-12">
             <h2 className="font-long-cang text-4xl lg:text-5xl text-[#f4eada] tracking-[0.05em] leading-tight font-thin mb-12">Our Pillars</h2>
@@ -87,7 +87,7 @@ const Mission = () => {
       </section>
 
       {/* Section 3 — In Practice */}
-      <section className="h-screen flex items-center justify-center px-8 lg:px-12">
+      <section className="h-screen flex items-center justify-center px-8 lg:px-12 mission-section-gradient">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="font-long-cang text-4xl lg:text-5xl text-[#f4eada] tracking-[0.05em] leading-tight font-thin">In Practice</h2>

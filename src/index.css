@@ -264,6 +264,12 @@ All colors MUST be HSL.
     position: relative;
   }
   
+  /* Soft elliptical radial gradient for Mission page sections */
+  .mission-section-gradient {
+    background: radial-gradient(ellipse at center, #5d717b 0%, transparent 70%);
+    position: relative;
+  }
+  
   .almara-footer-gradient-bg::before {
     content: '';
     position: absolute;
