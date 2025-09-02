@@ -148,6 +148,11 @@ All colors MUST be HSL.
     background: linear-gradient(to right, hsl(var(--almara-light-text)) 0%, transparent 50%);
     opacity: 1;
     z-index: 1;
+  }
+  
+  /* Remove overlay for Mission page */
+  .almara-gradient-bg.no-overlay::after {
+    display: none;
     pointer-events: none;
   }
   
