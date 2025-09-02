@@ -291,7 +291,7 @@ All colors MUST be HSL.
 
   /* Mission page section backgrounds with individual gradients */
   .mission-section-bg {
-    background: radial-gradient(ellipse at center, hsl(var(--almara-dark-blue)) 0%, transparent 70%);
+    background: radial-gradient(ellipse at center, hsl(var(--almara-dark-blue)) 0%, hsl(var(--almara-light-blue)) 70%);
     position: relative;
   }
 
