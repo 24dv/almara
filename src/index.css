@@ -181,6 +181,35 @@ All colors MUST be HSL.
     position: relative;
   }
   
+  .almara-partners-gradient-bg::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(to right, hsl(var(--almara-light-text)) 0%, transparent 50%);
+    opacity: 1;
+    z-index: 1;
+    pointer-events: none;
+  }
+  
+  .almara-partners-gradient-bg::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-image: url('/lovable-uploads/08276971-f3d6-48ef-af4b-9d930d4ced96.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0.6;
+    z-index: 0;
+    pointer-events: none;
+  }
+  
   .almara-footer-gradient-bg::before {
     content: '';
     position: absolute;
