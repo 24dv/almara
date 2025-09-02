@@ -44,21 +44,21 @@ const Services = () => {
           <div className="text-center mb-16">
             <h2 className="font-museo-moderno text-[28px] lg:text-[32px] text-[#363636]">How We Work</h2>
           </div>
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-12 font-helvetica-now text-almara-dark-text/80">
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-12 font-helvetica-now text-[#363636]">
             <article className="space-y-3">
-              <h3 className="text-lg text-almara-dark-text">Ongoing counsel</h3>
+              <h3 className="text-lg text-[#b3bacb]">Ongoing counsel</h3>
               <p className="leading-relaxed">
                 We stay close to your world—anticipating needs, coordinating specialists, and maintaining oversight.
               </p>
             </article>
             <article className="space-y-3">
-              <h3 className="text-lg text-almara-dark-text">Mandate-led execution</h3>
+              <h3 className="text-lg text-[#b3bacb]">Mandate-led execution</h3>
               <p className="leading-relaxed">
                 When opportunities arise, we mobilise the right people and drive transactions to completion.
               </p>
             </article>
             <article className="space-y-3">
-              <h3 className="text-lg text-almara-dark-text">Orchestrated network</h3>
+              <h3 className="text-lg text-[#b3bacb]">Orchestrated network</h3>
               <p className="leading-relaxed">
                 Discreet access to private banks, boutiques, legal/tax advisors, researchers, and art-world experts—curated and managed by us.
               </p>
@@ -76,11 +76,11 @@ const Services = () => {
           <div className="grid gap-8 md:grid-cols-2">
             {/* Family Office */}
             <article className="bg-white/10 backdrop-blur-sm rounded-lg p-8 border border-white/20">
-              <h3 className="text-xl font-semibold text-almara-dark-text mb-4">Family Office</h3>
-              <p className="text-almara-dark-text/80 leading-relaxed mb-4">
+              <h3 className="text-xl font-semibold text-[#b3bacb] mb-4">Family Office</h3>
+              <p className="text-[#363636] leading-relaxed mb-4">
                 We design the architecture of bespoke wealth solutions—aligning asset management and wealth structuring.
               </p>
-              <ul className="list-disc pl-5 space-y-2 text-almara-dark-text/80">
+              <ul className="list-disc pl-5 space-y-2 text-[#363636]">
                 <li>Structural design: holdings, governance, succession (multi-jurisdictional)</li>
                 <li>Coordination & oversight: investment managers, tax & legal, financing, accounting, audit, reporting</li>
                 <li>Consolidated view: periodic reviews, risk monitoring, cadence and accountability</li>
@@ -89,11 +89,11 @@ const Services = () => {
 
             {/* Alternatives */}
             <article className="bg-white/10 backdrop-blur-sm rounded-lg p-8 border border-white/20">
-              <h3 className="text-xl font-semibold text-almara-dark-text mb-4">Alternatives</h3>
-              <p className="text-almara-dark-text/80 leading-relaxed mb-4">
+              <h3 className="text-xl font-semibold text-[#b3bacb] mb-4">Alternatives</h3>
+              <p className="text-[#363636] leading-relaxed mb-4">
                 Where opportunity meets access. Curated exposure across private markets.
               </p>
-              <ul className="list-disc pl-5 space-y-2 text-almara-dark-text/80">
+              <ul className="list-disc pl-5 space-y-2 text-[#363636]">
                 <li>Private Equity & Venture Capital</li>
                 <li>Private Debt & Hedge Funds</li>
                 <li>Structured Products & Litigation Funding</li>
@@ -103,11 +103,11 @@ const Services = () => {
 
             {/* Capital & M&A */}
             <article className="bg-white/10 backdrop-blur-sm rounded-lg p-8 border border-white/20">
-              <h3 className="text-xl font-semibold text-almara-dark-text mb-4">Capital Introduction & M&A</h3>
-              <p className="text-almara-dark-text/80 leading-relaxed mb-4">
+              <h3 className="text-xl font-semibold text-[#b3bacb] mb-4">Capital Introduction & M&A</h3>
+              <p className="text-[#363636] leading-relaxed mb-4">
                 Connecting capital and opportunity—quietly and effectively.
               </p>
-              <ul className="list-disc pl-5 space-y-2 text-almara-dark-text/80">
+              <ul className="list-disc pl-5 space-y-2 text-[#363636]">
                 <li>Capital introductions: institutions, family offices, and select co-investors</li>
                 <li>M&A support: buy-side/sell-side, valuation, diligence, negotiations</li>
                 <li>Execution with partners: targeted boutiques and global advisors where appropriate</li>
@@ -116,11 +116,11 @@ const Services = () => {
 
             {/* Art Advisory */}
             <article className="bg-white/10 backdrop-blur-sm rounded-lg p-8 border border-white/20">
-              <h3 className="text-xl font-semibold text-almara-dark-text mb-4">Art Advisory</h3>
-              <p className="text-almara-dark-text/80 leading-relaxed mb-4">
+              <h3 className="text-xl font-semibold text-[#b3bacb] mb-4">Art Advisory</h3>
+              <p className="text-[#363636] leading-relaxed mb-4">
                 Beyond collection management—insider access to expertise and institutions.
               </p>
-              <ul className="list-disc pl-5 space-y-2 text-almara-dark-text/80">
+              <ul className="list-disc pl-5 space-y-2 text-[#363636]">
                 <li>Acquisition & valuation: market intelligence, authenticity, pricing</li>
                 <li>Conservation & succession: preservation strategies, estate integration</li>
                 <li>Placement & financing: loans, insurance, art lending, gallery/museum relationships</li>
@@ -145,7 +145,7 @@ const Services = () => {
       <section className="px-12 py-20 bg-almara-dark-text/5">
         <div className="max-w-4xl mx-auto text-center space-y-6 font-helvetica-now">
           <h2 className="font-museo-moderno text-[24px] lg:text-[28px] text-[#363636]">Who We Work With</h2>
-          <p className="text-almara-dark-text/80">Principals & Families · Entrepreneurial Investors · Fund Managers</p>
+          <p className="text-[#363636]">Principals & Families · Entrepreneurial Investors · Fund Managers</p>
         </div>
       </section>
 

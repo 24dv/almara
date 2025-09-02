@@ -71,7 +71,7 @@ const Partners = () => {
         <div className="max-w-7xl mx-auto">
           <div className="text-center space-y-6 mb-14">
             <h2 className="font-museo-moderno text-[28px] lg:text-[32px] text-[#363636]">Institutional Partners</h2>
-            <p className="font-helvetica-now text-almara-dark-text/80">
+            <p className="font-helvetica-now text-[#363636]">
               Banking and investment relationships that enable execution with discretion.
             </p>
           </div>
@@ -97,7 +97,7 @@ const Partners = () => {
                   <TooltipTrigger asChild>
                     <div className="bg-white/10 backdrop-blur-sm rounded-lg px-6 py-10 border border-white/20 text-center cursor-default">
                       <img src={logos[p.name]} alt={`${p.name} logo`} loading="lazy" className="mx-auto h-10 object-contain mb-3" />
-                      <span className="block text-lg tracking-wide text-almara-dark-text">{p.name}</span>
+                      <span className="block text-lg tracking-wide text-[#363636]">{p.name}</span>
                     </div>
                   </TooltipTrigger>
                   <TooltipContent className="font-helvetica-now text-sm">
@@ -118,7 +118,7 @@ const Partners = () => {
         <div className="max-w-6xl mx-auto">
           <div className="text-center space-y-6 mb-12">
             <h2 className="font-museo-moderno text-[28px] lg:text-[32px] text-[#363636]">Technology Partners</h2>
-            <p className="font-helvetica-now text-almara-dark-text/80">
+            <p className="font-helvetica-now text-[#363636]">
               Infrastructure for secure sourcing, governance, and reporting.
             </p>
           </div>
@@ -135,7 +135,7 @@ const Partners = () => {
                   <TooltipTrigger asChild>
                     <div className="bg-white/10 backdrop-blur-sm rounded-lg px-10 py-12 border border-white/20 text-center cursor-default min-w-[220px]">
                       <img src={logos[p.name]} alt={`${p.name} logo`} loading="lazy" className="mx-auto h-10 object-contain mb-4" />
-                      <span className="block text-2xl tracking-wide text-almara-dark-text">{p.name}</span>
+                      <span className="block text-2xl tracking-wide text-[#363636]">{p.name}</span>
                     </div>
                   </TooltipTrigger>
                   <TooltipContent className="font-helvetica-now text-sm">
@@ -156,7 +156,7 @@ const Partners = () => {
         <div className="max-w-7xl mx-auto">
           <div className="text-center space-y-6 mb-14">
             <h2 className="font-museo-moderno text-[28px] lg:text-[32px] text-[#363636]">Project Partners</h2>
-            <p className="font-helvetica-now text-almara-dark-text/80">
+            <p className="font-helvetica-now text-[#363636]">
               Specialists we mobilise for specific mandates.
             </p>
           </div>
@@ -182,7 +182,7 @@ const Partners = () => {
                   <TooltipTrigger asChild>
                     <div className="bg-white/10 backdrop-blur-sm rounded-lg px-6 py-10 border border-white/20 text-center cursor-default">
                       <img src={logos[p.name]} alt={`${p.name} logo`} loading="lazy" className="mx-auto h-10 object-contain mb-3" />
-                      <span className="block text-lg tracking-wide text-almara-dark-text">{p.name}</span>
+                      <span className="block text-lg tracking-wide text-[#363636]">{p.name}</span>
                     </div>
                   </TooltipTrigger>
                   <TooltipContent className="font-helvetica-now text-sm">
