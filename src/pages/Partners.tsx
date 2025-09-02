@@ -180,10 +180,10 @@ const Partners = () => {
           <div className="grid gap-12 grid-cols-2 max-w-2xl mx-auto">
             {[{
               name: "Delio",
-              longDesc: "Private markets distribution platform"
+              longDesc: "Delio offers a white-label platform that helps financial firms digitise and distribute private market investments."
             }, {
               name: "Abbove",
-              longDesc: "Wealth data and consolidated oversight"
+              longDesc: "Abbove provides a wealth-planning platform that consolidates client data into a single, structured view."
             }].map(p => (
               <div key={p.name} className="relative group">
                 <button className="bg-transparent text-[#f4eada] rounded-xl almara-call-btn relative z-[100] transition-all px-8 py-12 text-center w-full">
