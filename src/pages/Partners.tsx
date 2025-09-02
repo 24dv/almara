@@ -119,7 +119,7 @@ const Partners = () => {
               }].map(p => (
                 <Tooltip key={p.name}>
                   <TooltipTrigger asChild>
-                    <button className="bg-background border border-input rounded-xl px-8 py-12 text-center shadow-lg relative z-10 transition-colors hover:bg-accent hover:text-accent-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2">
+                    <button className="bg-transparent text-[#f4eada] rounded-xl almara-call-btn relative z-[100] transition-all px-8 py-12 text-center shadow-lg">
                       <img src={logos[p.name]} alt={`${p.name} logo`} loading="lazy" className="mx-auto h-12 object-contain" />
                     </button>
                   </TooltipTrigger>
@@ -141,7 +141,7 @@ const Partners = () => {
               }].map(p => (
                 <Tooltip key={p.name}>
                   <TooltipTrigger asChild>
-                    <button className="bg-background border border-input rounded-xl px-8 py-12 text-center shadow-lg relative z-10 transition-colors hover:bg-accent hover:text-accent-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2">
+                    <button className="bg-transparent text-[#f4eada] rounded-xl almara-call-btn relative z-[100] transition-all px-8 py-12 text-center shadow-lg">
                       <img src={logos[p.name]} alt={`${p.name} logo`} loading="lazy" className="mx-auto h-12 object-contain" />
                     </button>
                   </TooltipTrigger>
