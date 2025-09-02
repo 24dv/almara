@@ -38,7 +38,7 @@ const Mission = () => {
       {/* Main Content */}
       <main className="relative z-10 min-h-[calc(100vh-200px)]">
       {/* Section 1 — Our Mission (includes header) */}
-      <section className="h-screen flex flex-col px-8 lg:px-12 mission-section-gradient">
+      <section className="h-screen flex flex-col px-6 lg:px-8 mission-section-gradient">
         <header className="relative z-10 hidden lg:flex items-center justify-center pt-8 pb-4">
           <Link to="/" className="transition-opacity hover:opacity-80">
             <img src="/lovable-uploads/889a0efd-ed5b-448b-a911-54ea486f744c.png" alt="ALMARA" className="h-7 sm:h-8 md:h-9 opacity-90" />
@@ -60,8 +60,8 @@ const Mission = () => {
       </section>
 
       {/* Section 2 — Our Pillars */}
-      <section className="h-screen flex items-center justify-center px-8 lg:px-12 mission-section-gradient">
-        <div className="max-w-5xl mx-auto bg-gradient-to-r from-transparent via-gray-600/30 to-gray-700/60 rounded-3xl p-12 backdrop-blur-sm">
+      <section className="h-screen flex items-center justify-center px-6 lg:px-8 mission-section-gradient">
+        <div className="max-w-6xl mx-auto bg-gradient-to-r from-transparent via-gray-600/30 to-gray-700/60 rounded-3xl p-12 backdrop-blur-sm">
           <div className="text-center mb-8">
             <h2 className="font-museo-moderno text-[32px] lg:text-[36px] text-[#f4eada] tracking-[0.05em] opacity-90 leading-tight mb-8">Our Pillars</h2>
           </div>
@@ -87,7 +87,7 @@ const Mission = () => {
       </section>
 
       {/* Section 3 — In Practice */}
-      <section className="h-screen flex items-center justify-center px-8 lg:px-12 mission-section-gradient">
+      <section className="h-screen flex items-center justify-center px-6 lg:px-8 mission-section-gradient">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="font-museo-moderno text-[32px] lg:text-[36px] text-[#f4eada] tracking-[0.05em] opacity-90 leading-tight">In Practice</h2>
