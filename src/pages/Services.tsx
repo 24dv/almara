@@ -46,19 +46,19 @@ const Services = () => {
           </div>
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-12 font-helvetica-now text-[#363636]">
             <article className="space-y-3">
-              <h3 className="text-lg text-[#b3bacb]">Ongoing counsel</h3>
+              <h3 className="text-lg text-[#364b56]">Ongoing counsel</h3>
               <p className="leading-relaxed">
                 We stay close to your world—anticipating needs, coordinating specialists, and maintaining oversight.
               </p>
             </article>
             <article className="space-y-3">
-              <h3 className="text-lg text-[#b3bacb]">Mandate-led execution</h3>
+              <h3 className="text-lg text-[#364b56]">Mandate-led execution</h3>
               <p className="leading-relaxed">
                 When opportunities arise, we mobilise the right people and drive transactions to completion.
               </p>
             </article>
             <article className="space-y-3">
-              <h3 className="text-lg text-[#b3bacb]">Orchestrated network</h3>
+              <h3 className="text-lg text-[#364b56]">Orchestrated network</h3>
               <p className="leading-relaxed">
                 Discreet access to private banks, boutiques, legal/tax advisors, researchers, and art-world experts—curated and managed by us.
               </p>
@@ -76,7 +76,7 @@ const Services = () => {
           <div className="grid gap-8 md:grid-cols-2">
             {/* Family Office */}
             <article className="bg-white/10 backdrop-blur-sm rounded-lg p-8 border border-white/20">
-              <h3 className="text-xl font-semibold text-[#b3bacb] mb-4">Family Office</h3>
+              <h3 className="text-xl font-semibold text-[#364b56] mb-4">Family Office</h3>
               <p className="text-[#363636] leading-relaxed mb-4">
                 We design the architecture of bespoke wealth solutions—aligning asset management and wealth structuring.
               </p>
@@ -89,7 +89,7 @@ const Services = () => {
 
             {/* Alternatives */}
             <article className="bg-white/10 backdrop-blur-sm rounded-lg p-8 border border-white/20">
-              <h3 className="text-xl font-semibold text-[#b3bacb] mb-4">Alternatives</h3>
+              <h3 className="text-xl font-semibold text-[#364b56] mb-4">Alternatives</h3>
               <p className="text-[#363636] leading-relaxed mb-4">
                 Where opportunity meets access. Curated exposure across private markets.
               </p>
@@ -103,7 +103,7 @@ const Services = () => {
 
             {/* Capital & M&A */}
             <article className="bg-white/10 backdrop-blur-sm rounded-lg p-8 border border-white/20">
-              <h3 className="text-xl font-semibold text-[#b3bacb] mb-4">Capital Introduction & M&A</h3>
+              <h3 className="text-xl font-semibold text-[#364b56] mb-4">Capital Introduction & M&A</h3>
               <p className="text-[#363636] leading-relaxed mb-4">
                 Connecting capital and opportunity—quietly and effectively.
               </p>
@@ -116,7 +116,7 @@ const Services = () => {
 
             {/* Art Advisory */}
             <article className="bg-white/10 backdrop-blur-sm rounded-lg p-8 border border-white/20">
-              <h3 className="text-xl font-semibold text-[#b3bacb] mb-4">Art Advisory</h3>
+              <h3 className="text-xl font-semibold text-[#364b56] mb-4">Art Advisory</h3>
               <p className="text-[#363636] leading-relaxed mb-4">
                 Beyond collection management—insider access to expertise and institutions.
               </p>
