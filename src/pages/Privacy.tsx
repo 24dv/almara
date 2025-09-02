@@ -12,13 +12,13 @@ const Privacy = () => {
             Last updated: {new Date().toLocaleDateString()}
           </p>
           
-          <div className="space-y-8">
+          <div className="space-y-6">
             <section>
               <h2 className="text-2xl font-semibold text-[#363636] mb-4">Information We Collect</h2>
               <p className="leading-relaxed mb-4">
                 We collect information you provide directly to us, such as when you create an account, use our services, or contact us for support. This may include:
               </p>
-              <ul className="list-disc pl-6 space-y-2">
+              <ul className="list-disc pl-6 space-y-1">
                 <li>Contact information (name, email address, phone number)</li>
                 <li>Business information and maritime credentials</li>
                 <li>Usage data and service preferences</li>
@@ -31,7 +31,7 @@ const Privacy = () => {
               <p className="leading-relaxed mb-4">
                 We use the information we collect to:
               </p>
-              <ul className="list-disc pl-6 space-y-2">
+              <ul className="list-disc pl-6 space-y-1">
                 <li>Provide, maintain, and improve our maritime services</li>
                 <li>Process transactions and send related information</li>
                 <li>Send technical notices and support messages</li>
@@ -45,7 +45,7 @@ const Privacy = () => {
               <p className="leading-relaxed mb-4">
                 We do not sell, trade, or otherwise transfer your personal information to third parties without your consent, except as described in this policy. We may share information in the following circumstances:
               </p>
-              <ul className="list-disc pl-6 space-y-2">
+              <ul className="list-disc pl-6 space-y-1">
                 <li>With service providers who assist in our operations</li>
                 <li>When required by law or to protect our rights</li>
                 <li>In connection with business transfers or acquisitions</li>
@@ -65,7 +65,7 @@ const Privacy = () => {
               <p className="leading-relaxed mb-4">
                 You have the right to:
               </p>
-              <ul className="list-disc pl-6 space-y-2">
+              <ul className="list-disc pl-6 space-y-1">
                 <li>Access and update your personal information</li>
                 <li>Request deletion of your data</li>
                 <li>Opt out of certain communications</li>

@@ -47,19 +47,19 @@ const Mission = () => {
             <h2 className="font-museo-moderno text-[28px] lg:text-[32px] text-[#363636]">Pillars</h2>
           </div>
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 font-helvetica-now text-[#363636]">
-            <article className="space-y-3">
+            <article className="space-y-2">
               <h3 className="text-lg text-[#364b56]">Wisdom</h3>
               <p>Experience distilled into judgment. We prioritise signal over noise and the long term over the immediate.</p>
             </article>
-            <article className="space-y-3">
+            <article className="space-y-2">
               <h3 className="text-lg text-[#364b56]">Grounded</h3>
               <p>Calm, practical, reality-first. We work with what is, then shape what can be.</p>
             </article>
-            <article className="space-y-3">
+            <article className="space-y-2">
               <h3 className="text-lg text-[#364b56]">Simple</h3>
               <p>Clarity is a discipline. We focus on the essence and remove what doesn’t serve.</p>
             </article>
-            <article className="space-y-3">
+            <article className="space-y-2">
               <h3 className="text-lg text-[#364b56]">Spirituality</h3>
               <p>Meaning and care in action. Compassion and responsibility inform decisions.</p>
             </article>
@@ -83,7 +83,7 @@ const Mission = () => {
           </ul>
 
           {/* CTA */}
-          <div className="text-center mt-16 space-y-6">
+          <div className="text-center mt-16 space-y-4">
             <h3 className="font-museo-moderno text-[24px] lg:text-[28px] text-[#364b56]">Build with intention</h3>
             <Button asChild variant="call" size="call" className="font-helvetica-now">
               <Link to="/services">Explore Services</Link>

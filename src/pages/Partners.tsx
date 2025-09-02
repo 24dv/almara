@@ -69,7 +69,7 @@ const Partners = () => {
       {/* Banner 2 — Institutional Partners */}
       <section className="px-12 py-24">
         <div className="max-w-7xl mx-auto">
-          <div className="text-center space-y-6 mb-14">
+          <div className="text-center space-y-4 mb-14">
             <h2 className="font-museo-moderno text-[28px] lg:text-[32px] text-[#363636]">Institutional Partners</h2>
             <p className="font-helvetica-now text-[#363636]">
               Banking and investment relationships that enable execution with discretion.
@@ -116,7 +116,7 @@ const Partners = () => {
       {/* Banner 3 — Technology Partners */}
       <section className="px-12 py-24 bg-almara-dark-text/5">
         <div className="max-w-6xl mx-auto">
-          <div className="text-center space-y-6 mb-12">
+          <div className="text-center space-y-4 mb-12">
             <h2 className="font-museo-moderno text-[28px] lg:text-[32px] text-[#363636]">Technology Partners</h2>
             <p className="font-helvetica-now text-[#363636]">
               Infrastructure for secure sourcing, governance, and reporting.
@@ -154,7 +154,7 @@ const Partners = () => {
       {/* Banner 4 — Project Partners */}
       <section className="px-12 py-24">
         <div className="max-w-7xl mx-auto">
-          <div className="text-center space-y-6 mb-14">
+          <div className="text-center space-y-4 mb-14">
             <h2 className="font-museo-moderno text-[28px] lg:text-[32px] text-[#363636]">Project Partners</h2>
             <p className="font-helvetica-now text-[#363636]">
               Specialists we mobilise for specific mandates.
@@ -196,7 +196,7 @@ const Partners = () => {
 
       {/* Banner 5 — CTA */}
       <section className="px-12 py-28 bg-almara-dark-text/5">
-        <div className="max-w-3xl mx-auto text-center space-y-8">
+        <div className="max-w-3xl mx-auto text-center space-y-6">
           <h2 className="font-museo-moderno text-[28px] lg:text-[32px] text-[#363636]">Put the network to work</h2>
           <p className="leading-relaxed text-base text-[#f4eada] font-helvetica-now">
             Tell us what you’re building; we’ll assemble the right team.
