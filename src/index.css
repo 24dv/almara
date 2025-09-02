@@ -220,7 +220,7 @@ All colors MUST be HSL.
 
   /* Section-specific background for Partners page sections */
   .almara-section-bg {
-    background: var(--almara-partners-gradient);
+    background: hsl(var(--almara-light-text));
     position: relative;
   }
 
