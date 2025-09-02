@@ -101,7 +101,7 @@ const Partners = () => {
         <div className="max-w-6xl mx-auto text-center relative z-10">
           <div className="mb-16">
             <h2 className="font-museo-moderno text-[32px] lg:text-[36px] text-[#364b56] mb-6">Institutional Partners</h2>
-            <p className="font-helvetica-now text-[#364b56] text-lg">
+            <p className="font-helvetica-now text-[#363636] text-lg">
               Banking and investment relationships that enable execution with discretion.
             </p>
           </div>
@@ -164,7 +164,7 @@ const Partners = () => {
         <div className="max-w-4xl mx-auto text-center relative z-10">
           <div className="mb-16">
             <h2 className="font-museo-moderno text-[32px] lg:text-[36px] text-[#364b56] mb-6">Technology Partners</h2>
-            <p className="font-helvetica-now text-[#364b56] text-lg">
+            <p className="font-helvetica-now text-[#363636] text-lg">
               Infrastructure for secure sourcing, governance, and reporting.
             </p>
           </div>
@@ -200,7 +200,7 @@ const Partners = () => {
         <div className="max-w-6xl mx-auto text-center relative z-10">
           <div className="mb-16">
             <h2 className="font-museo-moderno text-[32px] lg:text-[36px] text-[#364b56] mb-6">Project Partners</h2>
-            <p className="font-helvetica-now text-[#364b56] text-lg">
+            <p className="font-helvetica-now text-[#363636] text-lg">
               Specialists we mobilise for specific mandates.
             </p>
           </div>
@@ -262,13 +262,13 @@ const Partners = () => {
       <section className="h-screen flex items-center justify-center px-12 py-20 bg-[hsl(var(--almara-light-text))] partners-gradient-bg">
         <div className="max-w-4xl mx-auto text-center space-y-12 relative z-10">
           <div className="space-y-8">
-            <h2 className="font-museo-moderno text-[32px] lg:text-[36px] text-[#364b56] tracking-wider leading-tight uppercase">
+            <h2 className="font-long-cang sm:text-[36px] md:text-[40px] lg:text-[44px] text-[#364b56] tracking-[0.05em] opacity-90 leading-tight font-thin text-5xl">
               Tell us what you're building,<br />
               we'll assemble the right team
             </h2>
           </div>
           <div className="pt-8">
-            <Button variant="call" size="call" className="font-helvetica-now text-xl px-16 py-6 relative z-10">
+            <Button variant="call-footer" size="call" className="font-helvetica-now relative z-10">
               request a call
             </Button>
           </div>
