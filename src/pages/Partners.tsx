@@ -57,24 +57,24 @@ const Partners = () => {
 
   return (
     <div className="relative w-full min-h-screen almara-gradient-bg">
-      {/* Header with cream background */}
-      <header className="relative z-10 hidden lg:flex items-center justify-center pt-8 pb-4 bg-[hsl(var(--almara-light-text))]">
-        <Link to="/" className="transition-opacity hover:opacity-80">
-          <img src="/lovable-uploads/889a0efd-ed5b-448b-a911-54ea486f744c.png" alt="ALMARA" className="h-7 sm:h-8 md:h-9 opacity-90" />
-        </Link>
-      </header>
+      {/* Combined Header and Hero Section with unified background */}
+      <section className="relative min-h-screen flex flex-col bg-[hsl(var(--almara-light-text))] partners-gradient-bg">        
+        {/* Header */}
+        <header className="relative z-50 hidden lg:flex items-center justify-center pt-8 pb-4">
+          <Link to="/" className="transition-opacity hover:opacity-80">
+            <img src="/lovable-uploads/889a0efd-ed5b-448b-a911-54ea486f744c.png" alt="ALMARA" className="h-7 sm:h-8 md:h-9 opacity-90" />
+          </Link>
+        </header>
 
-      {/* Navigation - fixed positioned at same height as home page */}
-      <Navigation positioning="fixed" />
+        {/* Navigation - fixed positioned at same height as home page */}
+        <Navigation positioning="fixed" />
 
-      {/* Mobile Header/Menu */}
-      <MobileMenu />
-      
-      {/* Section 1: Our Partners - Hero */}
-      <section className="h-screen flex items-center justify-center bg-[hsl(var(--almara-light-text))] partners-gradient-bg">        
-        {/* Main Content */}
-        <div className="flex items-center justify-center px-12 py-20">
-          <div className="max-w-4xl text-center relative">
+        {/* Mobile Header/Menu */}
+        <MobileMenu />
+        
+        {/* Hero Content */}
+        <div className="relative z-40 flex-1 flex items-center justify-center px-12 py-20">
+          <div className="max-w-4xl text-center relative z-50">
             {/* Content */}
             <div className="space-y-8">
               <h1 className="font-long-cang text-[48px] lg:text-[56px] text-almara-light-text tracking-[0.05em] opacity-90 leading-tight font-thin">
@@ -94,8 +94,8 @@ const Partners = () => {
       </section>
       
       {/* Section 2: Institutional Partners */}
-      <section className="h-screen flex items-center justify-center px-12 py-20 bg-[hsl(var(--almara-light-text))] partners-gradient-bg">
-        <div className="max-w-6xl mx-auto text-center">
+      <section className="relative z-30 h-screen flex items-center justify-center px-12 py-20 bg-[hsl(var(--almara-light-text))] partners-gradient-bg">
+        <div className="relative z-40 max-w-6xl mx-auto text-center">
           <div className="mb-16">
             <h2 className="font-museo-moderno text-[36px] lg:text-[42px] text-[#364b56] mb-6">Institutional Partners</h2>
             <p className="font-helvetica-now text-[#364b56] text-lg">
@@ -157,8 +157,8 @@ const Partners = () => {
       </section>
 
       {/* Section 3: Technology Partners */}
-      <section className="h-screen flex items-center justify-center px-12 py-20 bg-[hsl(var(--almara-light-text))] partners-gradient-bg">
-        <div className="max-w-4xl mx-auto text-center">
+      <section className="relative z-30 h-screen flex items-center justify-center px-12 py-20 bg-[hsl(var(--almara-light-text))] partners-gradient-bg">
+        <div className="relative z-40 max-w-4xl mx-auto text-center">
           <div className="mb-16">
             <h2 className="font-museo-moderno text-[36px] lg:text-[42px] text-[#364b56] mb-6">Technology Partners</h2>
             <p className="font-helvetica-now text-[#364b56] text-lg">
@@ -193,8 +193,8 @@ const Partners = () => {
       </section>
 
       {/* Section 4: Project Partners */}
-      <section className="h-screen flex items-center justify-center px-12 py-20 bg-[hsl(var(--almara-light-text))] partners-gradient-bg">
-        <div className="max-w-6xl mx-auto text-center">
+      <section className="relative z-30 h-screen flex items-center justify-center px-12 py-20 bg-[hsl(var(--almara-light-text))] partners-gradient-bg">
+        <div className="relative z-40 max-w-6xl mx-auto text-center">
           <div className="mb-16">
             <h2 className="font-museo-moderno text-[36px] lg:text-[42px] text-[#364b56] mb-6">Project Partners</h2>
             <p className="font-helvetica-now text-[#364b56] text-lg">
@@ -256,8 +256,8 @@ const Partners = () => {
       </section>
 
       {/* Section 5: Call to Action */}
-      <section className="h-screen flex items-center justify-center px-12 py-20 bg-[hsl(var(--almara-light-text))] partners-gradient-bg">
-        <div className="max-w-4xl mx-auto text-center space-y-12">
+      <section className="relative z-30 h-screen flex items-center justify-center px-12 py-20 bg-[hsl(var(--almara-light-text))] partners-gradient-bg">
+        <div className="relative z-40 max-w-4xl mx-auto text-center space-y-12">
           <div className="space-y-8">
             <h2 className="font-long-cang text-[32px] lg:text-[36px] text-[#364b56] tracking-wider leading-tight uppercase">
               Tell us what you're building,<br />
