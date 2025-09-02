@@ -10,9 +10,9 @@ export const HeroSection = () => {
       
       {/* Text - Positioned below the circle */}
       <div className="relative z-10 flex items-center justify-center mt-8">
-        <h2 className="font-long-cang text-[32px] sm:text-[36px] md:text-[40px] text-almara-subtitle-text tracking-[0em] opacity-90 font-thin">
+        <h1 className="font-long-cang text-[32px] sm:text-[36px] md:text-[40px] text-almara-subtitle-text tracking-[0em] opacity-90 font-thin">
           A SEA OF OPPORTUNITY
-        </h2>
+        </h1>
       </div>
     </section>;
 };
