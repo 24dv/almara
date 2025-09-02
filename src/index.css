@@ -47,8 +47,8 @@ All colors MUST be HSL.
     --ring: var(--almara-dark-blue);
 
     /* Custom ALMARA design tokens */
-    --almara-radial-gradient: radial-gradient(circle at center, hsl(var(--almara-dark-blue)) 0%, hsl(var(--almara-light-blue)) 100%);
-    --almara-partners-gradient: radial-gradient(circle at center, hsl(var(--almara-dark-blue)) 0%, hsl(var(--almara-dark-blue)) 0.10%, hsl(var(--almara-light-text)) 40%);
+    --almara-radial-gradient: radial-gradient(circle at center, hsl(var(--almara-light-text)) 0%, hsl(var(--almara-light-text) / 0.7) 20%, hsl(var(--almara-light-blue) / 0.5) 50%, hsl(var(--almara-dark-blue)) 100%);
+    --almara-partners-gradient: radial-gradient(circle at center, hsl(var(--almara-light-text) / 0.8) 0%, hsl(var(--almara-light-text) / 0.4) 25%, hsl(var(--almara-light-blue) / 0.3) 50%, hsl(var(--almara-dark-blue)) 100%);
     --almara-hero-shadow: 0 20px 60px -10px hsl(var(--almara-dark-blue) / 0.15);
     --almara-button-shadow: 0 8px 25px -5px hsl(var(--almara-dark-blue) / 0.2);
     --almara-button-neo-shadow: 5px 5px 15px hsl(0 0% 0% / 0.35), -5px -5px 15px hsl(0 0% 100% / 0.25);
@@ -172,7 +172,7 @@ All colors MUST be HSL.
   }
   
   .almara-footer-gradient-bg {
-    background: hsl(var(--almara-light-text));
+    background: var(--almara-radial-gradient);
     position: relative;
   }
   
@@ -212,9 +212,21 @@ All colors MUST be HSL.
 
   /* Section-specific background for Partners page sections */
   .almara-section-bg {
-    background: hsl(var(--almara-light-text));
-    background-image: radial-gradient(ellipse at center, hsl(var(--almara-dark-blue) / 0.8) 0%, hsl(var(--almara-dark-blue) / 0.4) 30%, transparent 70%);
+    background: var(--almara-partners-gradient);
     position: relative;
+  }
+
+  .almara-section-bg::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(to right, hsl(var(--almara-light-text)) 0%, transparent 100%);
+    opacity: 1;
+    z-index: -1;
+    pointer-events: none;
   }
 
   .almara-section-bg::before {
