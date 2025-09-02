@@ -3,7 +3,6 @@ import { Footer } from "@/components/Footer";
 import { Link } from "react-router-dom";
 import { MobileMenu } from "@/components/MobileMenu";
 import { useEffect } from "react";
-
 const Mission = () => {
   // SEO
   useEffect(() => {
@@ -24,9 +23,7 @@ const Mission = () => {
     }
     link.href = window.location.href;
   }, []);
-
-  return (
-    <div className="relative w-full min-h-screen almara-gradient-bg no-overlay">
+  return <div className="relative w-full min-h-screen almara-gradient-bg no-overlay">
       {/* Navigation - fixed positioned at same height as home page */}
       <Navigation positioning="fixed" />
 
@@ -38,7 +35,7 @@ const Mission = () => {
       {/* Main Content */}
       <main className="relative z-10 min-h-[calc(100vh-200px)]">
       {/* Section 1 — Our Mission (includes header) */}
-      <section className="h-screen flex flex-col px-6 lg:px-8 mission-section-gradient">
+      <section className="h-screen flex flex-col px-8 lg:px-12 mission-section-gradient">
         <header className="relative z-10 hidden lg:flex items-center justify-center pt-8 pb-4">
           <Link to="/" className="transition-opacity hover:opacity-80">
             <img src="/lovable-uploads/889a0efd-ed5b-448b-a911-54ea486f744c.png" alt="ALMARA" className="h-7 sm:h-8 md:h-9 opacity-90" />
@@ -60,10 +57,12 @@ const Mission = () => {
       </section>
 
       {/* Section 2 — Our Pillars */}
-      <section className="h-screen flex items-center justify-center px-6 lg:px-8 mission-section-gradient">
-        <div className="max-w-7xl mx-auto bg-gradient-to-r from-transparent via-gray-600/30 to-gray-700/60 rounded-3xl p-12 backdrop-blur-sm">
+      <section className="h-screen flex items-center justify-center px-8 lg:px-12 mission-section-gradient">
+        <div className="max-w-3xl mx-0 px-[90px]">
           <div className="text-center mb-8">
-            <h2 className="font-museo-moderno text-[32px] lg:text-[36px] text-[#f4eada] tracking-[0.05em] opacity-90 leading-tight mb-8">Our Pillars</h2>
+            <div className="inline-block border-2 border-purple-400 px-8 py-4 mb-8">
+              <h2 className="font-museo-moderno text-[32px] lg:text-[36px] text-[#f4eada] tracking-[0.05em] opacity-90 leading-tight">Our Pillars</h2>
+            </div>
           </div>
           <div className="space-y-8 font-helvetica-now text-[#f4eada]">
             <article className="text-center space-y-4">
@@ -87,8 +86,8 @@ const Mission = () => {
       </section>
 
       {/* Section 3 — In Practice */}
-      <section className="h-screen flex items-center justify-center px-6 lg:px-8 mission-section-gradient">
-        <div className="max-w-7xl mx-auto">
+      <section className="h-screen flex items-center justify-center px-8 lg:px-12 mission-section-gradient">
+        <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="font-museo-moderno text-[32px] lg:text-[36px] text-[#f4eada] tracking-[0.05em] opacity-90 leading-tight">In Practice</h2>
           </div>
@@ -142,8 +141,6 @@ const Mission = () => {
       
       {/* Footer */}
       <Footer />
-    </div>
-  );
+    </div>;
 };
-
 export default Mission;
