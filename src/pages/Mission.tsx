@@ -26,7 +26,7 @@ const Mission = () => {
   }, []);
 
   return (
-    <div className="relative w-full min-h-screen mission-vignette-bg">
+    <div className="relative w-full min-h-screen">
       {/* Navigation - fixed positioned at same height as home page */}
       <Navigation positioning="fixed" />
 
@@ -42,8 +42,8 @@ const Mission = () => {
       
       {/* Main Content */}
       <main className="relative z-10 min-h-[calc(100vh-200px)]">
-      {/* Section 1 — Our Mission */}
-      <section className="h-screen flex items-center justify-center px-12">
+        {/* Section 1 — Our Mission */}
+        <section className="h-screen flex items-center justify-center px-12 almara-gradient-bg no-overlay">
         <div className="max-w-3xl text-center space-y-8">
           <h1 className="font-long-cang sm:text-[36px] md:text-[40px] lg:text-[44px] text-almara-subtitle-text tracking-[0.05em] opacity-90 leading-tight font-thin text-5xl">Our Mission</h1>
           <p className="leading-relaxed text-base text-[#f4eada] font-helvetica-now max-w-2xl mx-auto">
@@ -55,8 +55,8 @@ const Mission = () => {
         </div>
       </section>
 
-      {/* Section 2 — Our Pillars */}
-      <section className="h-screen flex items-center justify-center px-12">
+        {/* Section 2 — Our Pillars */}
+        <section className="h-screen flex items-center justify-center px-12 almara-gradient-bg no-overlay">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-14">
             <h2 className="font-long-cang sm:text-[36px] md:text-[40px] lg:text-[44px] text-almara-subtitle-text tracking-[0.05em] opacity-90 leading-tight font-thin text-5xl">Our Pillars</h2>
@@ -82,8 +82,8 @@ const Mission = () => {
         </div>
       </section>
 
-      {/* Section 3 — In Practice */}
-      <section className="h-screen flex items-center justify-center px-12">
+        {/* Section 3 — In Practice */}
+        <section className="h-screen flex items-center justify-center px-12 almara-gradient-bg no-overlay">
         <div className="max-w-5xl mx-auto">
           <div className="text-center mb-12">
             <h2 className="font-long-cang sm:text-[36px] md:text-[40px] lg:text-[44px] text-almara-subtitle-text tracking-[0.05em] opacity-90 leading-tight font-thin text-5xl">In Practice</h2>
