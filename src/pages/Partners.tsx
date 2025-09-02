@@ -56,7 +56,7 @@ const Partners = () => {
   return (
     <div className="relative w-full min-h-screen almara-gradient-bg">
       {/* Header with cream background */}
-      <header className="relative z-10 hidden lg:flex items-center justify-center pt-8 pb-4 bg-[hsl(var(--almara-light-text))]">
+      <header className="fixed top-0 left-0 right-0 z-50 hidden lg:flex items-center justify-center pt-8 pb-4 bg-[hsl(var(--almara-light-text))]/80 backdrop-blur-md">
         <Link to="/" className="transition-opacity hover:opacity-80">
           <img src="/lovable-uploads/889a0efd-ed5b-448b-a911-54ea486f744c.png" alt="ALMARA" className="h-7 sm:h-8 md:h-9 opacity-90" />
         </Link>
@@ -69,7 +69,7 @@ const Partners = () => {
       <MobileMenu />
       
       {/* Section 1: Our Partners - Hero */}
-      <section className="h-screen flex items-center justify-center bg-[hsl(var(--almara-light-text))] partners-gradient-bg relative">        
+      <section className="h-screen flex items-center justify-center bg-[hsl(var(--almara-light-text))] partners-gradient-bg relative sticky top-0 z-10">        
         {/* Background Circle */}
         <img src="/lovable-uploads/a58a04a2-6cc9-41d7-a8c1-bd70d0c8df8f.png" alt="Circle background" className="absolute w-[60vw] h-[60vw] max-w-[600px] max-h-[600px] min-w-[320px] min-h-[320px] object-cover bg-transparent top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-[5]" />
         
@@ -281,7 +281,7 @@ const Partners = () => {
       </section>
 
       {/* Section 5: Call to Action */}
-      <section className="h-screen flex items-center justify-center px-12 py-20 bg-[hsl(var(--almara-light-text))] partners-gradient-bg sticky top-0 z-50">
+      <section className="h-screen flex items-center justify-center px-12 py-20 bg-[hsl(var(--almara-light-text))] partners-gradient-bg">
         <div className="max-w-4xl mx-auto text-center space-y-12 relative z-10">
           <div className="space-y-8">
             <h2 className="font-long-cang sm:text-[36px] md:text-[40px] lg:text-[46px] text-[#364b56] tracking-[0.05em] opacity-90 leading-tight font-thin text-5xl uppercase rotate-[3deg]">
