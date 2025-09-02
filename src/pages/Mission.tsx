@@ -61,7 +61,7 @@ const Mission = () => {
 
       {/* Section 2 — Our Pillars */}
       <section className="h-screen flex items-center justify-center px-8 lg:px-12 mission-section-gradient">
-        <div className="max-w-3xl mx-auto bg-gradient-to-r from-gray-700/60 via-gray-600/30 to-transparent rounded-3xl p-12 backdrop-blur-sm">
+        <div className="max-w-3xl mx-auto bg-gradient-to-r from-transparent via-gray-600/30 to-gray-700/60 rounded-3xl p-12 backdrop-blur-sm">
           <div className="text-center mb-8">
             <h2 className="font-museo-moderno text-[32px] lg:text-[36px] text-[#f4eada] tracking-[0.05em] opacity-90 leading-tight mb-8">Our Pillars</h2>
           </div>
