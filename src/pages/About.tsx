@@ -40,15 +40,15 @@ const About = () => {
             </div>
             
             {/* Founder Info */}
-            <div className="space-y-12 max-w-xl">
-              <div className="space-y-4">
+            <div className="space-y-8 max-w-xl">
+              <div className="space-y-2">
                 <h2 className="font-museo-moderno text-[32px] lg:text-[36px] text-[#363636]">
                   Tom Meganck
                 </h2>
                 <h3 className="font-helvetica-now text-xl tracking-wider font-bold text-[#364b56]">founder</h3>
               </div>
               
-              <div className="space-y-8 text-almara-dark-text/80 font-helvetica-now">
+              <div className="space-y-6 text-almara-dark-text/80 font-helvetica-now">
                 <p className="leading-relaxed text-base text-[#363636]">
                   With a career spanning over two decades, Tom 
                   Meganck has guided ultra-high-net-worth 
