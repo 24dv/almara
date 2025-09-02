@@ -48,7 +48,7 @@ All colors MUST be HSL.
 
     /* Custom ALMARA design tokens */
     --almara-radial-gradient: radial-gradient(circle at center, hsl(var(--almara-dark-blue)) 0%, hsl(var(--almara-light-blue)) 100%);
-    --almara-partners-gradient: radial-gradient(circle at center, hsl(var(--almara-dark-blue)) 0%, hsl(var(--almara-dark-blue)) 2%, hsl(var(--almara-dark-blue) / 0.98) 4%, hsl(var(--almara-dark-blue) / 0.95) 6%, hsl(var(--almara-dark-blue) / 0.92) 8%, hsl(var(--almara-dark-blue) / 0.88) 10%, hsl(var(--almara-dark-blue) / 0.85) 12%, hsl(var(--almara-dark-blue) / 0.82) 14%, hsl(var(--almara-dark-blue) / 0.8) 15%, hsl(var(--almara-dark-blue) / 0.75) 17%, hsl(var(--almara-dark-blue) / 0.7) 19%, hsl(var(--almara-dark-blue) / 0.65) 20%, hsl(var(--almara-dark-blue) / 0.6) 22%, hsl(var(--almara-dark-blue) / 0.55) 23%, hsl(var(--almara-dark-blue) / 0.5) 24%, hsl(var(--almara-dark-blue) / 0.45) 24.5%, hsl(var(--almara-dark-blue) / 0.4) 25%, hsl(var(--almara-dark-blue) / 0.35) 27%, hsl(var(--almara-dark-blue) / 0.3) 29%, hsl(var(--almara-dark-blue) / 0.25) 30%, hsl(var(--almara-dark-blue) / 0.2) 32%, hsl(var(--almara-dark-blue) / 0.15) 34%, hsl(var(--almara-dark-blue) / 0.1) 35%, hsl(var(--almara-dark-blue) / 0.05) 37%, hsl(var(--almara-light-text)) 40%);
+    --almara-partners-gradient: radial-gradient(circle at center, hsl(var(--almara-dark-blue)) 0%, hsl(var(--almara-dark-blue)) 2%, hsl(var(--almara-dark-blue) / 0.8) 15%, hsl(var(--almara-dark-blue) / 0.4) 25%, hsl(var(--almara-light-text)) 40%);
     --almara-hero-shadow: 0 20px 60px -10px hsl(var(--almara-dark-blue) / 0.15);
     --almara-button-shadow: 0 8px 25px -5px hsl(var(--almara-dark-blue) / 0.2);
     --almara-button-neo-shadow: 5px 5px 15px hsl(0 0% 0% / 0.35), -5px -5px 15px hsl(0 0% 100% / 0.25);
