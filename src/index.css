@@ -256,7 +256,6 @@ All colors MUST be HSL.
   /* Elliptical radial gradient for Partners page sections */
   .partners-gradient-bg {
     background: radial-gradient(ellipse at center, #5d717b 0%, rgba(255, 255, 255, 0) 70%);
-    backdrop-filter: blur(20px);
     position: relative;
   }
   
