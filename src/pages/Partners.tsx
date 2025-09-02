@@ -7,8 +7,6 @@ import { useEffect } from "react";
 import { Link } from "react-router-dom";
 import partnersHero from "@/assets/partners-hero.jpg";
 import quintetLogo from "@/assets/logos/quintet.svg";
-import degroofPetercamLogo from "@/assets/logos/degroof-petercam.svg";
-import ubpLogo from "@/assets/logos/ubp.svg";
 import cigpLogo from "@/assets/logos/cigp.svg";
 import antarcticaLogo from "@/assets/logos/antarctica.svg";
 import delioLogo from "@/assets/logos/delio.svg";
@@ -42,8 +40,8 @@ const Partners = () => {
 
   const logos: Record<string, string> = {
     "Quintet": quintetLogo,
-    "Degroof Petercam": degroofPetercamLogo,
-    "UBP": ubpLogo,
+    "Degroof Petercam": "/lovable-uploads/c3574845-89ba-40fc-92f2-8bb1b34e4b56.png",
+    "UBP": "/lovable-uploads/75ca8d5a-9e04-492e-8048-83b8e15d144d.png",
     "CIGP": cigpLogo,
     "Antarctica": antarcticaLogo,
     "Delio": delioLogo,
@@ -122,7 +120,7 @@ const Partners = () => {
                 <Tooltip key={p.name}>
                   <TooltipTrigger asChild>
                     <div className="bg-white/20 backdrop-blur-sm rounded-xl px-8 py-12 border border-white/30 text-center cursor-default shadow-lg relative z-10">
-                      <img src={logos[p.name]} alt={`${p.name} logo`} loading="lazy" className="mx-auto h-12 object-contain mb-4" />
+                      <img src={logos[p.name]} alt={`${p.name} logo`} loading="lazy" className="mx-auto h-10 object-contain mb-4" />
                       <span className="block text-xl tracking-wide text-[#364b56] font-medium">{p.name}</span>
                     </div>
                   </TooltipTrigger>
@@ -145,7 +143,7 @@ const Partners = () => {
                 <Tooltip key={p.name}>
                   <TooltipTrigger asChild>
                     <div className="bg-white/20 backdrop-blur-sm rounded-xl px-8 py-12 border border-white/30 text-center cursor-default shadow-lg relative z-10">
-                      <img src={logos[p.name]} alt={`${p.name} logo`} loading="lazy" className="mx-auto h-12 object-contain mb-4" />
+                      <img src={logos[p.name]} alt={`${p.name} logo`} loading="lazy" className="mx-auto h-10 object-contain mb-4" />
                       <span className="block text-xl tracking-wide text-[#364b56] font-medium">{p.name}</span>
                     </div>
                   </TooltipTrigger>
