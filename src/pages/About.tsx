@@ -45,11 +45,11 @@ const About = () => {
                 <h2 className="font-museo-moderno text-[32px] lg:text-[36px] text-[#363636]">
                   Tom Meganck
                 </h2>
-                <h3 className="text-almara-dark-text/60 font-helvetica-now text-xl tracking-wider font-bold text-[#b3bacb]">founder</h3>
+                <h3 className="font-helvetica-now text-xl tracking-wider font-bold text-[#b3bacb]">founder</h3>
               </div>
               
               <div className="space-y-8 text-almara-dark-text/80 font-helvetica-now">
-                <p className="leading-relaxed text-base">
+                <p className="leading-relaxed text-base text-[#363636]">
                   With a career spanning over two decades, Tom 
                   Meganck has guided ultra-high-net-worth 
                   families, entrepreneurs, and institutions across 
@@ -66,7 +66,7 @@ const About = () => {
                   <p className="text-[#f4eada]">Background info 04</p>
                 </div>
                 
-                <p className="leading-relaxed text-base">
+                <p className="leading-relaxed text-base text-[#363636]">
                   His expertise blends private banking, alternative 
                   investments, and multi-jurisdictional structuring 
                   with a uniquely personal approach.
