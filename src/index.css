@@ -266,7 +266,7 @@ All colors MUST be HSL.
   
   /* Soft elliptical radial gradient for Mission page sections */
   .mission-section-gradient {
-    background: radial-gradient(ellipse at center, #5d717b 0%, transparent 70%);
+    background: radial-gradient(ellipse at center, #364b56 0%, transparent 70%);
     position: relative;
   }
 
