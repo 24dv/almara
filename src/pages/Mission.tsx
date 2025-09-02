@@ -64,7 +64,7 @@ const Mission = () => {
         <div className="max-w-2xl mx-auto">
           <div className="text-center mb-16">
             <div className="inline-block border-2 border-purple-400 px-8 py-4 mb-12">
-              <h2 className="font-long-cang text-4xl lg:text-5xl text-[#f4eada] tracking-[0.05em] leading-tight font-thin">Our Pillars</h2>
+              <h2 className="font-museo-moderno text-[32px] lg:text-[36px] text-[#f4eada] tracking-[0.05em] opacity-90 leading-tight">Our Pillars</h2>
             </div>
           </div>
           <div className="space-y-12 font-helvetica-now text-[#f4eada]">
@@ -92,7 +92,7 @@ const Mission = () => {
       <section className="h-screen flex items-center justify-center px-8 lg:px-12 mission-section-gradient">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
-            <h2 className="font-long-cang text-4xl lg:text-5xl text-[#f4eada] tracking-[0.05em] leading-tight font-thin">In Practice</h2>
+            <h2 className="font-museo-moderno text-[32px] lg:text-[36px] text-[#f4eada] tracking-[0.05em] opacity-90 leading-tight">In Practice</h2>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-12 font-helvetica-now text-[#f4eada]">
             <div className="flex items-start space-x-4">
