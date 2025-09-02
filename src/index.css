@@ -172,7 +172,7 @@ All colors MUST be HSL.
   }
   
   .almara-footer-gradient-bg {
-    background: var(--almara-radial-gradient);
+    background: hsl(var(--almara-light-text));
     position: relative;
   }
   
@@ -212,21 +212,8 @@ All colors MUST be HSL.
 
   /* Section-specific background for Partners page sections */
   .almara-section-bg {
-    background: var(--almara-partners-gradient);
+    background: hsl(var(--almara-light-text));
     position: relative;
-  }
-
-  .almara-section-bg::after {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: linear-gradient(to right, hsl(var(--almara-light-text)) 0%, transparent 100%);
-    opacity: 1;
-    z-index: -1;
-    pointer-events: none;
   }
 
   .almara-section-bg::before {
