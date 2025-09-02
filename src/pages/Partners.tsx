@@ -46,11 +46,11 @@ const Partners = () => {
     "Antarctica": "/lovable-uploads/21882ea6-ceb9-4b1c-a053-99616dc103cc.png",
     "Delio": "/lovable-uploads/3fc3d753-d5ff-4595-bce7-6272f9f9ccac.png",
     "Abbove": "/lovable-uploads/b10b396d-3422-4a4e-a8d6-106ce903a97e.png",
-    "Aquitara": aquitaraLogo,
+    "Aquitara": "/lovable-uploads/6048451a-77cc-43d8-8264-6f45cd672904.png",
     "Deminor": deminorLogo,
     "Firgun": firgunLogo,
-    "Geneva Technologies": genevaTechnologiesLogo,
-    "Golborne": golborneLogo,
+    "Geneva Technologies": "/lovable-uploads/fb70fc12-73d6-4b1a-966c-d2e15456ca28.png",
+    "Golborne": "/lovable-uploads/e402a5f1-6c20-4ba9-8d6c-552bc77990cb.png",
   };
 
   return (
