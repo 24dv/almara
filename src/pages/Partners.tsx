@@ -104,54 +104,61 @@ const Partners = () => {
             </p>
           </div>
 
-          <TooltipProvider>
-            <div className="grid gap-8 grid-cols-3 max-w-3xl mx-auto mb-8">
-              {/* Top row - 3 items */}
-              {[{
-                name: "Quintet",
-                desc: "Private banking & investment services"
-              }, {
-                name: "Degroof Petercam", 
-                desc: "Wealth & asset management"
-              }, {
-                name: "UBP",
-                desc: "Institutional investment capabilities"
-              }].map(p => (
-                <Tooltip key={p.name}>
-                  <TooltipTrigger asChild>
-                    <button className="bg-transparent text-[#f4eada] rounded-xl almara-call-btn relative z-[100] transition-all px-8 py-12 text-center">
-                      <img src={logos[p.name]} alt={`${p.name} logo`} loading="lazy" className="mx-auto h-12 object-contain" />
-                    </button>
-                  </TooltipTrigger>
-                  <TooltipContent className="font-helvetica-now text-sm">
-                    {p.name} — {p.desc}
-                  </TooltipContent>
-                </Tooltip>
-              ))}
-            </div>
-            
-            <div className="grid gap-8 grid-cols-2 max-w-lg mx-auto">
-              {/* Bottom row - 2 items */}
-              {[{
-                name: "CIGP",
-                desc: "Investment advisory & corporate finance"
-              }, {
-                name: "Antarctica",
-                desc: "Specialised investment platform"
-              }].map(p => (
-                <Tooltip key={p.name}>
-                  <TooltipTrigger asChild>
-                    <button className="bg-transparent text-[#f4eada] rounded-xl almara-call-btn relative z-[100] transition-all px-8 py-12 text-center">
-                      <img src={logos[p.name]} alt={`${p.name} logo`} loading="lazy" className="mx-auto h-12 object-contain" />
-                    </button>
-                  </TooltipTrigger>
-                  <TooltipContent className="font-helvetica-now text-sm">
-                    {p.name} — {p.desc}
-                  </TooltipContent>
-                </Tooltip>
-              ))}
-            </div>
-          </TooltipProvider>
+          <div className="grid gap-8 grid-cols-3 max-w-3xl mx-auto mb-8">
+            {/* Top row - 3 items */}
+            {[{
+              name: "Quintet",
+              shortDesc: "Private banking & investment services",
+              longDesc: "Quintet is a Luxembourg-based private bank with offices across Europe and the UK. It provides bespoke wealth planning, investment management, lending, and philanthropy with an international perspective."
+            }, {
+              name: "Degroof Petercam", 
+              shortDesc: "Wealth & asset management",
+              longDesc: "Degroof Petercam, founded in Belgium in 1871, combines private banking, corporate finance, and asset management through DPAM. It manages over €50 billion for individuals and institutions with an active, independent approach."
+            }, {
+              name: "UBP",
+              shortDesc: "Institutional investment capabilities",
+              longDesc: "Union Bancaire Privée (UBP), founded in Geneva in 1969, is a leading wealth and asset manager. It serves private and institutional clients worldwide with traditional and alternative investment strategies."
+            }].map(p => (
+              <div key={p.name} className="relative group">
+                <button className="bg-transparent text-[#f4eada] rounded-xl almara-call-btn relative z-[100] transition-all px-8 py-12 text-center w-full">
+                  <img src={logos[p.name]} alt={`${p.name} logo`} loading="lazy" className="mx-auto h-12 object-contain" />
+                </button>
+                
+                {/* Hover Overlay */}
+                <div className="absolute inset-0 bg-black/90 backdrop-blur-sm rounded-xl opacity-0 group-hover:opacity-100 transition-all duration-300 z-[200] p-6 flex flex-col justify-center">
+                  <h3 className="font-helvetica-now font-bold text-[#f4eada] text-sm mb-2 tracking-wide">{p.name}</h3>
+                  <p className="font-helvetica-now text-[#f4eada]/80 text-xs font-medium mb-3">{p.shortDesc}</p>
+                  <p className="font-helvetica-now text-[#f4eada]/70 text-xs leading-relaxed">{p.longDesc}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+          
+          <div className="grid gap-8 grid-cols-2 max-w-lg mx-auto">
+            {/* Bottom row - 2 items */}
+            {[{
+              name: "CIGP",
+              shortDesc: "Investment advisory & corporate finance",
+              longDesc: "CIGP is a Geneva-based firm founded in 1964, specializing in wealth management and corporate finance. It delivers independent, tailored solutions to entrepreneurs, families, and institutions across three continents."
+            }, {
+              name: "Antarctica",
+              shortDesc: "Specialised investment platform",
+              longDesc: "Antarctica Asset Management, established in 2001, focuses on hedge fund and private equity solutions. It serves institutions, family offices, and private banks worldwide with research-driven, customized portfolios."
+            }].map(p => (
+              <div key={p.name} className="relative group">
+                <button className="bg-transparent text-[#f4eada] rounded-xl almara-call-btn relative z-[100] transition-all px-8 py-12 text-center w-full">
+                  <img src={logos[p.name]} alt={`${p.name} logo`} loading="lazy" className="mx-auto h-12 object-contain" />
+                </button>
+                
+                {/* Hover Overlay */}
+                <div className="absolute inset-0 bg-black/90 backdrop-blur-sm rounded-xl opacity-0 group-hover:opacity-100 transition-all duration-300 z-[200] p-6 flex flex-col justify-center">
+                  <h3 className="font-helvetica-now font-bold text-[#f4eada] text-sm mb-2 tracking-wide">{p.name}</h3>
+                  <p className="font-helvetica-now text-[#f4eada]/80 text-xs font-medium mb-3">{p.shortDesc}</p>
+                  <p className="font-helvetica-now text-[#f4eada]/70 text-xs leading-relaxed">{p.longDesc}</p>
+                </div>
+              </div>
+            ))}
+          </div>
         </div>
       </section>
 
