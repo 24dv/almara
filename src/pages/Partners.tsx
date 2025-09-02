@@ -262,7 +262,7 @@ const Partners = () => {
       <section className="h-screen flex items-center justify-center px-12 py-20 bg-[hsl(var(--almara-light-text))] partners-gradient-bg">
         <div className="max-w-4xl mx-auto text-center space-y-12 relative z-10">
           <div className="space-y-8">
-            <h2 className="font-long-cang sm:text-[36px] md:text-[40px] lg:text-[44px] text-[#364b56] tracking-[0.05em] opacity-90 leading-tight font-thin text-5xl">
+            <h2 className="font-long-cang sm:text-[36px] md:text-[40px] lg:text-[48px] text-[#364b56] tracking-[0.05em] opacity-90 leading-tight font-thin text-5xl">
               Tell us what you're building,<br />
               we'll assemble the right team
             </h2>
