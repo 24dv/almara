@@ -71,7 +71,7 @@ const Partners = () => {
       <MobileMenu />
       
       {/* Section 1: Our Partners - Hero */}
-      <section className="h-screen flex items-center justify-center bg-[hsl(var(--almara-light-text))]">        
+      <section className="h-screen flex items-center justify-center bg-[hsl(var(--almara-light-text))] partners-gradient-bg">        
         {/* Main Content */}
         <div className="flex items-center justify-center px-12 py-20">
           <div className="max-w-4xl text-center relative">
@@ -94,7 +94,7 @@ const Partners = () => {
       </section>
       
       {/* Section 2: Institutional Partners */}
-      <section className="h-screen flex items-center justify-center px-12 py-20 bg-[hsl(var(--almara-light-text))]">
+      <section className="h-screen flex items-center justify-center px-12 py-20 bg-[hsl(var(--almara-light-text))] partners-gradient-bg">
         <div className="max-w-6xl mx-auto text-center">
           <div className="mb-16">
             <h2 className="font-museo-moderno text-[36px] lg:text-[42px] text-[#364b56] mb-6">Institutional Partners</h2>
@@ -157,7 +157,7 @@ const Partners = () => {
       </section>
 
       {/* Section 3: Technology Partners */}
-      <section className="h-screen flex items-center justify-center px-12 py-20 bg-[hsl(var(--almara-light-text))]">
+      <section className="h-screen flex items-center justify-center px-12 py-20 bg-[hsl(var(--almara-light-text))] partners-gradient-bg">
         <div className="max-w-4xl mx-auto text-center">
           <div className="mb-16">
             <h2 className="font-museo-moderno text-[36px] lg:text-[42px] text-[#364b56] mb-6">Technology Partners</h2>
@@ -193,7 +193,7 @@ const Partners = () => {
       </section>
 
       {/* Section 4: Project Partners */}
-      <section className="h-screen flex items-center justify-center px-12 py-20 bg-[hsl(var(--almara-light-text))]">
+      <section className="h-screen flex items-center justify-center px-12 py-20 bg-[hsl(var(--almara-light-text))] partners-gradient-bg">
         <div className="max-w-6xl mx-auto text-center">
           <div className="mb-16">
             <h2 className="font-museo-moderno text-[36px] lg:text-[42px] text-[#364b56] mb-6">Project Partners</h2>
@@ -256,7 +256,7 @@ const Partners = () => {
       </section>
 
       {/* Section 5: Call to Action */}
-      <section className="h-screen flex items-center justify-center px-12 py-20 bg-[hsl(var(--almara-light-text))]">
+      <section className="h-screen flex items-center justify-center px-12 py-20 bg-[hsl(var(--almara-light-text))] partners-gradient-bg">
         <div className="max-w-4xl mx-auto text-center space-y-12">
           <div className="space-y-8">
             <h2 className="font-long-cang text-[32px] lg:text-[36px] text-[#364b56] tracking-wider leading-tight uppercase">
