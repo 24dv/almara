@@ -69,19 +69,19 @@ const Mission = () => {
           </div>
           <div className="space-y-12 font-helvetica-now text-[#f4eada]">
             <article className="text-center space-y-4">
-              <h3 className="text-xl text-[#f4eada] font-semibold">wisdom</h3>
+              <h3 className="font-helvetica-now text-xl tracking-wider font-bold text-[#f4eada]">wisdom</h3>
               <p className="text-base leading-relaxed">Experience distilled into judgment. We prioritise signal over noise and the long term over the immediate.</p>
             </article>
             <article className="text-center space-y-4">
-              <h3 className="text-xl text-[#f4eada] font-semibold">grounded</h3>
+              <h3 className="font-helvetica-now text-xl tracking-wider font-bold text-[#f4eada]">grounded</h3>
               <p className="text-base leading-relaxed">Calm, practical, reality-first. We work with what is, then shape what can be.</p>
             </article>
             <article className="text-center space-y-4">
-              <h3 className="text-xl text-[#f4eada] font-semibold">simple</h3>
+              <h3 className="font-helvetica-now text-xl tracking-wider font-bold text-[#f4eada]">simple</h3>
               <p className="text-base leading-relaxed">Clarity is a discipline. We focus on the essence and remove what doesn't serve.</p>
             </article>
             <article className="text-center space-y-4">
-              <h3 className="text-xl text-[#f4eada] font-semibold">spirituality</h3>
+              <h3 className="font-helvetica-now text-xl tracking-wider font-bold text-[#f4eada]">spirituality</h3>
               <p className="text-base leading-relaxed">Meaning and care in action. Compassion and responsibility inform decisions.</p>
             </article>
           </div>
