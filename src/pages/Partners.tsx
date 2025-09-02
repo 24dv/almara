@@ -66,14 +66,14 @@ const Partners = () => {
         <MobileMenu />
         
         {/* Header with Logo (desktop only) */}
-        <header className="relative z-10 hidden lg:flex items-center justify-center pt-8 pb-4">
+        <header className="relative z-20 hidden lg:flex items-center justify-center pt-8 pb-4">
           <Link to="/" className="transition-opacity hover:opacity-80">
             <img src="/lovable-uploads/889a0efd-ed5b-448b-a911-54ea486f744c.png" alt="ALMARA" className="h-7 sm:h-8 md:h-9 opacity-90" />
           </Link>
         </header>
         
         {/* Main Content */}
-        <div className="flex-1 flex items-center justify-center px-12 py-20">
+        <div className="flex-1 flex items-center justify-center px-12 py-20 relative z-20">
           <div className="max-w-4xl text-center relative">
             {/* Large background circle */}
             <div className="absolute inset-0 flex items-center justify-center">
@@ -99,7 +99,7 @@ const Partners = () => {
       </section>
       
       {/* Section 2: Institutional Partners */}
-      <section className="h-screen flex items-center justify-center px-12 py-20 almara-section-bg">
+      <section className="h-screen flex items-center justify-center px-12 py-20 almara-section-bg relative z-20">
         <div className="max-w-6xl mx-auto text-center">
           <div className="mb-16">
             <h2 className="font-museo-moderno text-[36px] lg:text-[42px] text-[#364b56] mb-6">Institutional Partners</h2>
@@ -162,7 +162,7 @@ const Partners = () => {
       </section>
 
       {/* Section 3: Technology Partners */}
-      <section className="h-screen flex items-center justify-center px-12 py-20 almara-section-bg">
+      <section className="h-screen flex items-center justify-center px-12 py-20 almara-section-bg relative z-20">
         <div className="max-w-4xl mx-auto text-center">
           <div className="mb-16">
             <h2 className="font-museo-moderno text-[36px] lg:text-[42px] text-[#364b56] mb-6">Technology Partners</h2>
@@ -198,7 +198,7 @@ const Partners = () => {
       </section>
 
       {/* Section 4: Project Partners */}
-      <section className="h-screen flex items-center justify-center px-12 py-20 almara-section-bg">
+      <section className="h-screen flex items-center justify-center px-12 py-20 almara-section-bg relative z-20">
         <div className="max-w-6xl mx-auto text-center">
           <div className="mb-16">
             <h2 className="font-museo-moderno text-[36px] lg:text-[42px] text-[#364b56] mb-6">Project Partners</h2>
@@ -261,7 +261,7 @@ const Partners = () => {
       </section>
 
       {/* Section 5: Call to Action */}
-      <section className="h-screen flex items-center justify-center px-12 py-20 almara-section-bg">
+      <section className="h-screen flex items-center justify-center px-12 py-20 almara-section-bg relative z-20">
         <div className="max-w-4xl mx-auto text-center space-y-12">
           <div className="space-y-8">
             <h2 className="font-long-cang text-[32px] lg:text-[36px] text-[#364b56] tracking-wider leading-tight uppercase">
