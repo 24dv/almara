@@ -80,7 +80,7 @@ const Partners = () => {
           <div className="max-w-lg text-center relative z-10">
             {/* Content */}
             <div className="space-y-6">
-              <h1 className="font-long-cang text-[36px] lg:text-[42px] text-almara-light-text tracking-[0.05em] opacity-90 leading-tight font-thin">
+              <h1 className="font-museo-moderno text-[32px] lg:text-[36px] text-almara-light-text tracking-[0.05em] opacity-90 leading-tight">
                 Our Partners
               </h1>
               <h2 className="font-museo-moderno text-[20px] lg:text-[24px] text-[#364b56] mb-6">
