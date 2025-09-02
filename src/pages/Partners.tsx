@@ -109,15 +109,15 @@ const Partners = () => {
             {[{
               name: "Quintet",
               shortDesc: "Private banking & investment services",
-              longDesc: "Quintet is a Luxembourg-based private bank with offices across Europe and the UK. It provides bespoke wealth planning, investment management, lending, and philanthropy with an international perspective."
+              longDesc: "Luxembourg-based Quintet offers private banking, wealth planning, and investment services across Europe and the UK."
             }, {
               name: "Degroof Petercam", 
               shortDesc: "Wealth & asset management",
-              longDesc: "Degroof Petercam, founded in Belgium in 1871, combines private banking, corporate finance, and asset management through DPAM. It manages over €50 billion for individuals and institutions with an active, independent approach."
+              longDesc: "Belgium's Degroof Petercam provides private banking, corporate finance, and asset management with over €50 billion under management."
             }, {
               name: "UBP",
               shortDesc: "Institutional investment capabilities",
-              longDesc: "Union Bancaire Privée (UBP), founded in Geneva in 1969, is a leading wealth and asset manager. It serves private and institutional clients worldwide with traditional and alternative investment strategies."
+              longDesc: "Geneva-based UBP specializes in wealth and asset management, serving private and institutional clients worldwide."
             }].map(p => (
               <div key={p.name} className="relative group">
                 <button className="bg-transparent text-[#f4eada] rounded-xl almara-call-btn relative z-[100] transition-all px-8 py-12 text-center w-full">
@@ -139,11 +139,11 @@ const Partners = () => {
             {[{
               name: "CIGP",
               shortDesc: "Investment advisory & corporate finance",
-              longDesc: "CIGP is a Geneva-based firm founded in 1964, specializing in wealth management and corporate finance. It delivers independent, tailored solutions to entrepreneurs, families, and institutions across three continents."
+              longDesc: "CIGP is an independent Geneva firm offering global wealth management and corporate finance advisory."
             }, {
               name: "Antarctica",
               shortDesc: "Specialised investment platform",
-              longDesc: "Antarctica Asset Management, established in 2001, focuses on hedge fund and private equity solutions. It serves institutions, family offices, and private banks worldwide with research-driven, customized portfolios."
+              longDesc: "Antarctica Asset Management delivers hedge fund and private equity solutions for institutions, family offices, and private banks."
             }].map(p => (
               <div key={p.name} className="relative group">
                 <button className="bg-transparent text-[#f4eada] rounded-xl almara-call-btn relative z-[100] transition-all px-8 py-12 text-center w-full">
