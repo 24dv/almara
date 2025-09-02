@@ -221,10 +221,10 @@ const Partners = () => {
             {/* Top row - 3 items */}
             {[{
               name: "Aquitara",
-              longDesc: "Sector specialist / advisory"
+              longDesc: "Aquitara (via 5I2 Capital) invests in remediating Agent Orange–contaminated land in Vietnam and developing renewable-energy eco-parks."
             }, {
               name: "Deminor",
-              longDesc: "Investor services / claims strategy"
+              longDesc: "Deminor, founded in 1990, is a B Corp litigation funder backing complex claims across jurisdictions with financial and legal expertise."
             }, {
               name: "Firgun",
               longDesc: "Venture / innovation initiatives"
@@ -253,10 +253,10 @@ const Partners = () => {
             {/* Bottom row - 2 items */}
             {[{
               name: "Geneva Technologies",
-              longDesc: "Technology / engineering expertise"
+              longDesc: "Genève Technologies builds machine learning–based trading strategies, extracting alpha from global markets through proprietary AI models."
             }, {
               name: "Golborne",
-              longDesc: "Corporate advisory"
+              longDesc: "Golborne Capital offers secured private credit to SMEs and growth firms, often as first institutional lender, focused on preservation and niche opportunities."
             }].map(p => (
               <div key={p.name} className="relative group">
                 <button className="bg-transparent text-[#f4eada] rounded-xl almara-call-btn relative z-[100] transition-all px-8 py-12 text-center w-full">
