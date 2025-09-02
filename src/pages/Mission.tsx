@@ -1,8 +1,6 @@
 import { PageLayout } from "@/components/PageLayout";
-import { Button } from "@/components/ui/button";
-import { Link } from "react-router-dom";
 import { useEffect } from "react";
-import missionHero from "@/assets/mission-hero.jpg";
+
 const Mission = () => {
   // SEO
   useEffect(() => {
@@ -23,55 +21,54 @@ const Mission = () => {
     }
     link.href = window.location.href;
   }, []);
-  return <PageLayout title="Mission">
-      {/* Banner 1 — Mission */}
-      <section className="h-screen flex items-center justify-center px-12 py-20">
-        <div className="max-w-3xl text-center space-y-16">
-          <h1 className="font-long-cang sm:text-[36px] md:text-[40px] lg:text-[44px] text-almara-subtitle-text tracking-[0.05em] opacity-90 leading-tight font-thin text-5xl">MISSION</h1>
-          <p className="leading-relaxed text-base text-[#f4eada] font-helvetica-now max-w-2xl mx-auto px-[40px]">
+
+  return (
+    <PageLayout title="Mission">
+      {/* Section 1 — Our Mission */}
+      <section className="h-screen flex items-center justify-center px-12">
+        <div className="max-w-3xl text-center space-y-8">
+          <h1 className="font-long-cang sm:text-[36px] md:text-[40px] lg:text-[44px] text-almara-subtitle-text tracking-[0.05em] opacity-90 leading-tight font-thin text-5xl">Our Mission</h1>
+          <p className="leading-relaxed text-base text-[#f4eada] font-helvetica-now max-w-2xl mx-auto">
             We bring intention, vision and clarity to foster balanced growth—with kindness and compassion.
           </p>
-          <p className="leading-relaxed text-base text-[#f4eada] font-helvetica-now max-w-2xl mx-auto px-[40px]">
+          <p className="leading-relaxed text-base text-[#f4eada] font-helvetica-now max-w-2xl mx-auto">
             Almara pairs wisdom with execution: grounded judgment, simple structures, and a quiet, steady core that guides how we steward capital, culture, and relationships.
           </p>
-          <figure className="mt-6">
-            <img src={missionHero} alt="ALMARA mission values hero mockup" loading="lazy" className="mx-auto rounded-xl shadow-xl w-full max-w-2xl h-auto object-cover" />
-          </figure>
         </div>
       </section>
 
-      {/* Banner 2 — Pillars */}
-      <section className="px-12 py-24 bg-almara-dark-text/5">
+      {/* Section 2 — Our Pillars */}
+      <section className="h-screen flex items-center justify-center px-12">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-14">
-            <h2 className="font-museo-moderno text-[28px] lg:text-[32px] text-[#363636]">Pillars</h2>
+            <h2 className="font-long-cang sm:text-[36px] md:text-[40px] lg:text-[44px] text-almara-subtitle-text tracking-[0.05em] opacity-90 leading-tight font-thin text-5xl">Our Pillars</h2>
           </div>
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 font-helvetica-now text-[#363636]">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 font-helvetica-now text-[#f4eada]">
             <article className="space-y-2">
-              <h3 className="text-lg text-[#364b56]">Wisdom</h3>
+              <h3 className="text-lg text-[#f4eada] font-semibold">Wisdom</h3>
               <p>Experience distilled into judgment. We prioritise signal over noise and the long term over the immediate.</p>
             </article>
             <article className="space-y-2">
-              <h3 className="text-lg text-[#364b56]">Grounded</h3>
+              <h3 className="text-lg text-[#f4eada] font-semibold">Grounded</h3>
               <p>Calm, practical, reality-first. We work with what is, then shape what can be.</p>
             </article>
             <article className="space-y-2">
-              <h3 className="text-lg text-[#364b56]">Simple</h3>
-              <p>Clarity is a discipline. We focus on the essence and remove what doesn’t serve.</p>
+              <h3 className="text-lg text-[#f4eada] font-semibold">Simple</h3>
+              <p>Clarity is a discipline. We focus on the essence and remove what doesn't serve.</p>
             </article>
             <article className="space-y-2">
-              <h3 className="text-lg text-[#364b56]">Spirituality</h3>
+              <h3 className="text-lg text-[#f4eada] font-semibold">Spirituality</h3>
               <p>Meaning and care in action. Compassion and responsibility inform decisions.</p>
             </article>
           </div>
         </div>
       </section>
 
-      {/* Banner 3 — In Practice */}
-      <section className="px-12 py-24">
+      {/* Section 3 — In Practice */}
+      <section className="h-screen flex items-center justify-center px-12">
         <div className="max-w-5xl mx-auto">
           <div className="text-center mb-12">
-            <h2 className="font-museo-moderno text-[28px] lg:text-[32px] text-[#363636]">In Practice</h2>
+            <h2 className="font-long-cang sm:text-[36px] md:text-[40px] lg:text-[44px] text-almara-subtitle-text tracking-[0.05em] opacity-90 leading-tight font-thin text-5xl">In Practice</h2>
           </div>
           <ul className="grid gap-5 md:grid-cols-2 font-helvetica-now text-[#f4eada]">
             <li className="leading-relaxed">Clarity first — define purpose, constraints, and desired outcomes before we act.</li>
@@ -81,16 +78,10 @@ const Mission = () => {
             <li className="leading-relaxed">Community & Belonging — trusted circles, shared knowledge, aligned action.</li>
             <li className="leading-relaxed">Materiality · Sensitivity · Play — respect for the tangible and the felt; keep minds open.</li>
           </ul>
-
-          {/* CTA */}
-          <div className="text-center mt-16 space-y-4">
-            <h3 className="font-museo-moderno text-[24px] lg:text-[28px] text-[#364b56]">Build with intention</h3>
-            <Button asChild variant="call" size="call" className="font-helvetica-now">
-              <Link to="/services">Explore Services</Link>
-            </Button>
-          </div>
         </div>
       </section>
-    </PageLayout>;
+    </PageLayout>
+  );
 };
+
 export default Mission;
