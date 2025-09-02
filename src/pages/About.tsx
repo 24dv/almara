@@ -45,7 +45,7 @@ const About = () => {
                 <h2 className="font-museo-moderno text-[32px] lg:text-[36px] text-[#363636]">
                   Tom Meganck
                 </h2>
-                <h3 className="text-almara-dark-text/60 font-helvetica-now text-lg tracking-wider font-bold text-[#b3bacb]">founder</h3>
+                <h3 className="text-almara-dark-text/60 font-helvetica-now text-xl tracking-wider font-bold text-[#b3bacb]">founder</h3>
               </div>
               
               <div className="space-y-8 text-almara-dark-text/80 font-helvetica-now">
