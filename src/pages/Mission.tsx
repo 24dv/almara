@@ -43,59 +43,99 @@ const Mission = () => {
       {/* Main Content */}
       <main className="relative z-10 min-h-[calc(100vh-200px)]">
       {/* Section 1 — Our Mission */}
-      <section className="h-screen flex items-center justify-center px-12">
+      <section className="h-screen flex items-center justify-center px-8 lg:px-12">
         <div className="max-w-3xl text-center space-y-8">
-          <h1 className="font-long-cang sm:text-[36px] md:text-[40px] lg:text-[44px] text-almara-subtitle-text tracking-[0.05em] opacity-90 leading-tight font-thin text-5xl">Our Mission</h1>
-          <p className="leading-relaxed text-base text-[#f4eada] font-helvetica-now max-w-2xl mx-auto">
-            We bring intention, vision and clarity to foster balanced growth—with kindness and compassion.
-          </p>
-          <p className="leading-relaxed text-base text-[#f4eada] font-helvetica-now max-w-2xl mx-auto">
-            Almara pairs wisdom with execution: grounded judgment, simple structures, and a quiet, steady core that guides how we steward capital, culture, and relationships.
-          </p>
+          <h1 className="font-long-cang text-4xl lg:text-5xl text-[#f4eada] tracking-[0.05em] leading-tight font-thin">Our Mission</h1>
+          <div className="space-y-6">
+            <p className="leading-relaxed text-base text-[#f4eada] font-helvetica-now max-w-2xl mx-auto">
+              We bring intention, vision and clarity to foster balanced growth, with kindness and compassion.
+            </p>
+            <p className="leading-relaxed text-base text-[#f4eada] font-helvetica-now max-w-2xl mx-auto">
+              Almara pairs wisdom with execution: grounded judgment, simple structures, and a quiet, steady core that guides how we steward capital, culture, and relationships.
+            </p>
+          </div>
         </div>
       </section>
 
       {/* Section 2 — Our Pillars */}
-      <section className="h-screen flex items-center justify-center px-12">
-        <div className="max-w-6xl mx-auto">
-          <div className="text-center mb-14">
-            <h2 className="font-long-cang sm:text-[36px] md:text-[40px] lg:text-[44px] text-almara-subtitle-text tracking-[0.05em] opacity-90 leading-tight font-thin text-5xl">Our Pillars</h2>
+      <section className="h-screen flex items-center justify-center px-8 lg:px-12">
+        <div className="max-w-4xl mx-auto">
+          <div className="text-center mb-12">
+            <h2 className="font-long-cang text-4xl lg:text-5xl text-[#f4eada] tracking-[0.05em] leading-tight font-thin mb-12">Our Pillars</h2>
           </div>
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 font-helvetica-now text-[#f4eada]">
-            <article className="space-y-2">
-              <h3 className="text-lg text-[#f4eada] font-semibold">Wisdom</h3>
-              <p>Experience distilled into judgment. We prioritise signal over noise and the long term over the immediate.</p>
-            </article>
-            <article className="space-y-2">
-              <h3 className="text-lg text-[#f4eada] font-semibold">Grounded</h3>
-              <p>Calm, practical, reality-first. We work with what is, then shape what can be.</p>
-            </article>
-            <article className="space-y-2">
-              <h3 className="text-lg text-[#f4eada] font-semibold">Simple</h3>
-              <p>Clarity is a discipline. We focus on the essence and remove what doesn't serve.</p>
-            </article>
-            <article className="space-y-2">
-              <h3 className="text-lg text-[#f4eada] font-semibold">Spirituality</h3>
-              <p>Meaning and care in action. Compassion and responsibility inform decisions.</p>
-            </article>
+          <div className="bg-[#5d717b]/80 backdrop-blur-sm rounded-3xl p-12 lg:p-16">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 font-helvetica-now text-[#f4eada]">
+              <article className="text-center space-y-4">
+                <h3 className="text-lg text-[#f4eada] font-semibold">wisdom</h3>
+                <p className="text-sm leading-relaxed">Experience distilled into judgment. We prioritise signal over noise and the long term over the immediate.</p>
+              </article>
+              <article className="text-center space-y-4">
+                <h3 className="text-lg text-[#f4eada] font-semibold">grounded</h3>
+                <p className="text-sm leading-relaxed">Calm, practical, reality-first. We work with what is, then shape what can be.</p>
+              </article>
+              <article className="text-center space-y-4">
+                <h3 className="text-lg text-[#f4eada] font-semibold">simple</h3>
+                <p className="text-sm leading-relaxed">Clarity is a discipline. We focus on the essence and remove what doesn't serve.</p>
+              </article>
+              <article className="text-center space-y-4">
+                <h3 className="text-lg text-[#f4eada] font-semibold">spirituality</h3>
+                <p className="text-sm leading-relaxed">Meaning and care in action. Compassion and responsibility inform decisions.</p>
+              </article>
+            </div>
           </div>
         </div>
       </section>
 
       {/* Section 3 — In Practice */}
-      <section className="h-screen flex items-center justify-center px-12">
-        <div className="max-w-5xl mx-auto">
-          <div className="text-center mb-12">
-            <h2 className="font-long-cang sm:text-[36px] md:text-[40px] lg:text-[44px] text-almara-subtitle-text tracking-[0.05em] opacity-90 leading-tight font-thin text-5xl">In Practice</h2>
+      <section className="h-screen flex items-center justify-center px-8 lg:px-12">
+        <div className="max-w-6xl mx-auto">
+          <div className="text-center mb-16">
+            <h2 className="font-long-cang text-4xl lg:text-5xl text-[#f4eada] tracking-[0.05em] leading-tight font-thin">In Practice</h2>
           </div>
-          <ul className="grid gap-5 md:grid-cols-2 font-helvetica-now text-[#f4eada]">
-            <li className="leading-relaxed">Clarity first — define purpose, constraints, and desired outcomes before we act.</li>
-            <li className="leading-relaxed">Balance — hold risk/return and time/impact in healthy tension.</li>
-            <li className="leading-relaxed">Simplicity as rigour — fewer moving parts, tighter governance, better decisions.</li>
-            <li className="leading-relaxed">Exploration & Creativity — research, first principles, new lenses.</li>
-            <li className="leading-relaxed">Community & Belonging — trusted circles, shared knowledge, aligned action.</li>
-            <li className="leading-relaxed">Materiality · Sensitivity · Play — respect for the tangible and the felt; keep minds open.</li>
-          </ul>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-12 font-helvetica-now text-[#f4eada]">
+            <div className="flex items-start space-x-4">
+              <div className="w-4 h-4 rounded-full bg-[#5d717b] flex-shrink-0 mt-1"></div>
+              <div>
+                <h3 className="text-sm font-semibold mb-2 text-[#f4eada]">clarity first</h3>
+                <p className="text-sm leading-relaxed">We define purpose, constraints, and desired outcomes before we act.</p>
+              </div>
+            </div>
+            <div className="flex items-start space-x-4">
+              <div className="w-4 h-4 rounded-full bg-[#5d717b] flex-shrink-0 mt-1"></div>
+              <div>
+                <h3 className="text-sm font-semibold mb-2 text-[#f4eada]">balance</h3>
+                <p className="text-sm leading-relaxed">We hold risk/return and time/impact in healthy tension.</p>
+              </div>
+            </div>
+            <div className="flex items-start space-x-4">
+              <div className="w-4 h-4 rounded-full bg-[#5d717b] flex-shrink-0 mt-1"></div>
+              <div>
+                <h3 className="text-sm font-semibold mb-2 text-[#f4eada]">simplicity as rigour</h3>
+                <p className="text-sm leading-relaxed">We believe in fewer moving parts, tighter governance, better decisions.</p>
+              </div>
+            </div>
+            <div className="flex items-start space-x-4">
+              <div className="w-4 h-4 rounded-full bg-[#5d717b] flex-shrink-0 mt-1"></div>
+              <div>
+                <h3 className="text-sm font-semibold mb-2 text-[#f4eada]">exploration & creativity</h3>
+                <p className="text-sm leading-relaxed">We focus on research, first principles, new lenses.</p>
+              </div>
+            </div>
+            <div className="flex items-start space-x-4">
+              <div className="w-4 h-4 rounded-full bg-[#5d717b] flex-shrink-0 mt-1"></div>
+              <div>
+                <h3 className="text-sm font-semibold mb-2 text-[#f4eada]">community & belonging</h3>
+                <p className="text-sm leading-relaxed">Through trusted circles, shared knowledge, aligned action.</p>
+              </div>
+            </div>
+            <div className="flex items-start space-x-4">
+              <div className="w-4 h-4 rounded-full bg-[#5d717b] flex-shrink-0 mt-1"></div>
+              <div>
+                <h3 className="text-sm font-semibold mb-2 text-[#f4eada]">materiality · sensitivity · play</h3>
+                <p className="text-sm leading-relaxed">We respect the tangible and the felt, and keep our minds open.</p>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
       </main>
