@@ -165,29 +165,28 @@ const Partners = () => {
             </p>
           </div>
 
-          <TooltipProvider>
-            <div className="grid gap-12 grid-cols-2 max-w-2xl mx-auto">
-              {[{
-                name: "Delio",
-                desc: "Private markets distribution platform"
-              }, {
-                name: "Abbove",
-                desc: "Wealth data and consolidated oversight"
-              }].map(p => (
-                <Tooltip key={p.name}>
-                  <TooltipTrigger asChild>
-                    <div className="bg-white/20 backdrop-blur-sm rounded-xl px-12 py-16 border border-white/30 text-center cursor-default shadow-lg relative z-10">
-                      <img src={logos[p.name]} alt={`${p.name} logo`} loading="lazy" className="mx-auto h-14 object-contain mb-6" />
-                      <span className="block text-2xl tracking-wide text-[#364b56] font-medium">{p.name}</span>
-                    </div>
-                  </TooltipTrigger>
-                  <TooltipContent className="font-helvetica-now text-sm">
-                    {p.name} — {p.desc}
-                  </TooltipContent>
-                </Tooltip>
-              ))}
-            </div>
-          </TooltipProvider>
+          <div className="grid gap-12 grid-cols-2 max-w-2xl mx-auto">
+            {[{
+              name: "Delio",
+              longDesc: "Private markets distribution platform"
+            }, {
+              name: "Abbove",
+              longDesc: "Wealth data and consolidated oversight"
+            }].map(p => (
+              <div key={p.name} className="relative group">
+                <button className="bg-transparent text-[#f4eada] rounded-xl almara-call-btn relative z-[100] transition-all px-12 py-16 text-center w-full">
+                  <img src={logos[p.name]} alt={`${p.name} logo`} loading="lazy" className="mx-auto h-14 object-contain mb-6" />
+                  <span className="block text-2xl tracking-wide text-[#364b56] font-medium">{p.name}</span>
+                </button>
+                
+                {/* Hover Overlay */}
+                <div className="absolute inset-0 bg-[#364b56]/95 backdrop-blur-sm rounded-xl opacity-0 group-hover:opacity-100 transition-all duration-300 z-[200] p-6 flex flex-col justify-center">
+                  <h3 className="font-helvetica-now font-bold text-[#f4eada] text-sm mb-4 tracking-wide">{p.name}</h3>
+                  <p className="font-helvetica-now text-[#f4eada] text-xs leading-relaxed">{p.longDesc}</p>
+                </div>
+              </div>
+            ))}
+          </div>
         </div>
       </section>
 
@@ -201,56 +200,56 @@ const Partners = () => {
             </p>
           </div>
 
-          <TooltipProvider>
-            <div className="grid gap-8 grid-cols-3 max-w-3xl mx-auto mb-8">
-              {/* Top row - 3 items */}
-              {[{
-                name: "Aquitara",
-                desc: "Sector specialist / advisory"
-              }, {
-                name: "Deminor",
-                desc: "Investor services / claims strategy"
-              }, {
-                name: "Firgun",
-                desc: "Venture / innovation initiatives"
-              }].map(p => (
-                <Tooltip key={p.name}>
-                  <TooltipTrigger asChild>
-                    <div className="bg-white/20 backdrop-blur-sm rounded-xl px-8 py-12 border border-white/30 text-center cursor-default shadow-lg relative z-10">
-                      <img src={logos[p.name]} alt={`${p.name} logo`} loading="lazy" className="mx-auto h-12 object-contain mb-4" />
-                      <span className="block text-xl tracking-wide text-[#364b56] font-medium">{p.name}</span>
-                    </div>
-                  </TooltipTrigger>
-                  <TooltipContent className="font-helvetica-now text-sm">
-                    {p.name} — {p.desc}
-                  </TooltipContent>
-                </Tooltip>
-              ))}
-            </div>
-            
-            <div className="grid gap-8 grid-cols-2 max-w-lg mx-auto">
-              {/* Bottom row - 2 items */}
-              {[{
-                name: "Geneva Technologies",
-                desc: "Technology / engineering expertise"
-              }, {
-                name: "Golborne",
-                desc: "Corporate advisory"
-              }].map(p => (
-                <Tooltip key={p.name}>
-                  <TooltipTrigger asChild>
-                    <div className="bg-white/20 backdrop-blur-sm rounded-xl px-8 py-12 border border-white/30 text-center cursor-default shadow-lg relative z-10">
-                      <img src={logos[p.name]} alt={`${p.name} logo`} loading="lazy" className="mx-auto h-12 object-contain mb-4" />
-                      <span className="block text-xl tracking-wide text-[#364b56] font-medium">{p.name}</span>
-                    </div>
-                  </TooltipTrigger>
-                  <TooltipContent className="font-helvetica-now text-sm">
-                    {p.name} — {p.desc}
-                  </TooltipContent>
-                </Tooltip>
-              ))}
-            </div>
-          </TooltipProvider>
+          <div className="grid gap-8 grid-cols-3 max-w-3xl mx-auto mb-8">
+            {/* Top row - 3 items */}
+            {[{
+              name: "Aquitara",
+              longDesc: "Sector specialist / advisory"
+            }, {
+              name: "Deminor",
+              longDesc: "Investor services / claims strategy"
+            }, {
+              name: "Firgun",
+              longDesc: "Venture / innovation initiatives"
+            }].map(p => (
+              <div key={p.name} className="relative group">
+                <button className="bg-transparent text-[#f4eada] rounded-xl almara-call-btn relative z-[100] transition-all px-8 py-12 text-center w-full">
+                  <img src={logos[p.name]} alt={`${p.name} logo`} loading="lazy" className="mx-auto h-12 object-contain mb-4" />
+                  <span className="block text-xl tracking-wide text-[#364b56] font-medium">{p.name}</span>
+                </button>
+                
+                {/* Hover Overlay */}
+                <div className="absolute inset-0 bg-[#364b56]/95 backdrop-blur-sm rounded-xl opacity-0 group-hover:opacity-100 transition-all duration-300 z-[200] p-6 flex flex-col justify-center">
+                  <h3 className="font-helvetica-now font-bold text-[#f4eada] text-sm mb-4 tracking-wide">{p.name}</h3>
+                  <p className="font-helvetica-now text-[#f4eada] text-xs leading-relaxed">{p.longDesc}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+          
+          <div className="grid gap-8 grid-cols-2 max-w-lg mx-auto">
+            {/* Bottom row - 2 items */}
+            {[{
+              name: "Geneva Technologies",
+              longDesc: "Technology / engineering expertise"
+            }, {
+              name: "Golborne",
+              longDesc: "Corporate advisory"
+            }].map(p => (
+              <div key={p.name} className="relative group">
+                <button className="bg-transparent text-[#f4eada] rounded-xl almara-call-btn relative z-[100] transition-all px-8 py-12 text-center w-full">
+                  <img src={logos[p.name]} alt={`${p.name} logo`} loading="lazy" className="mx-auto h-12 object-contain mb-4" />
+                  <span className="block text-xl tracking-wide text-[#364b56] font-medium">{p.name}</span>
+                </button>
+                
+                {/* Hover Overlay */}
+                <div className="absolute inset-0 bg-[#364b56]/95 backdrop-blur-sm rounded-xl opacity-0 group-hover:opacity-100 transition-all duration-300 z-[200] p-6 flex flex-col justify-center">
+                  <h3 className="font-helvetica-now font-bold text-[#f4eada] text-sm mb-4 tracking-wide">{p.name}</h3>
+                  <p className="font-helvetica-now text-[#f4eada] text-xs leading-relaxed">{p.longDesc}</p>
+                </div>
+              </div>
+            ))}
+          </div>
         </div>
       </section>
 
