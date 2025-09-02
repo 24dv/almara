@@ -83,7 +83,7 @@ const Partners = () => {
               <h1 className="font-museo-moderno text-[32px] lg:text-[36px] text-almara-light-text tracking-[0.05em] opacity-90 leading-tight">
                 Our Partners
               </h1>
-              <h2 className="font-museo-moderno text-[20px] lg:text-[24px] text-[#364b56] mb-6">
+              <h2 className="font-helvetica-now text-xl tracking-wider font-bold text-[#364b56] mb-6">
                 a curated network that amplifies outcomes
               </h2>
               <div className="mx-auto">
