@@ -71,20 +71,23 @@ const Partners = () => {
       <MobileMenu />
       
       {/* Section 1: Our Partners - Hero */}
-      <section className="h-screen flex items-center justify-center bg-[hsl(var(--almara-light-text))] partners-gradient-bg">        
-        {/* Main Content */}
+      <section className="h-screen flex items-center justify-center bg-[hsl(var(--almara-light-text))] partners-gradient-bg relative">        
+        {/* Background Circle */}
+        <img src="/lovable-uploads/a58a04a2-6cc9-41d7-a8c1-bd70d0c8df8f.png" alt="Circle background" className="absolute w-[60vw] h-[60vw] max-w-[600px] max-h-[600px] min-w-[320px] min-h-[320px] object-cover bg-transparent top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-[5]" />
+        
+        {/* Main Content - Centered in circle */}
         <div className="flex items-center justify-center px-12 py-20 relative z-10">
-          <div className="max-w-4xl text-center relative z-10">
+          <div className="max-w-lg text-center relative z-10">
             {/* Content */}
-            <div className="space-y-8">
-              <h1 className="font-long-cang text-[48px] lg:text-[56px] text-almara-light-text tracking-[0.05em] opacity-90 leading-tight font-thin">
+            <div className="space-y-6">
+              <h1 className="font-long-cang text-[36px] lg:text-[42px] text-almara-light-text tracking-[0.05em] opacity-90 leading-tight font-thin">
                 Our Partners
               </h1>
-              <h2 className="font-museo-moderno text-[28px] lg:text-[32px] text-[#364b56] mb-8">
+              <h2 className="font-museo-moderno text-[20px] lg:text-[24px] text-[#364b56] mb-6">
                 a curated network that amplifies outcomes
               </h2>
-              <div className="max-w-2xl mx-auto space-y-6">
-                <p className="leading-relaxed text-base text-[#364b56] font-helvetica-now">
+              <div className="mx-auto">
+                <p className="leading-relaxed text-sm lg:text-base text-[#364b56] font-helvetica-now">
                   We collaborate with leading institutions, technology platforms, and project specialists—activated selectively, and only when it serves the mandate.
                 </p>
               </div>
