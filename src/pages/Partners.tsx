@@ -56,7 +56,7 @@ const Partners = () => {
   };
 
   return (
-    <div className="relative w-full min-h-screen">
+    <div className="relative w-full min-h-screen almara-gradient-bg">
       {/* Header with cream background */}
       <header className="relative z-10 hidden lg:flex items-center justify-center pt-8 pb-4 bg-[hsl(var(--almara-light-text))]">
         <Link to="/" className="transition-opacity hover:opacity-80">
