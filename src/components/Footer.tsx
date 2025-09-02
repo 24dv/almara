@@ -14,14 +14,14 @@ export const Footer = () => {
         
         {/* Center - Request a Call Button */}
         <div className="flex-shrink-0 mx-8">
-          <Button variant="call" size="call" className="font-helvetica-now">request a call</Button>
+          <Button variant="call-footer" size="call">request a call</Button>
         </div>
         
         {/* Right Side - Privacy Link */}
         <div className="flex-1 flex justify-end">
           <Link 
             to="/privacy" 
-            className="text-xs text-[#363636] hover:text-[#363636]/70 transition-colors duration-300 font-helvetica-now"
+            className="text-sm text-[#363636] hover:text-[#363636]/70 transition-colors duration-300 font-helvetica-now"
           >
             privacy
           </Link>
