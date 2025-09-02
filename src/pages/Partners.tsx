@@ -186,9 +186,8 @@ const Partners = () => {
               longDesc: "Wealth data and consolidated oversight"
             }].map(p => (
               <div key={p.name} className="relative group">
-                <button className="bg-transparent text-[#f4eada] rounded-xl almara-call-btn relative z-[100] transition-all px-12 py-16 text-center w-full">
-                  <img src={logos[p.name]} alt={`${p.name} logo`} loading="lazy" className="mx-auto h-14 object-contain mb-6" />
-                  <span className="block text-2xl tracking-wide text-[#364b56] font-medium">{p.name}</span>
+                <button className="bg-transparent text-[#f4eada] rounded-xl almara-call-btn relative z-[100] transition-all px-8 py-12 text-center w-full">
+                  <img src={logos[p.name]} alt={`${p.name} logo`} loading="lazy" className="mx-auto h-16 object-contain" />
                 </button>
                 
                 {/* Hover Overlay */}
@@ -232,8 +231,7 @@ const Partners = () => {
             }].map(p => (
               <div key={p.name} className="relative group">
                 <button className="bg-transparent text-[#f4eada] rounded-xl almara-call-btn relative z-[100] transition-all px-8 py-12 text-center w-full">
-                  <img src={logos[p.name]} alt={`${p.name} logo`} loading="lazy" className="mx-auto h-12 object-contain mb-4" />
-                  <span className="block text-xl tracking-wide text-[#364b56] font-medium">{p.name}</span>
+                  <img src={logos[p.name]} alt={`${p.name} logo`} loading="lazy" className="mx-auto h-16 object-contain" />
                 </button>
                 
                 {/* Hover Overlay */}
@@ -262,8 +260,7 @@ const Partners = () => {
             }].map(p => (
               <div key={p.name} className="relative group">
                 <button className="bg-transparent text-[#f4eada] rounded-xl almara-call-btn relative z-[100] transition-all px-8 py-12 text-center w-full">
-                  <img src={logos[p.name]} alt={`${p.name} logo`} loading="lazy" className="mx-auto h-12 object-contain mb-4" />
-                  <span className="block text-xl tracking-wide text-[#364b56] font-medium">{p.name}</span>
+                  <img src={logos[p.name]} alt={`${p.name} logo`} loading="lazy" className="mx-auto h-16 object-contain" />
                 </button>
                 
                 {/* Hover Overlay */}
