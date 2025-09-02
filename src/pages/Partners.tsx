@@ -57,23 +57,23 @@ const Partners = () => {
 
   return (
     <div className="relative w-full min-h-screen">
-      {/* Navigation - fixed positioned at same height as home page */}
-      <Navigation positioning="fixed" />
+      {/* Section 1: Our Partners - Hero (includes header) */}
+      <section className="h-screen flex flex-col almara-section-bg">
+        {/* Navigation - fixed positioned at same height as home page */}
+        <Navigation positioning="fixed" />
 
-      {/* Mobile Header/Menu */}
-      <MobileMenu />
-      
-      {/* Header with Logo (desktop only) */}
-      <header className="relative z-10 hidden lg:flex items-center justify-center pt-8 pb-4">
-        <Link to="/" className="transition-opacity hover:opacity-80">
-          <img src="/lovable-uploads/889a0efd-ed5b-448b-a911-54ea486f744c.png" alt="ALMARA" className="h-7 sm:h-8 md:h-9 opacity-90" />
-        </Link>
-      </header>
-      
-      {/* Main Content */}
-      <main className="relative z-10">
-        {/* Section 1: Our Partners - Hero */}
-        <section className="h-screen flex items-center justify-center px-12 py-20 almara-section-bg">
+        {/* Mobile Header/Menu */}
+        <MobileMenu />
+        
+        {/* Header with Logo (desktop only) */}
+        <header className="relative z-10 hidden lg:flex items-center justify-center pt-8 pb-4">
+          <Link to="/" className="transition-opacity hover:opacity-80">
+            <img src="/lovable-uploads/889a0efd-ed5b-448b-a911-54ea486f744c.png" alt="ALMARA" className="h-7 sm:h-8 md:h-9 opacity-90" />
+          </Link>
+        </header>
+        
+        {/* Main Content */}
+        <div className="flex-1 flex items-center justify-center px-12 py-20">
           <div className="max-w-4xl text-center relative">
             {/* Large background circle */}
             <div className="absolute inset-0 flex items-center justify-center">
@@ -95,187 +95,187 @@ const Partners = () => {
               </div>
             </div>
           </div>
-        </section>
-
-        {/* Section 2: Institutional Partners */}
-        <section className="h-screen flex items-center justify-center px-12 py-20 almara-section-bg">
-          <div className="max-w-6xl mx-auto text-center">
-            <div className="mb-16">
-              <h2 className="font-museo-moderno text-[36px] lg:text-[42px] text-[#364b56] mb-6">Institutional Partners</h2>
-              <p className="font-helvetica-now text-[#364b56] text-lg">
-                Banking and investment relationships that enable execution with discretion.
-              </p>
-            </div>
-
-            <TooltipProvider>
-              <div className="grid gap-8 grid-cols-3 max-w-3xl mx-auto mb-8">
-                {/* Top row - 3 items */}
-                {[{
-                  name: "Quintet",
-                  desc: "Private banking & investment services"
-                }, {
-                  name: "Degroof Petercam", 
-                  desc: "Wealth & asset management"
-                }, {
-                  name: "UBP",
-                  desc: "Institutional investment capabilities"
-                }].map(p => (
-                  <Tooltip key={p.name}>
-                    <TooltipTrigger asChild>
-                      <div className="bg-white/20 backdrop-blur-sm rounded-xl px-8 py-12 border border-white/30 text-center cursor-default shadow-lg">
-                        <img src={logos[p.name]} alt={`${p.name} logo`} loading="lazy" className="mx-auto h-12 object-contain mb-4" />
-                        <span className="block text-xl tracking-wide text-[#364b56] font-medium">{p.name}</span>
-                      </div>
-                    </TooltipTrigger>
-                    <TooltipContent className="font-helvetica-now text-sm">
-                      {p.name} — {p.desc}
-                    </TooltipContent>
-                  </Tooltip>
-                ))}
-              </div>
-              
-              <div className="grid gap-8 grid-cols-2 max-w-lg mx-auto">
-                {/* Bottom row - 2 items */}
-                {[{
-                  name: "CIGP",
-                  desc: "Investment advisory & corporate finance"
-                }, {
-                  name: "Antarctica",
-                  desc: "Specialised investment platform"
-                }].map(p => (
-                  <Tooltip key={p.name}>
-                    <TooltipTrigger asChild>
-                      <div className="bg-white/20 backdrop-blur-sm rounded-xl px-8 py-12 border border-white/30 text-center cursor-default shadow-lg">
-                        <img src={logos[p.name]} alt={`${p.name} logo`} loading="lazy" className="mx-auto h-12 object-contain mb-4" />
-                        <span className="block text-xl tracking-wide text-[#364b56] font-medium">{p.name}</span>
-                      </div>
-                    </TooltipTrigger>
-                    <TooltipContent className="font-helvetica-now text-sm">
-                      {p.name} — {p.desc}
-                    </TooltipContent>
-                  </Tooltip>
-                ))}
-              </div>
-            </TooltipProvider>
+        </div>
+      </section>
+      
+      {/* Section 2: Institutional Partners */}
+      <section className="h-screen flex items-center justify-center px-12 py-20 almara-section-bg">
+        <div className="max-w-6xl mx-auto text-center">
+          <div className="mb-16">
+            <h2 className="font-museo-moderno text-[36px] lg:text-[42px] text-[#364b56] mb-6">Institutional Partners</h2>
+            <p className="font-helvetica-now text-[#364b56] text-lg">
+              Banking and investment relationships that enable execution with discretion.
+            </p>
           </div>
-        </section>
 
-        {/* Section 3: Technology Partners */}
-        <section className="h-screen flex items-center justify-center px-12 py-20 almara-section-bg">
-          <div className="max-w-4xl mx-auto text-center">
-            <div className="mb-16">
-              <h2 className="font-museo-moderno text-[36px] lg:text-[42px] text-[#364b56] mb-6">Technology Partners</h2>
-              <p className="font-helvetica-now text-[#364b56] text-lg">
-                Infrastructure for secure sourcing, governance, and reporting.
-              </p>
+          <TooltipProvider>
+            <div className="grid gap-8 grid-cols-3 max-w-3xl mx-auto mb-8">
+              {/* Top row - 3 items */}
+              {[{
+                name: "Quintet",
+                desc: "Private banking & investment services"
+              }, {
+                name: "Degroof Petercam", 
+                desc: "Wealth & asset management"
+              }, {
+                name: "UBP",
+                desc: "Institutional investment capabilities"
+              }].map(p => (
+                <Tooltip key={p.name}>
+                  <TooltipTrigger asChild>
+                    <div className="bg-white/20 backdrop-blur-sm rounded-xl px-8 py-12 border border-white/30 text-center cursor-default shadow-lg">
+                      <img src={logos[p.name]} alt={`${p.name} logo`} loading="lazy" className="mx-auto h-12 object-contain mb-4" />
+                      <span className="block text-xl tracking-wide text-[#364b56] font-medium">{p.name}</span>
+                    </div>
+                  </TooltipTrigger>
+                  <TooltipContent className="font-helvetica-now text-sm">
+                    {p.name} — {p.desc}
+                  </TooltipContent>
+                </Tooltip>
+              ))}
             </div>
+            
+            <div className="grid gap-8 grid-cols-2 max-w-lg mx-auto">
+              {/* Bottom row - 2 items */}
+              {[{
+                name: "CIGP",
+                desc: "Investment advisory & corporate finance"
+              }, {
+                name: "Antarctica",
+                desc: "Specialised investment platform"
+              }].map(p => (
+                <Tooltip key={p.name}>
+                  <TooltipTrigger asChild>
+                    <div className="bg-white/20 backdrop-blur-sm rounded-xl px-8 py-12 border border-white/30 text-center cursor-default shadow-lg">
+                      <img src={logos[p.name]} alt={`${p.name} logo`} loading="lazy" className="mx-auto h-12 object-contain mb-4" />
+                      <span className="block text-xl tracking-wide text-[#364b56] font-medium">{p.name}</span>
+                    </div>
+                  </TooltipTrigger>
+                  <TooltipContent className="font-helvetica-now text-sm">
+                    {p.name} — {p.desc}
+                  </TooltipContent>
+                </Tooltip>
+              ))}
+            </div>
+          </TooltipProvider>
+        </div>
+      </section>
 
-            <TooltipProvider>
-              <div className="grid gap-12 grid-cols-2 max-w-2xl mx-auto">
-                {[{
-                  name: "Delio",
-                  desc: "Private markets distribution platform"
-                }, {
-                  name: "Abbove",
-                  desc: "Wealth data and consolidated oversight"
-                }].map(p => (
-                  <Tooltip key={p.name}>
-                    <TooltipTrigger asChild>
-                      <div className="bg-white/20 backdrop-blur-sm rounded-xl px-12 py-16 border border-white/30 text-center cursor-default shadow-lg">
-                        <img src={logos[p.name]} alt={`${p.name} logo`} loading="lazy" className="mx-auto h-14 object-contain mb-6" />
-                        <span className="block text-2xl tracking-wide text-[#364b56] font-medium">{p.name}</span>
-                      </div>
-                    </TooltipTrigger>
-                    <TooltipContent className="font-helvetica-now text-sm">
-                      {p.name} — {p.desc}
-                    </TooltipContent>
-                  </Tooltip>
-                ))}
-              </div>
-            </TooltipProvider>
+      {/* Section 3: Technology Partners */}
+      <section className="h-screen flex items-center justify-center px-12 py-20 almara-section-bg">
+        <div className="max-w-4xl mx-auto text-center">
+          <div className="mb-16">
+            <h2 className="font-museo-moderno text-[36px] lg:text-[42px] text-[#364b56] mb-6">Technology Partners</h2>
+            <p className="font-helvetica-now text-[#364b56] text-lg">
+              Infrastructure for secure sourcing, governance, and reporting.
+            </p>
           </div>
-        </section>
 
-        {/* Section 4: Project Partners */}
-        <section className="h-screen flex items-center justify-center px-12 py-20 almara-section-bg">
-          <div className="max-w-6xl mx-auto text-center">
-            <div className="mb-16">
-              <h2 className="font-museo-moderno text-[36px] lg:text-[42px] text-[#364b56] mb-6">Project Partners</h2>
-              <p className="font-helvetica-now text-[#364b56] text-lg">
-                Specialists we mobilise for specific mandates.
-              </p>
+          <TooltipProvider>
+            <div className="grid gap-12 grid-cols-2 max-w-2xl mx-auto">
+              {[{
+                name: "Delio",
+                desc: "Private markets distribution platform"
+              }, {
+                name: "Abbove",
+                desc: "Wealth data and consolidated oversight"
+              }].map(p => (
+                <Tooltip key={p.name}>
+                  <TooltipTrigger asChild>
+                    <div className="bg-white/20 backdrop-blur-sm rounded-xl px-12 py-16 border border-white/30 text-center cursor-default shadow-lg">
+                      <img src={logos[p.name]} alt={`${p.name} logo`} loading="lazy" className="mx-auto h-14 object-contain mb-6" />
+                      <span className="block text-2xl tracking-wide text-[#364b56] font-medium">{p.name}</span>
+                    </div>
+                  </TooltipTrigger>
+                  <TooltipContent className="font-helvetica-now text-sm">
+                    {p.name} — {p.desc}
+                  </TooltipContent>
+                </Tooltip>
+              ))}
             </div>
+          </TooltipProvider>
+        </div>
+      </section>
 
-            <TooltipProvider>
-              <div className="grid gap-8 grid-cols-3 max-w-3xl mx-auto mb-8">
-                {/* Top row - 3 items */}
-                {[{
-                  name: "Aquitara",
-                  desc: "Sector specialist / advisory"
-                }, {
-                  name: "Deminor",
-                  desc: "Investor services / claims strategy"
-                }, {
-                  name: "Firgun",
-                  desc: "Venture / innovation initiatives"
-                }].map(p => (
-                  <Tooltip key={p.name}>
-                    <TooltipTrigger asChild>
-                      <div className="bg-white/20 backdrop-blur-sm rounded-xl px-8 py-12 border border-white/30 text-center cursor-default shadow-lg">
-                        <img src={logos[p.name]} alt={`${p.name} logo`} loading="lazy" className="mx-auto h-12 object-contain mb-4" />
-                        <span className="block text-xl tracking-wide text-[#364b56] font-medium">{p.name}</span>
-                      </div>
-                    </TooltipTrigger>
-                    <TooltipContent className="font-helvetica-now text-sm">
-                      {p.name} — {p.desc}
-                    </TooltipContent>
-                  </Tooltip>
-                ))}
-              </div>
-              
-              <div className="grid gap-8 grid-cols-2 max-w-lg mx-auto">
-                {/* Bottom row - 2 items */}
-                {[{
-                  name: "Geneva Technologies",
-                  desc: "Technology / engineering expertise"
-                }, {
-                  name: "Golborne",
-                  desc: "Corporate advisory"
-                }].map(p => (
-                  <Tooltip key={p.name}>
-                    <TooltipTrigger asChild>
-                      <div className="bg-white/20 backdrop-blur-sm rounded-xl px-8 py-12 border border-white/30 text-center cursor-default shadow-lg">
-                        <img src={logos[p.name]} alt={`${p.name} logo`} loading="lazy" className="mx-auto h-12 object-contain mb-4" />
-                        <span className="block text-xl tracking-wide text-[#364b56] font-medium">{p.name}</span>
-                      </div>
-                    </TooltipTrigger>
-                    <TooltipContent className="font-helvetica-now text-sm">
-                      {p.name} — {p.desc}
-                    </TooltipContent>
-                  </Tooltip>
-                ))}
-              </div>
-            </TooltipProvider>
+      {/* Section 4: Project Partners */}
+      <section className="h-screen flex items-center justify-center px-12 py-20 almara-section-bg">
+        <div className="max-w-6xl mx-auto text-center">
+          <div className="mb-16">
+            <h2 className="font-museo-moderno text-[36px] lg:text-[42px] text-[#364b56] mb-6">Project Partners</h2>
+            <p className="font-helvetica-now text-[#364b56] text-lg">
+              Specialists we mobilise for specific mandates.
+            </p>
           </div>
-        </section>
 
-        {/* Section 5: Call to Action */}
-        <section className="h-screen flex items-center justify-center px-12 py-20 almara-section-bg">
-          <div className="max-w-4xl mx-auto text-center space-y-12">
-            <div className="space-y-8">
-              <h2 className="font-long-cang text-[32px] lg:text-[36px] text-[#364b56] tracking-wider leading-tight uppercase">
-                Tell us what you're building,<br />
-                we'll assemble the right team
-              </h2>
+          <TooltipProvider>
+            <div className="grid gap-8 grid-cols-3 max-w-3xl mx-auto mb-8">
+              {/* Top row - 3 items */}
+              {[{
+                name: "Aquitara",
+                desc: "Sector specialist / advisory"
+              }, {
+                name: "Deminor",
+                desc: "Investor services / claims strategy"
+              }, {
+                name: "Firgun",
+                desc: "Venture / innovation initiatives"
+              }].map(p => (
+                <Tooltip key={p.name}>
+                  <TooltipTrigger asChild>
+                    <div className="bg-white/20 backdrop-blur-sm rounded-xl px-8 py-12 border border-white/30 text-center cursor-default shadow-lg">
+                      <img src={logos[p.name]} alt={`${p.name} logo`} loading="lazy" className="mx-auto h-12 object-contain mb-4" />
+                      <span className="block text-xl tracking-wide text-[#364b56] font-medium">{p.name}</span>
+                    </div>
+                  </TooltipTrigger>
+                  <TooltipContent className="font-helvetica-now text-sm">
+                    {p.name} — {p.desc}
+                  </TooltipContent>
+                </Tooltip>
+              ))}
             </div>
-            <div className="pt-8">
-              <Button variant="call" size="call" className="font-helvetica-now text-xl px-16 py-6">
-                request a call
-              </Button>
+            
+            <div className="grid gap-8 grid-cols-2 max-w-lg mx-auto">
+              {/* Bottom row - 2 items */}
+              {[{
+                name: "Geneva Technologies",
+                desc: "Technology / engineering expertise"
+              }, {
+                name: "Golborne",
+                desc: "Corporate advisory"
+              }].map(p => (
+                <Tooltip key={p.name}>
+                  <TooltipTrigger asChild>
+                    <div className="bg-white/20 backdrop-blur-sm rounded-xl px-8 py-12 border border-white/30 text-center cursor-default shadow-lg">
+                      <img src={logos[p.name]} alt={`${p.name} logo`} loading="lazy" className="mx-auto h-12 object-contain mb-4" />
+                      <span className="block text-xl tracking-wide text-[#364b56] font-medium">{p.name}</span>
+                    </div>
+                  </TooltipTrigger>
+                  <TooltipContent className="font-helvetica-now text-sm">
+                    {p.name} — {p.desc}
+                  </TooltipContent>
+                </Tooltip>
+              ))}
             </div>
+          </TooltipProvider>
+        </div>
+      </section>
+
+      {/* Section 5: Call to Action */}
+      <section className="h-screen flex items-center justify-center px-12 py-20 almara-section-bg">
+        <div className="max-w-4xl mx-auto text-center space-y-12">
+          <div className="space-y-8">
+            <h2 className="font-long-cang text-[32px] lg:text-[36px] text-[#364b56] tracking-wider leading-tight uppercase">
+              Tell us what you're building,<br />
+              we'll assemble the right team
+            </h2>
           </div>
-        </section>
-      </main>
+          <div className="pt-8">
+            <Button variant="call" size="call" className="font-helvetica-now text-xl px-16 py-6">
+              request a call
+            </Button>
+          </div>
+        </div>
+      </section>
       
       {/* Footer */}
       <Footer />
