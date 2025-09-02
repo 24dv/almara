@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 export const Footer = () => {
   return (
     <footer className="px-8 py-6 border-t border-[#F4EADA] almara-footer-gradient-bg">
-      <div className="flex items-center justify-between max-w-7xl mx-auto">
+      <div className="flex items-center justify-between max-w-7xl mx-auto relative z-10">
         {/* Left Side - Lorem Ipsum */}
         <div className="flex-1">
           <p className="text-xs text-[#363636] max-w-sm leading-relaxed font-helvetica-now">

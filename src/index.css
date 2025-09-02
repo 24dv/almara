@@ -187,6 +187,7 @@ All colors MUST be HSL.
     background-position: center;
     background-repeat: no-repeat;
     opacity: 0.8;
+    z-index: -1;
     pointer-events: none;
   }
 
