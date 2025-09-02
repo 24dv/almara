@@ -120,8 +120,7 @@ const Partners = () => {
                 <Tooltip key={p.name}>
                   <TooltipTrigger asChild>
                     <div className="bg-white/20 backdrop-blur-sm rounded-xl px-8 py-12 border border-white/30 text-center cursor-default shadow-lg relative z-10">
-                      <img src={logos[p.name]} alt={`${p.name} logo`} loading="lazy" className="mx-auto h-10 object-contain mb-4" />
-                      <span className="block text-xl tracking-wide text-[#364b56] font-medium">{p.name}</span>
+                      <img src={logos[p.name]} alt={`${p.name} logo`} loading="lazy" className="mx-auto h-10 object-contain" />
                     </div>
                   </TooltipTrigger>
                   <TooltipContent className="font-helvetica-now text-sm">
@@ -143,8 +142,7 @@ const Partners = () => {
                 <Tooltip key={p.name}>
                   <TooltipTrigger asChild>
                     <div className="bg-white/20 backdrop-blur-sm rounded-xl px-8 py-12 border border-white/30 text-center cursor-default shadow-lg relative z-10">
-                      <img src={logos[p.name]} alt={`${p.name} logo`} loading="lazy" className="mx-auto h-10 object-contain mb-4" />
-                      <span className="block text-xl tracking-wide text-[#364b56] font-medium">{p.name}</span>
+                      <img src={logos[p.name]} alt={`${p.name} logo`} loading="lazy" className="mx-auto h-10 object-contain" />
                     </div>
                   </TooltipTrigger>
                   <TooltipContent className="font-helvetica-now text-sm">
