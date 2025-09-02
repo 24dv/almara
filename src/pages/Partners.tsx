@@ -50,7 +50,7 @@ const Partners = () => {
     "Deminor": deminorLogo,
     "Firgun": firgunLogo,
     "Geneva Technologies": "/lovable-uploads/fb70fc12-73d6-4b1a-966c-d2e15456ca28.png",
-    "Golborne": "/lovable-uploads/e402a5f1-6c20-4ba9-8d6c-552bc77990cb.png",
+    "Golborne": "/lovable-uploads/5a2ca5d0-c530-438f-a901-3963ba8f89a7.png",
   };
 
   return (
