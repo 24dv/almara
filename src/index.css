@@ -269,6 +269,22 @@ All colors MUST be HSL.
     background: radial-gradient(ellipse at center, #5d717b 0%, transparent 70%);
     position: relative;
   }
+
+  .mission-section-gradient::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('/lovable-uploads/08276971-f3d6-48ef-af4b-9d930d4ced96.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0.4;
+    z-index: 1;
+    pointer-events: none;
+  }
   
   .almara-footer-gradient-bg::before {
     content: '';
