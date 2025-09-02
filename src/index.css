@@ -9,7 +9,7 @@ All colors MUST be HSL.
 @layer base {
   :root {
     /* ALMARA Brand Colors */
-    --almara-dark-blue: 203 24% 28%;     /* #364B56 */
+    --almara-dark-blue: 200 14% 42%;     /* #5d717b */
     --almara-light-blue: 220 15% 74%;    /* #B3BACB */
     --almara-dark-text: 0 0% 21%;        /* #363636 */
     --almara-light-text: 43 42% 89%;     /* #F4EADA */
