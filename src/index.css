@@ -47,7 +47,7 @@ All colors MUST be HSL.
     --ring: var(--almara-dark-blue);
 
     /* Custom ALMARA design tokens */
-    --almara-radial-gradient: radial-gradient(circle at center, hsl(var(--almara-dark-blue)) 0%, hsl(var(--almara-light-blue)) 100%);
+    --almara-radial-gradient: radial-gradient(circle at center, hsl(var(--almara-dark-blue)) 0%, hsl(var(--almara-dark-blue)) 15%, hsl(var(--almara-light-blue)) 60%);
     --almara-partners-gradient: radial-gradient(circle at center, hsl(var(--almara-dark-blue)) 0%, hsl(var(--almara-light-text)) 100%);
     --almara-hero-shadow: 0 20px 60px -10px hsl(var(--almara-dark-blue) / 0.15);
     --almara-button-shadow: 0 8px 25px -5px hsl(var(--almara-dark-blue) / 0.2);
