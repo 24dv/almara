@@ -7,7 +7,7 @@ export const Footer = () => {
       <div className="flex items-center justify-between max-w-7xl mx-auto">
         {/* Left Side - Lorem Ipsum */}
         <div className="flex-1">
-          <p className="text-xs text-[#363636]/70 max-w-sm leading-relaxed font-helvetica-now">
+          <p className="text-xs text-[#363636] max-w-sm leading-relaxed font-helvetica-now">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, consectetur adipiscing elit, sed do eiusmod.
           </p>
         </div>
@@ -21,7 +21,7 @@ export const Footer = () => {
         <div className="flex-1 flex justify-end">
           <Link 
             to="/privacy" 
-            className="text-xs text-[#363636]/70 hover:text-[#363636] transition-colors duration-300 font-helvetica-now"
+            className="text-xs text-[#363636] hover:text-[#363636]/70 transition-colors duration-300 font-helvetica-now"
           >
             privacy
           </Link>
