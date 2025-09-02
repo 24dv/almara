@@ -213,6 +213,7 @@ All colors MUST be HSL.
   /* Section-specific background for Partners page sections */
   .almara-section-bg {
     background: hsl(var(--almara-light-text));
+    background-image: radial-gradient(ellipse at center, hsl(var(--almara-dark-blue) / 0.8) 0%, hsl(var(--almara-dark-blue) / 0.4) 30%, transparent 70%);
     position: relative;
   }
 
