@@ -108,15 +108,12 @@ const Partners = () => {
             {/* Top row - 3 items */}
             {[{
               name: "Quintet",
-              shortDesc: "Private banking & investment services",
               longDesc: "Luxembourg-based Quintet offers private banking, wealth planning, and investment services across Europe and the UK."
             }, {
               name: "Degroof Petercam", 
-              shortDesc: "Wealth & asset management",
               longDesc: "Belgium's Degroof Petercam provides private banking, corporate finance, and asset management with over €50 billion under management."
             }, {
               name: "UBP",
-              shortDesc: "Institutional investment capabilities",
               longDesc: "Geneva-based UBP specializes in wealth and asset management, serving private and institutional clients worldwide."
             }].map(p => (
               <div key={p.name} className="relative group">
@@ -126,8 +123,7 @@ const Partners = () => {
                 
                 {/* Hover Overlay */}
                 <div className="absolute inset-0 bg-black/90 backdrop-blur-sm rounded-xl opacity-0 group-hover:opacity-100 transition-all duration-300 z-[200] p-6 flex flex-col justify-center">
-                  <h3 className="font-helvetica-now font-bold text-[#f4eada] text-sm mb-2 tracking-wide">{p.name}</h3>
-                  <p className="font-helvetica-now text-[#f4eada]/80 text-xs font-medium mb-3">{p.shortDesc}</p>
+                  <h3 className="font-helvetica-now font-bold text-[#f4eada] text-sm mb-4 tracking-wide">{p.name}</h3>
                   <p className="font-helvetica-now text-[#f4eada]/70 text-xs leading-relaxed">{p.longDesc}</p>
                 </div>
               </div>
@@ -138,11 +134,9 @@ const Partners = () => {
             {/* Bottom row - 2 items */}
             {[{
               name: "CIGP",
-              shortDesc: "Investment advisory & corporate finance",
               longDesc: "CIGP is an independent Geneva firm offering global wealth management and corporate finance advisory."
             }, {
               name: "Antarctica",
-              shortDesc: "Specialised investment platform",
               longDesc: "Antarctica Asset Management delivers hedge fund and private equity solutions for institutions, family offices, and private banks."
             }].map(p => (
               <div key={p.name} className="relative group">
@@ -152,8 +146,7 @@ const Partners = () => {
                 
                 {/* Hover Overlay */}
                 <div className="absolute inset-0 bg-black/90 backdrop-blur-sm rounded-xl opacity-0 group-hover:opacity-100 transition-all duration-300 z-[200] p-6 flex flex-col justify-center">
-                  <h3 className="font-helvetica-now font-bold text-[#f4eada] text-sm mb-2 tracking-wide">{p.name}</h3>
-                  <p className="font-helvetica-now text-[#f4eada]/80 text-xs font-medium mb-3">{p.shortDesc}</p>
+                  <h3 className="font-helvetica-now font-bold text-[#f4eada] text-sm mb-4 tracking-wide">{p.name}</h3>
                   <p className="font-helvetica-now text-[#f4eada]/70 text-xs leading-relaxed">{p.longDesc}</p>
                 </div>
               </div>
