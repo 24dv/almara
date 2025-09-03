@@ -153,16 +153,12 @@ const Services = () => {
                   aria-label={`Select ${service.title}`}
                 />
                 {activeService === service.id && (
-                  <div 
-                    className="ml-2"
-                    style={{
-                      width: '0',
-                      height: '0',
-                      borderLeft: '8px solid #f4eada',
-                      borderTop: '6px solid transparent',
-                      borderBottom: '6px solid transparent'
-                    }}
-                  />
+                  <span 
+                    className="ml-2 text-xl"
+                    style={{ color: '#f4eada' }}
+                  >
+                    ➤
+                  </span>
                 )}
               </div>
             ))}
