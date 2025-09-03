@@ -70,7 +70,7 @@ const Services = () => {
 
       {/* What We Do Section */}
       <section className="px-8 lg:px-12 py-24 mission-gradient">
-        <div className="max-w-5xl mx-auto">
+        <div className="max-w-7xl mx-auto">
           <div className="grid gap-8 md:grid-cols-2">
             {/* Family Office */}
             <article className="bg-gradient-to-r from-transparent via-gray-600/30 to-gray-700/60 rounded-3xl p-8 backdrop-blur-sm border border-white/10">
@@ -131,7 +131,7 @@ const Services = () => {
 
       {/* How We Work Section */}
       <section className="px-8 lg:px-12 py-24 mission-gradient">
-        <div className="max-w-5xl mx-auto">
+        <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="font-museo-moderno text-[28px] lg:text-[32px] text-white">How We Work</h2>
           </div>
