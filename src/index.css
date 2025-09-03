@@ -53,19 +53,19 @@
   }
 }
 
-/* Pulsating animation for circle elements */
-.circle-pulse {
-  animation: circlePulse 3s ease-in-out infinite;
+/* Pulsating animation for gradient backgrounds */
+.gradient-pulse {
+  animation: gradientPulse 2s ease-in-out infinite;
 }
 
-@keyframes circlePulse {
+@keyframes gradientPulse {
   0%, 100% {
-    transform: scale(1);
     opacity: 1;
+    filter: brightness(1) contrast(1);
   }
   50% {
-    transform: scale(1.15);
-    opacity: 0.6;
+    opacity: 0.7;
+    filter: brightness(1.3) contrast(1.2);
   }
 }
 
