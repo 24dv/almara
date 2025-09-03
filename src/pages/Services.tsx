@@ -123,9 +123,9 @@ const Services = () => {
       <section className="h-screen flex items-center justify-center px-8 lg:px-12 mission-gradient">
         <div className="max-w-6xl mx-auto">
           {/* Interactive Circles */}
-          <div className="relative flex items-center justify-center mb-12 space-x-48">
+          <div className="flex items-center justify-center mb-12">
             {services.map((service, index) => (
-              <div key={service.id} className="flex items-center space-x-3">
+              <div key={service.id} className="flex items-center">
                 <button
                   onClick={() => setActiveService(service.id)}
                   className="flex-shrink-0"
@@ -152,18 +152,23 @@ const Services = () => {
                   }}
                   aria-label={`Select ${service.title}`}
                 />
+                {/* Arrow after first circle only */}
+                {index === 0 && (
+                  <div className="flex items-center justify-center" style={{ width: '192px' }}>
+                    <span 
+                      className="text-3xl"
+                      style={{ color: '#f4eada' }}
+                    >
+                      ➤
+                    </span>
+                  </div>
+                )}
+                {/* Spacing for other circles */}
+                {index > 0 && index < services.length - 1 && (
+                  <div style={{ width: '192px' }} />
+                )}
               </div>
             ))}
-            {/* Arrow positioned in the middle between first and second circles */}
-            <span 
-              className="absolute text-3xl"
-              style={{ 
-                color: '#f4eada',
-                left: 'calc(50% - 276px)' // Between first and second: center minus half total width plus first circle plus half gap
-              }}
-            >
-              ➤
-            </span>
           </div>
 
           {/* Service Content */}
