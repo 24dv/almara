@@ -315,6 +315,25 @@ All colors MUST be HSL.
     position: relative;
   }
   
+  .partners-gradient-bg::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 60vw;
+    height: 60vw;
+    max-width: 600px;
+    max-height: 600px;
+    min-width: 320px;
+    min-height: 320px;
+    background: radial-gradient(ellipse at center, hsl(var(--almara-dark-blue) / 0.15) 0%, transparent 50%);
+    border-radius: 50%;
+    filter: blur(20px);
+    z-index: 2;
+    pointer-events: none;
+  }
+  
   /* Soft elliptical radial gradient for Mission page sections */
   .mission-section-gradient {
     background: radial-gradient(ellipse at center, #364b56 0%, transparent 70%);
