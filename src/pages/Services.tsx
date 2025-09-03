@@ -170,7 +170,7 @@ const Services = () => {
 
           {/* Service Content */}
           <div className="relative">
-            <div className="absolute left-0 text-left max-w-xl" style={{ marginLeft: 'calc(50% - 400px)' }}>
+            <div className="absolute left-0 text-left" style={{ marginLeft: 'calc(50% - 400px)', maxWidth: '28rem' }}>
               {services.map((service) => (
                 <div 
                   key={service.id}
