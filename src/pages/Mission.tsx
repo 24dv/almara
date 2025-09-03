@@ -38,14 +38,14 @@ const Mission = () => {
       {/* Main Content */}
       <main className="relative z-10 min-h-[calc(100vh-200px)]">
       {/* Section 1 — Our Mission (includes header) */}
-      <section className="h-screen flex flex-col px-8 lg:px-12 mission-section-gradient reveal-up" style={{ animationDelay: '0.2s', animationFillMode: 'both' }}>
+      <section className="h-screen flex flex-col px-8 lg:px-12 mission-section-gradient">
         <header className="relative z-10 hidden lg:flex items-center justify-center pt-8 pb-4">
           <Link to="/" className="transition-opacity hover:opacity-80">
             <img src="/lovable-uploads/889a0efd-ed5b-448b-a911-54ea486f744c.png" alt="ALMARA" className="h-7 sm:h-8 md:h-9 opacity-90" />
           </Link>
         </header>
         <div className="flex-1 flex items-center justify-center">
-          <div className="max-w-lg text-center space-y-8">
+          <div className="max-w-lg text-center space-y-8 reveal-up" style={{ animationDelay: '0.2s', animationFillMode: 'both' }}>
             <h1 className="font-museo-moderno text-[32px] lg:text-[36px] text-[#f4eada] tracking-[0.05em] opacity-90 leading-tight">Our Mission</h1>
             <div className="space-y-6">
               <p className="leading-relaxed text-sm lg:text-base text-[#f4eada] font-helvetica-now">

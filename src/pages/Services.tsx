@@ -92,13 +92,13 @@ const Services = () => {
       </section>
 
       {/* Hero Section */}
-      <section className="h-screen flex items-center justify-center px-8 lg:px-12 mission-section-gradient relative overflow-hidden reveal-up" style={{ animationDelay: '0.2s', animationFillMode: 'both' }}>
+      <section className="h-screen flex items-center justify-center px-8 lg:px-12 mission-section-gradient relative overflow-hidden">
         {/* Background Circle - Spans from header to bottom of section */}
         <img src="/lovable-uploads/a58a04a2-6cc9-41d7-a8c1-bd70d0c8df8f.png" alt="Circle background" className="absolute w-[120vh] h-[120vh] min-w-[800px] min-h-[800px] max-w-[1200px] max-h-[1200px] object-cover bg-transparent top-0 right-0 transform translate-x-[25%] -translate-y-[10%] z-[1] opacity-80" loading="eager" fetchPriority="high" />
         
         <div className="w-full max-w-7xl mx-auto px-8 lg:px-12 relative z-10">
           <div className="w-full flex justify-end">
-            <div className="max-w-6xl text-right space-y-8">
+            <div className="max-w-6xl text-right space-y-8 reveal-up" style={{ animationDelay: '0.2s', animationFillMode: 'both' }}>
           <h1 className="font-museo-moderno text-[32px] lg:text-[36px] text-[#f4eada] tracking-[0.05em] opacity-90 leading-tight">Our Services</h1>
           <div className="space-y-2">
             <p className="leading-relaxed text-sm lg:text-base text-[#f4eada] font-helvetica-now">

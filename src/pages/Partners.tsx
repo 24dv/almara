@@ -62,7 +62,7 @@ const Partners = () => {
       <MobileMenu />
       
       {/* Section 1: Our Partners - Hero with extended background including header */}
-      <section className="h-screen flex flex-col bg-[hsl(var(--almara-light-text))] partners-gradient-bg relative reveal-up" style={{ animationDelay: '0.2s', animationFillMode: 'both' }}>
+      <section className="h-screen flex flex-col bg-[hsl(var(--almara-light-text))] partners-gradient-bg relative">
         {/* Header with logo - now part of the section */}
         <header className="relative z-10 hidden lg:flex items-center justify-center pt-8 pb-4">
           <Link to="/" className="transition-opacity hover:opacity-80">
