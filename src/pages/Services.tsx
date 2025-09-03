@@ -195,7 +195,7 @@ const Services = () => {
                             style={{ width: '6px', height: '6px' }}
                           />
                         </div>
-                        <p className="text-[#f4eada] text-sm leading-relaxed">{point}</p>
+                        <p className="text-[#f4eada] text-base leading-relaxed">{point}</p>
                       </div>
                     ))}
                   </div>
