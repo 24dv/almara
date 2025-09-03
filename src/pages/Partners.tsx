@@ -73,8 +73,8 @@ const Partners = () => {
         {/* Background Circle */}
         <img src="/lovable-uploads/a58a04a2-6cc9-41d7-a8c1-bd70d0c8df8f.png" alt="Circle background" className="absolute w-[60vw] h-[60vw] max-w-[600px] max-h-[600px] min-w-[320px] min-h-[320px] object-cover bg-transparent top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-[5]" />
         
-        {/* Main Content - Centered in remaining space */}
-        <div className="flex-1 flex items-center justify-center px-12 py-20 relative z-10">
+        {/* Main Content - Better centered in remaining space */}
+        <div className="flex-1 flex items-center justify-center px-12 relative z-10" style={{ marginTop: '-60px' }}>
           <div className="max-w-lg text-center relative z-10">
             {/* Content */}
             <div className="space-y-6">
