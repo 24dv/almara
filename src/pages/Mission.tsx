@@ -97,8 +97,8 @@ const Mission = () => {
               <div 
                 className="flex-shrink-0 mt-1"
                 style={{
-                  width: '60px',
-                  height: '60px',
+                  width: '56px',
+                  height: '56px',
                   borderRadius: '50%',
                   backgroundColor: 'transparent',
                   boxShadow: 'inset -4px -4px 8px rgba(255,255,255,0.0), inset 2px 2px 4px rgba(0,0,0,0.7)'
@@ -113,8 +113,8 @@ const Mission = () => {
               <div 
                 className="flex-shrink-0 mt-1"
                 style={{
-                  width: '60px',
-                  height: '60px',
+                  width: '56px',
+                  height: '56px',
                   borderRadius: '50%',
                   backgroundColor: 'transparent',
                   boxShadow: 'inset -4px -4px 8px rgba(255,255,255,0.0), inset 2px 2px 4px rgba(0,0,0,0.7)'
@@ -129,8 +129,8 @@ const Mission = () => {
               <div 
                 className="flex-shrink-0 mt-1"
                 style={{
-                  width: '60px',
-                  height: '60px',
+                  width: '56px',
+                  height: '56px',
                   borderRadius: '50%',
                   backgroundColor: 'transparent',
                   boxShadow: 'inset -4px -4px 8px rgba(255,255,255,0.0), inset 2px 2px 4px rgba(0,0,0,0.7)'
@@ -145,8 +145,8 @@ const Mission = () => {
               <div 
                 className="flex-shrink-0 mt-1"
                 style={{
-                  width: '60px',
-                  height: '60px',
+                  width: '56px',
+                  height: '56px',
                   borderRadius: '50%',
                   backgroundColor: 'transparent',
                   boxShadow: 'inset -4px -4px 8px rgba(255,255,255,0.0), inset 2px 2px 4px rgba(0,0,0,0.7)'
@@ -161,8 +161,8 @@ const Mission = () => {
               <div 
                 className="flex-shrink-0 mt-1"
                 style={{
-                  width: '60px',
-                  height: '60px',
+                  width: '56px',
+                  height: '56px',
                   borderRadius: '50%',
                   backgroundColor: 'transparent',
                   boxShadow: 'inset -4px -4px 8px rgba(255,255,255,0.0), inset 2px 2px 4px rgba(0,0,0,0.7)'
@@ -177,8 +177,8 @@ const Mission = () => {
               <div 
                 className="flex-shrink-0 mt-1"
                 style={{
-                  width: '60px',
-                  height: '60px',
+                  width: '56px',
+                  height: '56px',
                   borderRadius: '50%',
                   backgroundColor: 'transparent',
                   boxShadow: 'inset -4px -4px 8px rgba(255,255,255,0.0), inset 2px 2px 4px rgba(0,0,0,0.7)'
