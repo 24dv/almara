@@ -134,7 +134,7 @@ const Services = () => {
                     height: '56px',
                     borderRadius: '50%',
                     backgroundColor: activeService === service.id ? '#364b56' : 'transparent',
-                    boxShadow: 'inset -4px -4px 8px rgba(255,255,255,0.0), inset 2px 2px 4px rgba(0,0,0,0.7)',
+                    boxShadow: activeService === service.id ? '4px 4px 8px rgba(0,0,0,0.3), -2px -2px 4px rgba(255,255,255,0.1)' : 'inset -4px -4px 8px rgba(255,255,255,0.0), inset 2px 2px 4px rgba(0,0,0,0.7)',
                     transition: 'background-color 0.4s cubic-bezier(0.4, 0, 0.2, 1), transform 0.2s ease-out',
                     transform: 'scale(1)'
                   }}
