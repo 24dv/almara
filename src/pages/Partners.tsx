@@ -55,26 +55,26 @@ const Partners = () => {
 
   return (
     <div className="relative w-full min-h-screen almara-gradient-bg">
-      {/* Header with cream background */}
-      <header className="relative z-10 hidden lg:flex items-center justify-center pt-8 pb-4 bg-[hsl(var(--almara-light-text))]">
-        <Link to="/" className="transition-opacity hover:opacity-80">
-          <img src="/lovable-uploads/889a0efd-ed5b-448b-a911-54ea486f744c.png" alt="ALMARA" className="h-7 sm:h-8 md:h-9 opacity-90" />
-        </Link>
-      </header>
-
       {/* Navigation - fixed positioned at same height as home page */}
       <Navigation positioning="fixed" />
 
       {/* Mobile Header/Menu */}
       <MobileMenu />
       
-      {/* Section 1: Our Partners - Hero */}
-      <section className="h-screen flex items-center justify-center bg-[hsl(var(--almara-light-text))] partners-gradient-bg relative">        
+      {/* Section 1: Our Partners - Hero with extended background including header */}
+      <section className="h-screen flex flex-col bg-[hsl(var(--almara-light-text))] partners-gradient-bg relative">
+        {/* Header with logo - now part of the section */}
+        <header className="relative z-10 hidden lg:flex items-center justify-center pt-8 pb-4">
+          <Link to="/" className="transition-opacity hover:opacity-80">
+            <img src="/lovable-uploads/889a0efd-ed5b-448b-a911-54ea486f744c.png" alt="ALMARA" className="h-7 sm:h-8 md:h-9 opacity-90" />
+          </Link>
+        </header>
+        
         {/* Background Circle */}
         <img src="/lovable-uploads/a58a04a2-6cc9-41d7-a8c1-bd70d0c8df8f.png" alt="Circle background" className="absolute w-[60vw] h-[60vw] max-w-[600px] max-h-[600px] min-w-[320px] min-h-[320px] object-cover bg-transparent top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-[5]" />
         
-        {/* Main Content - Centered in circle */}
-        <div className="flex items-center justify-center px-12 py-20 relative z-10">
+        {/* Main Content - Centered in remaining space */}
+        <div className="flex-1 flex items-center justify-center px-12 py-20 relative z-10">
           <div className="max-w-lg text-center relative z-10">
             {/* Content */}
             <div className="space-y-6">
