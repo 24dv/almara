@@ -121,9 +121,9 @@ const Services = () => {
 
       {/* Interactive Services Section */}
       <section className="h-screen bg-almara-light-text/20 flex items-center justify-center px-8 lg:px-12 mission-section-gradient">
-        <div className="max-w-6xl mx-auto">
+        <div className="max-w-6xl mx-auto flex flex-col items-center justify-center h-full">
           {/* Interactive Circles */}
-          <div className="flex items-center justify-center mb-12">
+          <div className="flex items-center justify-center mb-16">
             {services.map((service, index) => (
               <div key={service.id} className="flex items-center">
                 <button
@@ -170,44 +170,42 @@ const Services = () => {
           </div>
 
           {/* Service Content */}
-          <div className="relative">
-            <div className="absolute left-0 text-left" style={{ marginLeft: 'calc(50% - 400px)', maxWidth: '28rem' }}>
-              {services.map((service) => (
-                <div 
-                  key={service.id}
-                  className={`transition-all duration-500 ${
-                    activeService === service.id 
-                      ? 'opacity-100 transform translate-y-0' 
-                      : 'opacity-0 transform translate-y-4 absolute pointer-events-none'
-                  }`}
-                >
-                  <h3 className="font-helvetica-now text-xl tracking-wider font-bold text-[#f4eada] mb-6">
-                    {service.title}
-                  </h3>
-                  <p className="text-[#f4eada] leading-relaxed mb-6 text-base">
-                    {service.description}
-                  </p>
-                  <div className="space-y-3">
-                    {service.points.map((point, index) => (
-                      <div key={index} className="flex items-start space-x-3">
-                        <div className="flex-shrink-0 mt-2">
-                          <div 
-                            style={{
-                              width: '0',
-                              height: '0',
-                              borderLeft: '8px solid #f4eada',
-                              borderTop: '6px solid transparent',
-                              borderBottom: '6px solid transparent'
-                            }}
-                          />
-                        </div>
-                        <p className="text-[#f4eada] text-base leading-relaxed">{point}</p>
+          <div className="text-center" style={{ maxWidth: '28rem' }}>
+            {services.map((service) => (
+              <div 
+                key={service.id}
+                className={`transition-all duration-500 ${
+                  activeService === service.id 
+                    ? 'opacity-100 transform translate-y-0' 
+                    : 'opacity-0 transform translate-y-4 absolute pointer-events-none'
+                }`}
+              >
+                <h3 className="font-helvetica-now text-xl tracking-wider font-bold text-[#f4eada] mb-6">
+                  {service.title}
+                </h3>
+                <p className="text-[#f4eada] leading-relaxed mb-6 text-base">
+                  {service.description}
+                </p>
+                <div className="space-y-3">
+                  {service.points.map((point, index) => (
+                    <div key={index} className="flex items-start space-x-3">
+                      <div className="flex-shrink-0 mt-2">
+                        <div 
+                          style={{
+                            width: '0',
+                            height: '0',
+                            borderLeft: '8px solid #f4eada',
+                            borderTop: '6px solid transparent',
+                            borderBottom: '6px solid transparent'
+                          }}
+                        />
                       </div>
-                    ))}
-                  </div>
+                      <p className="text-[#f4eada] text-base leading-relaxed">{point}</p>
+                    </div>
+                  ))}
                 </div>
-              ))}
-            </div>
+              </div>
+            ))}
           </div>
         </div>
       </section>
