@@ -1,7 +1,9 @@
 export const HeroSection = () => {
   return <section className="relative h-screen flex flex-col items-center justify-center animate-fade-in">
-      {/* Background Circle */}
-      <img src="/lovable-uploads/a58a04a2-6cc9-41d7-a8c1-bd70d0c8df8f.png" alt="Circle background" className="absolute w-[80vw] h-[80vw] max-w-[800px] max-h-[800px] min-w-[320px] min-h-[320px] object-cover bg-transparent top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-[5] reveal-fade" style={{ animationDelay: '0.1s', animationFillMode: 'both' }} loading="eager" fetchPriority="high" />
+      {/* Background Circle with Premium Pulsating Effect */}
+      <div className="almara-pulse-container">
+        <img src="/lovable-uploads/a58a04a2-6cc9-41d7-a8c1-bd70d0c8df8f.png" alt="Circle background" className="w-[80vw] h-[80vw] max-w-[800px] max-h-[800px] min-w-[320px] min-h-[320px] object-cover bg-transparent reveal-fade" style={{ animationDelay: '0.1s', animationFillMode: 'both' }} loading="eager" fetchPriority="high" />
+      </div>
       
       {/* Logo - Perfectly centered in the circle */}
       <div className="relative z-10 flex items-center justify-center reveal-fade" style={{ animationDelay: '0.3s', animationFillMode: 'both' }}>
