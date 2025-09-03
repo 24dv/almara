@@ -53,20 +53,6 @@
   }
 }
 
-/* Pulsating animation for gradient backgrounds */
-.gradient-pulse {
-  animation: gradientPulse 2s ease-in-out infinite;
-}
-
-@keyframes gradientPulse {
-  0%, 100% {
-    background: radial-gradient(ellipse at center, #5d717b 0%, rgba(255, 255, 255, 0) 70%);
-  }
-  50% {
-    background: radial-gradient(ellipse at center, #8a9ba8 0%, rgba(255, 255, 255, 0) 50%);
-  }
-}
-
 /* ALMARA Design System - All colors, gradients, fonts, etc defined here. 
 All colors MUST be HSL.
 */
