@@ -222,40 +222,40 @@ const Services = () => {
             <h2 className="font-museo-moderno text-[28px] lg:text-[32px] text-[#f4eada]">How We Work</h2>
           </div>
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-12 font-helvetica-now text-white/70 mb-16">
-            <article className="space-y-2">
-              <h3 className="font-helvetica-now text-xl tracking-wider font-bold text-[#f4eada]">Ongoing counsel</h3>
+            <article className="space-y-4">
+              <h3 className="font-helvetica-now text-xl tracking-wider font-bold text-[#f4eada] mb-4">Ongoing counsel</h3>
               <p className="text-[#f4eada] leading-relaxed text-base">
                 We stay close to your world, anticipating needs, coordinating specialists, and maintaining oversight.
               </p>
             </article>
-            <article className="space-y-2">
-              <h3 className="font-helvetica-now text-xl tracking-wider font-bold text-[#f4eada]">Mandate-led execution</h3>
+            <article className="space-y-4">
+              <h3 className="font-helvetica-now text-xl tracking-wider font-bold text-[#f4eada] mb-4">Mandate-led execution</h3>
               <p className="text-[#f4eada] leading-relaxed text-base">
                 When opportunities arise, we mobilise the right people and drive transactions to completion.
               </p>
             </article>
-            <article className="space-y-2">
-              <h3 className="font-helvetica-now text-xl tracking-wider font-bold text-[#f4eada]">Orchestrated network</h3>
+            <article className="space-y-4">
+              <h3 className="font-helvetica-now text-xl tracking-wider font-bold text-[#f4eada] mb-4">Orchestrated network</h3>
               <p className="text-[#f4eada] leading-relaxed text-base">
                 Discreet access to private banks, boutiques, legal/tax advisors, researchers, and art-world experts, curated and managed by us.
               </p>
             </article>
           </div>
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-12 font-helvetica-now">
-            <article className="space-y-2">
-              <h3 className="font-helvetica-now text-xl tracking-wider font-bold text-[#f4eada]">who we work with</h3>
+            <article className="space-y-4">
+              <h3 className="font-helvetica-now text-xl tracking-wider font-bold text-[#f4eada] mb-4">who we work with</h3>
               <p className="text-[#f4eada] leading-relaxed text-base">
                 Principals & families · Entrepreneurial investors · Fund managers
               </p>
             </article>
-            <article className="space-y-2">
-              <h3 className="font-helvetica-now text-xl tracking-wider font-bold text-[#f4eada]">perspective</h3>
+            <article className="space-y-4">
+              <h3 className="font-helvetica-now text-xl tracking-wider font-bold text-[#f4eada] mb-4">perspective</h3>
               <p className="text-[#f4eada] leading-relaxed text-base">
                 Research-led and culture-aware, with ties to London Business School and the Sorbonne. We support democracy, the rule of law, European integration, and contemporary visual and performance art.
               </p>
             </article>
-            <article className="space-y-2">
-              <h3 className="font-helvetica-now text-xl tracking-wider font-bold text-[#f4eada]">discretion & access</h3>
+            <article className="space-y-4">
+              <h3 className="font-helvetica-now text-xl tracking-wider font-bold text-[#f4eada] mb-4">discretion & access</h3>
               <p className="text-[#f4eada] leading-relaxed text-base">
                 We collaborate with leading institutions and boutiques. References available on request.
               </p>
