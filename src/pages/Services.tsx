@@ -120,10 +120,10 @@ const Services = () => {
       </section>
 
       {/* Interactive Services Section */}
-      <section className="h-screen bg-almara-light-text/20 flex items-center justify-center px-8 lg:px-12 py-16 mission-section-gradient">
+      <section className="h-screen bg-almara-light-text/20 flex items-center justify-center px-8 lg:px-12 mission-section-gradient">
         <div className="max-w-6xl mx-auto">
           {/* Interactive Circles */}
-          <div className="flex items-center justify-center mb-12">
+          <div className="flex items-center justify-center mb-8">
             {services.map((service, index) => (
               <div key={service.id} className="flex items-center">
                 <button
