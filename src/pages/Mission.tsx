@@ -94,42 +94,96 @@ const Mission = () => {
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-12 font-helvetica-now text-[#f4eada]">
             <div className="flex items-start space-x-4">
-              <div className="w-4 h-4 rounded-full bg-[#5d717b] flex-shrink-0 mt-1"></div>
+              <div 
+                className="flex-shrink-0 mt-1"
+                style={{
+                  width: '16px',
+                  height: '16px',
+                  borderRadius: '50%',
+                  backgroundColor: 'hsl(var(--almara-carmine))',
+                  boxShadow: 'inset -4px -4px 8px rgba(255,255,255,0.0), inset 2px 2px 4px rgba(0,0,0,0.7)'
+                }}
+              />
               <div>
                 <h3 className="text-sm font-semibold mb-2 text-[#f4eada]">clarity first</h3>
                 <p className="text-sm leading-relaxed">We define purpose, constraints, and desired outcomes before we act.</p>
               </div>
             </div>
             <div className="flex items-start space-x-4">
-              <div className="w-4 h-4 rounded-full bg-[#5d717b] flex-shrink-0 mt-1"></div>
+              <div 
+                className="flex-shrink-0 mt-1"
+                style={{
+                  width: '16px',
+                  height: '16px',
+                  borderRadius: '50%',
+                  backgroundColor: 'hsl(var(--almara-carmine))',
+                  boxShadow: 'inset -4px -4px 8px rgba(255,255,255,0.0), inset 2px 2px 4px rgba(0,0,0,0.7)'
+                }}
+              />
               <div>
                 <h3 className="text-sm font-semibold mb-2 text-[#f4eada]">balance</h3>
                 <p className="text-sm leading-relaxed">We hold risk/return and time/impact in healthy tension.</p>
               </div>
             </div>
             <div className="flex items-start space-x-4">
-              <div className="w-4 h-4 rounded-full bg-[#5d717b] flex-shrink-0 mt-1"></div>
+              <div 
+                className="flex-shrink-0 mt-1"
+                style={{
+                  width: '16px',
+                  height: '16px',
+                  borderRadius: '50%',
+                  backgroundColor: 'hsl(var(--almara-carmine))',
+                  boxShadow: 'inset -4px -4px 8px rgba(255,255,255,0.0), inset 2px 2px 4px rgba(0,0,0,0.7)'
+                }}
+              />
               <div>
                 <h3 className="text-sm font-semibold mb-2 text-[#f4eada]">simplicity as rigour</h3>
                 <p className="text-sm leading-relaxed">We believe in fewer moving parts, tighter governance, better decisions.</p>
               </div>
             </div>
             <div className="flex items-start space-x-4">
-              <div className="w-4 h-4 rounded-full bg-[#5d717b] flex-shrink-0 mt-1"></div>
+              <div 
+                className="flex-shrink-0 mt-1"
+                style={{
+                  width: '16px',
+                  height: '16px',
+                  borderRadius: '50%',
+                  backgroundColor: 'hsl(var(--almara-carmine))',
+                  boxShadow: 'inset -4px -4px 8px rgba(255,255,255,0.0), inset 2px 2px 4px rgba(0,0,0,0.7)'
+                }}
+              />
               <div>
                 <h3 className="text-sm font-semibold mb-2 text-[#f4eada]">exploration & creativity</h3>
                 <p className="text-sm leading-relaxed">We focus on research, first principles, new lenses.</p>
               </div>
             </div>
             <div className="flex items-start space-x-4">
-              <div className="w-4 h-4 rounded-full bg-[#5d717b] flex-shrink-0 mt-1"></div>
+              <div 
+                className="flex-shrink-0 mt-1"
+                style={{
+                  width: '16px',
+                  height: '16px',
+                  borderRadius: '50%',
+                  backgroundColor: 'hsl(var(--almara-carmine))',
+                  boxShadow: 'inset -4px -4px 8px rgba(255,255,255,0.0), inset 2px 2px 4px rgba(0,0,0,0.7)'
+                }}
+              />
               <div>
                 <h3 className="text-sm font-semibold mb-2 text-[#f4eada]">community & belonging</h3>
                 <p className="text-sm leading-relaxed">Through trusted circles, shared knowledge, aligned action.</p>
               </div>
             </div>
             <div className="flex items-start space-x-4">
-              <div className="w-4 h-4 rounded-full bg-[#5d717b] flex-shrink-0 mt-1"></div>
+              <div 
+                className="flex-shrink-0 mt-1"
+                style={{
+                  width: '16px',
+                  height: '16px',
+                  borderRadius: '50%',
+                  backgroundColor: 'hsl(var(--almara-carmine))',
+                  boxShadow: 'inset -4px -4px 8px rgba(255,255,255,0.0), inset 2px 2px 4px rgba(0,0,0,0.7)'
+                }}
+              />
               <div>
                 <h3 className="text-sm font-semibold mb-2 text-[#f4eada]">materiality · sensitivity · play</h3>
                 <p className="text-sm leading-relaxed">We respect the tangible and the felt, and keep our minds open.</p>
