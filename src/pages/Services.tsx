@@ -191,8 +191,13 @@ const Services = () => {
                       <div key={index} className="flex items-start space-x-3">
                         <div className="flex-shrink-0 mt-2">
                           <div 
-                            className="bg-[#c44569] transform rotate-45"
-                            style={{ width: '6px', height: '6px' }}
+                            style={{
+                              width: '0',
+                              height: '0',
+                              borderLeft: '8px solid #f4eada',
+                              borderTop: '6px solid transparent',
+                              borderBottom: '6px solid transparent'
+                            }}
                           />
                         </div>
                         <p className="text-[#f4eada] text-base leading-relaxed">{point}</p>
