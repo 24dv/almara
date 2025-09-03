@@ -223,20 +223,20 @@ const Services = () => {
           </div>
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-12 font-helvetica-now text-white/70 mb-16">
             <article className="space-y-2">
-              <h3 className="text-lg text-white/80">Ongoing counsel</h3>
-              <p className="leading-relaxed">
+              <h3 className="font-helvetica-now text-xl tracking-wider font-bold text-[#f4eada]">Ongoing counsel</h3>
+              <p className="text-[#f4eada] leading-relaxed text-base">
                 We stay close to your world, anticipating needs, coordinating specialists, and maintaining oversight.
               </p>
             </article>
             <article className="space-y-2">
-              <h3 className="text-lg text-white/80">Mandate-led execution</h3>
-              <p className="leading-relaxed">
+              <h3 className="font-helvetica-now text-xl tracking-wider font-bold text-[#f4eada]">Mandate-led execution</h3>
+              <p className="text-[#f4eada] leading-relaxed text-base">
                 When opportunities arise, we mobilise the right people and drive transactions to completion.
               </p>
             </article>
             <article className="space-y-2">
-              <h3 className="text-lg text-white/80">Orchestrated network</h3>
-              <p className="leading-relaxed">
+              <h3 className="font-helvetica-now text-xl tracking-wider font-bold text-[#f4eada]">Orchestrated network</h3>
+              <p className="text-[#f4eada] leading-relaxed text-base">
                 Discreet access to private banks, boutiques, legal/tax advisors, researchers, and art-world experts, curated and managed by us.
               </p>
             </article>
