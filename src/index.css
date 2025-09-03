@@ -189,15 +189,15 @@ All colors MUST be HSL.
     position: relative;
   }
   
-  /* Premium Pulsating Circle Effect */
+  /* Internal Fire Pulsating Effect - No Size Change */
   .almara-pulse-container {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 5;
-    will-change: transform, box-shadow;
-    animation: almaraPulse 4s cubic-bezier(0.25, 0.46, 0.45, 0.94) infinite;
+    overflow: hidden;
+    border-radius: 50%;
   }
   
   .almara-pulse-container::before {
@@ -205,45 +205,65 @@ All colors MUST be HSL.
     position: absolute;
     top: 50%;
     left: 50%;
-    width: 110%;
-    height: 110%;
+    width: 100%;
+    height: 100%;
     transform: translate(-50%, -50%);
     border-radius: 50%;
     box-shadow: 
-      inset 0 0 40px hsl(var(--almara-dark-blue) / 0.3),
-      inset 0 0 80px hsl(var(--almara-dark-blue) / 0.2),
-      0 0 60px hsl(var(--almara-dark-blue) / 0.25),
-      0 0 120px hsl(var(--almara-carmine) / 0.15);
-    animation: almaraPulseShadow 4s cubic-bezier(0.25, 0.46, 0.45, 0.94) infinite;
+      inset 0 0 30px hsl(var(--almara-carmine) / 0.4),
+      inset 0 0 60px hsl(var(--almara-carmine) / 0.3),
+      inset 0 0 100px hsl(var(--almara-dark-blue) / 0.2);
+    animation: internalFirePulse 3s ease-in-out infinite;
     pointer-events: none;
-    z-index: -1;
+    z-index: 1;
   }
   
-  @keyframes almaraPulse {
+  .almara-pulse-container::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 70%;
+    height: 70%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    box-shadow: 
+      inset 0 0 20px hsl(var(--almara-carmine) / 0.6),
+      inset 0 0 40px hsl(var(--almara-carmine) / 0.4);
+    animation: innerFireCore 2.5s ease-in-out infinite;
+    pointer-events: none;
+    z-index: 2;
+  }
+  
+  @keyframes internalFirePulse {
     0%, 100% {
-      transform: translate(-50%, -50%) scale(0.98);
+      opacity: 0.3;
+      box-shadow: 
+        inset 0 0 30px hsl(var(--almara-carmine) / 0.3),
+        inset 0 0 60px hsl(var(--almara-carmine) / 0.2),
+        inset 0 0 100px hsl(var(--almara-dark-blue) / 0.15);
     }
     50% {
-      transform: translate(-50%, -50%) scale(1.02);
+      opacity: 0.7;
+      box-shadow: 
+        inset 0 0 40px hsl(var(--almara-carmine) / 0.5),
+        inset 0 0 80px hsl(var(--almara-carmine) / 0.4),
+        inset 0 0 120px hsl(var(--almara-dark-blue) / 0.25);
     }
   }
   
-  @keyframes almaraPulseShadow {
+  @keyframes innerFireCore {
     0%, 100% {
-      opacity: 0.6;
+      opacity: 0.4;
       box-shadow: 
-        inset 0 0 40px hsl(var(--almara-dark-blue) / 0.3),
-        inset 0 0 80px hsl(var(--almara-dark-blue) / 0.2),
-        0 0 60px hsl(var(--almara-dark-blue) / 0.25),
-        0 0 120px hsl(var(--almara-carmine) / 0.15);
+        inset 0 0 15px hsl(var(--almara-carmine) / 0.5),
+        inset 0 0 30px hsl(var(--almara-carmine) / 0.3);
     }
     50% {
-      opacity: 0.9;
+      opacity: 0.8;
       box-shadow: 
-        inset 0 0 60px hsl(var(--almara-dark-blue) / 0.45),
-        inset 0 0 120px hsl(var(--almara-dark-blue) / 0.3),
-        0 0 100px hsl(var(--almara-dark-blue) / 0.4),
-        0 0 180px hsl(var(--almara-carmine) / 0.25);
+        inset 0 0 25px hsl(var(--almara-carmine) / 0.7),
+        inset 0 0 50px hsl(var(--almara-carmine) / 0.5);
     }
   }
   
