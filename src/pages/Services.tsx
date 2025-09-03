@@ -49,8 +49,9 @@ const Services = () => {
         {/* Background Circle - Right Side Oversized */}
         <img src="/lovable-uploads/a58a04a2-6cc9-41d7-a8c1-bd70d0c8df8f.png" alt="Circle background" className="absolute w-[120vw] h-[120vw] max-w-[1200px] max-h-[1200px] object-cover bg-transparent top-1/2 right-[-30vw] transform -translate-y-1/2 z-[1] opacity-80" />
         
-        <div className="max-w-7xl mx-auto relative z-10">
-          <div className="max-w-6xl ml-auto text-right space-y-8 pr-8 lg:pr-12">
+        <div className="w-full max-w-7xl mx-auto px-8 lg:px-12 relative z-10">
+          <div className="w-full flex justify-end">
+            <div className="max-w-6xl text-right space-y-8">
           <h1 className="font-museo-moderno text-[32px] lg:text-[36px] text-white tracking-[0.05em] opacity-90 leading-tight">Our Services</h1>
           <div className="space-y-2">
             <p className="leading-relaxed text-sm lg:text-base text-white font-helvetica-now">
@@ -66,7 +67,8 @@ const Services = () => {
           <div className="pt-6">
             <Button variant="call" size="call" className="font-helvetica-now">request a call</Button>
           </div>
-        </div>
+            </div>
+          </div>
         </div>
       </section>
 
