@@ -53,6 +53,22 @@
   }
 }
 
+/* Pulsating animation for circle elements */
+.circle-pulse {
+  animation: circlePulse 3s ease-in-out infinite;
+}
+
+@keyframes circlePulse {
+  0%, 100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.05);
+    opacity: 0.8;
+  }
+}
+
 /* ALMARA Design System - All colors, gradients, fonts, etc defined here. 
 All colors MUST be HSL.
 */
