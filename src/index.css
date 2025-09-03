@@ -2,6 +2,57 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Reveal animations */
+.reveal-up {
+  opacity: 0;
+  transform: translateY(30px);
+  animation: revealUp 1.2s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
+}
+
+.reveal-fade {
+  opacity: 0;
+  animation: revealFade 1s ease-out forwards;
+}
+
+.reveal-left {
+  opacity: 0;
+  transform: translateX(-30px);
+  animation: revealLeft 1s ease-out forwards;
+}
+
+.reveal-right {
+  opacity: 0;
+  transform: translateX(30px);
+  animation: revealRight 1s ease-out forwards;
+}
+
+@keyframes revealUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes revealFade {
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes revealLeft {
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes revealRight {
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
 /* ALMARA Design System - All colors, gradients, fonts, etc defined here. 
 All colors MUST be HSL.
 */
