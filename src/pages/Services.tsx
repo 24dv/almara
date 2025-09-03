@@ -128,7 +128,7 @@ const Services = () => {
               <div key={service.id} className="flex items-center">
                 <button
                   onClick={() => setActiveService(service.id)}
-                  className="flex-shrink-0"
+                  className="flex-shrink-0 relative z-20"
                   style={{
                     width: '56px',
                     height: '56px',
