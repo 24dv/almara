@@ -105,7 +105,7 @@ const Mission = () => {
                 }}
               />
               <div>
-                <h3 className="font-helvetica-now text-xl tracking-wider font-bold text-[#f4eada]">clarity first</h3>
+                <h3 className="font-helvetica-now text-xl tracking-wider font-bold text-[#f4eada] mb-4">clarity first</h3>
                 <p className="text-base leading-relaxed">We define purpose, constraints, and desired outcomes before we act.</p>
               </div>
             </div>
@@ -121,7 +121,7 @@ const Mission = () => {
                 }}
               />
               <div>
-                <h3 className="font-helvetica-now text-xl tracking-wider font-bold text-[#f4eada]">balance</h3>
+                <h3 className="font-helvetica-now text-xl tracking-wider font-bold text-[#f4eada] mb-4">balance</h3>
                 <p className="text-base leading-relaxed">We hold risk/return and time/impact in healthy tension.</p>
               </div>
             </div>
@@ -137,7 +137,7 @@ const Mission = () => {
                 }}
               />
               <div>
-                <h3 className="font-helvetica-now text-xl tracking-wider font-bold text-[#f4eada]">simplicity as rigour</h3>
+                <h3 className="font-helvetica-now text-xl tracking-wider font-bold text-[#f4eada] mb-4">simplicity as rigour</h3>
                 <p className="text-base leading-relaxed">We believe in fewer moving parts, tighter governance, better decisions.</p>
               </div>
             </div>
@@ -153,7 +153,7 @@ const Mission = () => {
                 }}
               />
               <div>
-                <h3 className="font-helvetica-now text-xl tracking-wider font-bold text-[#f4eada]">exploration & creativity</h3>
+                <h3 className="font-helvetica-now text-xl tracking-wider font-bold text-[#f4eada] mb-4">exploration & creativity</h3>
                 <p className="text-base leading-relaxed">We focus on research, first principles, new lenses.</p>
               </div>
             </div>
@@ -169,7 +169,7 @@ const Mission = () => {
                 }}
               />
               <div>
-                <h3 className="font-helvetica-now text-xl tracking-wider font-bold text-[#f4eada]">community & belonging</h3>
+                <h3 className="font-helvetica-now text-xl tracking-wider font-bold text-[#f4eada] mb-4">community & belonging</h3>
                 <p className="text-base leading-relaxed">Through trusted circles, shared knowledge, aligned action.</p>
               </div>
             </div>
@@ -185,7 +185,7 @@ const Mission = () => {
                 }}
               />
               <div>
-                <h3 className="font-helvetica-now text-xl tracking-wider font-bold text-[#f4eada]">materiality · sensitivity · play</h3>
+                <h3 className="font-helvetica-now text-xl tracking-wider font-bold text-[#f4eada] mb-4">materiality · sensitivity · play</h3>
                 <p className="text-base leading-relaxed">We respect the tangible and the felt, and keep our minds open.</p>
               </div>
             </div>
