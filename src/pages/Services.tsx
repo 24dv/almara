@@ -47,7 +47,7 @@ const Services = () => {
       {/* Hero Section */}
       <section className="h-screen flex items-center justify-center px-8 lg:px-12 mission-gradient relative overflow-hidden">
         {/* Background Circle - Right Side Oversized */}
-        <img src="/lovable-uploads/a58a04a2-6cc9-41d7-a8c1-bd70d0c8df8f.png" alt="Circle background" className="absolute w-[60vw] h-[60vw] max-w-[600px] max-h-[600px] object-cover bg-transparent top-1/2 right-[5%] transform -translate-y-1/2 z-[1] opacity-80" />
+        <img src="/lovable-uploads/a58a04a2-6cc9-41d7-a8c1-bd70d0c8df8f.png" alt="Circle background" className="absolute w-[100vw] h-[100vw] max-w-[1000px] max-h-[1000px] object-cover bg-transparent top-1/2 right-[-10%] transform -translate-y-1/2 z-[1] opacity-80" />
         
         <div className="w-full max-w-7xl mx-auto px-8 lg:px-12 relative z-10">
           <div className="w-full flex justify-end">
