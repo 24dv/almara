@@ -3,10 +3,57 @@ import { Footer } from "@/components/Footer";
 import { Link } from "react-router-dom";
 import { MobileMenu } from "@/components/MobileMenu";
 import { Button } from "@/components/ui/button";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import servicesHero from "@/assets/services-hero.jpg";
 
 const Services = () => {
+  const [activeService, setActiveService] = useState("family-office");
+
+  const services = [
+    {
+      id: "family-office",
+      title: "family office",
+      description: "We design the architecture of bespoke wealth solutions—aligning asset management and wealth structuring.",
+      points: [
+        "Structural design: holdings, governance, succession (multi-jurisdictional)",
+        "Coordination & oversight: investment managers, tax & legal, financing, accounting, audit, reporting",
+        "Consolidated view: periodic reviews, risk monitoring, cadence and accountability"
+      ]
+    },
+    {
+      id: "alternatives",
+      title: "alternatives",
+      description: "Where opportunity meets access. Curated exposure across private markets.",
+      points: [
+        "Private Equity & Venture Capital",
+        "Private Debt & Hedge Funds", 
+        "Structured Products & Litigation Funding",
+        "Real Estate & Specialty Assets"
+      ]
+    },
+    {
+      id: "capital-ma",
+      title: "capital introduction & M&A",
+      description: "Connecting capital and opportunity—quietly and effectively.",
+      points: [
+        "Capital introductions: institutions, family offices, and select co-investors",
+        "M&A support: buy-side/sell-side, valuation, diligence, negotiations",
+        "Execution with partners: targeted boutiques and global advisors where appropriate"
+      ]
+    },
+    {
+      id: "art-advisory",
+      title: "art advisory",
+      description: "Beyond collection management—insider access to expertise and institutions.",
+      points: [
+        "Acquisition & valuation: market intelligence, authenticity, pricing",
+        "Conservation & succession: preservation strategies, estate integration",
+        "Placement & financing: loans, insurance, art lending, gallery/museum relationships",
+        "Infrastructure: collection-management systems and bespoke reporting"
+      ]
+    }
+  ];
+
   // Basic SEO for this page
   useEffect(() => {
     document.title = "Services | ALMARA";
@@ -72,63 +119,64 @@ const Services = () => {
         </div>
       </section>
 
-      {/* What We Do Section */}
+      {/* Interactive Services Section */}
       <section className="px-8 lg:px-12 py-24 mission-gradient">
-        <div className="max-w-5xl mx-auto">
-          <div className="grid gap-8 md:grid-cols-2">
-            {/* Family Office */}
-            <article className="bg-gradient-to-r from-transparent via-gray-600/30 to-gray-700/60 rounded-3xl p-8 backdrop-blur-sm border border-white/10">
-              <h3 className="text-xl font-semibold text-white/80 mb-4">Family Office</h3>
-              <p className="text-white/70 leading-relaxed mb-4">
-                We design the architecture of bespoke wealth solutions—aligning asset management and wealth structuring.
-              </p>
-              <ul className="list-disc pl-5 space-y-2 text-white/70">
-                <li>Structural design: holdings, governance, succession (multi-jurisdictional)</li>
-                <li>Coordination & oversight: investment managers, tax & legal, financing, accounting, audit, reporting</li>
-                <li>Consolidated view: periodic reviews, risk monitoring, cadence and accountability</li>
-              </ul>
-            </article>
+        <div className="max-w-6xl mx-auto">
+          {/* Interactive Circles */}
+          <div className="flex items-center justify-center mb-12 space-x-8">
+            {services.map((service, index) => (
+              <button
+                key={service.id}
+                onClick={() => setActiveService(service.id)}
+                className={`flex-shrink-0 transition-all duration-300 ${
+                  activeService === service.id ? 'transform scale-110' : 'hover:transform hover:scale-105'
+                }`}
+                style={{
+                  width: '56px',
+                  height: '56px',
+                  borderRadius: '50%',
+                  backgroundColor: activeService === service.id ? '#c44569' : 'transparent',
+                  boxShadow: activeService === service.id 
+                    ? 'inset -2px -2px 4px rgba(255,255,255,0.1), inset 2px 2px 4px rgba(0,0,0,0.3)'
+                    : 'inset -4px -4px 8px rgba(255,255,255,0.0), inset 2px 2px 4px rgba(0,0,0,0.7)'
+                }}
+                aria-label={`Select ${service.title}`}
+              />
+            ))}
+          </div>
 
-            {/* Alternatives */}
-            <article className="bg-gradient-to-r from-transparent via-gray-600/30 to-gray-700/60 rounded-3xl p-8 backdrop-blur-sm border border-white/10">
-              <h3 className="text-xl font-semibold text-white/80 mb-4">Alternatives</h3>
-              <p className="text-white/70 leading-relaxed mb-4">
-                Where opportunity meets access. Curated exposure across private markets.
-              </p>
-              <ul className="list-disc pl-5 space-y-2 text-white/70">
-                <li>Private Equity & Venture Capital</li>
-                <li>Private Debt & Hedge Funds</li>
-                <li>Structured Products & Litigation Funding</li>
-                <li>Real Estate & Specialty Assets</li>
-              </ul>
-            </article>
-
-            {/* Capital & M&A */}
-            <article className="bg-gradient-to-r from-transparent via-gray-600/30 to-gray-700/60 rounded-3xl p-8 backdrop-blur-sm border border-white/10">
-              <h3 className="text-xl font-semibold text-white/80 mb-4">Capital Introduction & M&A</h3>
-              <p className="text-white/70 leading-relaxed mb-4">
-                Connecting capital and opportunity—quietly and effectively.
-              </p>
-              <ul className="list-disc pl-5 space-y-2 text-white/70">
-                <li>Capital introductions: institutions, family offices, and select co-investors</li>
-                <li>M&A support: buy-side/sell-side, valuation, diligence, negotiations</li>
-                <li>Execution with partners: targeted boutiques and global advisors where appropriate</li>
-              </ul>
-            </article>
-
-            {/* Art Advisory */}
-            <article className="bg-gradient-to-r from-transparent via-gray-600/30 to-gray-700/60 rounded-3xl p-8 backdrop-blur-sm border border-white/10">
-              <h3 className="text-xl font-semibold text-white/80 mb-4">Art Advisory</h3>
-              <p className="text-white/70 leading-relaxed mb-4">
-                Beyond collection management—insider access to expertise and institutions.
-              </p>
-              <ul className="list-disc pl-5 space-y-2 text-white/70">
-                <li>Acquisition & valuation: market intelligence, authenticity, pricing</li>
-                <li>Conservation & succession: preservation strategies, estate integration</li>
-                <li>Placement & financing: loans, insurance, art lending, gallery/museum relationships</li>
-                <li>Infrastructure: collection-management systems and bespoke reporting</li>
-              </ul>
-            </article>
+          {/* Service Content */}
+          <div className="text-left max-w-4xl">
+            {services.map((service) => (
+              <div 
+                key={service.id}
+                className={`transition-all duration-500 ${
+                  activeService === service.id 
+                    ? 'opacity-100 transform translate-y-0' 
+                    : 'opacity-0 transform translate-y-4 absolute pointer-events-none'
+                }`}
+              >
+                <h3 className="font-helvetica-now text-xl tracking-wider font-bold text-[#f4eada] mb-6">
+                  {service.title}
+                </h3>
+                <p className="text-[#f4eada] leading-relaxed mb-6 text-base">
+                  {service.description}
+                </p>
+                <div className="space-y-3">
+                  {service.points.map((point, index) => (
+                    <div key={index} className="flex items-start space-x-3">
+                      <div className="flex-shrink-0 mt-2">
+                        <div 
+                          className="bg-[#c44569] transform rotate-45"
+                          style={{ width: '6px', height: '6px' }}
+                        />
+                      </div>
+                      <p className="text-[#f4eada] text-sm leading-relaxed">{point}</p>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            ))}
           </div>
         </div>
       </section>
