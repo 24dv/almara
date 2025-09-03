@@ -101,13 +101,13 @@ const Services = () => {
             <div className="max-w-6xl text-right space-y-8">
           <h1 className="font-museo-moderno text-[32px] lg:text-[36px] text-[#f4eada] tracking-[0.05em] opacity-90 leading-tight">Our Services</h1>
           <div className="space-y-2">
-            <p className="leading-relaxed text-sm lg:text-base text-[#f4eada] font-helvetica-now">
+            <p className="leading-relaxed text-sm lg:text-base text-[#f4eada] font-helvetica-now font-light">
               Family office, alternatives, M&A, and art advisory,
             </p>
-            <p className="leading-relaxed text-sm lg:text-base text-[#f4eada] font-helvetica-now">
+            <p className="leading-relaxed text-sm lg:text-base text-[#f4eada] font-helvetica-now font-light">
               delivered through ongoing counsel
             </p>
-            <p className="leading-relaxed text-sm lg:text-base text-[#f4eada] font-helvetica-now">
+            <p className="leading-relaxed text-sm lg:text-base text-[#f4eada] font-helvetica-now font-light">
               and mandate-led execution.
             </p>
           </div>
