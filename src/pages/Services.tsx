@@ -159,7 +159,7 @@ const Services = () => {
               className="absolute text-3xl"
               style={{ 
                 color: '#f4eada',
-                left: 'calc(50% - 144px)' // Exactly in the middle of the gap between first and second circle
+                left: 'calc(50% - 276px)' // Between first and second: center minus half total width plus first circle plus half gap
               }}
             >
               ➤
