@@ -315,26 +315,6 @@ All colors MUST be HSL.
     position: relative;
   }
   
-  /* Subtle glow effect behind circle image - only for hero section */
-  .partners-hero-glow::before {
-    content: '';
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 60vw;
-    height: 60vw;
-    max-width: 600px;
-    max-height: 600px;
-    min-width: 400px;
-    min-height: 400px;
-    background: radial-gradient(ellipse at center, hsl(var(--almara-dark-blue) / 0.4) 0%, hsl(var(--almara-dark-blue) / 0.2) 30%, hsl(var(--almara-dark-blue) / 0.05) 60%, transparent 80%);
-    border-radius: 50%;
-    filter: blur(20px);
-    z-index: 4;
-    pointer-events: none;
-  }
-  
   /* Soft elliptical radial gradient for Mission page sections */
   .mission-section-gradient {
     background: radial-gradient(ellipse at center, #364b56 0%, transparent 70%);
