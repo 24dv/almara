@@ -49,7 +49,7 @@ const Services = () => {
         {/* Background Circle - Right Side Oversized */}
         <img src="/lovable-uploads/a58a04a2-6cc9-41d7-a8c1-bd70d0c8df8f.png" alt="Circle background" className="absolute w-[120vw] h-[120vw] max-w-[1200px] max-h-[1200px] object-cover bg-transparent top-1/2 right-[-30vw] transform -translate-y-1/2 z-[1] opacity-80" />
         
-        <div className="max-w-6xl ml-auto mr-16 text-right space-y-8 relative z-10">
+        <div className="max-w-lg ml-auto mr-16 text-right space-y-8 relative z-10">
           <h1 className="font-museo-moderno text-[32px] lg:text-[36px] text-white tracking-[0.05em] opacity-90 leading-tight">Our Services</h1>
           <div className="space-y-2">
             <p className="leading-relaxed text-sm lg:text-base text-white font-helvetica-now">
