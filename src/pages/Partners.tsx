@@ -99,7 +99,7 @@ const Partners = () => {
         <div className="max-w-6xl mx-auto text-center relative z-10">
           <div className="mb-16">
             <h2 className="font-museo-moderno text-[32px] lg:text-[36px] text-[#364b56] mb-6">Institutional Partners</h2>
-            <p className="font-helvetica-now text-[#363636] text-lg">
+            <p className="font-helvetica-now text-[#363636] text-lg max-w-[85%] mx-auto">
               Banking and investment relationships that enable execution with discretion.
             </p>
           </div>
@@ -172,7 +172,7 @@ const Partners = () => {
         <div className="max-w-4xl mx-auto text-center relative z-10">
           <div className="mb-16">
             <h2 className="font-museo-moderno text-[32px] lg:text-[36px] text-[#364b56] mb-6">Technology Partners</h2>
-            <p className="font-helvetica-now text-[#363636] text-lg">
+            <p className="font-helvetica-now text-[#363636] text-lg max-w-[85%] mx-auto">
               Infrastructure for secure sourcing, governance, and reporting.
             </p>
           </div>
@@ -212,7 +212,7 @@ const Partners = () => {
         <div className="max-w-6xl mx-auto text-center relative z-10">
           <div className="mb-16">
             <h2 className="font-museo-moderno text-[32px] lg:text-[36px] text-[#364b56] mb-6">Project Partners</h2>
-            <p className="font-helvetica-now text-[#363636] text-lg">
+            <p className="font-helvetica-now text-[#363636] text-lg max-w-[85%] mx-auto">
               Specialists we mobilise for specific mandates.
             </p>
           </div>
