@@ -51,7 +51,7 @@ const Services = () => {
         
         <div className="max-w-6xl ml-auto mr-16 text-right space-y-8 relative z-10">
           <h1 className="font-museo-moderno text-[32px] lg:text-[36px] text-white tracking-[0.05em] opacity-90 leading-tight">Our Services</h1>
-          <div className="space-y-6">
+          <div className="space-y-2">
             <p className="leading-relaxed text-sm lg:text-base text-white font-helvetica-now">
               Family office, alternatives, M&A, and art advisory,
             </p>
