@@ -46,24 +46,13 @@ const Services = () => {
 
       {/* Hero Section */}
       <section className="h-screen flex items-center justify-center px-8 lg:px-12 mission-gradient">
-        <div className="flex items-center w-full max-w-6xl">
-          {/* Navigation Dots */}
-          <div className="hidden lg:flex flex-col space-y-6 mr-16">
-            <Link to="/about" className="w-16 h-16 rounded-full bg-white/20 backdrop-blur-sm border border-white/30 flex items-center justify-center text-white/70 text-sm font-helvetica-now hover:bg-white/30 transition-all">about</Link>
-            <div className="w-16 h-16 rounded-full bg-red-600 flex items-center justify-center text-white text-sm font-helvetica-now font-medium">services</div>
-            <Link to="/partners" className="w-16 h-16 rounded-full bg-white/20 backdrop-blur-sm border border-white/30 flex items-center justify-center text-white/70 text-sm font-helvetica-now hover:bg-white/30 transition-all">partners</Link>
-            <Link to="/mission" className="w-16 h-16 rounded-full bg-white/20 backdrop-blur-sm border border-white/30 flex items-center justify-center text-white/70 text-sm font-helvetica-now hover:bg-white/30 transition-all">mission</Link>
-          </div>
-
-          {/* Content */}
-          <div className="flex-1 text-right space-y-8">
-            <h1 className="font-long-cang text-5xl lg:text-6xl xl:text-7xl text-white leading-tight font-thin">Our Services</h1>
-            <p className="text-lg lg:text-xl text-white/90 font-helvetica-now max-w-2xl ml-auto leading-relaxed">
-              Family office, alternatives, M&A, and art advisory, delivered through ongoing counsel and mandate-led execution.
-            </p>
-            <div className="pt-6">
-              <Button variant="call" size="call" className="font-helvetica-now">request a call</Button>
-            </div>
+        <div className="text-center space-y-8">
+          <h1 className="font-long-cang text-5xl lg:text-6xl xl:text-7xl text-white leading-tight font-thin">Our Services</h1>
+          <p className="text-lg lg:text-xl text-white/90 font-helvetica-now max-w-2xl mx-auto leading-relaxed">
+            Family office, alternatives, M&A, and art advisory, delivered through ongoing counsel and mandate-led execution.
+          </p>
+          <div className="pt-6">
+            <Button variant="call" size="call" className="font-helvetica-now">request a call</Button>
           </div>
         </div>
       </section>
