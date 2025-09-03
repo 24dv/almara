@@ -123,35 +123,48 @@ const Services = () => {
       <section className="px-8 lg:px-12 py-24 mission-gradient">
         <div className="max-w-6xl mx-auto">
           {/* Interactive Circles */}
-          <div className="flex items-center justify-center mb-12 space-x-8">
+          <div className="flex items-center justify-center mb-12 space-x-16">
             {services.map((service, index) => (
-              <button
-                key={service.id}
-                onClick={() => setActiveService(service.id)}
-                className="flex-shrink-0"
-                style={{
-                  width: '56px',
-                  height: '56px',
-                  borderRadius: '50%',
-                  backgroundColor: activeService === service.id ? 'hsl(var(--almara-carmine))' : 'transparent',
-                  boxShadow: 'inset -4px -4px 8px rgba(255,255,255,0.0), inset 2px 2px 4px rgba(0,0,0,0.7)',
-                  transition: 'background-color 0.4s cubic-bezier(0.4, 0, 0.2, 1), transform 0.2s ease-out',
-                  transform: 'scale(1)'
-                }}
-                onMouseEnter={(e) => {
-                  if (activeService !== service.id) {
-                    e.currentTarget.style.backgroundColor = 'hsl(var(--almara-carmine))';
-                    e.currentTarget.style.transform = 'scale(1.05)';
-                  }
-                }}
-                onMouseLeave={(e) => {
-                  if (activeService !== service.id) {
-                    e.currentTarget.style.backgroundColor = 'transparent';
-                    e.currentTarget.style.transform = 'scale(1)';
-                  }
-                }}
-                aria-label={`Select ${service.title}`}
-              />
+              <div key={service.id} className="flex items-center space-x-3">
+                <button
+                  onClick={() => setActiveService(service.id)}
+                  className="flex-shrink-0"
+                  style={{
+                    width: '56px',
+                    height: '56px',
+                    borderRadius: '50%',
+                    backgroundColor: activeService === service.id ? 'hsl(var(--almara-carmine))' : 'transparent',
+                    boxShadow: 'inset -4px -4px 8px rgba(255,255,255,0.0), inset 2px 2px 4px rgba(0,0,0,0.7)',
+                    transition: 'background-color 0.4s cubic-bezier(0.4, 0, 0.2, 1), transform 0.2s ease-out',
+                    transform: 'scale(1)'
+                  }}
+                  onMouseEnter={(e) => {
+                    if (activeService !== service.id) {
+                      e.currentTarget.style.backgroundColor = 'hsl(var(--almara-carmine))';
+                      e.currentTarget.style.transform = 'scale(1.05)';
+                    }
+                  }}
+                  onMouseLeave={(e) => {
+                    if (activeService !== service.id) {
+                      e.currentTarget.style.backgroundColor = 'transparent';
+                      e.currentTarget.style.transform = 'scale(1)';
+                    }
+                  }}
+                  aria-label={`Select ${service.title}`}
+                />
+                {activeService === service.id && (
+                  <div 
+                    className="ml-2"
+                    style={{
+                      width: '0',
+                      height: '0',
+                      borderLeft: '8px solid #f4eada',
+                      borderTop: '6px solid transparent',
+                      borderBottom: '6px solid transparent'
+                    }}
+                  />
+                )}
+              </div>
             ))}
           </div>
 
