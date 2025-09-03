@@ -75,7 +75,7 @@ const Partners = () => {
         
         {/* Main Content - Better centered in remaining space */}
         <div className="flex-1 flex items-center justify-center px-12 relative z-10" style={{ marginTop: '-60px' }}>
-          <div className="max-w-lg text-center relative z-10">
+          <div className="max-w-lg text-center relative z-10 reveal-up" style={{ animationDelay: '0.3s', animationFillMode: 'both' }}>
             {/* Content */}
             <div className="space-y-6">
               <h1 className="font-museo-moderno text-[32px] lg:text-[36px] text-almara-light-text tracking-[0.05em] opacity-90 leading-tight">
