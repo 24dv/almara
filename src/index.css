@@ -373,12 +373,12 @@ All colors MUST be HSL.
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 45%;
-    height: 45%;
+    width: 50%;
+    height: 50%;
     background: radial-gradient(
       circle at center,
-      hsl(var(--almara-dark-blue) / 0.25) 0%,
-      hsl(var(--almara-dark-blue) / 0.15) 40%,
+      hsl(var(--almara-dark-blue) / 0.35) 0%,
+      hsl(var(--almara-dark-blue) / 0.2) 40%,
       transparent 70%
     );
     border-radius: 50%;
