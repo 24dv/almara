@@ -221,7 +221,7 @@ const Services = () => {
           <div className="text-center mb-16">
             <h2 className="font-museo-moderno text-[28px] lg:text-[32px] text-white">How We Work</h2>
           </div>
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-12 font-helvetica-now text-white/70">
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-12 font-helvetica-now text-white/70 mb-16">
             <article className="space-y-2">
               <h3 className="text-lg text-white/80">Ongoing counsel</h3>
               <p className="leading-relaxed">
@@ -238,6 +238,26 @@ const Services = () => {
               <h3 className="text-lg text-white/80">Orchestrated network</h3>
               <p className="leading-relaxed">
                 Discreet access to private banks, boutiques, legal/tax advisors, researchers, and art-world experts, curated and managed by us.
+              </p>
+            </article>
+          </div>
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-12 font-helvetica-now">
+            <article className="space-y-2">
+              <h3 className="font-helvetica-now text-xl tracking-wider font-bold text-[#f4eada]">who we work with</h3>
+              <p className="text-[#f4eada] leading-relaxed text-base">
+                Principals & families · Entrepreneurial investors · Fund managers
+              </p>
+            </article>
+            <article className="space-y-2">
+              <h3 className="font-helvetica-now text-xl tracking-wider font-bold text-[#f4eada]">perspective</h3>
+              <p className="text-[#f4eada] leading-relaxed text-base">
+                Research-led and culture-aware, with ties to London Business School and the Sorbonne. We support democracy, the rule of law, European integration, and contemporary visual and performance art.
+              </p>
+            </article>
+            <article className="space-y-2">
+              <h3 className="font-helvetica-now text-xl tracking-wider font-bold text-[#f4eada]">discretion & access</h3>
+              <p className="text-[#f4eada] leading-relaxed text-base">
+                We collaborate with leading institutions and boutiques. References available on request.
               </p>
             </article>
           </div>
