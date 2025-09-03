@@ -46,14 +46,8 @@ const Services = () => {
 
       {/* Hero Section */}
       <section className="h-screen flex items-center justify-center px-8 lg:px-12 mission-gradient relative overflow-hidden">
-        {/* Background Circle - Responsive scaling to keep text centered */}
-        <img src="/lovable-uploads/a58a04a2-6cc9-41d7-a8c1-bd70d0c8df8f.png" alt="Circle background" className="absolute object-cover bg-transparent z-[1] opacity-80
-          w-[600px] h-[600px] top-1/2 right-0 transform translate-x-[20%] -translate-y-1/2
-          sm:w-[700px] sm:h-[700px] sm:translate-x-[15%]
-          md:w-[800px] md:h-[800px] md:translate-x-[10%]
-          lg:w-[900px] lg:h-[900px] lg:translate-x-[5%]
-          xl:w-[1000px] xl:h-[1000px] xl:translate-x-[2%]
-          2xl:w-[1100px] 2xl:h-[1100px] 2xl:translate-x-[0%]" />
+        {/* Background Circle - Spans from header to bottom of section */}
+        <img src="/lovable-uploads/a58a04a2-6cc9-41d7-a8c1-bd70d0c8df8f.png" alt="Circle background" className="absolute w-[120vh] h-[120vh] min-w-[800px] min-h-[800px] max-w-[1200px] max-h-[1200px] object-cover bg-transparent top-0 right-0 transform translate-x-[25%] -translate-y-[10%] z-[1] opacity-80" />
         
         <div className="w-full max-w-7xl mx-auto px-8 lg:px-12 relative z-10">
           <div className="w-full flex justify-end">
