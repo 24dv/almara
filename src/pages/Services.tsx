@@ -215,7 +215,7 @@ const Services = () => {
       {/* How We Work Section */}
       <section className="relative h-screen flex items-center justify-center px-8 lg:px-12 mission-section-gradient overflow-hidden">
         {/* Background Circle - Centered and sized to touch top/bottom borders */}
-        <img src="/lovable-uploads/a58a04a2-6cc9-41d7-a8c1-bd70d0c8df8f.png" alt="Circle background" className="absolute w-[100vh] h-[100vh] object-cover bg-transparent top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-[1] opacity-60" />
+        <img src="/lovable-uploads/a58a04a2-6cc9-41d7-a8c1-bd70d0c8df8f.png" alt="Circle background" className="absolute w-[80vh] h-[80vh] object-cover bg-transparent top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-[1] opacity-60" />
         
         <div className="max-w-5xl mx-auto relative z-10">
           <div className="text-center mb-16">
