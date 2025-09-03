@@ -92,7 +92,7 @@ const Services = () => {
       </section>
 
       {/* Hero Section */}
-      <section className="h-screen flex items-center justify-center px-8 lg:px-12 mission-gradient relative overflow-hidden">
+      <section className="h-screen flex items-center justify-center px-8 lg:px-12 mission-section-gradient relative overflow-hidden">
         {/* Background Circle - Spans from header to bottom of section */}
         <img src="/lovable-uploads/a58a04a2-6cc9-41d7-a8c1-bd70d0c8df8f.png" alt="Circle background" className="absolute w-[120vh] h-[120vh] min-w-[800px] min-h-[800px] max-w-[1200px] max-h-[1200px] object-cover bg-transparent top-0 right-0 transform translate-x-[25%] -translate-y-[10%] z-[1] opacity-80" />
         
