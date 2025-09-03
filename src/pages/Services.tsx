@@ -154,12 +154,12 @@ const Services = () => {
                 />
               </div>
             ))}
-            {/* Arrow positioned between first and second circles */}
+            {/* Arrow positioned in the middle between first and second circles */}
             <span 
               className="absolute text-3xl"
               style={{ 
                 color: '#f4eada',
-                left: 'calc(50% - 120px)' // Positioned between first and second circle
+                left: 'calc(50% - 96px)' // Exactly in the middle of the gap between first and second circle
               }}
             >
               ➤
