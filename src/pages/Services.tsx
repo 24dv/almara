@@ -154,7 +154,7 @@ const Services = () => {
                 />
                 {activeService === service.id && (
                   <span 
-                    className="ml-2 text-xl"
+                    className="ml-2 text-3xl"
                     style={{ color: '#f4eada' }}
                   >
                     ➤
