@@ -281,6 +281,16 @@ All colors MUST be HSL.
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    opacity: 0.3;
+    z-index: 1;
+  }
+
+  /* Elliptical radial gradient for Services page sections - no texture overlay */
+  .services-section-gradient {
+    background: radial-gradient(ellipse at center, #364b56 0%, transparent 70%);
+    position: relative;
+  }
+    background-repeat: no-repeat;
     opacity: 0.4;
     z-index: 1;
     pointer-events: none;
