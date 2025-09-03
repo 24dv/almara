@@ -92,7 +92,7 @@ const Services = () => {
       </section>
 
       {/* Hero Section */}
-      <section className="h-screen flex items-center justify-center px-8 lg:px-12 relative overflow-hidden">
+      <section className="h-screen flex items-center justify-center px-8 lg:px-12 mission-section-gradient relative overflow-hidden">
         {/* Background Circle - Spans from header to bottom of section */}
         <img src="/lovable-uploads/a58a04a2-6cc9-41d7-a8c1-bd70d0c8df8f.png" alt="Circle background" className="absolute w-[120vh] h-[120vh] min-w-[800px] min-h-[800px] max-w-[1200px] max-h-[1200px] object-cover bg-transparent top-0 right-0 transform translate-x-[25%] -translate-y-[10%] z-[1] opacity-80" />
         
@@ -120,7 +120,7 @@ const Services = () => {
       </section>
 
       {/* Interactive Services Section */}
-      <section className="h-screen bg-almara-light-text/20 flex items-start justify-center px-8 lg:px-12">
+      <section className="h-screen bg-almara-light-text/20 flex items-start justify-center px-8 lg:px-12 mission-section-gradient">
         <div className="max-w-6xl mx-auto pt-60 pb-16">
           {/* Interactive Circles */}
           <div className="flex items-center justify-center mb-8">
@@ -134,7 +134,6 @@ const Services = () => {
                     height: '56px',
                     borderRadius: '50%',
                     backgroundColor: activeService === service.id ? '#364b56' : 'transparent',
-                    boxShadow: 'inset -4px -4px 8px rgba(255,255,255,0.0), inset 2px 2px 4px rgba(0,0,0,0.7)',
                     transition: 'background-color 0.4s cubic-bezier(0.4, 0, 0.2, 1), transform 0.2s ease-out',
                     transform: 'scale(1)'
                   }}
@@ -213,7 +212,7 @@ const Services = () => {
       </section>
 
       {/* How We Work Section */}
-      <section className="h-screen flex items-center justify-center px-8 lg:px-12">
+      <section className="h-screen flex items-center justify-center px-8 lg:px-12 mission-section-gradient">
         <div className="max-w-5xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="font-museo-moderno text-[28px] lg:text-[32px] text-white">How We Work</h2>
