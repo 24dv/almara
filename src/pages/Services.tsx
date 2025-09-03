@@ -123,7 +123,7 @@ const Services = () => {
       <section className="h-screen flex items-center justify-center px-8 lg:px-12 mission-gradient">
         <div className="max-w-6xl mx-auto">
           {/* Interactive Circles */}
-          <div className="flex items-center justify-center mb-12 space-x-48">
+          <div className="relative flex items-center justify-center mb-12 space-x-48">
             {services.map((service, index) => (
               <div key={service.id} className="flex items-center space-x-3">
                 <button
@@ -152,16 +152,18 @@ const Services = () => {
                   }}
                   aria-label={`Select ${service.title}`}
                 />
-                {activeService === service.id && (
-                  <span 
-                    className="ml-2 text-3xl"
-                    style={{ color: '#f4eada' }}
-                  >
-                    ➤
-                  </span>
-                )}
               </div>
             ))}
+            {/* Arrow positioned between first and second circles */}
+            <span 
+              className="absolute text-3xl"
+              style={{ 
+                color: '#f4eada',
+                left: 'calc(50% - 120px)' // Positioned between first and second circle
+              }}
+            >
+              ➤
+            </span>
           </div>
 
           {/* Service Content */}
