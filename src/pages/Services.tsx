@@ -92,7 +92,7 @@ const Services = () => {
       </section>
 
       {/* Hero Section */}
-      <section className="h-screen flex items-center justify-center px-8 lg:px-12 mission-section-gradient relative overflow-hidden animate-fade-in">
+      <section className="h-screen flex items-center justify-center px-8 lg:px-12 mission-section-gradient relative overflow-hidden reveal-up" style={{ animationDelay: '0.2s', animationFillMode: 'both' }}>
         {/* Background Circle - Spans from header to bottom of section */}
         <img src="/lovable-uploads/a58a04a2-6cc9-41d7-a8c1-bd70d0c8df8f.png" alt="Circle background" className="absolute w-[120vh] h-[120vh] min-w-[800px] min-h-[800px] max-w-[1200px] max-h-[1200px] object-cover bg-transparent top-0 right-0 transform translate-x-[25%] -translate-y-[10%] z-[1] opacity-80" loading="eager" fetchPriority="high" />
         
@@ -120,7 +120,7 @@ const Services = () => {
       </section>
 
       {/* Interactive Services Section */}
-      <section className="h-screen bg-almara-light-text/20 flex items-start justify-center px-8 lg:px-12 mission-section-gradient animate-fade-in">
+      <section className="h-screen bg-almara-light-text/20 flex items-start justify-center px-8 lg:px-12 mission-section-gradient">
         <div className="max-w-6xl mx-auto pt-60 pb-16">
           {/* Interactive Circles */}
           <div className="flex items-center justify-center mb-8">
@@ -217,7 +217,7 @@ const Services = () => {
       </section>
 
       {/* How We Work Section */}
-      <section className="relative h-screen flex items-center justify-center px-8 lg:px-12 mission-section-gradient overflow-hidden animate-fade-in">
+      <section className="relative h-screen flex items-center justify-center px-8 lg:px-12 mission-section-gradient overflow-hidden">
         {/* Background Circle - Centered and sized to touch top/bottom borders */}
         <img src="/lovable-uploads/a58a04a2-6cc9-41d7-a8c1-bd70d0c8df8f.png" alt="Circle background" className="absolute w-[90vh] h-[90vh] object-cover bg-transparent top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-[1] opacity-60" loading="lazy" />
         
