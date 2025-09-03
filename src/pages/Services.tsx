@@ -152,20 +152,18 @@ const Services = () => {
                   }}
                   aria-label={`Select ${service.title}`}
                 />
-                {/* Arrow after first circle only */}
-                {index === 0 && (
+                {/* Arrow after each circle except the last */}
+                {index < services.length - 1 && (
                   <div className="flex items-center justify-center" style={{ width: '192px' }}>
-                    <span 
-                      className="text-3xl"
-                      style={{ color: '#f4eada' }}
-                    >
-                      ➤
-                    </span>
+                    {activeService === service.id && (
+                      <span 
+                        className="text-3xl"
+                        style={{ color: '#f4eada' }}
+                      >
+                        ➤
+                      </span>
+                    )}
                   </div>
-                )}
-                {/* Spacing for other circles */}
-                {index > 0 && index < services.length - 1 && (
-                  <div style={{ width: '192px' }} />
                 )}
               </div>
             ))}
