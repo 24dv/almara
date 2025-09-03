@@ -106,7 +106,7 @@ const Mission = () => {
               />
               <div>
                 <h3 className="font-helvetica-now text-xl tracking-wider font-bold text-[#f4eada] mb-4">clarity first</h3>
-                <p className="text-base leading-relaxed">We define purpose, constraints, and desired outcomes before we act.</p>
+                <p className="text-base leading-relaxed text-[#f4eada]">We define purpose, constraints, and desired outcomes before we act.</p>
               </div>
             </div>
             <div className="flex items-start space-x-4">
@@ -122,7 +122,7 @@ const Mission = () => {
               />
               <div>
                 <h3 className="font-helvetica-now text-xl tracking-wider font-bold text-[#f4eada] mb-4">balance</h3>
-                <p className="text-base leading-relaxed">We hold risk/return and time/impact in healthy tension.</p>
+                <p className="text-base leading-relaxed text-[#f4eada]">We hold risk/return and time/impact in healthy tension.</p>
               </div>
             </div>
             <div className="flex items-start space-x-4">
@@ -138,7 +138,7 @@ const Mission = () => {
               />
               <div>
                 <h3 className="font-helvetica-now text-xl tracking-wider font-bold text-[#f4eada] mb-4">simplicity as rigour</h3>
-                <p className="text-base leading-relaxed">We believe in fewer moving parts, tighter governance, better decisions.</p>
+                <p className="text-base leading-relaxed text-[#f4eada]">We believe in fewer moving parts, tighter governance, better decisions.</p>
               </div>
             </div>
             <div className="flex items-start space-x-4">
@@ -154,7 +154,7 @@ const Mission = () => {
               />
               <div>
                 <h3 className="font-helvetica-now text-xl tracking-wider font-bold text-[#f4eada] mb-4">exploration & creativity</h3>
-                <p className="text-base leading-relaxed">We focus on research, first principles, new lenses.</p>
+                <p className="text-base leading-relaxed text-[#f4eada]">We focus on research, first principles, new lenses.</p>
               </div>
             </div>
             <div className="flex items-start space-x-4">
@@ -170,7 +170,7 @@ const Mission = () => {
               />
               <div>
                 <h3 className="font-helvetica-now text-xl tracking-wider font-bold text-[#f4eada] mb-4">community & belonging</h3>
-                <p className="text-base leading-relaxed">Through trusted circles, shared knowledge, aligned action.</p>
+                <p className="text-base leading-relaxed text-[#f4eada]">Through trusted circles, shared knowledge, aligned action.</p>
               </div>
             </div>
             <div className="flex items-start space-x-4">
@@ -186,7 +186,7 @@ const Mission = () => {
               />
               <div>
                 <h3 className="font-helvetica-now text-xl tracking-wider font-bold text-[#f4eada] mb-4">materiality · sensitivity · play</h3>
-                <p className="text-base leading-relaxed">We respect the tangible and the felt, and keep our minds open.</p>
+                <p className="text-base leading-relaxed text-[#f4eada]">We respect the tangible and the felt, and keep our minds open.</p>
               </div>
             </div>
           </div>
