@@ -46,7 +46,7 @@ const Services = () => {
 
       {/* Hero Section */}
       <section className="h-screen flex items-center justify-center px-8 lg:px-12 mission-gradient">
-        <div className="flex items-center w-full max-w-7xl">
+        <div className="flex items-center w-full max-w-6xl">
           {/* Navigation Dots */}
           <div className="hidden lg:flex flex-col space-y-6 mr-16">
             <Link to="/about" className="w-16 h-16 rounded-full bg-white/20 backdrop-blur-sm border border-white/30 flex items-center justify-center text-white/70 text-sm font-helvetica-now hover:bg-white/30 transition-all">about</Link>
@@ -70,7 +70,7 @@ const Services = () => {
 
       {/* What We Do Section */}
       <section className="px-8 lg:px-12 py-24 mission-gradient">
-        <div className="max-w-7xl mx-auto">
+        <div className="max-w-5xl mx-auto">
           <div className="grid gap-8 md:grid-cols-2">
             {/* Family Office */}
             <article className="bg-gradient-to-r from-transparent via-gray-600/30 to-gray-700/60 rounded-3xl p-8 backdrop-blur-sm border border-white/10">
