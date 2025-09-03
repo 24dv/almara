@@ -105,8 +105,8 @@ const Mission = () => {
                 }}
               />
               <div>
-                <h3 className="text-sm font-semibold mb-2 text-[#f4eada]">clarity first</h3>
-                <p className="text-sm leading-relaxed">We define purpose, constraints, and desired outcomes before we act.</p>
+                <h3 className="font-helvetica-now text-xl tracking-wider font-bold text-[#f4eada]">clarity first</h3>
+                <p className="text-base leading-relaxed">We define purpose, constraints, and desired outcomes before we act.</p>
               </div>
             </div>
             <div className="flex items-start space-x-4">
@@ -121,8 +121,8 @@ const Mission = () => {
                 }}
               />
               <div>
-                <h3 className="text-sm font-semibold mb-2 text-[#f4eada]">balance</h3>
-                <p className="text-sm leading-relaxed">We hold risk/return and time/impact in healthy tension.</p>
+                <h3 className="font-helvetica-now text-xl tracking-wider font-bold text-[#f4eada]">balance</h3>
+                <p className="text-base leading-relaxed">We hold risk/return and time/impact in healthy tension.</p>
               </div>
             </div>
             <div className="flex items-start space-x-4">
@@ -137,8 +137,8 @@ const Mission = () => {
                 }}
               />
               <div>
-                <h3 className="text-sm font-semibold mb-2 text-[#f4eada]">simplicity as rigour</h3>
-                <p className="text-sm leading-relaxed">We believe in fewer moving parts, tighter governance, better decisions.</p>
+                <h3 className="font-helvetica-now text-xl tracking-wider font-bold text-[#f4eada]">simplicity as rigour</h3>
+                <p className="text-base leading-relaxed">We believe in fewer moving parts, tighter governance, better decisions.</p>
               </div>
             </div>
             <div className="flex items-start space-x-4">
@@ -153,8 +153,8 @@ const Mission = () => {
                 }}
               />
               <div>
-                <h3 className="text-sm font-semibold mb-2 text-[#f4eada]">exploration & creativity</h3>
-                <p className="text-sm leading-relaxed">We focus on research, first principles, new lenses.</p>
+                <h3 className="font-helvetica-now text-xl tracking-wider font-bold text-[#f4eada]">exploration & creativity</h3>
+                <p className="text-base leading-relaxed">We focus on research, first principles, new lenses.</p>
               </div>
             </div>
             <div className="flex items-start space-x-4">
@@ -169,8 +169,8 @@ const Mission = () => {
                 }}
               />
               <div>
-                <h3 className="text-sm font-semibold mb-2 text-[#f4eada]">community & belonging</h3>
-                <p className="text-sm leading-relaxed">Through trusted circles, shared knowledge, aligned action.</p>
+                <h3 className="font-helvetica-now text-xl tracking-wider font-bold text-[#f4eada]">community & belonging</h3>
+                <p className="text-base leading-relaxed">Through trusted circles, shared knowledge, aligned action.</p>
               </div>
             </div>
             <div className="flex items-start space-x-4">
@@ -185,8 +185,8 @@ const Mission = () => {
                 }}
               />
               <div>
-                <h3 className="text-sm font-semibold mb-2 text-[#f4eada]">materiality · sensitivity · play</h3>
-                <p className="text-sm leading-relaxed">We respect the tangible and the felt, and keep our minds open.</p>
+                <h3 className="font-helvetica-now text-xl tracking-wider font-bold text-[#f4eada]">materiality · sensitivity · play</h3>
+                <p className="text-base leading-relaxed">We respect the tangible and the felt, and keep our minds open.</p>
               </div>
             </div>
           </div>
