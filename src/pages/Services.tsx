@@ -170,15 +170,15 @@ const Services = () => {
           </div>
 
           {/* Service Content */}
-          <div className="relative">
+          <div className="relative min-h-[300px]">
             <div className="absolute left-0 text-left" style={{ marginLeft: 'calc(50% - 400px)', maxWidth: '28rem' }}>
               {services.map((service) => (
                 <div 
                   key={service.id}
-                  className={`transition-all duration-700 ease-in-out ${
+                  className={`absolute inset-0 transition-all duration-700 ease-in-out ${
                     activeService === service.id 
-                      ? 'opacity-100 transform translate-y-0 relative' 
-                      : 'opacity-0 transform translate-y-2 absolute pointer-events-none'
+                      ? 'opacity-100 transform translate-y-0 z-10' 
+                      : 'opacity-0 transform translate-y-2 z-0'
                   }`}
                   style={{
                     transitionProperty: 'opacity, transform',
