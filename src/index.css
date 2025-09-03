@@ -14,10 +14,6 @@
   animation: revealFade 2.5s ease-out forwards;
 }
 
-.pulse-breathing {
-  animation: pulseBreathing 4s ease-in-out infinite;
-}
-
 .reveal-left {
   opacity: 0;
   transform: translateX(-30px);
@@ -40,17 +36,6 @@
 @keyframes revealFade {
   to {
     opacity: 1;
-  }
-}
-
-@keyframes pulseBreathing {
-  0%, 100% {
-    opacity: 0.6;
-    transform: scale(1);
-  }
-  50% {
-    opacity: 0.9;
-    transform: scale(1.02);
   }
 }
 
