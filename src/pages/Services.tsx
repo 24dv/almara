@@ -45,10 +45,13 @@ const Services = () => {
       </section>
 
       {/* Hero Section */}
-      <section className="h-screen flex items-center justify-center px-8 lg:px-12 mission-gradient">
-        <div className="text-center space-y-8">
+      <section className="h-screen flex items-center justify-center px-8 lg:px-12 mission-gradient relative overflow-hidden">
+        {/* Background Circle - Right Side Oversized */}
+        <img src="/lovable-uploads/a58a04a2-6cc9-41d7-a8c1-bd70d0c8df8f.png" alt="Circle background" className="absolute w-[120vw] h-[120vw] max-w-[1200px] max-h-[1200px] object-cover bg-transparent top-1/2 right-[-30vw] transform -translate-y-1/2 z-[1] opacity-80" />
+        
+        <div className="text-right space-y-8 relative z-10 max-w-6xl ml-auto mr-8">
           <h1 className="font-long-cang text-5xl lg:text-6xl xl:text-7xl text-white leading-tight font-thin">Our Services</h1>
-          <p className="text-lg lg:text-xl text-white/90 font-helvetica-now max-w-2xl mx-auto leading-relaxed">
+          <p className="text-lg lg:text-xl text-white/90 font-helvetica-now max-w-2xl ml-auto leading-relaxed">
             Family office, alternatives, M&A, and art advisory, delivered through ongoing counsel and mandate-led execution.
           </p>
           <div className="pt-6">
