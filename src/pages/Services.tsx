@@ -219,7 +219,7 @@ const Services = () => {
         
         <div className="max-w-5xl mx-auto relative z-10">
           <div className="text-center mb-16">
-            <h2 className="font-museo-moderno text-[28px] lg:text-[32px] text-white">How We Work</h2>
+            <h2 className="font-museo-moderno text-[28px] lg:text-[32px] text-[#f4eada]">How We Work</h2>
           </div>
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-12 font-helvetica-now text-white/70 mb-16">
             <article className="space-y-2">
