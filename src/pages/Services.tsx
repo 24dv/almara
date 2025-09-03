@@ -123,7 +123,7 @@ const Services = () => {
       <section className="px-8 lg:px-12 py-24 mission-gradient">
         <div className="max-w-6xl mx-auto">
           {/* Interactive Circles */}
-          <div className="flex items-center justify-center mb-12 space-x-32">
+          <div className="flex items-center justify-center mb-12 space-x-48">
             {services.map((service, index) => (
               <div key={service.id} className="flex items-center space-x-3">
                 <button
