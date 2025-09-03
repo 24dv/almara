@@ -120,7 +120,7 @@ const Services = () => {
       </section>
 
       {/* Interactive Services Section */}
-      <section className="h-screen flex items-center justify-center px-8 lg:px-12 mission-gradient">
+      <section className="h-screen flex items-center justify-center px-8 lg:px-12 mission-section-gradient">
         <div className="max-w-6xl mx-auto">
           {/* Interactive Circles */}
           <div className="flex items-center justify-center mb-12">
@@ -213,7 +213,7 @@ const Services = () => {
       </section>
 
       {/* How We Work Section */}
-      <section className="h-screen flex items-center justify-center px-8 lg:px-12 mission-gradient">
+      <section className="h-screen flex items-center justify-center px-8 lg:px-12 mission-section-gradient">
         <div className="max-w-5xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="font-museo-moderno text-[28px] lg:text-[32px] text-white">How We Work</h2>
