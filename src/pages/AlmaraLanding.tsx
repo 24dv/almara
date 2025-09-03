@@ -5,7 +5,7 @@ import { MobileMenu } from "@/components/MobileMenu";
 
 const AlmaraLanding = () => {
   return (
-    <div className="relative w-full almara-gradient-bg">
+    <div className="relative w-full almara-gradient-bg animate-fade-in">
       {/* Mobile Header/Menu */}
       <MobileMenu />
 

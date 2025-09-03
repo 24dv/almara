@@ -26,7 +26,7 @@ const Mission = () => {
   }, []);
 
   return (
-    <div className="relative w-full min-h-screen almara-gradient-bg no-overlay">
+    <div className="relative w-full min-h-screen almara-gradient-bg no-overlay animate-fade-in">
       {/* Navigation - fixed positioned at same height as home page */}
       <Navigation positioning="fixed" />
 

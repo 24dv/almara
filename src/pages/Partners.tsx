@@ -54,7 +54,7 @@ const Partners = () => {
   };
 
   return (
-    <div className="relative w-full min-h-screen almara-gradient-bg">
+    <div className="relative w-full min-h-screen almara-gradient-bg animate-fade-in">
       {/* Navigation - fixed positioned at same height as home page */}
       <Navigation positioning="fixed" />
 

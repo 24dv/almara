@@ -10,7 +10,7 @@ export const PageLayout = ({
   title,
   children
 }: PageLayoutProps) => {
-  return <div className="relative w-full min-h-screen almara-gradient-bg">
+  return <div className="relative w-full min-h-screen almara-gradient-bg animate-fade-in">
       {/* Navigation - fixed positioned at same height as home page */}
       <Navigation positioning="fixed" />
 
