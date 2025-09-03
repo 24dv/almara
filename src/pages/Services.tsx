@@ -175,10 +175,10 @@ const Services = () => {
               {services.map((service) => (
                 <div 
                   key={service.id}
-                  className={`absolute inset-0 transition-all duration-700 ease-in-out ${
+                  className={`transition-all duration-700 ease-in-out ${
                     activeService === service.id 
-                      ? 'opacity-100 transform translate-y-0 z-10' 
-                      : 'opacity-0 transform translate-y-2 z-0'
+                      ? 'opacity-100 transform translate-y-0 relative z-10' 
+                      : 'opacity-0 transform translate-y-2 absolute top-0 pointer-events-none z-0'
                   }`}
                   style={{
                     transitionProperty: 'opacity, transform',
