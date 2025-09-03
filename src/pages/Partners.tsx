@@ -84,7 +84,7 @@ const Partners = () => {
               <h2 className="font-helvetica-now text-xl tracking-wider font-bold text-[#364b56] mb-6">
                 a curated network that amplifies outcomes
               </h2>
-              <div className="mx-auto">
+              <div className="mx-auto max-w-[85%]">
                 <p className="leading-relaxed text-sm lg:text-base text-[#363636] font-helvetica-now">
                   We collaborate with leading institutions, technology platforms, and project specialists—activated selectively, and only when it serves the mandate.
                 </p>
