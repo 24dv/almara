@@ -75,7 +75,7 @@ const Services = () => {
   }, []);
 
   return (
-    <div className="relative w-full min-h-screen almara-gradient-bg no-overlay">
+    <div className="relative w-full min-h-screen bg-almara-bg no-overlay">
       {/* Navigation - fixed positioned at same height as home page */}
       <Navigation positioning="fixed" />
 
