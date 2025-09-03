@@ -131,7 +131,7 @@ const Services = () => {
 
       {/* How We Work Section */}
       <section className="px-8 lg:px-12 py-24 mission-gradient">
-        <div className="max-w-6xl mx-auto">
+        <div className="max-w-5xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="font-museo-moderno text-[28px] lg:text-[32px] text-white">How We Work</h2>
           </div>
