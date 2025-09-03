@@ -175,11 +175,15 @@ const Services = () => {
               {services.map((service) => (
                 <div 
                   key={service.id}
-                  className={`transition-all duration-500 ${
+                  className={`transition-all duration-700 ease-in-out ${
                     activeService === service.id 
-                      ? 'opacity-100 transform translate-y-0' 
-                      : 'opacity-0 transform translate-y-4 absolute pointer-events-none'
+                      ? 'opacity-100 transform translate-y-0 relative' 
+                      : 'opacity-0 transform translate-y-2 absolute pointer-events-none'
                   }`}
+                  style={{
+                    transitionProperty: 'opacity, transform',
+                    willChange: 'opacity, transform'
+                  }}
                 >
                   <h3 className="font-helvetica-now text-xl tracking-wider font-bold text-[#f4eada] mb-6">
                     {service.title}
