@@ -11,7 +11,7 @@
 
 .reveal-fade {
   opacity: 0;
-  animation: revealFade 1.5s ease-out forwards;
+  animation: revealFade 2.5s ease-out forwards;
 }
 
 .reveal-left {
