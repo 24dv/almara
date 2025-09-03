@@ -315,22 +315,23 @@ All colors MUST be HSL.
     position: relative;
   }
   
-  .partners-gradient-bg::before {
+  /* Subtle glow effect behind circle image - only for hero section */
+  .partners-hero-glow::before {
     content: '';
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 70vw;
-    height: 70vw;
-    max-width: 700px;
-    max-height: 700px;
-    min-width: 400px;
-    min-height: 400px;
-    background: radial-gradient(ellipse at center, hsl(var(--almara-dark-blue) / 0.4) 0%, hsl(var(--almara-dark-blue) / 0.2) 30%, transparent 60%);
+    width: 55vw;
+    height: 55vw;
+    max-width: 550px;
+    max-height: 550px;
+    min-width: 350px;
+    min-height: 350px;
+    background: radial-gradient(ellipse at center, hsl(var(--almara-dark-blue) / 0.25) 0%, hsl(var(--almara-dark-blue) / 0.12) 40%, transparent 70%);
     border-radius: 50%;
-    filter: blur(30px);
-    z-index: 2;
+    filter: blur(25px);
+    z-index: 3;
     pointer-events: none;
   }
   
