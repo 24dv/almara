@@ -169,7 +169,7 @@ const Services = () => {
           </div>
 
           {/* Service Content */}
-          <div className="text-left max-w-4xl">
+          <div className="text-left max-w-4xl ml-0">
             {services.map((service) => (
               <div 
                 key={service.id}
