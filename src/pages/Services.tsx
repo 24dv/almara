@@ -169,37 +169,39 @@ const Services = () => {
           </div>
 
           {/* Service Content */}
-          <div className="text-left max-w-4xl ml-0">
-            {services.map((service) => (
-              <div 
-                key={service.id}
-                className={`transition-all duration-500 ${
-                  activeService === service.id 
-                    ? 'opacity-100 transform translate-y-0' 
-                    : 'opacity-0 transform translate-y-4 absolute pointer-events-none'
-                }`}
-              >
-                <h3 className="font-helvetica-now text-xl tracking-wider font-bold text-[#f4eada] mb-6">
-                  {service.title}
-                </h3>
-                <p className="text-[#f4eada] leading-relaxed mb-6 text-base">
-                  {service.description}
-                </p>
-                <div className="space-y-3">
-                  {service.points.map((point, index) => (
-                    <div key={index} className="flex items-start space-x-3">
-                      <div className="flex-shrink-0 mt-2">
-                        <div 
-                          className="bg-[#c44569] transform rotate-45"
-                          style={{ width: '6px', height: '6px' }}
-                        />
+          <div className="relative">
+            <div className="absolute left-0 text-left max-w-4xl" style={{ marginLeft: 'calc(50% - 336px)' }}>
+              {services.map((service) => (
+                <div 
+                  key={service.id}
+                  className={`transition-all duration-500 ${
+                    activeService === service.id 
+                      ? 'opacity-100 transform translate-y-0' 
+                      : 'opacity-0 transform translate-y-4 absolute pointer-events-none'
+                  }`}
+                >
+                  <h3 className="font-helvetica-now text-xl tracking-wider font-bold text-[#f4eada] mb-6">
+                    {service.title}
+                  </h3>
+                  <p className="text-[#f4eada] leading-relaxed mb-6 text-base">
+                    {service.description}
+                  </p>
+                  <div className="space-y-3">
+                    {service.points.map((point, index) => (
+                      <div key={index} className="flex items-start space-x-3">
+                        <div className="flex-shrink-0 mt-2">
+                          <div 
+                            className="bg-[#c44569] transform rotate-45"
+                            style={{ width: '6px', height: '6px' }}
+                          />
+                        </div>
+                        <p className="text-[#f4eada] text-sm leading-relaxed">{point}</p>
                       </div>
-                      <p className="text-[#f4eada] text-sm leading-relaxed">{point}</p>
-                    </div>
-                  ))}
+                    ))}
+                  </div>
                 </div>
-              </div>
-            ))}
+              ))}
+            </div>
           </div>
         </div>
       </section>
