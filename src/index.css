@@ -361,4 +361,28 @@ All colors MUST be HSL.
   .almara-call-btn:hover {
     box-shadow: var(--almara-button-neo-shadow-hover);
   }
+
+  /* Premium pulsating glow animation for circle image */
+  .almara-circle-pulse {
+    animation: almaraPulse 4s ease-in-out infinite;
+    filter: drop-shadow(0 0 20px hsl(var(--almara-dark-blue) / 0.3));
+  }
+
+  @keyframes almaraPulse {
+    0%, 100% {
+      filter: 
+        drop-shadow(0 0 20px hsl(var(--almara-dark-blue) / 0.3))
+        drop-shadow(0 0 40px hsl(var(--almara-dark-blue) / 0.2))
+        drop-shadow(0 0 60px hsl(var(--almara-dark-blue) / 0.1));
+      transform: scale(1);
+    }
+    50% {
+      filter: 
+        drop-shadow(0 0 30px hsl(var(--almara-dark-blue) / 0.5))
+        drop-shadow(0 0 60px hsl(var(--almara-dark-blue) / 0.3))
+        drop-shadow(0 0 90px hsl(var(--almara-dark-blue) / 0.2))
+        drop-shadow(0 0 120px hsl(var(--almara-light-blue) / 0.1));
+      transform: scale(1.02);
+    }
+  }
 }
