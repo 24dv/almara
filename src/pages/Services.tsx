@@ -34,7 +34,7 @@ const Services = () => {
     {
       id: "capital-ma",
       title: "capital introduction & M&A",
-      description: "Connecting capital and opportunity—quietly and effectively.",
+      description: "Connecting capital and opportunity, quietly and effectively.",
       points: [
         "Capital introductions: institutions, family offices, and select co-investors",
         "M&A support: buy-side/sell-side, valuation, diligence, negotiations",
@@ -44,7 +44,7 @@ const Services = () => {
     {
       id: "art-advisory",
       title: "art advisory",
-      description: "Beyond collection management—insider access to expertise and institutions.",
+      description: "Beyond collection management, insider access to expertise and institutions.",
       points: [
         "Acquisition & valuation: market intelligence, authenticity, pricing",
         "Conservation & succession: preservation strategies, estate integration",
@@ -57,7 +57,7 @@ const Services = () => {
   // Basic SEO for this page
   useEffect(() => {
     document.title = "Services | ALMARA";
-    const desc = "Family office, alternatives, M&A, and art advisory—delivered through ongoing counsel and mandate-led execution.";
+    const desc = "Family office, alternatives, M&A, and art advisory, delivered through ongoing counsel and mandate-led execution.";
     let meta = document.querySelector('meta[name="description"]') as HTMLMetaElement | null;
     if (!meta) {
       meta = document.createElement("meta");
@@ -221,7 +221,7 @@ const Services = () => {
             <article className="space-y-2">
               <h3 className="text-lg text-white/80">Ongoing counsel</h3>
               <p className="leading-relaxed">
-                We stay close to your world—anticipating needs, coordinating specialists, and maintaining oversight.
+                We stay close to your world, anticipating needs, coordinating specialists, and maintaining oversight.
               </p>
             </article>
             <article className="space-y-2">
@@ -233,7 +233,7 @@ const Services = () => {
             <article className="space-y-2">
               <h3 className="text-lg text-white/80">Orchestrated network</h3>
               <p className="leading-relaxed">
-                Discreet access to private banks, boutiques, legal/tax advisors, researchers, and art-world experts—curated and managed by us.
+                Discreet access to private banks, boutiques, legal/tax advisors, researchers, and art-world experts, curated and managed by us.
               </p>
             </article>
           </div>
