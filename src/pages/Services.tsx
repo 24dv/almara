@@ -13,7 +13,7 @@ const Services = () => {
     {
       id: "family-office",
       title: "family office",
-      description: "We design the architecture of bespoke wealth solutions—aligning asset management and wealth structuring.",
+      description: "We design the architecture of bespoke wealth solutions, aligning asset management and wealth structuring.",
       points: [
         "Structural design: holdings, governance, succession (multi-jurisdictional)",
         "Coordination & oversight: investment managers, tax & legal, financing, accounting, audit, reporting",
