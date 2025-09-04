@@ -39,7 +39,7 @@ const About = () => {
                 <div 
                   className="absolute inset-0 rounded-lg"
                   style={{
-                    background: 'rgba(54, 75, 86, 0.44)',
+                    background: 'rgba(244, 234, 218, 0.36)',
                     boxShadow: '0 4px 30px rgba(0, 0, 0, 0.1)',
                     backdropFilter: 'blur(0px)',
                     WebkitBackdropFilter: 'blur(0px)'
