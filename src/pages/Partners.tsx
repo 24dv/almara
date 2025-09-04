@@ -231,7 +231,7 @@ const Partners = () => {
             }].map(p => (
               <div key={p.name} className="relative group">
                 <button className="bg-transparent text-[#f4eada] rounded-xl almara-call-btn relative z-[100] transition-all px-8 py-12 text-center w-full">
-                  <img src={logos[p.name]} alt={`${p.name} logo`} loading="lazy" className="mx-auto h-16 object-contain" />
+                  <img src={logos[p.name]} alt={`${p.name} logo`} loading="lazy" className={`mx-auto object-contain ${p.name === 'Aquitara' ? 'h-12 w-32' : 'h-16'}`} />
                 </button>
                 
                 {/* Hover Overlay */}
