@@ -123,7 +123,7 @@ const Services = () => {
       <section className="h-screen bg-almara-light-text/20 flex items-start justify-center px-8 lg:px-12 mission-section-gradient">
         <div className="max-w-6xl mx-auto pt-60 pb-16">
           {/* Interactive Circles */}
-          <div className="flex items-center justify-center mb-8">
+          <div className="flex items-center justify-center mb-16">
             {services.map((service, index) => (
               <div key={service.id} className="flex items-center">
                 <button
@@ -187,7 +187,7 @@ const Services = () => {
                 >
                   {/* Services with images - Art Advisory, Capital M&A, and Alternatives */}
                   {service.id === 'art-advisory' || service.id === 'capital-ma' || service.id === 'alternatives' ? (
-                    <div className="flex items-start space-x-8">
+                    <div className="flex items-start space-x-12">
                       <div className="w-1/2 flex-shrink-0 relative">
                         <img 
                           src={
