@@ -12,7 +12,7 @@ import antarcticaLogo from "@/assets/logos/antarctica.svg";
 import delioLogo from "@/assets/logos/delio.svg";
 import abboveLogo from "@/assets/logos/abbove.svg";
 import aquitaraLogo from "@/assets/logos/aquitara.svg";
-import deminorLogo from "@/assets/logos/deminor.svg";
+
 import firgunLogo from "@/assets/logos/firgun.svg";
 import genevaTechnologiesLogo from "@/assets/logos/geneva-technologies.svg";
 import golborneLogo from "@/assets/logos/golborne.svg";
@@ -47,7 +47,7 @@ const Partners = () => {
     "Delio": "/lovable-uploads/3fc3d753-d5ff-4595-bce7-6272f9f9ccac.png",
     "Abbove": "/lovable-uploads/b10b396d-3422-4a4e-a8d6-106ce903a97e.png",
     "Aquitara": "/lovable-uploads/98df291f-2486-4d79-b850-2e62a2e36bb0.png",
-    "Deminor": "/lovable-uploads/a3f95a09-b150-4ae7-9f85-f4d4713b39b0.png",
+    
     "Firgun": firgunLogo,
     "Geneva Technologies": "/lovable-uploads/fb70fc12-73d6-4b1a-966c-d2e15456ca28.png",
     "Golborne": "/lovable-uploads/5a2ca5d0-c530-438f-a901-3963ba8f89a7.png",
@@ -217,14 +217,11 @@ const Partners = () => {
             </p>
           </div>
 
-          <div className="grid gap-8 grid-cols-3 max-w-3xl mx-auto mb-8">
-            {/* Top row - 3 items */}
+          <div className="grid gap-8 grid-cols-2 max-w-lg mx-auto mb-8">
+            {/* Top row - 2 items */}
             {[{
               name: "Aquitara",
               longDesc: "Aquitara (via 5I2 Capital) invests in remediating Agent Orange–contaminated land in Vietnam and developing renewable-energy eco-parks."
-            }, {
-              name: "Deminor",
-              longDesc: "Deminor, founded in 1990, is a B Corp litigation funder backing complex claims across jurisdictions with financial and legal expertise."
             }, {
               name: "Firgun",
               longDesc: "Venture / innovation initiatives"
