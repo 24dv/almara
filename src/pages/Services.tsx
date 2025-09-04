@@ -192,7 +192,7 @@ const Services = () => {
                         <img 
                           src="/lovable-uploads/24427e5c-c5b4-462c-8320-f420776f39d1.png" 
                           alt="Art Advisory" 
-                          className="w-full h-64 object-cover rounded-lg"
+                          className="w-full aspect-square object-cover rounded-lg"
                           loading="lazy"
                         />
                       </div>
