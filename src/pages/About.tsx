@@ -8,7 +8,7 @@ const About = () => {
           {/* Main Tagline */}
           <h1 className="font-long-cang sm:text-[36px] md:text-[40px] lg:text-[44px] text-almara-subtitle-text tracking-[0.05em] opacity-90 leading-tight font-thin text-5xl">
             IN A SEA OF OPPORTUNITIES,<br />
-            DISCERNMENT IS THE TRUE COMPASS.
+            DISCERNMENT IS THE TRUE COMPASS
           </h1>
           
           {/* Description Text */}
