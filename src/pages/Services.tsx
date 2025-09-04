@@ -188,12 +188,22 @@ const Services = () => {
                   {/* Art Advisory - Special layout with image */}
                   {service.id === 'art-advisory' ? (
                     <div className="flex items-start space-x-8">
-                      <div className="w-1/2 flex-shrink-0">
+                      <div className="w-1/2 flex-shrink-0 relative">
                         <img 
                           src="/lovable-uploads/24427e5c-c5b4-462c-8320-f420776f39d1.png" 
                           alt="Art Advisory" 
                           className="w-full aspect-square object-cover rounded-lg"
                           loading="lazy"
+                        />
+                        <div 
+                          className="absolute inset-0 rounded-lg"
+                          style={{
+                            background: 'rgba(244, 234, 218, 0.36)',
+                            borderRadius: '16px',
+                            boxShadow: '0 4px 30px rgba(0, 0, 0, 0.1)',
+                            backdropFilter: 'blur(0px)',
+                            WebkitBackdropFilter: 'blur(0px)'
+                          }}
                         />
                       </div>
                       <div className="w-1/2">
