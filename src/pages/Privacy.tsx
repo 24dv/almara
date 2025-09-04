@@ -1,22 +1,18 @@
 import { PageLayout } from "@/components/PageLayout";
-import { ScrollReveal } from "@/components/ScrollReveal";
 
 const Privacy = () => {
   return (
     <PageLayout title="Privacy Policy">
       <div className="max-w-4xl mx-auto px-8 py-16">
-        <ScrollReveal direction="up">
-          <h1 className="text-4xl md:text-5xl font-long-cang text-almara-subtitle-text mb-8 text-center">
-            Privacy Policy
-          </h1>
-        </ScrollReveal>
-        <ScrollReveal direction="up" delay={200}>
-          <div className="prose prose-lg mx-auto text-[#363636] font-helvetica-now">
-            <p className="text-lg leading-relaxed mb-8">
-              Last updated: {new Date().toLocaleDateString()}
-            </p>
-            
-            <div className="space-y-6">
+        <h1 className="text-4xl md:text-5xl font-long-cang text-almara-subtitle-text mb-8 text-center">
+          Privacy Policy
+        </h1>
+        <div className="prose prose-lg mx-auto text-[#363636] font-helvetica-now">
+          <p className="text-lg leading-relaxed mb-8">
+            Last updated: {new Date().toLocaleDateString()}
+          </p>
+          
+          <div className="space-y-6">
             <section>
               <h2 className="text-2xl font-semibold text-[#363636] mb-4">Information We Collect</h2>
               <p className="leading-relaxed mb-4">
@@ -83,9 +79,8 @@ const Privacy = () => {
                 If you have any questions about this Privacy Policy or our data practices, please contact us at privacy@almara.com or through our official communication channels.
               </p>
             </section>
-            </div>
           </div>
-        </ScrollReveal>
+        </div>
       </div>
     </PageLayout>
   );

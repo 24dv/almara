@@ -1,6 +1,5 @@
 import { Navigation } from "@/components/Navigation";
 import { Footer } from "@/components/Footer";
-import { ScrollReveal } from "@/components/ScrollReveal";
 import { Link } from "react-router-dom";
 import { MobileMenu } from "@/components/MobileMenu";
 import { Button } from "@/components/ui/button";
@@ -101,7 +100,7 @@ const Services = () => {
 
       {/* Interactive Services Section */}
       <section className="h-screen bg-almara-light-text/20 flex items-start justify-center px-8 lg:px-12 mission-section-gradient">
-        <ScrollReveal direction="up" delay={200} className="max-w-6xl mx-auto pt-48 pb-16">
+        <div className="max-w-6xl mx-auto pt-48 pb-16">
           {/* Interactive Circles */}
           <div className="flex items-center justify-center mb-16">
             {services.map((service, index) => <div key={service.id} className="flex items-center">
@@ -205,10 +204,10 @@ const Services = () => {
                           </div>)}
                       </div>
                     </div>)}
-                 </div>)}
+                </div>)}
             </div>
           </div>
-        </ScrollReveal>
+        </div>
       </section>
 
       {/* How We Work Section */}
@@ -220,12 +219,10 @@ const Services = () => {
         }} loading="lazy" />
         
         <div className="max-w-5xl mx-auto relative z-10">
-          <ScrollReveal direction="up" delay={200}>
-            <div className="text-center mb-16">
-              <h2 className="font-museo-moderno text-[28px] lg:text-[32px] text-[#f4eada]">How We Work</h2>
-            </div>
-          </ScrollReveal>
-          <ScrollReveal direction="up" delay={400} className="grid grid-cols-1 lg:grid-cols-3 gap-12 font-helvetica-now text-white/70 mb-16">
+          <div className="text-center mb-16">
+            <h2 className="font-museo-moderno text-[28px] lg:text-[32px] text-[#f4eada]">How We Work</h2>
+          </div>
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-12 font-helvetica-now text-white/70 mb-16">
             <article className="space-y-4">
               <h3 className="font-helvetica-now text-xl tracking-wider font-bold text-[#b3bacb] mb-4">ongoing counsel</h3>
               <p className="text-[#f4eada] leading-relaxed text-base">
@@ -244,8 +241,8 @@ const Services = () => {
                 Discreet access to private banks, boutiques, legal/tax advisors, researchers, and art-world experts, curated and managed by us.
               </p>
             </article>
-          </ScrollReveal>
-          <ScrollReveal direction="up" delay={600} className="grid grid-cols-1 lg:grid-cols-3 gap-12 font-helvetica-now">
+          </div>
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-12 font-helvetica-now">
             <article className="space-y-4">
               <h3 className="font-helvetica-now text-xl tracking-wider font-bold text-[#b3bacb] mb-4">who we work with</h3>
               <p className="text-[#f4eada] leading-relaxed text-base">
@@ -264,7 +261,7 @@ const Services = () => {
                 We collaborate with leading institutions and boutiques. References available on request.
               </p>
             </article>
-          </ScrollReveal>
+          </div>
         </div>
       </section>
       </main>

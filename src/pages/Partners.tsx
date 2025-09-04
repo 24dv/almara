@@ -5,7 +5,6 @@ import { Button } from "@/components/ui/button";
 import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from "@/components/ui/tooltip";
 import { useEffect } from "react";
 import { Link } from "react-router-dom";
-import { ScrollReveal } from "@/components/ScrollReveal";
 import partnersHero from "@/assets/partners-hero.jpg";
 import quintetLogo from "@/assets/logos/quintet.svg";
 import cigpLogo from "@/assets/logos/cigp.svg";
@@ -98,28 +97,25 @@ const Partners = () => {
       {/* Section 2: Institutional Partners */}
       <section className="h-screen flex items-center justify-center px-12 py-20 bg-[hsl(var(--almara-light-text))] partners-gradient-bg animate-fade-in">
         <div className="max-w-6xl mx-auto text-center relative z-10">
-          <ScrollReveal direction="up">
-            <div className="mb-16">
-              <h2 className="font-museo-moderno text-[32px] lg:text-[36px] text-[#364b56] mb-6">Institutional Partners</h2>
-              <p className="font-helvetica-now text-[#363636] text-base max-w-[70%] mx-auto">
-                Banking and investment relationships that enable execution with discretion.
-              </p>
-            </div>
-          </ScrollReveal>
+          <div className="mb-16">
+            <h2 className="font-museo-moderno text-[32px] lg:text-[36px] text-[#364b56] mb-6">Institutional Partners</h2>
+            <p className="font-helvetica-now text-[#363636] text-base max-w-[70%] mx-auto">
+              Banking and investment relationships that enable execution with discretion.
+            </p>
+          </div>
 
-          <ScrollReveal direction="up" delay={200}>
-            <div className="grid gap-8 grid-cols-3 max-w-3xl mx-auto mb-8">
-              {/* Top row - 3 items */}
-              {[{
-                name: "Quintet",
-                longDesc: "Luxembourg-based Quintet offers private banking, wealth planning, and investment services across Europe and the UK."
-              }, {
-                name: "Degroof Petercam", 
-                longDesc: "Belgium's Degroof Petercam provides private banking, corporate finance, and asset management with over €50 billion under management."
-              }, {
-                name: "UBP",
-                longDesc: "Geneva-based UBP specializes in wealth and asset management, serving private and institutional clients worldwide."
-              }].map(p => (
+          <div className="grid gap-8 grid-cols-3 max-w-3xl mx-auto mb-8">
+            {/* Top row - 3 items */}
+            {[{
+              name: "Quintet",
+              longDesc: "Luxembourg-based Quintet offers private banking, wealth planning, and investment services across Europe and the UK."
+            }, {
+              name: "Degroof Petercam", 
+              longDesc: "Belgium's Degroof Petercam provides private banking, corporate finance, and asset management with over €50 billion under management."
+            }, {
+              name: "UBP",
+              longDesc: "Geneva-based UBP specializes in wealth and asset management, serving private and institutional clients worldwide."
+            }].map(p => (
               <div key={p.name} className="relative group">
                 <button className="bg-transparent text-[#f4eada] rounded-xl almara-call-btn relative z-[100] transition-all px-8 py-12 text-center w-full">
                   <img src={logos[p.name]} alt={`${p.name} logo`} loading="lazy" className="mx-auto h-16 object-contain" />
@@ -137,12 +133,10 @@ const Partners = () => {
                   <p className="font-helvetica-now text-[#363636] text-xs leading-relaxed">{p.longDesc}</p>
                 </div>
               </div>
-              ))}
-            </div>
-          </ScrollReveal>
+            ))}
+          </div>
           
-          <ScrollReveal direction="up" delay={400}>
-            <div className="grid gap-8 grid-cols-2 max-w-lg mx-auto">
+          <div className="grid gap-8 grid-cols-2 max-w-lg mx-auto">
             {/* Bottom row - 2 items */}
             {[{
               name: "CIGP",
@@ -168,26 +162,22 @@ const Partners = () => {
                   <p className="font-helvetica-now text-[#363636] text-xs leading-relaxed">{p.longDesc}</p>
                 </div>
               </div>
-              ))}
-            </div>
-          </ScrollReveal>
+            ))}
+          </div>
         </div>
       </section>
 
       {/* Section 3: Technology Partners */}
       <section className="h-screen flex items-center justify-center px-12 py-20 bg-[hsl(var(--almara-light-text))] partners-gradient-bg">
         <div className="max-w-4xl mx-auto text-center relative z-10">
-          <ScrollReveal direction="up">
-            <div className="mb-16">
-              <h2 className="font-museo-moderno text-[32px] lg:text-[36px] text-[#364b56] mb-6">Technology Partners</h2>
-              <p className="font-helvetica-now text-[#363636] text-base max-w-[85%] mx-auto">
-                Infrastructure for secure sourcing, governance, and reporting.
-              </p>
-            </div>
-          </ScrollReveal>
+          <div className="mb-16">
+            <h2 className="font-museo-moderno text-[32px] lg:text-[36px] text-[#364b56] mb-6">Technology Partners</h2>
+            <p className="font-helvetica-now text-[#363636] text-base max-w-[85%] mx-auto">
+              Infrastructure for secure sourcing, governance, and reporting.
+            </p>
+          </div>
 
-          <ScrollReveal direction="up" delay={200}>
-            <div className="grid gap-12 grid-cols-2 max-w-2xl mx-auto">
+          <div className="grid gap-12 grid-cols-2 max-w-2xl mx-auto">
             {[{
               name: "Delio",
               longDesc: "Delio offers a white-label platform that helps financial firms digitise and distribute private market investments."
@@ -212,26 +202,22 @@ const Partners = () => {
                   <p className="font-helvetica-now text-[#363636] text-xs leading-relaxed">{p.longDesc}</p>
                 </div>
               </div>
-              ))}
-            </div>
-          </ScrollReveal>
+            ))}
+          </div>
         </div>
       </section>
 
       {/* Section 4: Project Partners */}
       <section className="h-screen flex items-center justify-center px-12 py-20 bg-[hsl(var(--almara-light-text))] partners-gradient-bg">
         <div className="max-w-6xl mx-auto text-center relative z-10">
-          <ScrollReveal direction="up">
-            <div className="mb-16">
-              <h2 className="font-museo-moderno text-[32px] lg:text-[36px] text-[#364b56] mb-6">Project Partners</h2>
-              <p className="font-helvetica-now text-[#363636] text-base max-w-[85%] mx-auto">
-                Specialists we mobilise for specific mandates.
-              </p>
-            </div>
-          </ScrollReveal>
+          <div className="mb-16">
+            <h2 className="font-museo-moderno text-[32px] lg:text-[36px] text-[#364b56] mb-6">Project Partners</h2>
+            <p className="font-helvetica-now text-[#363636] text-base max-w-[85%] mx-auto">
+              Specialists we mobilise for specific mandates.
+            </p>
+          </div>
 
-          <ScrollReveal direction="up" delay={200}>
-            <div className="grid gap-8 grid-cols-3 max-w-3xl mx-auto mb-8">
+          <div className="grid gap-8 grid-cols-3 max-w-3xl mx-auto mb-8">
             {/* Top row - 3 items */}
             {[{
               name: "Aquitara",
@@ -260,12 +246,10 @@ const Partners = () => {
                   <p className="font-helvetica-now text-[#363636] text-xs leading-relaxed">{p.longDesc}</p>
                 </div>
               </div>
-              ))}
-            </div>
-          </ScrollReveal>
+            ))}
+          </div>
           
-          <ScrollReveal direction="up" delay={400}>
-            <div className="grid gap-8 grid-cols-2 max-w-lg mx-auto">
+          <div className="grid gap-8 grid-cols-2 max-w-lg mx-auto">
             {/* Bottom row - 2 items */}
             {[{
               name: "Geneva Technologies",
@@ -291,29 +275,26 @@ const Partners = () => {
                   <p className="font-helvetica-now text-[#363636] text-xs leading-relaxed">{p.longDesc}</p>
                 </div>
               </div>
-              ))}
-            </div>
-          </ScrollReveal>
+            ))}
+          </div>
         </div>
       </section>
 
       {/* Section 5: Call to Action */}
       <section className="h-screen flex items-center justify-center px-12 py-20 bg-[hsl(var(--almara-light-text))] partners-gradient-bg">
-        <ScrollReveal direction="up">
-          <div className="max-w-4xl mx-auto text-center space-y-12 relative z-10">
-            <div className="space-y-8">
-              <h2 className="font-long-cang sm:text-[36px] md:text-[40px] lg:text-[46px] text-[#364b56] tracking-[0.05em] opacity-90 leading-tight font-thin text-5xl uppercase rotate-[3deg]">
-                Tell us what you're building,<br />
-                we'll assemble the right team
-              </h2>
-            </div>
-            <div className="pt-8">
-              <Button variant="call-footer" size="call" className="font-helvetica-now relative z-10">
-                request a call
-              </Button>
-            </div>
+        <div className="max-w-4xl mx-auto text-center space-y-12 relative z-10">
+          <div className="space-y-8">
+            <h2 className="font-long-cang sm:text-[36px] md:text-[40px] lg:text-[46px] text-[#364b56] tracking-[0.05em] opacity-90 leading-tight font-thin text-5xl uppercase rotate-[3deg]">
+              Tell us what you're building,<br />
+              we'll assemble the right team
+            </h2>
           </div>
-        </ScrollReveal>
+          <div className="pt-8">
+            <Button variant="call-footer" size="call" className="font-helvetica-now relative z-10">
+              request a call
+            </Button>
+          </div>
+        </div>
       </section>
       
       {/* Footer */}
