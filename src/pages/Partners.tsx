@@ -230,9 +230,9 @@ const Partners = () => {
               longDesc: "Venture / innovation initiatives"
             }].map(p => (
               <div key={p.name} className="relative group">
-                <button className="bg-transparent text-[#f4eada] rounded-xl almara-call-btn relative z-[100] transition-all px-8 py-12 text-center w-full">
+                <button className={`bg-transparent text-[#f4eada] rounded-xl almara-call-btn relative z-[100] transition-all text-center w-full ${p.name === 'Aquitara' ? 'px-8 py-8' : 'px-8 py-12'}`}>
                    <img src={logos[p.name]} alt={`${p.name} logo`} loading="lazy" className={`mx-auto object-contain ${p.name === 'Aquitara' ? 'h-24' : 'h-16'}`} />
-                </button>
+                 </button>
                 
                 {/* Hover Overlay */}
                 <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-all duration-300 z-[200] p-6 flex flex-col justify-center" style={{
