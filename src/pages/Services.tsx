@@ -92,14 +92,14 @@ const Services = () => {
       </section>
 
       {/* Hero Section */}
-      <section className="h-screen flex items-center justify-center px-4 sm:px-8 lg:px-12 mission-section-gradient relative overflow-hidden">
+      <section className="h-screen flex items-center justify-center px-8 lg:px-12 mission-section-gradient relative overflow-hidden">
         {/* Background Circle - Spans from header to bottom of section */}
-        <img src="/lovable-uploads/a58a04a2-6cc9-41d7-a8c1-bd70d0c8df8f.png" alt="Circle background" className="absolute w-[120vh] h-[120vh] min-w-[600px] min-h-[600px] sm:min-w-[800px] sm:min-h-[800px] max-w-[1200px] max-h-[1200px] object-cover bg-transparent top-0 right-0 transform translate-x-[25%] sm:translate-x-[25%] -translate-y-[10%] z-[1] opacity-80 reveal-fade" style={{ animationDelay: '0.1s', animationFillMode: 'both' }} loading="eager" fetchPriority="high" />
+        <img src="/lovable-uploads/a58a04a2-6cc9-41d7-a8c1-bd70d0c8df8f.png" alt="Circle background" className="absolute w-[120vh] h-[120vh] min-w-[800px] min-h-[800px] max-w-[1200px] max-h-[1200px] object-cover bg-transparent top-0 right-0 transform translate-x-[25%] -translate-y-[10%] z-[1] opacity-80 reveal-fade" style={{ animationDelay: '0.1s', animationFillMode: 'both' }} loading="eager" fetchPriority="high" />
         
-        <div className="w-full max-w-7xl mx-auto px-4 sm:px-8 lg:px-12 relative z-10">
-          <div className="w-full flex justify-center sm:justify-end">
-            <div className="max-w-6xl text-center sm:text-right space-y-6 lg:space-y-8 reveal-up" style={{ animationDelay: '0.2s', animationFillMode: 'both' }}>
-          <h1 className="font-museo-moderno text-[28px] sm:text-[32px] lg:text-[36px] text-[#f4eada] tracking-[0.05em] opacity-90 leading-tight">Our Services</h1>
+        <div className="w-full max-w-7xl mx-auto px-8 lg:px-12 relative z-10">
+          <div className="w-full flex justify-end">
+            <div className="max-w-6xl text-right space-y-8 reveal-up" style={{ animationDelay: '0.2s', animationFillMode: 'both' }}>
+          <h1 className="font-museo-moderno text-[32px] lg:text-[36px] text-[#f4eada] tracking-[0.05em] opacity-90 leading-tight">Our Services</h1>
           <div className="space-y-2">
             <p className="leading-relaxed text-sm lg:text-base text-[#f4eada] font-helvetica-now">
               Family office, alternatives, M&A, and art advisory,
@@ -120,18 +120,18 @@ const Services = () => {
       </section>
 
       {/* Interactive Services Section */}
-      <section className="min-h-screen bg-almara-light-text/20 flex items-start justify-center px-4 sm:px-8 lg:px-12 mission-section-gradient">
-        <div className="max-w-6xl mx-auto pt-24 sm:pt-32 lg:pt-48 pb-16">
+      <section className="h-screen bg-almara-light-text/20 flex items-start justify-center px-8 lg:px-12 mission-section-gradient">
+        <div className="max-w-6xl mx-auto pt-48 pb-16">
           {/* Interactive Circles */}
-          <div className="flex flex-wrap items-center justify-center gap-4 sm:gap-0 mb-12 lg:mb-16">
+          <div className="flex items-center justify-center mb-16">
             {services.map((service, index) => (
               <div key={service.id} className="flex items-center">
                 <button
                   onClick={() => setActiveService(service.id)}
                   className="flex-shrink-0 relative z-20"
                   style={{
-                    width: '48px',
-                    height: '48px',
+                    width: '56px',
+                    height: '56px',
                     borderRadius: '50%',
                     backgroundColor: activeService === service.id ? '#364b56' : 'transparent',
                     boxShadow: 'inset -4px -4px 8px rgba(255,255,255,0.0), inset 2px 2px 4px rgba(0,0,0,0.7)',
@@ -152,12 +152,12 @@ const Services = () => {
                   }}
                   aria-label={`Select ${service.title}`}
                 />
-                {/* Arrow after each circle except the last - Hidden on mobile */}
+                {/* Arrow after each circle except the last */}
                 {index < services.length - 1 && (
-                  <div className="hidden sm:flex items-center justify-center" style={{ width: '120px' }}>
+                  <div className="flex items-center justify-center" style={{ width: '192px' }}>
                     {activeService === service.id && (
                       <span 
-                        className="text-2xl lg:text-3xl"
+                        className="text-3xl"
                         style={{ color: '#f4eada' }}
                       >
                         ➤
@@ -170,8 +170,8 @@ const Services = () => {
           </div>
 
           {/* Service Content */}
-          <div className="relative min-h-[400px] sm:min-h-[350px] lg:min-h-[300px]">
-            <div className="w-full max-w-4xl mx-auto">
+          <div className="relative min-h-[300px]">
+            <div className="absolute left-0 w-full" style={{ marginLeft: 'calc(50% - 400px)', maxWidth: '800px' }}>
               {services.map((service) => (
                 <div 
                   key={service.id}
@@ -187,8 +187,8 @@ const Services = () => {
                 >
                   {/* Services with images - Art Advisory, Capital M&A, and Alternatives */}
                   {service.id === 'art-advisory' || service.id === 'capital-ma' || service.id === 'alternatives' ? (
-                    <div className="flex flex-col sm:flex-row items-start space-y-6 sm:space-y-0 sm:space-x-8 lg:space-x-12">
-                      <div className="w-full sm:w-1/2 flex-shrink-0 relative">
+                    <div className="flex items-start space-x-12">
+                      <div className="w-1/2 flex-shrink-0 relative">
                         <img 
                           src={
                             service.id === 'art-advisory' 
@@ -217,11 +217,11 @@ const Services = () => {
                           }}
                         />
                       </div>
-                      <div className="w-full sm:w-1/2">
-                        <h3 className="font-helvetica-now text-lg sm:text-xl tracking-wider font-bold text-[#f4eada] mb-4 sm:mb-6">
+                      <div className="w-1/2">
+                        <h3 className="font-helvetica-now text-xl tracking-wider font-bold text-[#f4eada] mb-6">
                           {service.title}
                         </h3>
-                        <p className="text-[#f4eada] leading-relaxed mb-4 sm:mb-6 text-sm sm:text-base">
+                        <p className="text-[#f4eada] leading-relaxed mb-6 text-base">
                           {service.description}
                         </p>
                         <div className="space-y-3">
@@ -238,19 +238,19 @@ const Services = () => {
                                   }}
                                 />
                               </div>
-                              <p className="text-[#f4eada] text-sm sm:text-base leading-relaxed">{point}</p>
+                              <p className="text-[#f4eada] text-base leading-relaxed">{point}</p>
                             </div>
                           ))}
                         </div>
                       </div>
                     </div>
                   ) : (
-                    /* Family Office service - text only layout */
-                    <div className="max-w-md mx-auto sm:mx-0">
-                      <h3 className="font-helvetica-now text-lg sm:text-xl tracking-wider font-bold text-[#f4eada] mb-4 sm:mb-6">
+                    /* Other services - original layout */
+                    <div style={{ maxWidth: '28rem' }}>
+                      <h3 className="font-helvetica-now text-xl tracking-wider font-bold text-[#f4eada] mb-6">
                         {service.title}
                       </h3>
-                      <p className="text-[#f4eada] leading-relaxed mb-4 sm:mb-6 text-sm sm:text-base">
+                      <p className="text-[#f4eada] leading-relaxed mb-6 text-base">
                         {service.description}
                       </p>
                       <div className="space-y-3">
@@ -267,7 +267,7 @@ const Services = () => {
                                 }}
                               />
                             </div>
-                            <p className="text-[#f4eada] text-sm sm:text-base leading-relaxed">{point}</p>
+                            <p className="text-[#f4eada] text-base leading-relaxed">{point}</p>
                           </div>
                         ))}
                       </div>
@@ -281,50 +281,50 @@ const Services = () => {
       </section>
 
       {/* How We Work Section */}
-      <section className="relative min-h-screen flex items-center justify-center px-4 sm:px-8 lg:px-12 mission-section-gradient overflow-hidden">
+      <section className="relative h-screen flex items-center justify-center px-8 lg:px-12 mission-section-gradient overflow-hidden">
         {/* Background Circle - Centered and sized to touch top/bottom borders */}
-        <img src="/lovable-uploads/a58a04a2-6cc9-41d7-a8c1-bd70d0c8df8f.png" alt="Circle background" className="absolute w-[70vh] h-[70vh] sm:w-[90vh] sm:h-[90vh] object-cover bg-transparent top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-[1] opacity-60 reveal-fade" style={{ animationDelay: '0.1s', animationFillMode: 'both' }} loading="lazy" />
+        <img src="/lovable-uploads/a58a04a2-6cc9-41d7-a8c1-bd70d0c8df8f.png" alt="Circle background" className="absolute w-[90vh] h-[90vh] object-cover bg-transparent top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-[1] opacity-60 reveal-fade" style={{ animationDelay: '0.1s', animationFillMode: 'both' }} loading="lazy" />
         
-        <div className="max-w-5xl mx-auto relative z-10 py-16">
-          <div className="text-center mb-12 lg:mb-16">
-            <h2 className="font-museo-moderno text-[24px] sm:text-[28px] lg:text-[32px] text-[#f4eada]">How We Work</h2>
+        <div className="max-w-5xl mx-auto relative z-10">
+          <div className="text-center mb-16">
+            <h2 className="font-museo-moderno text-[28px] lg:text-[32px] text-[#f4eada]">How We Work</h2>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 lg:gap-12 font-helvetica-now text-white/70 mb-12 lg:mb-16">
-            <article className="space-y-4 text-center md:text-left">
-              <h3 className="font-helvetica-now text-lg sm:text-xl tracking-wider font-bold text-[#f4eada] mb-4">Ongoing counsel</h3>
-              <p className="text-[#f4eada] leading-relaxed text-sm sm:text-base">
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-12 font-helvetica-now text-white/70 mb-16">
+            <article className="space-y-4">
+              <h3 className="font-helvetica-now text-xl tracking-wider font-bold text-[#f4eada] mb-4">Ongoing counsel</h3>
+              <p className="text-[#f4eada] leading-relaxed text-base">
                 We stay close to your world, anticipating needs, coordinating specialists, and maintaining oversight.
               </p>
             </article>
-            <article className="space-y-4 text-center md:text-left">
-              <h3 className="font-helvetica-now text-lg sm:text-xl tracking-wider font-bold text-[#f4eada] mb-4">Mandate-led execution</h3>
-              <p className="text-[#f4eada] leading-relaxed text-sm sm:text-base">
+            <article className="space-y-4">
+              <h3 className="font-helvetica-now text-xl tracking-wider font-bold text-[#f4eada] mb-4">Mandate-led execution</h3>
+              <p className="text-[#f4eada] leading-relaxed text-base">
                 When opportunities arise, we mobilise the right people and drive transactions to completion.
               </p>
             </article>
-            <article className="space-y-4 text-center md:text-left">
-              <h3 className="font-helvetica-now text-lg sm:text-xl tracking-wider font-bold text-[#f4eada] mb-4">Orchestrated network</h3>
-              <p className="text-[#f4eada] leading-relaxed text-sm sm:text-base">
+            <article className="space-y-4">
+              <h3 className="font-helvetica-now text-xl tracking-wider font-bold text-[#f4eada] mb-4">Orchestrated network</h3>
+              <p className="text-[#f4eada] leading-relaxed text-base">
                 Discreet access to private banks, boutiques, legal/tax advisors, researchers, and art-world experts, curated and managed by us.
               </p>
             </article>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 lg:gap-12 font-helvetica-now">
-            <article className="space-y-4 text-center md:text-left">
-              <h3 className="font-helvetica-now text-lg sm:text-xl tracking-wider font-bold text-[#f4eada] mb-4">who we work with</h3>
-              <p className="text-[#f4eada] leading-relaxed text-sm sm:text-base">
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-12 font-helvetica-now">
+            <article className="space-y-4">
+              <h3 className="font-helvetica-now text-xl tracking-wider font-bold text-[#f4eada] mb-4">who we work with</h3>
+              <p className="text-[#f4eada] leading-relaxed text-base">
                 Principals & families · Entrepreneurial investors · Fund managers
               </p>
             </article>
-            <article className="space-y-4 text-center md:text-left">
-              <h3 className="font-helvetica-now text-lg sm:text-xl tracking-wider font-bold text-[#f4eada] mb-4">perspective</h3>
-              <p className="text-[#f4eada] leading-relaxed text-sm sm:text-base">
+            <article className="space-y-4">
+              <h3 className="font-helvetica-now text-xl tracking-wider font-bold text-[#f4eada] mb-4">perspective</h3>
+              <p className="text-[#f4eada] leading-relaxed text-base">
                 Research-led and culture-aware, with ties to London Business School and the Sorbonne. We support democracy, the rule of law, European integration, and contemporary visual and performance art.
               </p>
             </article>
-            <article className="space-y-4 text-center md:text-left">
-              <h3 className="font-helvetica-now text-lg sm:text-xl tracking-wider font-bold text-[#f4eada] mb-4">discretion & access</h3>
-              <p className="text-[#f4eada] leading-relaxed text-sm sm:text-base">
+            <article className="space-y-4">
+              <h3 className="font-helvetica-now text-xl tracking-wider font-bold text-[#f4eada] mb-4">discretion & access</h3>
+              <p className="text-[#f4eada] leading-relaxed text-base">
                 We collaborate with leading institutions and boutiques. References available on request.
               </p>
             </article>
