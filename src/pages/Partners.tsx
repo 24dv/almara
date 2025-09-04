@@ -46,7 +46,7 @@ const Partners = () => {
     "Antarctica": "/lovable-uploads/21882ea6-ceb9-4b1c-a053-99616dc103cc.png",
     "Delio": "/lovable-uploads/3fc3d753-d5ff-4595-bce7-6272f9f9ccac.png",
     "Abbove": "/lovable-uploads/b10b396d-3422-4a4e-a8d6-106ce903a97e.png",
-    "Aquitara": "/lovable-uploads/98df291f-2486-4d79-b850-2e62a2e36bb0.png",
+    "Aquitara": "/lovable-uploads/8cd22e0f-b7f6-4a8d-a434-941ddb43de96.png",
     "Deminor": "/lovable-uploads/a3f95a09-b150-4ae7-9f85-f4d4713b39b0.png",
     "Firgun": firgunLogo,
     "Geneva Technologies": "/lovable-uploads/fb70fc12-73d6-4b1a-966c-d2e15456ca28.png",
