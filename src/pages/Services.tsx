@@ -171,7 +171,7 @@ const Services = () => {
 
           {/* Service Content */}
           <div className="relative min-h-[300px]">
-            <div className="absolute left-0 text-left" style={{ marginLeft: 'calc(50% - 400px)', maxWidth: '28rem' }}>
+            <div className="absolute left-0 w-full" style={{ marginLeft: 'calc(50% - 400px)', maxWidth: '800px' }}>
               {services.map((service) => (
                 <div 
                   key={service.id}
@@ -185,30 +185,73 @@ const Services = () => {
                     willChange: 'opacity, transform'
                   }}
                 >
-                  <h3 className="font-helvetica-now text-xl tracking-wider font-bold text-[#f4eada] mb-6">
-                    {service.title}
-                  </h3>
-                  <p className="text-[#f4eada] leading-relaxed mb-6 text-base">
-                    {service.description}
-                  </p>
-                  <div className="space-y-3">
-                    {service.points.map((point, index) => (
-                      <div key={index} className="flex items-start space-x-3">
-                        <div className="flex-shrink-0 mt-2">
-                          <div 
-                            style={{
-                              width: '0',
-                              height: '0',
-                              borderLeft: '8px solid #f4eada',
-                              borderTop: '6px solid transparent',
-                              borderBottom: '6px solid transparent'
-                            }}
-                          />
-                        </div>
-                        <p className="text-[#f4eada] text-base leading-relaxed">{point}</p>
+                  {/* Art Advisory - Special layout with image */}
+                  {service.id === 'art-advisory' ? (
+                    <div className="flex items-start space-x-8">
+                      <div className="w-1/2 flex-shrink-0">
+                        <img 
+                          src="/lovable-uploads/24427e5c-c5b4-462c-8320-f420776f39d1.png" 
+                          alt="Art Advisory" 
+                          className="w-full h-64 object-cover rounded-lg"
+                          loading="lazy"
+                        />
                       </div>
-                    ))}
-                  </div>
+                      <div className="w-1/2">
+                        <h3 className="font-helvetica-now text-xl tracking-wider font-bold text-[#f4eada] mb-6">
+                          {service.title}
+                        </h3>
+                        <p className="text-[#f4eada] leading-relaxed mb-6 text-base">
+                          {service.description}
+                        </p>
+                        <div className="space-y-3">
+                          {service.points.map((point, index) => (
+                            <div key={index} className="flex items-start space-x-3">
+                              <div className="flex-shrink-0 mt-2">
+                                <div 
+                                  style={{
+                                    width: '0',
+                                    height: '0',
+                                    borderLeft: '8px solid #f4eada',
+                                    borderTop: '6px solid transparent',
+                                    borderBottom: '6px solid transparent'
+                                  }}
+                                />
+                              </div>
+                              <p className="text-[#f4eada] text-base leading-relaxed">{point}</p>
+                            </div>
+                          ))}
+                        </div>
+                      </div>
+                    </div>
+                  ) : (
+                    /* Other services - original layout */
+                    <div style={{ maxWidth: '28rem' }}>
+                      <h3 className="font-helvetica-now text-xl tracking-wider font-bold text-[#f4eada] mb-6">
+                        {service.title}
+                      </h3>
+                      <p className="text-[#f4eada] leading-relaxed mb-6 text-base">
+                        {service.description}
+                      </p>
+                      <div className="space-y-3">
+                        {service.points.map((point, index) => (
+                          <div key={index} className="flex items-start space-x-3">
+                            <div className="flex-shrink-0 mt-2">
+                              <div 
+                                style={{
+                                  width: '0',
+                                  height: '0',
+                                  borderLeft: '8px solid #f4eada',
+                                  borderTop: '6px solid transparent',
+                                  borderBottom: '6px solid transparent'
+                                }}
+                              />
+                            </div>
+                            <p className="text-[#f4eada] text-base leading-relaxed">{point}</p>
+                          </div>
+                        ))}
+                      </div>
+                    </div>
+                  )}
                 </div>
               ))}
             </div>
