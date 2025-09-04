@@ -3,7 +3,6 @@ import { Footer } from "@/components/Footer";
 import { Link } from "react-router-dom";
 import { MobileMenu } from "@/components/MobileMenu";
 import { useEffect } from "react";
-
 const Mission = () => {
   // SEO
   useEffect(() => {
@@ -24,9 +23,7 @@ const Mission = () => {
     }
     link.href = window.location.href;
   }, []);
-
-  return (
-    <div className="relative w-full min-h-screen almara-gradient-bg no-overlay animate-fade-in">
+  return <div className="relative w-full min-h-screen almara-gradient-bg no-overlay animate-fade-in">
       {/* Navigation - fixed positioned at same height as home page */}
       <Navigation positioning="fixed" />
 
@@ -45,7 +42,10 @@ const Mission = () => {
           </Link>
         </header>
         <div className="flex-1 flex items-center justify-center">
-          <div className="max-w-lg text-center space-y-8 reveal-up" style={{ animationDelay: '0.2s', animationFillMode: 'both' }}>
+          <div className="max-w-lg text-center space-y-8 reveal-up" style={{
+            animationDelay: '0.2s',
+            animationFillMode: 'both'
+          }}>
             <h1 className="font-museo-moderno text-[32px] lg:text-[36px] text-[#f4eada] tracking-[0.05em] opacity-90 leading-tight">Our Mission</h1>
             <div className="space-y-6">
               <p className="leading-relaxed text-sm lg:text-base text-[#f4eada] font-helvetica-now">
@@ -94,98 +94,80 @@ const Mission = () => {
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-12 font-helvetica-now text-[#f4eada]">
             <div className="flex items-start space-x-4">
-              <div 
-                className="flex-shrink-0 mt-1"
-                style={{
-                  width: '56px',
-                  height: '56px',
-                  borderRadius: '50%',
-                  backgroundColor: 'transparent',
-                  boxShadow: 'inset -4px -4px 8px rgba(255,255,255,0.0), inset 2px 2px 4px rgba(0,0,0,0.7)'
-                }}
-              />
+              <div className="flex-shrink-0 mt-1" style={{
+                width: '56px',
+                height: '56px',
+                borderRadius: '50%',
+                backgroundColor: 'transparent',
+                boxShadow: 'inset -4px -4px 8px rgba(255,255,255,0.0), inset 2px 2px 4px rgba(0,0,0,0.7)'
+              }} />
               <div>
-                <h3 className="font-helvetica-now text-xl tracking-wider font-bold text-[#f4eada] mb-4">clarity first</h3>
+                <h3 className="font-helvetica-now text-xl tracking-wider font-bold mb-4 text-[#b3bacb]">clarity first</h3>
                 <p className="text-base leading-relaxed text-[#f4eada]">We define purpose, constraints, and desired outcomes before we act.</p>
               </div>
             </div>
             <div className="flex items-start space-x-4">
-              <div 
-                className="flex-shrink-0 mt-1"
-                style={{
-                  width: '56px',
-                  height: '56px',
-                  borderRadius: '50%',
-                  backgroundColor: 'transparent',
-                  boxShadow: 'inset -4px -4px 8px rgba(255,255,255,0.0), inset 2px 2px 4px rgba(0,0,0,0.7)'
-                }}
-              />
+              <div className="flex-shrink-0 mt-1" style={{
+                width: '56px',
+                height: '56px',
+                borderRadius: '50%',
+                backgroundColor: 'transparent',
+                boxShadow: 'inset -4px -4px 8px rgba(255,255,255,0.0), inset 2px 2px 4px rgba(0,0,0,0.7)'
+              }} />
               <div>
-                <h3 className="font-helvetica-now text-xl tracking-wider font-bold text-[#f4eada] mb-4">balance</h3>
+                <h3 className="font-helvetica-now text-xl tracking-wider font-bold mb-4 text-[#b3bacb]">balance</h3>
                 <p className="text-base leading-relaxed text-[#f4eada]">We hold risk/return and time/impact in healthy tension.</p>
               </div>
             </div>
             <div className="flex items-start space-x-4">
-              <div 
-                className="flex-shrink-0 mt-1"
-                style={{
-                  width: '56px',
-                  height: '56px',
-                  borderRadius: '50%',
-                  backgroundColor: 'transparent',
-                  boxShadow: 'inset -4px -4px 8px rgba(255,255,255,0.0), inset 2px 2px 4px rgba(0,0,0,0.7)'
-                }}
-              />
+              <div className="flex-shrink-0 mt-1" style={{
+                width: '56px',
+                height: '56px',
+                borderRadius: '50%',
+                backgroundColor: 'transparent',
+                boxShadow: 'inset -4px -4px 8px rgba(255,255,255,0.0), inset 2px 2px 4px rgba(0,0,0,0.7)'
+              }} />
               <div>
-                <h3 className="font-helvetica-now text-xl tracking-wider font-bold text-[#f4eada] mb-4">simplicity as rigour</h3>
+                <h3 className="font-helvetica-now text-xl tracking-wider font-bold mb-4 text-[#b3bacb]">simplicity as rigour</h3>
                 <p className="text-base leading-relaxed text-[#f4eada]">We believe in fewer moving parts, tighter governance, better decisions.</p>
               </div>
             </div>
             <div className="flex items-start space-x-4">
-              <div 
-                className="flex-shrink-0 mt-1"
-                style={{
-                  width: '56px',
-                  height: '56px',
-                  borderRadius: '50%',
-                  backgroundColor: 'transparent',
-                  boxShadow: 'inset -4px -4px 8px rgba(255,255,255,0.0), inset 2px 2px 4px rgba(0,0,0,0.7)'
-                }}
-              />
+              <div className="flex-shrink-0 mt-1" style={{
+                width: '56px',
+                height: '56px',
+                borderRadius: '50%',
+                backgroundColor: 'transparent',
+                boxShadow: 'inset -4px -4px 8px rgba(255,255,255,0.0), inset 2px 2px 4px rgba(0,0,0,0.7)'
+              }} />
               <div>
-                <h3 className="font-helvetica-now text-xl tracking-wider font-bold text-[#f4eada] mb-4">exploration & creativity</h3>
+                <h3 className="font-helvetica-now text-xl tracking-wider font-bold mb-4 text-[#b3bacb]">exploration & creativity</h3>
                 <p className="text-base leading-relaxed text-[#f4eada]">We focus on research, first principles, new lenses.</p>
               </div>
             </div>
             <div className="flex items-start space-x-4">
-              <div 
-                className="flex-shrink-0 mt-1"
-                style={{
-                  width: '56px',
-                  height: '56px',
-                  borderRadius: '50%',
-                  backgroundColor: 'transparent',
-                  boxShadow: 'inset -4px -4px 8px rgba(255,255,255,0.0), inset 2px 2px 4px rgba(0,0,0,0.7)'
-                }}
-              />
+              <div className="flex-shrink-0 mt-1" style={{
+                width: '56px',
+                height: '56px',
+                borderRadius: '50%',
+                backgroundColor: 'transparent',
+                boxShadow: 'inset -4px -4px 8px rgba(255,255,255,0.0), inset 2px 2px 4px rgba(0,0,0,0.7)'
+              }} />
               <div>
-                <h3 className="font-helvetica-now text-xl tracking-wider font-bold text-[#f4eada] mb-4">community & belonging</h3>
+                <h3 className="font-helvetica-now text-xl tracking-wider font-bold mb-4 text-[#b3bacb]">community & belonging</h3>
                 <p className="text-base leading-relaxed text-[#f4eada]">Through trusted circles, shared knowledge, aligned action.</p>
               </div>
             </div>
             <div className="flex items-start space-x-4">
-              <div 
-                className="flex-shrink-0 mt-1"
-                style={{
-                  width: '56px',
-                  height: '56px',
-                  borderRadius: '50%',
-                  backgroundColor: 'transparent',
-                  boxShadow: 'inset -4px -4px 8px rgba(255,255,255,0.0), inset 2px 2px 4px rgba(0,0,0,0.7)'
-                }}
-              />
+              <div className="flex-shrink-0 mt-1" style={{
+                width: '56px',
+                height: '56px',
+                borderRadius: '50%',
+                backgroundColor: 'transparent',
+                boxShadow: 'inset -4px -4px 8px rgba(255,255,255,0.0), inset 2px 2px 4px rgba(0,0,0,0.7)'
+              }} />
               <div>
-                <h3 className="font-helvetica-now text-xl tracking-wider font-bold text-[#f4eada] mb-4">materiality · sensitivity · play</h3>
+                <h3 className="font-helvetica-now text-xl tracking-wider font-bold mb-4 text-[#b3bacb]">materiality · sensitivi play</h3>
                 <p className="text-base leading-relaxed text-[#f4eada]">We respect the tangible and the felt, and keep our minds open.</p>
               </div>
             </div>
@@ -196,8 +178,6 @@ const Mission = () => {
       
       {/* Footer */}
       <Footer />
-    </div>
-  );
+    </div>;
 };
-
 export default Mission;
