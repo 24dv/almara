@@ -1,10 +1,11 @@
 import { PageLayout } from "@/components/PageLayout";
+import { ScrollReveal } from "@/components/ScrollReveal";
 import { Button } from "@/components/ui/button";
 const About = () => {
   return <PageLayout title="About">
       {/* Main Content Section - Full Height */}
       <section className="h-screen flex items-center justify-center px-12 py-20">
-        <div className="max-w-3xl text-center space-y-16 reveal-up" style={{ animationDelay: '0.2s', animationFillMode: 'both' }}>
+        <ScrollReveal direction="up" delay={200} className="max-w-3xl text-center space-y-16">
           {/* Main Tagline */}
           <h1 className="font-long-cang sm:text-[36px] md:text-[40px] lg:text-[44px] text-almara-subtitle-text tracking-[0.05em] opacity-90 leading-tight font-thin text-5xl">
             IN A SEA OF OPPORTUNITIES,<br />
@@ -25,7 +26,7 @@ const About = () => {
               and drive lasting portfolio value.
             </p>
           </div>
-        </div>
+        </ScrollReveal>
       </section>
 
       {/* Founder Section - Full Height */}
@@ -33,14 +34,16 @@ const About = () => {
         <div className="max-w-7xl mx-auto w-full">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center h-full">
             {/* Founder Image */}
-            <div className="flex justify-center lg:justify-end reveal-left" style={{ animationDelay: '0.2s', animationFillMode: 'both' }}>
-              <div className="max-w-md">
-                <img src="/lovable-uploads/3f98f6a2-7c73-465b-89c1-9ffd619f5b8f.png" alt="Tom Meganck - Founder" className="w-full h-auto rounded-lg shadow-lg" />
+            <ScrollReveal direction="left" delay={200}>
+              <div className="flex justify-center lg:justify-end">
+                <div className="max-w-md">
+                  <img src="/lovable-uploads/3f98f6a2-7c73-465b-89c1-9ffd619f5b8f.png" alt="Tom Meganck - Founder" className="w-full h-auto rounded-lg shadow-lg" />
+                </div>
               </div>
-            </div>
+            </ScrollReveal>
             
             {/* Founder Info */}
-            <div className="space-y-8 max-w-xl reveal-right" style={{ animationDelay: '0.4s', animationFillMode: 'both' }}>
+            <ScrollReveal direction="right" delay={400} className="space-y-8 max-w-xl">
               <div className="space-y-2">
                 <h2 className="font-museo-moderno text-[32px] lg:text-[36px] text-[#363636]">
                   Tom Meganck
@@ -77,7 +80,7 @@ const About = () => {
               <div className="pt-6">
                 <Button variant="call" size="call" className="font-helvetica-now">request a call</Button>
               </div>
-            </div>
+            </ScrollReveal>
           </div>
         </div>
       </section>
