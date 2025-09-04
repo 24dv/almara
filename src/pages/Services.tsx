@@ -185,20 +185,24 @@ const Services = () => {
                     willChange: 'opacity, transform'
                   }}
                 >
-                  {/* Services with images - Art Advisory, Capital M&A, and Alternatives */}
-                  {service.id === 'art-advisory' || service.id === 'capital-ma' || service.id === 'alternatives' ? (
+                  {/* Services with images - Family Office, Art Advisory, Capital M&A, and Alternatives */}
+                  {service.id === 'family-office' || service.id === 'art-advisory' || service.id === 'capital-ma' || service.id === 'alternatives' ? (
                     <div className="flex items-start space-x-12">
                       <div className="w-1/2 flex-shrink-0 relative">
                         <img 
                           src={
-                            service.id === 'art-advisory' 
+                            service.id === 'family-office'
+                              ? "/lovable-uploads/0fb235b5-0ef7-4a23-b23c-a09271d1c1ee.png"
+                              : service.id === 'art-advisory' 
                               ? "/lovable-uploads/24427e5c-c5b4-462c-8320-f420776f39d1.png"
                               : service.id === 'capital-ma'
-                              ? "/lovable-uploads/37ec4c4c-e064-493c-845e-7764d1c0a5bf.png"
+                              ? "/lovable-uploads/4c877114-c7bc-42b2-aa3d-5cf4f2df46b6.png"
                               : "/lovable-uploads/402e0eb5-ac60-45a4-b299-85280c71cb6d.png"
                           }
                           alt={
-                            service.id === 'art-advisory' 
+                            service.id === 'family-office'
+                              ? "Family Office"
+                              : service.id === 'art-advisory' 
                               ? "Art Advisory"
                               : service.id === 'capital-ma'
                               ? "Capital Introduction & M&A"
