@@ -3,6 +3,7 @@ import { Footer } from "@/components/Footer";
 import { Link } from "react-router-dom";
 import { MobileMenu } from "@/components/MobileMenu";
 import { useEffect } from "react";
+import { ScrollReveal } from "@/components/ScrollReveal";
 const Mission = () => {
   // SEO
   useEffect(() => {
@@ -61,11 +62,12 @@ const Mission = () => {
 
       {/* Section 2 — Our Pillars */}
       <section className="h-screen flex items-center justify-center px-8 lg:px-12 mission-section-gradient">
-        <div className="max-w-5xl mx-auto bg-gradient-to-r from-transparent via-gray-600/30 to-gray-700/60 rounded-3xl px-[120px] py-[58px] backdrop-blur-sm">
-          <div className="text-center mb-8">
-            <h2 className="font-museo-moderno text-[32px] lg:text-[36px] text-[#f4eada] tracking-[0.05em] opacity-90 leading-tight mb-8">Our Pillars</h2>
-          </div>
-          <div className="space-y-8 font-helvetica-now text-[#f4eada]">
+        <ScrollReveal direction="up">
+          <div className="max-w-5xl mx-auto bg-gradient-to-r from-transparent via-gray-600/30 to-gray-700/60 rounded-3xl px-[120px] py-[58px] backdrop-blur-sm">
+            <div className="text-center mb-8">
+              <h2 className="font-museo-moderno text-[32px] lg:text-[36px] text-[#f4eada] tracking-[0.05em] opacity-90 leading-tight mb-8">Our Pillars</h2>
+            </div>
+            <div className="space-y-8 font-helvetica-now text-[#f4eada]">
             <article className="text-center space-y-4">
               <h3 className="font-helvetica-now text-xl tracking-wider font-bold text-[#b3bacb]">wisdom</h3>
               <p className="text-base leading-relaxed max-w-sm mx-auto">Experience distilled into judgment. We prioritise signal over noise and the long term over the immediate.</p>
@@ -82,18 +84,22 @@ const Mission = () => {
               <h3 className="font-helvetica-now text-xl tracking-wider font-bold text-[#b3bacb]">spirituality</h3>
               <p className="text-base leading-relaxed max-w-sm mx-auto">Meaning and care in action. Compassion and responsibility inform decisions.</p>
             </article>
+            </div>
           </div>
-        </div>
+        </ScrollReveal>
       </section>
 
       {/* Section 3 — In Practice */}
       <section className="h-screen flex items-center justify-center px-8 lg:px-12 mission-section-gradient">
         <div className="max-w-6xl mx-auto">
-          <div className="text-center mb-16">
-            <h2 className="font-museo-moderno text-[32px] lg:text-[36px] text-[#f4eada] tracking-[0.05em] opacity-90 leading-tight">In Practice</h2>
-          </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-12 font-helvetica-now text-[#f4eada]">
-            <div className="flex items-start space-x-4">
+          <ScrollReveal direction="up">
+            <div className="text-center mb-16">
+              <h2 className="font-museo-moderno text-[32px] lg:text-[36px] text-[#f4eada] tracking-[0.05em] opacity-90 leading-tight">In Practice</h2>
+            </div>
+          </ScrollReveal>
+          <ScrollReveal direction="up" delay={200}>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-12 font-helvetica-now text-[#f4eada]">
+              <div className="flex items-start space-x-4">
               <div className="flex-shrink-0 mt-1" style={{
                 width: '56px',
                 height: '56px',
@@ -171,7 +177,8 @@ const Mission = () => {
                 <p className="text-base leading-relaxed text-[#f4eada]">We respect the tangible and the felt, and keep our minds open.</p>
               </div>
             </div>
-          </div>
+            </div>
+          </ScrollReveal>
         </div>
       </section>
       </main>
