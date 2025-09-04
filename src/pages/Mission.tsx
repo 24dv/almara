@@ -167,7 +167,7 @@ const Mission = () => {
                 boxShadow: 'inset -4px -4px 8px rgba(255,255,255,0.0), inset 2px 2px 4px rgba(0,0,0,0.7)'
               }} />
               <div>
-                <h3 className="font-helvetica-now text-xl tracking-wider font-bold mb-4 text-[#b3bacb]">materiality · sensitivi play</h3>
+                <h3 className="font-helvetica-now text-xl tracking-wider font-bold mb-4 text-[#b3bacb]">materiality · play</h3>
                 <p className="text-base leading-relaxed text-[#f4eada]">We respect the tangible and the felt, and keep our minds open.</p>
               </div>
             </div>
