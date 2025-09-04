@@ -121,7 +121,7 @@ const Services = () => {
 
       {/* Interactive Services Section */}
       <section className="h-screen bg-almara-light-text/20 flex items-start justify-center px-8 lg:px-12 mission-section-gradient">
-        <div className="max-w-6xl mx-auto pt-32 pb-16">
+        <div className="max-w-6xl mx-auto pt-48 pb-16">
           {/* Interactive Circles */}
           <div className="flex items-center justify-center mb-16">
             {services.map((service, index) => (
