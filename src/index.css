@@ -347,6 +347,18 @@ All colors MUST be HSL.
     background: radial-gradient(ellipse at center, #364b56 0%, transparent 70%);
     position: relative;
   }
+  
+  /* Force clickable content to be above all backgrounds */
+  .force-clickable {
+    position: relative !important;
+    z-index: 9999 !important;
+    pointer-events: auto !important;
+  }
+  
+  .force-clickable * {
+    pointer-events: auto !important;
+    z-index: 9999 !important;
+  }
 
   .mission-section-gradient::after {
     content: '';
