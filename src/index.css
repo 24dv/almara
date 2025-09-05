@@ -348,16 +348,38 @@ All colors MUST be HSL.
     position: relative;
   }
   
-  /* Force clickable content to be above all backgrounds */
+  /* Force clickable content with proper isolation */
   .force-clickable {
     position: relative !important;
     z-index: 9999 !important;
     pointer-events: auto !important;
+    isolation: isolate !important;
+    cursor: pointer !important;
   }
   
   .force-clickable * {
     pointer-events: auto !important;
-    z-index: 9999 !important;
+    cursor: pointer !important;
+  }
+  
+  .force-clickable button {
+    cursor: pointer !important;
+    pointer-events: auto !important;
+    z-index: 10000 !important;
+    position: relative !important;
+  }
+  
+  /* Ensure call-to-action section has proper stacking */
+  .cta-section {
+    isolation: isolate !important;
+    position: relative !important;
+    z-index: 1000 !important;
+  }
+  
+  .cta-content {
+    position: relative !important;
+    z-index: 1001 !important;
+    pointer-events: auto !important;
   }
 
   .mission-section-gradient::after {

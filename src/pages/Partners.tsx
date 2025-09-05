@@ -3,9 +3,10 @@ import { Footer } from "@/components/Footer";
 import { MobileMenu } from "@/components/MobileMenu";
 import { Button } from "@/components/ui/button";
 import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from "@/components/ui/tooltip";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { ScrollReveal } from "@/components/ScrollReveal";
+import { ContactModal } from "@/components/ContactModal";
 import partnersHero from "@/assets/partners-hero.jpg";
 import quintetLogo from "@/assets/logos/quintet.svg";
 import cigpLogo from "@/assets/logos/cigp.svg";
@@ -19,6 +20,8 @@ import genevaTechnologiesLogo from "@/assets/logos/geneva-technologies.svg";
 import golborneLogo from "@/assets/logos/golborne.svg";
 
 const Partners = () => {
+  const [isContactModalOpen, setIsContactModalOpen] = useState(false);
+  
   // Basic SEO
   useEffect(() => {
     document.title = "Partners | ALMARA";
@@ -66,8 +69,16 @@ const Partners = () => {
       <section className="h-screen flex flex-col bg-[hsl(var(--almara-light-text))] partners-gradient-bg relative">
         {/* Header with logo - now part of the section */}
         <header className="relative z-10 hidden lg:flex items-center justify-center pt-8 pb-4">
-          <Link to="/" className="transition-opacity hover:opacity-80">
-            <img src="/lovable-uploads/889a0efd-ed5b-448b-a911-54ea486f744c.png" alt="ALMARA" className="h-7 sm:h-8 md:h-9 opacity-90" />
+          <Link 
+            to="/" 
+            className="transition-opacity hover:opacity-80 cursor-pointer relative z-[10001] pointer-events-auto"
+            onClick={() => console.log('Logo clicked!')}
+          >
+            <img 
+              src="/lovable-uploads/889a0efd-ed5b-448b-a911-54ea486f744c.png" 
+              alt="ALMARA" 
+              className="h-7 sm:h-8 md:h-9 opacity-90 cursor-pointer" 
+            />
           </Link>
         </header>
         
@@ -298,26 +309,41 @@ const Partners = () => {
       </section>
 
       {/* Section 5: Call to Action */}
-      <section className="h-screen flex items-center justify-center px-12 py-20 bg-[hsl(var(--almara-light-text))] partners-gradient-bg relative">
-        <ScrollReveal direction="up" delay="0.1s">
-          <div className="max-w-4xl mx-auto text-center space-y-12 force-clickable">
-            <div className="space-y-8 force-clickable">
-              <h2 className="font-long-cang sm:text-[36px] md:text-[40px] lg:text-[46px] text-[#364b56] tracking-[0.05em] opacity-90 leading-tight font-thin text-5xl uppercase rotate-[3deg] force-clickable">
-                Tell us what you're building,<br />
-                we'll assemble the right team
-              </h2>
-            </div>
-            <div className="pt-8 force-clickable">
-              <Button variant="call-footer" size="call" className="font-helvetica-now force-clickable">
-                request a call
-              </Button>
-            </div>
+      <section className="h-screen flex items-center justify-center px-12 py-20 bg-[hsl(var(--almara-light-text))] partners-gradient-bg relative cta-section">
+        <div className="max-w-4xl mx-auto text-center space-y-12 cta-content">
+          <div className="space-y-8">
+            <h2 
+              className="font-long-cang sm:text-[36px] md:text-[40px] lg:text-[46px] text-[#364b56] tracking-[0.05em] opacity-90 leading-tight font-thin text-5xl uppercase rotate-[3deg] cursor-default select-none"
+              onClick={() => console.log('Heading clicked!')}
+            >
+              Tell us what you're building,<br />
+              we'll assemble the right team
+            </h2>
           </div>
-        </ScrollReveal>
+          <div className="pt-8">
+            <Button 
+              variant="call-footer" 
+              size="call" 
+              className="font-helvetica-now hover:scale-105 transition-transform duration-200" 
+              onClick={() => {
+                console.log('Button clicked!');
+                setIsContactModalOpen(true);
+              }}
+            >
+              request a call
+            </Button>
+          </div>
+        </div>
       </section>
       
       {/* Footer */}
       <Footer />
+      
+      {/* Contact Modal */}
+      <ContactModal 
+        open={isContactModalOpen} 
+        onOpenChange={setIsContactModalOpen} 
+      />
     </div>
   );
 };
