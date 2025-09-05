@@ -36,14 +36,8 @@ const About = () => {
             {/* Founder Image */}
             <ScrollReveal direction="left" delay="0.2s">
               <div className="flex justify-center lg:justify-end">
-                <div className="max-w-md relative">
+                <div className="max-w-md">
                   <img src="/lovable-uploads/3f98f6a2-7c73-465b-89c1-9ffd619f5b8f.png" alt="Tom Meganck - Founder" className="w-full h-auto rounded-lg shadow-lg" />
-                  <div className="absolute inset-0 rounded-lg" style={{
-                    background: 'rgba(54, 75, 86, 0.44)',
-                    boxShadow: '0 4px 30px rgba(0, 0, 0, 0.1)',
-                    backdropFilter: 'blur(0px)',
-                    WebkitBackdropFilter: 'blur(0px)'
-                  }} />
                 </div>
               </div>
             </ScrollReveal>

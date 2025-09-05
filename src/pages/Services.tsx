@@ -140,7 +140,7 @@ const Services = () => {
           {/* Interactive Circles */}
           <div className="flex items-center justify-center mb-16">
             {services.map((service, index) => <div key={service.id} className="flex items-center">
-                <button onClick={() => setActiveService(service.id)} className="flex-shrink-0 relative z-[100]" style={{
+                <button onClick={() => setActiveService(service.id)} className="flex-shrink-0 relative z-20" style={{
                 width: '56px',
                 height: '56px',
                 borderRadius: '50%',
