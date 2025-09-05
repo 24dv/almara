@@ -300,15 +300,15 @@ const Partners = () => {
       {/* Section 5: Call to Action */}
       <section className="h-screen flex items-center justify-center px-12 py-20 bg-[hsl(var(--almara-light-text))] partners-gradient-bg relative">
         <ScrollReveal direction="up" delay="0.1s">
-          <div className="max-w-4xl mx-auto text-center space-y-12 relative z-50">
-            <div className="space-y-8 relative z-50">
-              <h2 className="font-long-cang sm:text-[36px] md:text-[40px] lg:text-[46px] text-[#364b56] tracking-[0.05em] opacity-90 leading-tight font-thin text-5xl uppercase rotate-[3deg] relative z-50">
+          <div className="max-w-4xl mx-auto text-center space-y-12 relative z-[9999] pointer-events-auto">
+            <div className="space-y-8 relative z-[9999] pointer-events-auto">
+              <h2 className="font-long-cang sm:text-[36px] md:text-[40px] lg:text-[46px] text-[#364b56] tracking-[0.05em] opacity-90 leading-tight font-thin text-5xl uppercase rotate-[3deg] relative z-[9999] pointer-events-auto cursor-default">
                 Tell us what you're building,<br />
                 we'll assemble the right team
               </h2>
             </div>
-            <div className="pt-8 relative z-50">
-              <Button variant="call-footer" size="call" className="font-helvetica-now relative z-50">
+            <div className="pt-8 relative z-[9999] pointer-events-auto">
+              <Button variant="call-footer" size="call" className="font-helvetica-now relative z-[9999] pointer-events-auto cursor-pointer">
                 request a call
               </Button>
             </div>
