@@ -4,41 +4,9 @@ import { Link } from "react-router-dom";
 import { MobileMenu } from "@/components/MobileMenu";
 import { Button } from "@/components/ui/button";
 import { useEffect, useState } from "react";
-import { ScrollReveal } from "@/components/ScrollReveal";
-import { ImagePreloader } from "@/components/ImagePreloader";
 import servicesHero from "@/assets/services-hero.jpg";
 const Services = () => {
   const [activeService, setActiveService] = useState("family-office");
-  const [imagesLoaded, setImagesLoaded] = useState(false);
-  
-  // Service images to preload
-  const serviceImages = [
-    "/lovable-uploads/0fb235b5-0ef7-4a23-b23c-a09271d1c1ee.png", // family-office
-    "/lovable-uploads/24427e5c-c5b4-462c-8320-f420776f39d1.png", // art-advisory
-    "/lovable-uploads/4c877114-c7bc-42b2-aa3d-5cf4f2df46b6.png", // capital-ma
-    "/lovable-uploads/402e0eb5-ac60-45a4-b299-85280c71cb6d.png", // alternatives
-    "/lovable-uploads/889a0efd-ed5b-448b-a911-54ea486f744c.png", // logo
-    "/lovable-uploads/a58a04a2-6cc9-41d7-a8c1-bd70d0c8df8f.png"  // background circle
-  ];
-
-  useEffect(() => {
-    // Preload all images
-    Promise.all(
-      serviceImages.map(src => {
-        return new Promise((resolve, reject) => {
-          const img = new Image();
-          img.onload = resolve;
-          img.onerror = reject;
-          img.src = src;
-        });
-      })
-    ).then(() => {
-      setImagesLoaded(true);
-    }).catch(() => {
-      // Even if some images fail, show content
-      setImagesLoaded(true);
-    });
-  }, []);
   const services = [{
     id: "family-office",
     title: "family office",
@@ -81,9 +49,6 @@ const Services = () => {
     link.href = window.location.href;
   }, []);
   return <div className="relative w-full min-h-screen almara-gradient-bg no-overlay animate-fade-in">
-      {/* Preload Images */}
-      <ImagePreloader images={serviceImages} priority={true} />
-      
       {/* Navigation - fixed positioned at same height as home page */}
       <Navigation positioning="fixed" />
 
@@ -135,8 +100,7 @@ const Services = () => {
 
       {/* Interactive Services Section */}
       <section className="h-screen bg-almara-light-text/20 flex items-start justify-center px-8 lg:px-12 mission-section-gradient">
-        <ScrollReveal direction="up" delay="0.2s">
-          <div className="max-w-6xl mx-auto pt-48 pb-16">
+        <div className="max-w-6xl mx-auto pt-48 pb-16">
           {/* Interactive Circles */}
           <div className="flex items-center justify-center mb-16">
             {services.map((service, index) => <div key={service.id} className="flex items-center">
@@ -178,20 +142,14 @@ const Services = () => {
               marginLeft: 'calc(50% - 400px)',
               maxWidth: '800px'
             }}>
-              {services.map(service => <div key={service.id} className={`transition-all duration-500 ease-in-out ${activeService === service.id ? 'opacity-100 transform translate-y-0 relative z-10' : 'opacity-0 transform translate-y-4 absolute top-0 pointer-events-none z-0'}`} style={{
+              {services.map(service => <div key={service.id} className={`transition-all duration-700 ease-in-out ${activeService === service.id ? 'opacity-100 transform translate-y-0 relative z-10' : 'opacity-0 transform translate-y-2 absolute top-0 pointer-events-none z-0'}`} style={{
                 transitionProperty: 'opacity, transform',
                 willChange: 'opacity, transform'
               }}>
                   {/* Services with images - Family Office, Art Advisory, Capital M&A, and Alternatives */}
                   {service.id === 'family-office' || service.id === 'art-advisory' || service.id === 'capital-ma' || service.id === 'alternatives' ? <div className="flex items-start space-x-12">
                       <div className="w-1/2 flex-shrink-0 relative">
-                        <img 
-                          src={service.id === 'family-office' ? "/lovable-uploads/0fb235b5-0ef7-4a23-b23c-a09271d1c1ee.png" : service.id === 'art-advisory' ? "/lovable-uploads/24427e5c-c5b4-462c-8320-f420776f39d1.png" : service.id === 'capital-ma' ? "/lovable-uploads/4c877114-c7bc-42b2-aa3d-5cf4f2df46b6.png" : "/lovable-uploads/402e0eb5-ac60-45a4-b299-85280c71cb6d.png"} 
-                          alt={service.id === 'family-office' ? "Family Office" : service.id === 'art-advisory' ? "Art Advisory" : service.id === 'capital-ma' ? "Capital Introduction & M&A" : "Alternatives"} 
-                          className={`w-full aspect-square object-cover rounded-lg transition-opacity duration-300 ${imagesLoaded ? 'opacity-100' : 'opacity-0'}`}
-                          loading="eager"
-                          fetchPriority="high"
-                        />
+                        <img src={service.id === 'family-office' ? "/lovable-uploads/0fb235b5-0ef7-4a23-b23c-a09271d1c1ee.png" : service.id === 'art-advisory' ? "/lovable-uploads/24427e5c-c5b4-462c-8320-f420776f39d1.png" : service.id === 'capital-ma' ? "/lovable-uploads/4c877114-c7bc-42b2-aa3d-5cf4f2df46b6.png" : "/lovable-uploads/402e0eb5-ac60-45a4-b299-85280c71cb6d.png"} alt={service.id === 'family-office' ? "Family Office" : service.id === 'art-advisory' ? "Art Advisory" : service.id === 'capital-ma' ? "Capital Introduction & M&A" : "Alternatives"} className="w-full aspect-square object-cover rounded-lg" loading="lazy" />
                         <div className="absolute inset-0 rounded-lg" style={{
                       background: 'rgba(54, 75, 86, 0.44)',
                       boxShadow: '0 4px 30px rgba(0, 0, 0, 0.1)',
@@ -249,8 +207,7 @@ const Services = () => {
                 </div>)}
             </div>
           </div>
-          </div>
-        </ScrollReveal>
+        </div>
       </section>
 
       {/* How We Work Section */}
@@ -262,13 +219,10 @@ const Services = () => {
         }} loading="lazy" />
         
         <div className="max-w-5xl mx-auto relative z-10">
-          <ScrollReveal direction="up" delay="0.1s">
-            <div className="text-center mb-16">
-              <h2 className="font-museo-moderno text-[28px] lg:text-[32px] text-[#f4eada]">How We Work</h2>
-            </div>
-          </ScrollReveal>
-          <ScrollReveal direction="up" delay="0.3s">
-            <div className="grid grid-cols-1 lg:grid-cols-3 gap-12 font-helvetica-now text-white/70 mb-16">
+          <div className="text-center mb-16">
+            <h2 className="font-museo-moderno text-[28px] lg:text-[32px] text-[#f4eada]">How We Work</h2>
+          </div>
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-12 font-helvetica-now text-white/70 mb-16">
             <article className="space-y-4">
               <h3 className="font-helvetica-now text-xl tracking-wider font-bold text-[#b3bacb] mb-4">ongoing counsel</h3>
               <p className="text-[#f4eada] leading-relaxed text-base">
@@ -288,9 +242,7 @@ const Services = () => {
               </p>
             </article>
           </div>
-          </ScrollReveal>
-          <ScrollReveal direction="up" delay="0.5s">
-            <div className="grid grid-cols-1 lg:grid-cols-3 gap-12 font-helvetica-now">
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-12 font-helvetica-now">
             <article className="space-y-4">
               <h3 className="font-helvetica-now text-xl tracking-wider font-bold text-[#b3bacb] mb-4">who we work with</h3>
               <p className="text-[#f4eada] leading-relaxed text-base">
@@ -310,7 +262,6 @@ const Services = () => {
               </p>
             </article>
           </div>
-          </ScrollReveal>
         </div>
       </section>
       </main>

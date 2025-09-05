@@ -26,33 +26,6 @@
   animation: revealRight 1s ease-out forwards;
 }
 
-/* Scroll-triggered reveal animations */
-.scroll-reveal {
-  opacity: 0;
-  transition: opacity 1.2s cubic-bezier(0.25, 0.46, 0.45, 0.94), transform 1.2s cubic-bezier(0.25, 0.46, 0.45, 0.94);
-}
-
-.scroll-reveal-up {
-  transform: translateY(30px);
-}
-
-.scroll-reveal-left {
-  transform: translateX(-30px);
-}
-
-.scroll-reveal-right {
-  transform: translateX(30px);
-}
-
-.scroll-reveal-fade {
-  transform: none;
-}
-
-.scroll-reveal.visible {
-  opacity: 1;
-  transform: translateY(0) translateX(0);
-}
-
 @keyframes revealUp {
   to {
     opacity: 1;
@@ -346,40 +319,6 @@ All colors MUST be HSL.
   .mission-section-gradient {
     background: radial-gradient(ellipse at center, #364b56 0%, transparent 70%);
     position: relative;
-  }
-  
-  /* Force clickable content with proper isolation */
-  .force-clickable {
-    position: relative !important;
-    z-index: 9999 !important;
-    pointer-events: auto !important;
-    isolation: isolate !important;
-    cursor: pointer !important;
-  }
-  
-  .force-clickable * {
-    pointer-events: auto !important;
-    cursor: pointer !important;
-  }
-  
-  .force-clickable button {
-    cursor: pointer !important;
-    pointer-events: auto !important;
-    z-index: 10000 !important;
-    position: relative !important;
-  }
-  
-  /* Ensure call-to-action section has proper stacking */
-  .cta-section {
-    isolation: isolate !important;
-    position: relative !important;
-    z-index: 1000 !important;
-  }
-  
-  .cta-content {
-    position: relative !important;
-    z-index: 1001 !important;
-    pointer-events: auto !important;
   }
 
   .mission-section-gradient::after {

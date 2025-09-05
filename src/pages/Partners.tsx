@@ -3,10 +3,8 @@ import { Footer } from "@/components/Footer";
 import { MobileMenu } from "@/components/MobileMenu";
 import { Button } from "@/components/ui/button";
 import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from "@/components/ui/tooltip";
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 import { Link } from "react-router-dom";
-import { ScrollReveal } from "@/components/ScrollReveal";
-import { ContactModal } from "@/components/ContactModal";
 import partnersHero from "@/assets/partners-hero.jpg";
 import quintetLogo from "@/assets/logos/quintet.svg";
 import cigpLogo from "@/assets/logos/cigp.svg";
@@ -20,8 +18,6 @@ import genevaTechnologiesLogo from "@/assets/logos/geneva-technologies.svg";
 import golborneLogo from "@/assets/logos/golborne.svg";
 
 const Partners = () => {
-  const [isContactModalOpen, setIsContactModalOpen] = useState(false);
-  
   // Basic SEO
   useEffect(() => {
     document.title = "Partners | ALMARA";
@@ -69,16 +65,8 @@ const Partners = () => {
       <section className="h-screen flex flex-col bg-[hsl(var(--almara-light-text))] partners-gradient-bg relative">
         {/* Header with logo - now part of the section */}
         <header className="relative z-10 hidden lg:flex items-center justify-center pt-8 pb-4">
-          <Link 
-            to="/" 
-            className="transition-opacity hover:opacity-80 cursor-pointer relative z-[10001] pointer-events-auto"
-            onClick={() => console.log('Logo clicked!')}
-          >
-            <img 
-              src="/lovable-uploads/889a0efd-ed5b-448b-a911-54ea486f744c.png" 
-              alt="ALMARA" 
-              className="h-7 sm:h-8 md:h-9 opacity-90 cursor-pointer" 
-            />
+          <Link to="/" className="transition-opacity hover:opacity-80">
+            <img src="/lovable-uploads/889a0efd-ed5b-448b-a911-54ea486f744c.png" alt="ALMARA" className="h-7 sm:h-8 md:h-9 opacity-90" />
           </Link>
         </header>
         
@@ -109,17 +97,14 @@ const Partners = () => {
       {/* Section 2: Institutional Partners */}
       <section className="h-screen flex items-center justify-center px-12 py-20 bg-[hsl(var(--almara-light-text))] partners-gradient-bg animate-fade-in">
         <div className="max-w-6xl mx-auto text-center relative z-10">
-          <ScrollReveal direction="up" delay="0.1s">
-            <div className="mb-16">
-              <h2 className="font-museo-moderno text-[32px] lg:text-[36px] text-[#364b56] mb-6">Institutional Partners</h2>
-              <p className="font-helvetica-now text-[#363636] text-base max-w-[70%] mx-auto">
-                Banking and investment relationships that enable execution with discretion.
-              </p>
-            </div>
-          </ScrollReveal>
+          <div className="mb-16">
+            <h2 className="font-museo-moderno text-[32px] lg:text-[36px] text-[#364b56] mb-6">Institutional Partners</h2>
+            <p className="font-helvetica-now text-[#363636] text-base max-w-[70%] mx-auto">
+              Banking and investment relationships that enable execution with discretion.
+            </p>
+          </div>
 
-          <ScrollReveal direction="up" delay="0.3s">
-            <div className="grid gap-8 grid-cols-3 max-w-3xl mx-auto mb-8">
+          <div className="grid gap-8 grid-cols-3 max-w-3xl mx-auto mb-8">
             {/* Top row - 3 items */}
             {[{
               name: "Quintet",
@@ -150,10 +135,8 @@ const Partners = () => {
               </div>
             ))}
           </div>
-          </ScrollReveal>
           
-          <ScrollReveal direction="up" delay="0.5s">
-            <div className="grid gap-8 grid-cols-2 max-w-lg mx-auto">
+          <div className="grid gap-8 grid-cols-2 max-w-lg mx-auto">
             {/* Bottom row - 2 items */}
             {[{
               name: "CIGP",
@@ -181,24 +164,20 @@ const Partners = () => {
               </div>
             ))}
           </div>
-          </ScrollReveal>
         </div>
       </section>
 
       {/* Section 3: Technology Partners */}
       <section className="h-screen flex items-center justify-center px-12 py-20 bg-[hsl(var(--almara-light-text))] partners-gradient-bg">
         <div className="max-w-4xl mx-auto text-center relative z-10">
-          <ScrollReveal direction="up" delay="0.1s">
-            <div className="mb-16">
-              <h2 className="font-museo-moderno text-[32px] lg:text-[36px] text-[#364b56] mb-6">Technology Partners</h2>
-              <p className="font-helvetica-now text-[#363636] text-base max-w-[85%] mx-auto">
-                Infrastructure for secure sourcing, governance, and reporting.
-              </p>
-            </div>
-          </ScrollReveal>
+          <div className="mb-16">
+            <h2 className="font-museo-moderno text-[32px] lg:text-[36px] text-[#364b56] mb-6">Technology Partners</h2>
+            <p className="font-helvetica-now text-[#363636] text-base max-w-[85%] mx-auto">
+              Infrastructure for secure sourcing, governance, and reporting.
+            </p>
+          </div>
 
-          <ScrollReveal direction="up" delay="0.3s">
-            <div className="grid gap-12 grid-cols-2 max-w-2xl mx-auto">
+          <div className="grid gap-12 grid-cols-2 max-w-2xl mx-auto">
             {[{
               name: "Delio",
               longDesc: "Delio offers a white-label platform that helps financial firms digitise and distribute private market investments."
@@ -225,24 +204,20 @@ const Partners = () => {
               </div>
             ))}
           </div>
-          </ScrollReveal>
         </div>
       </section>
 
       {/* Section 4: Project Partners */}
       <section className="h-screen flex items-center justify-center px-12 py-20 bg-[hsl(var(--almara-light-text))] partners-gradient-bg">
         <div className="max-w-6xl mx-auto text-center relative z-10">
-          <ScrollReveal direction="up" delay="0.1s">
-            <div className="mb-16">
-              <h2 className="font-museo-moderno text-[32px] lg:text-[36px] text-[#364b56] mb-6">Project Partners</h2>
-              <p className="font-helvetica-now text-[#363636] text-base max-w-[85%] mx-auto">
-                Specialists we mobilise for specific mandates.
-              </p>
-            </div>
-          </ScrollReveal>
+          <div className="mb-16">
+            <h2 className="font-museo-moderno text-[32px] lg:text-[36px] text-[#364b56] mb-6">Project Partners</h2>
+            <p className="font-helvetica-now text-[#363636] text-base max-w-[85%] mx-auto">
+              Specialists we mobilise for specific mandates.
+            </p>
+          </div>
 
-          <ScrollReveal direction="up" delay="0.3s">
-            <div className="grid gap-8 grid-cols-3 max-w-3xl mx-auto mb-8">
+          <div className="grid gap-8 grid-cols-3 max-w-3xl mx-auto mb-8">
             {/* Top row - 3 items */}
             {[{
               name: "Aquitara",
@@ -273,10 +248,8 @@ const Partners = () => {
               </div>
             ))}
           </div>
-          </ScrollReveal>
           
-          <ScrollReveal direction="up" delay="0.5s">
-            <div className="grid gap-8 grid-cols-2 max-w-lg mx-auto">
+          <div className="grid gap-8 grid-cols-2 max-w-lg mx-auto">
             {/* Bottom row - 2 items */}
             {[{
               name: "Geneva Technologies",
@@ -304,32 +277,20 @@ const Partners = () => {
               </div>
             ))}
           </div>
-          </ScrollReveal>
         </div>
       </section>
 
       {/* Section 5: Call to Action */}
-      <section className="h-screen flex items-center justify-center px-12 py-20 bg-[hsl(var(--almara-light-text))] partners-gradient-bg relative cta-section">
-        <div className="max-w-4xl mx-auto text-center space-y-12 cta-content">
+      <section className="h-screen flex items-center justify-center px-12 py-20 bg-[hsl(var(--almara-light-text))] partners-gradient-bg">
+        <div className="max-w-4xl mx-auto text-center space-y-12 relative z-10">
           <div className="space-y-8">
-            <h2 
-              className="font-long-cang sm:text-[36px] md:text-[40px] lg:text-[46px] text-[#364b56] tracking-[0.05em] opacity-90 leading-tight font-thin text-5xl uppercase rotate-[3deg] cursor-default select-none"
-              onClick={() => console.log('Heading clicked!')}
-            >
+            <h2 className="font-long-cang sm:text-[36px] md:text-[40px] lg:text-[46px] text-[#364b56] tracking-[0.05em] opacity-90 leading-tight font-thin text-5xl uppercase rotate-[3deg]">
               Tell us what you're building,<br />
               we'll assemble the right team
             </h2>
           </div>
           <div className="pt-8">
-            <Button 
-              variant="call-footer" 
-              size="call" 
-              className="font-helvetica-now hover:scale-105 transition-transform duration-200" 
-              onClick={() => {
-                console.log('Button clicked!');
-                setIsContactModalOpen(true);
-              }}
-            >
+            <Button variant="call-footer" size="call" className="font-helvetica-now relative z-10">
               request a call
             </Button>
           </div>
@@ -338,12 +299,6 @@ const Partners = () => {
       
       {/* Footer */}
       <Footer />
-      
-      {/* Contact Modal */}
-      <ContactModal 
-        open={isContactModalOpen} 
-        onOpenChange={setIsContactModalOpen} 
-      />
     </div>
   );
 };

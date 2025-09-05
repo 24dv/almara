@@ -1,17 +1,13 @@
 import { PageLayout } from "@/components/PageLayout";
-import { ScrollReveal } from "@/components/ScrollReveal";
 
 const Privacy = () => {
   return (
     <PageLayout title="Privacy Policy">
       <div className="max-w-4xl mx-auto px-8 py-16">
-        <ScrollReveal direction="up" delay="0.1s">
-          <h1 className="text-4xl md:text-5xl font-long-cang text-almara-subtitle-text mb-8 text-center">
-            Privacy Policy
-          </h1>
-        </ScrollReveal>
-        <ScrollReveal direction="up" delay="0.3s">
-          <div className="prose prose-lg mx-auto text-[#363636] font-helvetica-now">
+        <h1 className="text-4xl md:text-5xl font-long-cang text-almara-subtitle-text mb-8 text-center">
+          Privacy Policy
+        </h1>
+        <div className="prose prose-lg mx-auto text-[#363636] font-helvetica-now">
           <p className="text-lg leading-relaxed mb-8">
             Last updated: {new Date().toLocaleDateString()}
           </p>
@@ -85,7 +81,6 @@ const Privacy = () => {
             </section>
           </div>
         </div>
-        </ScrollReveal>
       </div>
     </PageLayout>
   );

@@ -1,6 +1,5 @@
 import { PageLayout } from "@/components/PageLayout";
 import { Button } from "@/components/ui/button";
-import { ScrollReveal } from "@/components/ScrollReveal";
 const About = () => {
   return <PageLayout title="About">
       {/* Main Content Section - Full Height */}
@@ -34,17 +33,14 @@ const About = () => {
         <div className="max-w-7xl mx-auto w-full">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center h-full">
             {/* Founder Image */}
-            <ScrollReveal direction="left" delay="0.2s">
-              <div className="flex justify-center lg:justify-end">
-                <div className="max-w-md">
-                  <img src="/lovable-uploads/3f98f6a2-7c73-465b-89c1-9ffd619f5b8f.png" alt="Tom Meganck - Founder" className="w-full h-auto rounded-lg shadow-lg" />
-                </div>
+            <div className="flex justify-center lg:justify-end">
+              <div className="max-w-md">
+                <img src="/lovable-uploads/3f98f6a2-7c73-465b-89c1-9ffd619f5b8f.png" alt="Tom Meganck - Founder" className="w-full h-auto rounded-lg shadow-lg" />
               </div>
-            </ScrollReveal>
+            </div>
             
             {/* Founder Info */}
-            <ScrollReveal direction="right" delay="0.4s">
-              <div className="space-y-8 max-w-xl">
+            <div className="space-y-8 max-w-xl">
               <div className="space-y-2">
                 <h2 className="font-museo-moderno text-[32px] lg:text-[36px] text-[#363636]">
                   Tom Meganck
@@ -81,8 +77,7 @@ const About = () => {
               <div className="pt-6">
                 <Button variant="call" size="call" className="font-helvetica-now">request a call</Button>
               </div>
-              </div>
-            </ScrollReveal>
+            </div>
           </div>
         </div>
       </section>
