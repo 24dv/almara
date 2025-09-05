@@ -4,7 +4,10 @@ const About = () => {
   return <PageLayout title="About">
       {/* Main Content Section - Full Height */}
       <section className="h-screen flex items-center justify-center px-12 py-20">
-        <div className="max-w-3xl text-center space-y-16 reveal-up" style={{ animationDelay: '0.2s', animationFillMode: 'both' }}>
+        <div className="max-w-3xl text-center space-y-16 reveal-up" style={{
+        animationDelay: '0.2s',
+        animationFillMode: 'both'
+      }}>
           {/* Main Tagline */}
           <h1 className="font-long-cang sm:text-[36px] md:text-[40px] lg:text-[44px] text-almara-subtitle-text tracking-[0.05em] opacity-90 leading-tight font-thin text-5xl">
             IN A SEA OF OPPORTUNITIES,<br />
@@ -49,12 +52,9 @@ const About = () => {
               </div>
               
               <div className="space-y-6 text-almara-dark-text/80 font-helvetica-now">
-                <p className="leading-relaxed text-base text-[#363636]">
-                  With a career spanning over two decades, Tom 
-                  Meganck has guided ultra-high-net-worth 
-                  families, entrepreneurs, and institutions across 
-                  complex financial landscapes. Tom has lived and worked in Brussels, Luxembourg, Monaco, London, Hong Kong, and Lisbon, cultivating a global network and local fluency in the world's key financial and cultural hubs. Almara reflects his belief in discreet, holistic advisory — where trust, excellence, and long-term perspective drive every decision.
-                </p>
+                <p className="leading-relaxed text-base text-[#363636]">With a career spanning over two decades, Tom Meganck has guided ultra-high-net-worth families, entrepreneurs, and institutions across complex financial landscapes. His expertise blends private banking, alternative investments, and multi-jurisdictional structuring with a uniquely personal approach.
+
+              </p>
                 
                 <div className="space-y-3 text-base opacity-75">
                   <p className="text-[#f4eada]">Background info 01</p>
@@ -63,11 +63,7 @@ const About = () => {
                   <p className="text-[#f4eada]">Background info 04</p>
                 </div>
                 
-                <p className="leading-relaxed text-base text-[#363636]">
-                  His expertise blends private banking, alternative 
-                  investments, and multi-jurisdictional structuring 
-                  with a uniquely personal approach.
-                </p>
+                <p className="leading-relaxed text-base text-[#363636]">Tom has lived and worked in Brussels, Luxembourg, Monaco, London, Hong Kong, and Lisbon, cultivating a global network and local fluency in the world’s key financial and cultural hubs. Almara reflects his belief in discreet, holistic advisory, where trust, excellence, and long-term perspective drive every decision.</p>
               </div>
               
               {/* Call to Action */}
