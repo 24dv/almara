@@ -34,10 +34,7 @@ const About = () => {
       {/* Founder Section - Full Height */}
       <section className="h-screen bg-almara-light-text/20 flex items-center justify-center px-12 py-20">
         <div className="max-w-7xl mx-auto w-full">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center h-full reveal-up" style={{
-            animationDelay: '0.2s',
-            animationFillMode: 'both'
-          }}>
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center h-full">
             {/* Founder Image */}
             <div className="flex justify-center lg:justify-end">
               <div className="max-w-md relative">
