@@ -34,8 +34,8 @@ const About = () => {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center h-full">
             {/* Founder Image */}
             <div className="flex justify-center lg:justify-end">
-              <div className="max-w-md">
-                <img src="/lovable-uploads/3f98f6a2-7c73-465b-89c1-9ffd619f5b8f.png" alt="Tom Meganck - Founder" className="w-full h-auto rounded-lg shadow-lg" />
+              <div className="max-w-md relative z-0">
+                <img src="/lovable-uploads/3f98f6a2-7c73-465b-89c1-9ffd619f5b8f.png" alt="Tom Meganck - Founder" className="w-full h-auto rounded-lg shadow-lg relative z-0" />
               </div>
             </div>
             
@@ -53,10 +53,7 @@ const About = () => {
                   With a career spanning over two decades, Tom 
                   Meganck has guided ultra-high-net-worth 
                   families, entrepreneurs, and institutions across 
-                  complex financial landscapes. His expertise 
-                  blends private banking, alternative investments, 
-                  and multi-jurisdictional structuring with a uniquely 
-                  personal approach.
+                  complex financial landscapes. Tom has lived and worked in Brussels, Luxembourg, Monaco, London, Hong Kong, and Lisbon, cultivating a global network and local fluency in the world's key financial and cultural hubs. Almara reflects his belief in discreet, holistic advisory — where trust, excellence, and long-term perspective drive every decision.
                 </p>
                 
                 <div className="space-y-3 text-base opacity-75">
