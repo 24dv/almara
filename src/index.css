@@ -26,6 +26,33 @@
   animation: revealRight 1s ease-out forwards;
 }
 
+/* Scroll-triggered reveal animations */
+.scroll-reveal {
+  opacity: 0;
+  transition: opacity 1.2s cubic-bezier(0.25, 0.46, 0.45, 0.94), transform 1.2s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.scroll-reveal-up {
+  transform: translateY(30px);
+}
+
+.scroll-reveal-left {
+  transform: translateX(-30px);
+}
+
+.scroll-reveal-right {
+  transform: translateX(30px);
+}
+
+.scroll-reveal-fade {
+  transform: none;
+}
+
+.scroll-reveal.visible {
+  opacity: 1;
+  transform: translateY(0) translateX(0);
+}
+
 @keyframes revealUp {
   to {
     opacity: 1;

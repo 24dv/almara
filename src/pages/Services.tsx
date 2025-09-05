@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import { MobileMenu } from "@/components/MobileMenu";
 import { Button } from "@/components/ui/button";
 import { useEffect, useState } from "react";
+import { ScrollReveal } from "@/components/ScrollReveal";
 import servicesHero from "@/assets/services-hero.jpg";
 const Services = () => {
   const [activeService, setActiveService] = useState("family-office");
@@ -100,7 +101,8 @@ const Services = () => {
 
       {/* Interactive Services Section */}
       <section className="h-screen bg-almara-light-text/20 flex items-start justify-center px-8 lg:px-12 mission-section-gradient">
-        <div className="max-w-6xl mx-auto pt-48 pb-16">
+        <ScrollReveal direction="up" delay="0.2s">
+          <div className="max-w-6xl mx-auto pt-48 pb-16">
           {/* Interactive Circles */}
           <div className="flex items-center justify-center mb-16">
             {services.map((service, index) => <div key={service.id} className="flex items-center">
@@ -207,7 +209,8 @@ const Services = () => {
                 </div>)}
             </div>
           </div>
-        </div>
+          </div>
+        </ScrollReveal>
       </section>
 
       {/* How We Work Section */}
@@ -219,10 +222,13 @@ const Services = () => {
         }} loading="lazy" />
         
         <div className="max-w-5xl mx-auto relative z-10">
-          <div className="text-center mb-16">
-            <h2 className="font-museo-moderno text-[28px] lg:text-[32px] text-[#f4eada]">How We Work</h2>
-          </div>
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-12 font-helvetica-now text-white/70 mb-16">
+          <ScrollReveal direction="up" delay="0.1s">
+            <div className="text-center mb-16">
+              <h2 className="font-museo-moderno text-[28px] lg:text-[32px] text-[#f4eada]">How We Work</h2>
+            </div>
+          </ScrollReveal>
+          <ScrollReveal direction="up" delay="0.3s">
+            <div className="grid grid-cols-1 lg:grid-cols-3 gap-12 font-helvetica-now text-white/70 mb-16">
             <article className="space-y-4">
               <h3 className="font-helvetica-now text-xl tracking-wider font-bold text-[#b3bacb] mb-4">ongoing counsel</h3>
               <p className="text-[#f4eada] leading-relaxed text-base">
@@ -242,7 +248,9 @@ const Services = () => {
               </p>
             </article>
           </div>
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-12 font-helvetica-now">
+          </ScrollReveal>
+          <ScrollReveal direction="up" delay="0.5s">
+            <div className="grid grid-cols-1 lg:grid-cols-3 gap-12 font-helvetica-now">
             <article className="space-y-4">
               <h3 className="font-helvetica-now text-xl tracking-wider font-bold text-[#b3bacb] mb-4">who we work with</h3>
               <p className="text-[#f4eada] leading-relaxed text-base">
@@ -262,6 +270,7 @@ const Services = () => {
               </p>
             </article>
           </div>
+          </ScrollReveal>
         </div>
       </section>
       </main>
