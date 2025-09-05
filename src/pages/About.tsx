@@ -37,11 +37,14 @@ const About = () => {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center h-full">
             {/* Founder Image */}
             <div className="flex justify-center lg:justify-end">
-              <div className="max-w-md relative z-0">
+              <div className="max-w-md relative">
                 <img src="/lovable-uploads/3f98f6a2-7c73-465b-89c1-9ffd619f5b8f.png" alt="Tom Meganck - Founder" className="w-full h-auto rounded-lg shadow-lg relative z-0" />
-                {/* Grainy texture overlay */}
-                <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-almara-dark-blue/20 z-10 rounded-lg"></div>
-                <div className="absolute inset-0 bg-noise opacity-30 z-10 rounded-lg"></div>
+                <div className="absolute inset-0 rounded-lg z-10" style={{
+                  background: 'rgba(54, 75, 86, 0.44)',
+                  boxShadow: '0 4px 30px rgba(0, 0, 0, 0.1)',
+                  backdropFilter: 'blur(0px)',
+                  WebkitBackdropFilter: 'blur(0px)'
+                }} />
               </div>
             </div>
             
