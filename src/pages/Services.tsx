@@ -100,10 +100,7 @@ const Services = () => {
 
       {/* Interactive Services Section */}
       <section className="h-screen bg-almara-light-text/20 flex items-start justify-center px-8 lg:px-12 mission-section-gradient">
-        <div className="max-w-6xl mx-auto pt-48 pb-16 reveal-up" style={{
-          animationDelay: '0.4s',
-          animationFillMode: 'both'
-        }}>
+        <div className="max-w-6xl mx-auto pt-48 pb-16">
           {/* Interactive Circles */}
           <div className="flex items-center justify-center mb-16">
             {services.map((service, index) => <div key={service.id} className="flex items-center">
@@ -221,10 +218,7 @@ const Services = () => {
           animationFillMode: 'both'
         }} loading="lazy" />
         
-        <div className="max-w-5xl mx-auto relative z-10 reveal-up" style={{
-          animationDelay: '0.5s',
-          animationFillMode: 'both'
-        }}>
+        <div className="max-w-5xl mx-auto relative z-10">
           <div className="text-center mb-16">
             <h2 className="font-museo-moderno text-[28px] lg:text-[32px] text-[#f4eada]">How We Work</h2>
           </div>
