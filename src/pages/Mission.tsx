@@ -61,10 +61,7 @@ const Mission = () => {
 
       {/* Section 2 — Our Pillars */}
       <section className="h-screen flex items-center justify-center px-8 lg:px-12 mission-section-gradient">
-        <div className="max-w-5xl mx-auto bg-gradient-to-r from-transparent via-gray-600/30 to-gray-700/60 rounded-3xl px-[120px] py-[58px] backdrop-blur-sm reveal-up" style={{
-          animationDelay: '0.2s',
-          animationFillMode: 'both'
-        }}>
+        <div className="max-w-5xl mx-auto bg-gradient-to-r from-transparent via-gray-600/30 to-gray-700/60 rounded-3xl px-[120px] py-[58px] backdrop-blur-sm">
           <div className="text-center mb-8">
             <h2 className="font-museo-moderno text-[32px] lg:text-[36px] text-[#f4eada] tracking-[0.05em] opacity-90 leading-tight mb-8">Our Pillars</h2>
           </div>
@@ -91,10 +88,7 @@ const Mission = () => {
 
       {/* Section 3 — In Practice */}
       <section className="h-screen flex items-center justify-center px-8 lg:px-12 mission-section-gradient">
-        <div className="max-w-6xl mx-auto reveal-fade" style={{
-          animationDelay: '0.2s',
-          animationFillMode: 'both'
-        }}>
+        <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="font-museo-moderno text-[32px] lg:text-[36px] text-[#f4eada] tracking-[0.05em] opacity-90 leading-tight">In Practice</h2>
           </div>
