@@ -96,7 +96,10 @@ const Partners = () => {
       
       {/* Section 2: Institutional Partners */}
       <section className="h-screen flex items-center justify-center px-12 py-20 bg-[hsl(var(--almara-light-text))] partners-gradient-bg animate-fade-in">
-        <div className="max-w-6xl mx-auto text-center relative z-10">
+        <div className="max-w-6xl mx-auto text-center relative z-10 reveal-up" style={{
+          animationDelay: '0.2s',
+          animationFillMode: 'both'
+        }}>
           <div className="mb-16">
             <h2 className="font-museo-moderno text-[32px] lg:text-[36px] text-[#364b56] mb-6">Institutional Partners</h2>
             <p className="font-helvetica-now text-[#363636] text-base max-w-[70%] mx-auto">
@@ -169,7 +172,10 @@ const Partners = () => {
 
       {/* Section 3: Technology Partners */}
       <section className="h-screen flex items-center justify-center px-12 py-20 bg-[hsl(var(--almara-light-text))] partners-gradient-bg">
-        <div className="max-w-4xl mx-auto text-center relative z-10">
+        <div className="max-w-4xl mx-auto text-center relative z-10 reveal-up" style={{
+          animationDelay: '0.2s',
+          animationFillMode: 'both'
+        }}>
           <div className="mb-16">
             <h2 className="font-museo-moderno text-[32px] lg:text-[36px] text-[#364b56] mb-6">Technology Partners</h2>
             <p className="font-helvetica-now text-[#363636] text-base max-w-[85%] mx-auto">
@@ -209,7 +215,10 @@ const Partners = () => {
 
       {/* Section 4: Project Partners */}
       <section className="h-screen flex items-center justify-center px-12 py-20 bg-[hsl(var(--almara-light-text))] partners-gradient-bg">
-        <div className="max-w-6xl mx-auto text-center relative z-10">
+        <div className="max-w-6xl mx-auto text-center relative z-10 reveal-up" style={{
+          animationDelay: '0.2s',
+          animationFillMode: 'both'
+        }}>
           <div className="mb-16">
             <h2 className="font-museo-moderno text-[32px] lg:text-[36px] text-[#364b56] mb-6">Project Partners</h2>
             <p className="font-helvetica-now text-[#363636] text-base max-w-[85%] mx-auto">
@@ -282,7 +291,10 @@ const Partners = () => {
 
       {/* Section 5: Call to Action */}
       <section className="h-screen flex items-center justify-center px-12 py-20 bg-[hsl(var(--almara-light-text))] partners-gradient-bg">
-        <div className="max-w-4xl mx-auto text-center space-y-12 relative z-10">
+        <div className="max-w-4xl mx-auto text-center space-y-12 relative z-10 reveal-fade" style={{
+          animationDelay: '0.2s',
+          animationFillMode: 'both'
+        }}>
           <div className="space-y-8">
             <h2 className="font-long-cang sm:text-[36px] md:text-[40px] lg:text-[46px] text-[#364b56] tracking-[0.05em] opacity-90 leading-tight font-thin text-5xl uppercase rotate-[3deg]">
               Tell us what you're building,<br />

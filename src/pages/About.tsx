@@ -36,7 +36,10 @@ const About = () => {
         <div className="max-w-7xl mx-auto w-full">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center h-full">
             {/* Founder Image */}
-            <div className="flex justify-center lg:justify-end">
+            <div className="flex justify-center lg:justify-end reveal-left" style={{
+              animationDelay: '0.3s',
+              animationFillMode: 'both'
+            }}>
               <div className="max-w-md relative">
                 <img src="/lovable-uploads/3f98f6a2-7c73-465b-89c1-9ffd619f5b8f.png" alt="Tom Meganck - Founder" className="w-full h-auto rounded-lg shadow-lg relative z-0" />
                 <div className="absolute inset-0 rounded-lg z-10 pointer-events-none" style={{
@@ -50,7 +53,10 @@ const About = () => {
             </div>
             
             {/* Founder Info */}
-            <div className="space-y-8 max-w-xl">
+            <div className="space-y-8 max-w-xl reveal-right" style={{
+              animationDelay: '0.4s',
+              animationFillMode: 'both'
+            }}>
               <div className="space-y-2">
                 <h2 className="font-museo-moderno text-[32px] lg:text-[36px] text-[#363636]">
                   Tom Meganck
