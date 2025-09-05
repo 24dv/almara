@@ -19,10 +19,14 @@ const App = () => (
       <Toaster />
       <Sonner />
       <ImagePreloader images={[
-        "/lovable-uploads/889a0efd-ed5b-448b-a911-54ea486f744c.png",
-        "/lovable-uploads/2c678d11-20a8-496a-9604-16c61d8ae172.png", 
-        "/lovable-uploads/a58a04a2-6cc9-41d7-a8c1-bd70d0c8df8f.png"
-      ]} />
+        "/lovable-uploads/889a0efd-ed5b-448b-a911-54ea486f744c.png", // Main logo
+        "/lovable-uploads/2c678d11-20a8-496a-9604-16c61d8ae172.png", // Index hero
+        "/lovable-uploads/a58a04a2-6cc9-41d7-a8c1-bd70d0c8df8f.png", // Background circles
+        "/lovable-uploads/0fb235b5-0ef7-4a23-b23c-a09271d1c1ee.png", // Family office
+        "/lovable-uploads/24427e5c-c5b4-462c-8320-f420776f39d1.png", // Art advisory
+        "/lovable-uploads/4c877114-c7bc-42b2-aa3d-5cf4f2df46b6.png", // Capital M&A
+        "/lovable-uploads/402e0eb5-ac60-45a4-b299-85280c71cb6d.png"  // Alternatives
+      ]} priority={true} />
       <BrowserRouter>
         <ScrollToTop />
         <Routes>
