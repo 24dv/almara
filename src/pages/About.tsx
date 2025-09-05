@@ -39,11 +39,12 @@ const About = () => {
             <div className="flex justify-center lg:justify-end">
               <div className="max-w-md relative">
                 <img src="/lovable-uploads/3f98f6a2-7c73-465b-89c1-9ffd619f5b8f.png" alt="Tom Meganck - Founder" className="w-full h-auto rounded-lg shadow-lg relative z-0" />
-                <div className="absolute inset-0 rounded-lg z-10" style={{
-                  background: 'rgba(54, 75, 86, 0.44)',
-                  boxShadow: '0 4px 30px rgba(0, 0, 0, 0.1)',
-                  backdropFilter: 'blur(0px)',
-                  WebkitBackdropFilter: 'blur(0px)'
+                <div className="absolute inset-0 rounded-lg z-10 pointer-events-none" style={{
+                  backgroundImage: 'url("/lovable-uploads/08276971-f3d6-48ef-af4b-9d930d4ced96.png")',
+                  backgroundSize: 'cover',
+                  backgroundPosition: 'center',
+                  backgroundRepeat: 'no-repeat',
+                  opacity: 0.6
                 }} />
               </div>
             </div>
