@@ -48,7 +48,7 @@ const Partners = () => {
     "Abbove": "/lovable-uploads/b10b396d-3422-4a4e-a8d6-106ce903a97e.png",
     "Aquitara": "/lovable-uploads/8ae18207-d04e-40bf-8988-daf09a9004ec.png",
     
-    "Firgun": "/lovable-uploads/3e7ad95e-31d6-499c-86ae-69fbdaa5c3fb.png",
+    "Firgun Ventures": "/lovable-uploads/3e7ad95e-31d6-499c-86ae-69fbdaa5c3fb.png",
     "Geneva Technologies": "/lovable-uploads/fb70fc12-73d6-4b1a-966c-d2e15456ca28.png",
     "Golborne": "/lovable-uploads/5a2ca5d0-c530-438f-a901-3963ba8f89a7.png",
   };
