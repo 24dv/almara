@@ -19,11 +19,15 @@ import genevaTechnologiesLogo from "@/assets/logos/geneva-technologies.svg";
 import golborneLogo from "@/assets/logos/golborne.svg";
 
 const Partners = () => {
-  // Scroll reveal animations
-  const { ref: institutionalRef, isVisible: institutionalVisible } = useScrollReveal(0.1, 100);
-  const { ref: technologyRef, isVisible: technologyVisible } = useScrollReveal(0.1, 200);
-  const { ref: projectRef, isVisible: projectVisible } = useScrollReveal(0.1, 300);
-  const { ref: ctaRef, isVisible: ctaVisible } = useScrollReveal(0.1, 400);
+  // Scroll reveal animations for content elements
+  const { ref: instHeaderRef, isVisible: instHeaderVisible } = useScrollReveal(0.1, 100);
+  const { ref: instGridRef, isVisible: instGridVisible } = useScrollReveal(0.1, 200);
+  const { ref: techHeaderRef, isVisible: techHeaderVisible } = useScrollReveal(0.1, 100);
+  const { ref: techGridRef, isVisible: techGridVisible } = useScrollReveal(0.1, 200);
+  const { ref: projHeaderRef, isVisible: projHeaderVisible } = useScrollReveal(0.1, 100);
+  const { ref: projGridRef, isVisible: projGridVisible } = useScrollReveal(0.1, 200);
+  const { ref: ctaHeaderRef, isVisible: ctaHeaderVisible } = useScrollReveal(0.1, 100);
+  const { ref: ctaButtonRef, isVisible: ctaButtonVisible } = useScrollReveal(0.1, 200);
 
   // Basic SEO
   useEffect(() => {
@@ -102,89 +106,91 @@ const Partners = () => {
       </section>
       
       {/* Section 2: Institutional Partners */}
-      <section ref={institutionalRef} className={`h-screen flex items-center justify-center px-12 py-20 bg-[hsl(var(--almara-light-text))] partners-gradient-bg transition-all duration-700 ${institutionalVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
+      <section className="h-screen flex items-center justify-center px-12 py-20 bg-[hsl(var(--almara-light-text))] partners-gradient-bg">
         <div className="max-w-6xl mx-auto text-center relative z-10">
-          <div className="mb-16">
+          <div ref={instHeaderRef} className={`mb-16 transition-all duration-700 ${instHeaderVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
             <h2 className="font-museo-moderno text-[32px] lg:text-[36px] text-[#364b56] mb-6">Institutional Partners</h2>
             <p className="font-helvetica-now text-[#363636] text-base max-w-[70%] mx-auto">
               Banking and investment relationships that enable execution with discretion.
             </p>
           </div>
 
-          <div className="grid gap-12 grid-cols-3 max-w-2xl mx-auto mb-8">
-            {/* Top row - 3 items */}
-            {[{
-              name: "Beonti",
-              longDesc: "Beonti is a consulting boutique in Luxembourg, advising firms across the alternative investment industry."
-            }, {
-              name: "Kyros Capital", 
-              longDesc: "Kyros provides structured investment solutions, offering bankable and non-bankable products to global investors."
-            }, {
-              name: "UBP",
-              longDesc: "Geneva-based UBP specializes in wealth and asset management, serving private and institutional clients worldwide."
-            }].map(p => (
-              <div key={p.name} className="relative group">
-                <button className="bg-transparent text-[#f4eada] rounded-xl almara-call-btn relative z-[100] transition-all px-8 py-12 text-center w-full">
-                  <img src={logos[p.name]} alt={`${p.name} logo`} loading="lazy" className={`mx-auto h-16 object-contain ${p.name === 'Beonti' ? 'scale-[2.36]' : p.name === 'Kyros Capital' ? 'scale-[2.25]' : ''}`} />
-                </button>
-                
-                {/* Hover Overlay */}
-                <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-all duration-300 z-[200] p-6 flex flex-col justify-center" style={{
-                  background: 'rgba(244, 234, 218, 0.14)',
-                  borderRadius: '16px',
-                  boxShadow: '0 4px 30px rgba(0, 0, 0, 0.1)',
-                  backdropFilter: 'blur(13.2px)',
-                  WebkitBackdropFilter: 'blur(13.2px)'
-                }}>
-                  <h3 className="font-helvetica-now font-bold text-[#363636] text-sm mb-4 tracking-wide">{p.name}</h3>
-                  <p className="font-helvetica-now text-[#363636] text-xs leading-relaxed">{p.longDesc}</p>
+          <div ref={instGridRef} className={`transition-all duration-700 ${instGridVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
+            <div className="grid gap-12 grid-cols-3 max-w-2xl mx-auto mb-8">
+              {/* Top row - 3 items */}
+              {[{
+                name: "Beonti",
+                longDesc: "Beonti is a consulting boutique in Luxembourg, advising firms across the alternative investment industry."
+              }, {
+                name: "Kyros Capital", 
+                longDesc: "Kyros provides structured investment solutions, offering bankable and non-bankable products to global investors."
+              }, {
+                name: "UBP",
+                longDesc: "Geneva-based UBP specializes in wealth and asset management, serving private and institutional clients worldwide."
+              }].map(p => (
+                <div key={p.name} className="relative group">
+                  <button className="bg-transparent text-[#f4eada] rounded-xl almara-call-btn relative z-[100] transition-all px-8 py-12 text-center w-full">
+                    <img src={logos[p.name]} alt={`${p.name} logo`} loading="lazy" className={`mx-auto h-16 object-contain ${p.name === 'Beonti' ? 'scale-[2.36]' : p.name === 'Kyros Capital' ? 'scale-[2.25]' : ''}`} />
+                  </button>
+                  
+                  {/* Hover Overlay */}
+                  <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-all duration-300 z-[200] p-6 flex flex-col justify-center" style={{
+                    background: 'rgba(244, 234, 218, 0.14)',
+                    borderRadius: '16px',
+                    boxShadow: '0 4px 30px rgba(0, 0, 0, 0.1)',
+                    backdropFilter: 'blur(13.2px)',
+                    WebkitBackdropFilter: 'blur(13.2px)'
+                  }}>
+                    <h3 className="font-helvetica-now font-bold text-[#363636] text-sm mb-4 tracking-wide">{p.name}</h3>
+                    <p className="font-helvetica-now text-[#363636] text-xs leading-relaxed">{p.longDesc}</p>
+                  </div>
                 </div>
-              </div>
-            ))}
-          </div>
-          
-          <div className="grid gap-12 grid-cols-2 max-w-2xl mx-auto">
-            {/* Bottom row - 2 items */}
-            {[{
-              name: "CIGP",
-              longDesc: "CIGP is an independent Geneva firm offering global wealth management and corporate finance advisory."
-            }, {
-              name: "Antarctica",
-              longDesc: "Antarctica Asset Management delivers hedge fund and private equity solutions for institutions, family offices, and private banks."
-            }].map(p => (
-              <div key={p.name} className="relative group">
-                <button className="bg-transparent text-[#f4eada] rounded-xl almara-call-btn relative z-[100] transition-all px-8 py-12 text-center w-full">
-                  <img src={logos[p.name]} alt={`${p.name} logo`} loading="lazy" className="mx-auto h-16 object-contain" />
-                </button>
-                
-                {/* Hover Overlay */}
-                <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-all duration-300 z-[200] p-6 flex flex-col justify-center" style={{
-                  background: 'rgba(244, 234, 218, 0.14)',
-                  borderRadius: '16px',
-                  boxShadow: '0 4px 30px rgba(0, 0, 0, 0.1)',
-                  backdropFilter: 'blur(13.2px)',
-                  WebkitBackdropFilter: 'blur(13.2px)'
-                }}>
-                  <h3 className="font-helvetica-now font-bold text-[#363636] text-sm mb-4 tracking-wide">{p.name}</h3>
-                  <p className="font-helvetica-now text-[#363636] text-xs leading-relaxed">{p.longDesc}</p>
+              ))}
+            </div>
+            
+            <div className="grid gap-12 grid-cols-2 max-w-2xl mx-auto">
+              {/* Bottom row - 2 items */}
+              {[{
+                name: "CIGP",
+                longDesc: "CIGP is an independent Geneva firm offering global wealth management and corporate finance advisory."
+              }, {
+                name: "Antarctica",
+                longDesc: "Antarctica Asset Management delivers hedge fund and private equity solutions for institutions, family offices, and private banks."
+              }].map(p => (
+                <div key={p.name} className="relative group">
+                  <button className="bg-transparent text-[#f4eada] rounded-xl almara-call-btn relative z-[100] transition-all px-8 py-12 text-center w-full">
+                    <img src={logos[p.name]} alt={`${p.name} logo`} loading="lazy" className="mx-auto h-16 object-contain" />
+                  </button>
+                  
+                  {/* Hover Overlay */}
+                  <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-all duration-300 z-[200] p-6 flex flex-col justify-center" style={{
+                    background: 'rgba(244, 234, 218, 0.14)',
+                    borderRadius: '16px',
+                    boxShadow: '0 4px 30px rgba(0, 0, 0, 0.1)',
+                    backdropFilter: 'blur(13.2px)',
+                    WebkitBackdropFilter: 'blur(13.2px)'
+                  }}>
+                    <h3 className="font-helvetica-now font-bold text-[#363636] text-sm mb-4 tracking-wide">{p.name}</h3>
+                    <p className="font-helvetica-now text-[#363636] text-xs leading-relaxed">{p.longDesc}</p>
+                  </div>
                 </div>
-              </div>
-            ))}
+              ))}
+            </div>
           </div>
         </div>
       </section>
 
       {/* Section 3: Technology Partners */}
-      <section ref={technologyRef} className={`h-screen flex items-center justify-center px-12 py-20 bg-[hsl(var(--almara-light-text))] partners-gradient-bg transition-all duration-700 ${technologyVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
+      <section className="h-screen flex items-center justify-center px-12 py-20 bg-[hsl(var(--almara-light-text))] partners-gradient-bg">
         <div className="max-w-4xl mx-auto text-center relative z-10">
-          <div className="mb-16">
+          <div ref={techHeaderRef} className={`mb-16 transition-all duration-700 ${techHeaderVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
             <h2 className="font-museo-moderno text-[32px] lg:text-[36px] text-[#364b56] mb-6">Technology Partners</h2>
             <p className="font-helvetica-now text-[#363636] text-base max-w-[85%] mx-auto">
               Infrastructure for secure sourcing, governance, and reporting.
             </p>
           </div>
 
-          <div className="grid gap-12 grid-cols-2 max-w-2xl mx-auto">
+          <div ref={techGridRef} className={`grid gap-12 grid-cols-2 max-w-2xl mx-auto transition-all duration-700 ${techGridVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
             {[{
               name: "Delio",
               longDesc: "Delio offers a white-label platform that helps financial firms digitise and distribute private market investments."
@@ -215,85 +221,87 @@ const Partners = () => {
       </section>
 
       {/* Section 4: Project Partners */}
-      <section ref={projectRef} className={`h-screen flex items-center justify-center px-12 py-20 bg-[hsl(var(--almara-light-text))] partners-gradient-bg transition-all duration-700 ${projectVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
+      <section className="h-screen flex items-center justify-center px-12 py-20 bg-[hsl(var(--almara-light-text))] partners-gradient-bg">
         <div className="max-w-6xl mx-auto text-center relative z-10">
-          <div className="mb-16">
+          <div ref={projHeaderRef} className={`mb-16 transition-all duration-700 ${projHeaderVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
             <h2 className="font-museo-moderno text-[32px] lg:text-[36px] text-[#364b56] mb-6">Project Partners</h2>
             <p className="font-helvetica-now text-[#363636] text-base max-w-[85%] mx-auto">
               Specialists we mobilise for specific mandates.
             </p>
           </div>
 
-          <div className="grid gap-8 grid-cols-2 max-w-lg mx-auto mb-8">
-            {/* Top row - 3 items */}
-            {[{
-              name: "Aquitara",
-              longDesc: "Aquitara (via 5I2 Capital) invests in remediating Agent Orange–contaminated land in Vietnam and developing renewable-energy eco-parks."
-            }, {
-              name: "Firgun Ventures",
-              longDesc: "A $250M VC firm investing in series A/B Quantum Scaleups."
-            }].map(p => (
-              <div key={p.name} className="relative group">
-                <button className="bg-transparent text-[#f4eada] rounded-xl almara-call-btn relative z-[100] transition-all px-8 py-12 text-center w-full">
-                  <img src={logos[p.name]} alt={`${p.name} logo`} loading="lazy" className="mx-auto h-16 object-contain" />
-                </button>
-                
-                {/* Hover Overlay */}
-                <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-all duration-300 z-[200] p-6 flex flex-col justify-center" style={{
-                  background: 'rgba(244, 234, 218, 0.14)',
-                  borderRadius: '16px',
-                  boxShadow: '0 4px 30px rgba(0, 0, 0, 0.1)',
-                  backdropFilter: 'blur(13.2px)',
-                  WebkitBackdropFilter: 'blur(13.2px)'
-                }}>
-                  <h3 className="font-helvetica-now font-bold text-[#363636] text-sm mb-4 tracking-wide">{p.name}</h3>
-                  <p className="font-helvetica-now text-[#363636] text-xs leading-relaxed">{p.longDesc}</p>
+          <div ref={projGridRef} className={`transition-all duration-700 ${projGridVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
+            <div className="grid gap-8 grid-cols-2 max-w-lg mx-auto mb-8">
+              {/* Top row - 2 items */}
+              {[{
+                name: "Aquitara",
+                longDesc: "Aquitara (via 5I2 Capital) invests in remediating Agent Orange–contaminated land in Vietnam and developing renewable-energy eco-parks."
+              }, {
+                name: "Firgun Ventures",
+                longDesc: "A $250M VC firm investing in series A/B Quantum Scaleups."
+              }].map(p => (
+                <div key={p.name} className="relative group">
+                  <button className="bg-transparent text-[#f4eada] rounded-xl almara-call-btn relative z-[100] transition-all px-8 py-12 text-center w-full">
+                    <img src={logos[p.name]} alt={`${p.name} logo`} loading="lazy" className="mx-auto h-16 object-contain" />
+                  </button>
+                  
+                  {/* Hover Overlay */}
+                  <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-all duration-300 z-[200] p-6 flex flex-col justify-center" style={{
+                    background: 'rgba(244, 234, 218, 0.14)',
+                    borderRadius: '16px',
+                    boxShadow: '0 4px 30px rgba(0, 0, 0, 0.1)',
+                    backdropFilter: 'blur(13.2px)',
+                    WebkitBackdropFilter: 'blur(13.2px)'
+                  }}>
+                    <h3 className="font-helvetica-now font-bold text-[#363636] text-sm mb-4 tracking-wide">{p.name}</h3>
+                    <p className="font-helvetica-now text-[#363636] text-xs leading-relaxed">{p.longDesc}</p>
+                  </div>
                 </div>
-              </div>
-            ))}
-          </div>
-          
-          <div className="grid gap-8 grid-cols-2 max-w-lg mx-auto">
-            {/* Bottom row - 2 items */}
-            {[{
-              name: "Geneva Technologies",
-              longDesc: "Genève Technologies builds machine learning–based trading strategies, extracting alpha from global markets through proprietary AI models."
-            }, {
-              name: "Golborne",
-              longDesc: "Golborne Capital offers secured private credit to SMEs and growth firms, often as first institutional lender, focused on preservation and niche opportunities."
-            }].map(p => (
-              <div key={p.name} className="relative group">
-                <button className="bg-transparent text-[#f4eada] rounded-xl almara-call-btn relative z-[100] transition-all px-8 py-12 text-center w-full">
-                  <img src={logos[p.name]} alt={`${p.name} logo`} loading="lazy" className="mx-auto h-16 object-contain" />
-                </button>
-                
-                {/* Hover Overlay */}
-                <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-all duration-300 z-[200] p-6 flex flex-col justify-center" style={{
-                  background: 'rgba(244, 234, 218, 0.14)',
-                  borderRadius: '16px',
-                  boxShadow: '0 4px 30px rgba(0, 0, 0, 0.1)',
-                  backdropFilter: 'blur(13.2px)',
-                  WebkitBackdropFilter: 'blur(13.2px)'
-                }}>
-                  <h3 className="font-helvetica-now font-bold text-[#363636] text-sm mb-4 tracking-wide">{p.name}</h3>
-                  <p className="font-helvetica-now text-[#363636] text-xs leading-relaxed">{p.longDesc}</p>
+              ))}
+            </div>
+            
+            <div className="grid gap-8 grid-cols-2 max-w-lg mx-auto">
+              {/* Bottom row - 2 items */}
+              {[{
+                name: "Geneva Technologies",
+                longDesc: "Genève Technologies builds machine learning–based trading strategies, extracting alpha from global markets through proprietary AI models."
+              }, {
+                name: "Golborne",
+                longDesc: "Golborne Capital offers secured private credit to SMEs and growth firms, often as first institutional lender, focused on preservation and niche opportunities."
+              }].map(p => (
+                <div key={p.name} className="relative group">
+                  <button className="bg-transparent text-[#f4eada] rounded-xl almara-call-btn relative z-[100] transition-all px-8 py-12 text-center w-full">
+                    <img src={logos[p.name]} alt={`${p.name} logo`} loading="lazy" className="mx-auto h-16 object-contain" />
+                  </button>
+                  
+                  {/* Hover Overlay */}
+                  <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-all duration-300 z-[200] p-6 flex flex-col justify-center" style={{
+                    background: 'rgba(244, 234, 218, 0.14)',
+                    borderRadius: '16px',
+                    boxShadow: '0 4px 30px rgba(0, 0, 0, 0.1)',
+                    backdropFilter: 'blur(13.2px)',
+                    WebkitBackdropFilter: 'blur(13.2px)'
+                  }}>
+                    <h3 className="font-helvetica-now font-bold text-[#363636] text-sm mb-4 tracking-wide">{p.name}</h3>
+                    <p className="font-helvetica-now text-[#363636] text-xs leading-relaxed">{p.longDesc}</p>
+                  </div>
                 </div>
-              </div>
-            ))}
+              ))}
+            </div>
           </div>
         </div>
       </section>
 
       {/* Section 5: Call to Action */}
-      <section ref={ctaRef} className={`h-screen flex items-center justify-center px-12 py-20 bg-[hsl(var(--almara-light-text))] partners-gradient-bg transition-all duration-700 ${ctaVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
+      <section className="h-screen flex items-center justify-center px-12 py-20 bg-[hsl(var(--almara-light-text))] partners-gradient-bg">
         <div className="max-w-4xl mx-auto text-center space-y-12 relative z-50">
-          <div className="space-y-8 relative z-50">
+          <div ref={ctaHeaderRef} className={`space-y-8 relative z-50 transition-all duration-700 ${ctaHeaderVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
             <h2 className="font-long-cang sm:text-[36px] md:text-[40px] lg:text-[46px] text-[#364b56] tracking-[0.05em] opacity-90 leading-tight font-thin text-5xl uppercase rotate-[3deg] relative z-50">
               Tell us what you're building,<br />
               we'll assemble the right team
             </h2>
           </div>
-          <div className="pt-8 relative z-50">
+          <div ref={ctaButtonRef} className={`pt-8 relative z-50 transition-all duration-700 ${ctaButtonVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
             <Button variant="call-footer" size="call" className="font-helvetica-now relative z-50">
               request a call
             </Button>
