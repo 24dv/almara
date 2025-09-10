@@ -104,17 +104,14 @@ const Partners = () => {
             </p>
           </div>
 
-          <div className="grid gap-8 grid-cols-3 max-w-3xl mx-auto mb-8">
-            {/* Top row - 3 items */}
+          <div className="grid gap-8 grid-cols-2 max-w-2xl mx-auto mb-8">
+            {/* First row - 2 items */}
             {[{
               name: "Beonti",
               longDesc: "Beonti is a consulting boutique in Luxembourg, advising firms across the alternative investment industry."
             }, {
               name: "Kyros Capital", 
               longDesc: "Kyros Capital provides structured investment solutions from Singapore, offering bankable and non-bankable products to global investors."
-            }, {
-              name: "UBP",
-              longDesc: "Geneva-based UBP specializes in wealth and asset management, serving private and institutional clients worldwide."
             }].map(p => (
               <div key={p.name} className="relative group">
                 <button className="bg-transparent text-[#f4eada] rounded-xl almara-call-btn relative z-[100] transition-all px-8 py-12 text-center w-full">
@@ -136,12 +133,38 @@ const Partners = () => {
             ))}
           </div>
           
-          <div className="grid gap-8 grid-cols-2 max-w-lg mx-auto">
-            {/* Bottom row - 2 items */}
+          <div className="grid gap-8 grid-cols-2 max-w-2xl mx-auto mb-8">
+            {/* Second row - 2 items */}
             {[{
+              name: "UBP",
+              longDesc: "Geneva-based UBP specializes in wealth and asset management, serving private and institutional clients worldwide."
+            }, {
               name: "CIGP",
               longDesc: "CIGP is an independent Geneva firm offering global wealth management and corporate finance advisory."
-            }, {
+            }].map(p => (
+              <div key={p.name} className="relative group">
+                <button className="bg-transparent text-[#f4eada] rounded-xl almara-call-btn relative z-[100] transition-all px-8 py-12 text-center w-full">
+                  <img src={logos[p.name]} alt={`${p.name} logo`} loading="lazy" className="mx-auto h-16 object-contain" />
+                </button>
+                
+                {/* Hover Overlay */}
+                <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-all duration-300 z-[200] p-6 flex flex-col justify-center" style={{
+                  background: 'rgba(244, 234, 218, 0.14)',
+                  borderRadius: '16px',
+                  boxShadow: '0 4px 30px rgba(0, 0, 0, 0.1)',
+                  backdropFilter: 'blur(13.2px)',
+                  WebkitBackdropFilter: 'blur(13.2px)'
+                }}>
+                  <h3 className="font-helvetica-now font-bold text-[#363636] text-sm mb-4 tracking-wide">{p.name}</h3>
+                  <p className="font-helvetica-now text-[#363636] text-xs leading-relaxed">{p.longDesc}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+          
+          <div className="grid gap-8 grid-cols-1 max-w-xs mx-auto">
+            {/* Third row - 1 item centered */}
+            {[{
               name: "Antarctica",
               longDesc: "Antarctica Asset Management delivers hedge fund and private equity solutions for institutions, family offices, and private banks."
             }].map(p => (
