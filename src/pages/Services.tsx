@@ -107,24 +107,24 @@ const Services = () => {
       </section>
 
       {/* Interactive Services Section */}
-      <section className="h-screen bg-almara-light-text/20 flex items-start justify-center px-8 lg:px-12 mission-section-gradient relative z-20">
-        <div className="max-w-6xl mx-auto pt-48 pb-16 relative z-30">
+      <section className="h-screen bg-almara-light-text/20 flex items-start justify-center px-8 lg:px-12 mission-section-gradient">
+        <div className="max-w-6xl mx-auto pt-48 pb-16">
           {/* Interactive Circles */}
           <div ref={circlesRef} className={`flex items-center justify-center mb-16 transition-all duration-1000 ease-out ${circlesVisible ? 'opacity-100 transform translate-y-0' : 'opacity-0 transform translate-y-8'}`}>
             {services.map((service, index) => <div key={service.id} className="flex items-center">
-                <button onClick={() => setActiveService(service.id)} className="flex-shrink-0 relative" style={{
+                <button onClick={() => setActiveService(service.id)} className="flex-shrink-0 relative z-30" style={{
                 width: '56px',
                 height: '56px',
                 borderRadius: '50%',
-                backgroundColor: activeService === service.id ? '#4a9b9b' : 'transparent',
+                backgroundColor: activeService === service.id ? '#364b56' : 'transparent',
                 boxShadow: 'inset -4px -4px 8px rgba(255,255,255,0.0), inset 2px 2px 4px rgba(0,0,0,0.7)',
                 transition: 'background-color 0.4s cubic-bezier(0.4, 0, 0.2, 1), transform 0.2s ease-out',
                 transform: 'scale(1)',
                 position: 'relative',
-                zIndex: 50
+                zIndex: 30
               }} onMouseEnter={e => {
                 if (activeService !== service.id) {
-                  e.currentTarget.style.backgroundColor = '#4a9b9b';
+                  e.currentTarget.style.backgroundColor = '#364b56';
                   e.currentTarget.style.transform = 'scale(1.05)';
                 }
               }} onMouseLeave={e => {
