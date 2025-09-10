@@ -86,7 +86,49 @@ const Mission = () => {
         </div>
       </section>
 
-      {/* Section 3 — In Practice */}
+      {/* Section 3 — Our Vision */}
+      <section className="h-screen flex items-center justify-center px-8 lg:px-12 mission-section-gradient">
+        <div className="max-w-4xl mx-auto text-center space-y-12">
+          <div className="space-y-8">
+            <h2 className="font-museo-moderno text-[32px] lg:text-[36px] text-[#f4eada] tracking-[0.05em] opacity-90 leading-tight">Our Vision</h2>
+            <div className="space-y-6 font-helvetica-now text-[#f4eada] max-w-3xl mx-auto">
+              <p className="text-lg leading-relaxed">
+                We envision a future where alternative investing is guided by depth, 
+                not speed—where every decision reflects care for both returns and impact.
+              </p>
+              <p className="text-base leading-relaxed opacity-90">
+                In this world, investors partner with advisors who understand that true wealth 
+                encompasses financial growth, personal values, and lasting positive change. 
+                Together, we build portfolios that don't just perform—they endure.
+              </p>
+            </div>
+          </div>
+          
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-16">
+            <div className="text-center space-y-4">
+              <div className="w-16 h-16 mx-auto rounded-full bg-gradient-to-br from-[#f4eada]/20 to-[#b3bacb]/10 flex items-center justify-center mb-4">
+                <div className="w-8 h-8 rounded-full bg-[#f4eada]/30"></div>
+              </div>
+              <h3 className="font-helvetica-now text-xl font-bold text-[#b3bacb] tracking-wider">sustainable growth</h3>
+              <p className="text-base text-[#f4eada] leading-relaxed">
+                Building wealth that serves multiple generations, not just quarters.
+              </p>
+            </div>
+            
+            <div className="text-center space-y-4">
+              <div className="w-16 h-16 mx-auto rounded-full bg-gradient-to-br from-[#f4eada]/20 to-[#b3bacb]/10 flex items-center justify-center mb-4">
+                <div className="w-8 h-8 rounded-full bg-[#f4eada]/30"></div>
+              </div>
+              <h3 className="font-helvetica-now text-xl font-bold text-[#b3bacb] tracking-wider">purposeful partnerships</h3>
+              <p className="text-base text-[#f4eada] leading-relaxed">
+                Creating relationships built on trust, transparency, and shared vision.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Section 4 — In Practice */}
       <section className="h-screen flex items-center justify-center px-8 lg:px-12 mission-section-gradient">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
