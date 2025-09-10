@@ -118,7 +118,7 @@ const Partners = () => {
             }].map(p => (
               <div key={p.name} className="relative group">
                 <button className="bg-transparent text-[#f4eada] rounded-xl almara-call-btn relative z-[100] transition-all px-8 py-12 text-center w-full">
-                  <img src={logos[p.name]} alt={`${p.name} logo`} loading="lazy" className={`mx-auto h-16 object-contain ${p.name === 'Beonti' ? 'scale-[2.36]' : p.name === 'Kyros Capital' ? 'scale-150' : ''}`} />
+                  <img src={logos[p.name]} alt={`${p.name} logo`} loading="lazy" className={`mx-auto h-16 object-contain ${p.name === 'Beonti' ? 'scale-[2.36]' : p.name === 'Kyros Capital' ? 'scale-[2.25]' : ''}`} />
                 </button>
                 
                 {/* Hover Overlay */}
