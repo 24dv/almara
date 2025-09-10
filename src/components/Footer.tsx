@@ -17,13 +17,19 @@ export const Footer = () => {
           <Button variant="call-footer" size="call">request a call</Button>
         </div>
         
-        {/* Right Side - Privacy Link */}
-        <div className="flex-1 flex justify-end">
+        {/* Right Side - Privacy and Legal Notice Links */}
+        <div className="flex-1 flex justify-end space-x-6">
           <Link 
             to="/privacy" 
             className="text-sm text-[#363636] hover:text-[#363636]/70 transition-colors duration-300 font-helvetica-now"
           >
             privacy
+          </Link>
+          <Link 
+            to="/legal-notice" 
+            className="text-sm text-[#363636] hover:text-[#363636]/70 transition-colors duration-300 font-helvetica-now"
+          >
+            legal notice
           </Link>
         </div>
       </div>

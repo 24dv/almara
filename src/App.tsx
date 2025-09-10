@@ -10,6 +10,7 @@ import Services from "./pages/Services";
 import Partners from "./pages/Partners";
 import Mission from "./pages/Mission";
 import Privacy from "./pages/Privacy";
+import LegalNotice from "./pages/LegalNotice";
 import NotFound from "./pages/NotFound";
 
 
@@ -32,6 +33,7 @@ const App = () => (
           <Route path="/partners" element={<Partners />} />
           <Route path="/mission" element={<Mission />} />
           <Route path="/privacy" element={<Privacy />} />
+          <Route path="/legal-notice" element={<LegalNotice />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
