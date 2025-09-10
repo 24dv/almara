@@ -64,10 +64,10 @@ const About = () => {
               </p>
                 
                 <div className="space-y-3 text-base opacity-75">
-                  <p className="text-[#f4eada]">Background info 01</p>
-                  <p className="text-[#f4eada]">Background info 02</p>
-                  <p className="text-[#f4eada]">Background info 03</p>
-                  <p className="text-[#f4eada]">Background info 04</p>
+                  <p className="text-[#f4eada]">Founded and led a corporate services firm in London and Luxembourg.</p>
+                  <p className="text-[#f4eada]">Established a family office advisory practice in Hong Kong.</p>
+                  <p className="text-[#f4eada]">2002–2012: Served as Managing Director of a significant Single Family Office spanning New York, Luxembourg, Monaco, and Hong Kong, with a focus on hedge funds, private equity, and litigation funding.</p>
+                  <p className="text-[#f4eada]">Began his career in private and merchant banking in Luxembourg and Brussels.</p>
                 </div>
                 
                 <p className="leading-relaxed text-base text-[#363636]">Tom has lived and worked in Brussels, Luxembourg, Monaco, London, Hong Kong, and Lisbon, cultivating a global network and local fluency in the world’s key financial and cultural hubs. Almara reflects his belief in discreet, holistic advisory, where trust, excellence, and long-term perspective drive every decision.</p>
