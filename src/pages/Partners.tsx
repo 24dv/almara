@@ -217,8 +217,8 @@ const Partners = () => {
             </p>
           </div>
 
-          <div className="grid gap-8 grid-cols-2 max-w-lg mx-auto mb-8">
-            {/* Top row - 3 items */}
+          <div className="grid gap-12 grid-cols-2 max-w-2xl mx-auto mb-8">
+            {/* Top row - 2 items */}
             {[{
               name: "Aquitara",
               longDesc: "Aquitara (via 5I2 Capital) invests in remediating Agent Orange–contaminated land in Vietnam and developing renewable-energy eco-parks."
@@ -246,7 +246,7 @@ const Partners = () => {
             ))}
           </div>
           
-          <div className="grid gap-8 grid-cols-2 max-w-lg mx-auto">
+          <div className="grid gap-12 grid-cols-2 max-w-2xl mx-auto">
             {/* Bottom row - 2 items */}
             {[{
               name: "Geneva Technologies",
