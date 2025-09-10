@@ -2,9 +2,9 @@ import { PageLayout } from "@/components/PageLayout";
 import { Button } from "@/components/ui/button";
 import { useScrollReveal } from "@/hooks/useScrollReveal";
 const About = () => {
-  const { ref: sectionRef, isVisible: sectionVisible } = useScrollReveal<HTMLElement>(0.3);
-  const { ref: imageRef, isVisible: imageVisible } = useScrollReveal<HTMLDivElement>(0.3, 200);
-  const { ref: contentRef, isVisible: contentVisible } = useScrollReveal<HTMLDivElement>(0.3, 400);
+  const { ref: sectionRef, isVisible: sectionVisible } = useScrollReveal<HTMLElement>(0.1);
+  const { ref: imageRef, isVisible: imageVisible } = useScrollReveal<HTMLDivElement>(0.1, 100);
+  const { ref: contentRef, isVisible: contentVisible } = useScrollReveal<HTMLDivElement>(0.1, 300);
   return <PageLayout title="About">
       {/* Main Content Section - Full Height */}
       <section className="h-screen flex items-center justify-center px-12 py-20">
@@ -40,10 +40,10 @@ const About = () => {
         <div className="max-w-7xl mx-auto w-full">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center h-full">
             {/* Founder Image */}
-            <div ref={imageRef} className={`flex justify-center lg:justify-end transition-all duration-1000 ease-out ${
+            <div ref={imageRef} className={`flex justify-center lg:justify-end transition-all duration-700 ease-[cubic-bezier(0.4,0,0.2,1)] ${
               imageVisible 
                 ? 'translate-x-0 opacity-100' 
-                : '-translate-x-16 opacity-0'
+                : '-translate-x-12 opacity-0'
             }`}>
               <div className="max-w-md relative">
                 <img src="/lovable-uploads/3f98f6a2-7c73-465b-89c1-9ffd619f5b8f.png" alt="Tom Meganck - Founder" className="w-full h-auto rounded-lg shadow-lg relative z-0" />
@@ -58,10 +58,10 @@ const About = () => {
             </div>
             
             {/* Founder Info */}
-            <div ref={contentRef} className={`space-y-8 max-w-xl transition-all duration-1000 ease-out ${
+            <div ref={contentRef} className={`space-y-8 max-w-xl transition-all duration-700 ease-[cubic-bezier(0.4,0,0.2,1)] ${
               contentVisible 
                 ? 'translate-y-0 opacity-100' 
-                : 'translate-y-8 opacity-0'
+                : 'translate-y-10 opacity-0'
             }`}>
               <div className="space-y-2">
                 <h2 className="font-museo-moderno text-[32px] lg:text-[36px] text-[#363636]">
@@ -131,7 +131,7 @@ const About = () => {
               
               {/* Call to Action */}
               <div className="pt-6">
-                <Button variant="call" size="call" className="font-helvetica-now">request a call</Button>
+                <Button variant="call" size="call" className="font-helvetica-now">get in touch</Button>
               </div>
             </div>
           </div>
