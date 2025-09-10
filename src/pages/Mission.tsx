@@ -36,7 +36,7 @@ const Mission = () => {
       <main className="relative z-10 min-h-[calc(100vh-200px)]">
       {/* Section 1 — Our Mission (includes header) */}
       <section className="h-screen flex flex-col px-8 lg:px-12 mission-section-gradient">
-        <header className="relative z-10 hidden lg:flex items-center justify-center pt-8 pb-4">
+        <header className="relative z-50 hidden lg:flex items-center justify-center pt-8 pb-4">
           <Link to="/" className="transition-opacity hover:opacity-80">
             <img src="/lovable-uploads/889a0efd-ed5b-448b-a911-54ea486f744c.png" alt="ALMARA" className="h-7 sm:h-8 md:h-9 opacity-90" />
           </Link>
