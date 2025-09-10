@@ -40,7 +40,7 @@ const Partners = () => {
 
   const logos: Record<string, string> = {
     "Beonti": "/lovable-uploads/ee8615d4-ce98-4f1c-a704-916cc74548ab.png",
-    "Kyros Capital": "/lovable-uploads/118fd87f-fbcf-43dd-bb08-6f5133ace93e.png",
+    "Kyros Capital": "/lovable-uploads/23cd3e92-dac8-4dfb-b8a1-891f9ca070ef.png",
     "UBP": "/lovable-uploads/75ca8d5a-9e04-492e-8048-83b8e15d144d.png",
     "CIGP": "/lovable-uploads/820b3f6d-6998-45f0-ae8e-b47197131b55.png",
     "Antarctica": "/lovable-uploads/21882ea6-ceb9-4b1c-a053-99616dc103cc.png",
@@ -118,7 +118,7 @@ const Partners = () => {
             }].map(p => (
               <div key={p.name} className="relative group">
                 <button className="bg-transparent text-[#f4eada] rounded-xl almara-call-btn relative z-[100] transition-all px-8 py-12 text-center w-full">
-                  <img src={logos[p.name]} alt={`${p.name} logo`} loading="lazy" className="mx-auto h-16 object-contain" />
+                  <img src={logos[p.name]} alt={`${p.name} logo`} loading="lazy" className={`mx-auto h-16 object-contain ${p.name === 'Beonti' ? 'scale-[2.36]' : ''}`} />
                 </button>
                 
                 {/* Hover Overlay */}
