@@ -39,8 +39,8 @@ const Partners = () => {
   }, []);
 
   const logos: Record<string, string> = {
-    "Quintet": "/lovable-uploads/ff5b3eb0-a20e-4240-91a7-affd5dff85fd.png",
-    "Degroof Petercam": "/lovable-uploads/c3574845-89ba-40fc-92f2-8bb1b34e4b56.png",
+    "Beonti": "/lovable-uploads/738ada40-cf48-472c-9a72-79a8f6833f80.png",
+    "Kyros Capital": "/lovable-uploads/23cd3e92-dac8-4dfb-b8a1-891f9ca070ef.png",
     "UBP": "/lovable-uploads/75ca8d5a-9e04-492e-8048-83b8e15d144d.png",
     "CIGP": "/lovable-uploads/820b3f6d-6998-45f0-ae8e-b47197131b55.png",
     "Antarctica": "/lovable-uploads/21882ea6-ceb9-4b1c-a053-99616dc103cc.png",
@@ -107,11 +107,11 @@ const Partners = () => {
           <div className="grid gap-8 grid-cols-3 max-w-3xl mx-auto mb-8">
             {/* Top row - 3 items */}
             {[{
-              name: "Quintet",
-              longDesc: "Luxembourg-based Quintet offers private banking, wealth planning, and investment services across Europe and the UK."
+              name: "Beonti",
+              longDesc: "Innovative financial technology solutions and digital banking services."
             }, {
-              name: "Degroof Petercam", 
-              longDesc: "Belgium's Degroof Petercam provides private banking, corporate finance, and asset management with over €50 billion under management."
+              name: "Kyros Capital", 
+              longDesc: "Investment management and financial advisory services with a focus on institutional clients."
             }, {
               name: "UBP",
               longDesc: "Geneva-based UBP specializes in wealth and asset management, serving private and institutional clients worldwide."
