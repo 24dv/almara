@@ -13,14 +13,14 @@ const Privacy = () => {
           {/* Content */}
           <div className="space-y-6 text-[#363636] font-helvetica-now leading-relaxed text-base">
             <div className="space-y-4">
-              <h2 className="font-museo-moderno text-xl text-[#f4eada]">Information We Collect</h2>
+              <h2 className="font-helvetica-now text-xl tracking-wider font-bold text-[#364b56]">Information We Collect</h2>
               <p>
                 When you contact Almara Capital through our website or request a consultation, we may collect personal information including your name, contact details, financial circumstances, and investment objectives. This information is collected solely to provide you with our advisory services and to comply with regulatory requirements.
               </p>
             </div>
             
             <div className="space-y-4">
-              <h2 className="font-museo-moderno text-xl text-[#f4eada]">How We Use Your Information</h2>
+              <h2 className="font-helvetica-now text-xl tracking-wider font-bold text-[#364b56]">How We Use Your Information</h2>
               <p>
                 We use your personal information to:
               </p>
@@ -34,7 +34,7 @@ const Privacy = () => {
             </div>
             
             <div className="space-y-4">
-              <h2 className="font-museo-moderno text-xl text-[#f4eada]">Information Sharing and Disclosure</h2>
+              <h2 className="font-helvetica-now text-xl tracking-wider font-bold text-[#364b56]">Information Sharing and Disclosure</h2>
               <p>
                 Almara Capital maintains strict confidentiality regarding client information. We may share your information only with:
               </p>
@@ -47,21 +47,14 @@ const Privacy = () => {
             </div>
             
             <div className="space-y-4">
-              <h2 className="font-museo-moderno text-xl text-[#f4eada]">Data Security and Retention</h2>
-              <p>
-                We employ industry-standard security measures to protect your personal and financial information. Your data is retained in accordance with financial services regulations and is securely disposed of when no longer required for business or legal purposes.
-              </p>
-            </div>
-            
-            <div className="space-y-4">
-              <h2 className="font-museo-moderno text-xl text-[#f4eada]">Your Rights</h2>
+              <h2 className="font-helvetica-now text-xl tracking-wider font-bold text-[#364b56]">Your Rights</h2>
               <p>
                 You have the right to access, correct, or request deletion of your personal information, subject to our regulatory obligations. You may also object to certain processing activities or request data portability where applicable under data protection laws.
               </p>
             </div>
             
             <div className="space-y-4">
-              <h2 className="font-museo-moderno text-xl text-[#f4eada]">Contact Information</h2>
+              <h2 className="font-helvetica-now text-xl tracking-wider font-bold text-[#364b56]">Contact Information</h2>
               <p>
                 For questions regarding this privacy policy or to exercise your rights concerning your personal data, please contact Almara Capital directly through the consultation request process outlined on our website.
               </p>
