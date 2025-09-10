@@ -5,6 +5,7 @@ import { Button } from "@/components/ui/button";
 import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from "@/components/ui/tooltip";
 import { useEffect } from "react";
 import { Link } from "react-router-dom";
+import { useScrollReveal } from "@/hooks/useScrollReveal";
 import partnersHero from "@/assets/partners-hero.jpg";
 import quintetLogo from "@/assets/logos/quintet.svg";
 import cigpLogo from "@/assets/logos/cigp.svg";
@@ -18,6 +19,12 @@ import genevaTechnologiesLogo from "@/assets/logos/geneva-technologies.svg";
 import golborneLogo from "@/assets/logos/golborne.svg";
 
 const Partners = () => {
+  // Scroll reveal animations
+  const { ref: institutionalRef, isVisible: institutionalVisible } = useScrollReveal(0.1, 100);
+  const { ref: technologyRef, isVisible: technologyVisible } = useScrollReveal(0.1, 200);
+  const { ref: projectRef, isVisible: projectVisible } = useScrollReveal(0.1, 300);
+  const { ref: ctaRef, isVisible: ctaVisible } = useScrollReveal(0.1, 400);
+
   // Basic SEO
   useEffect(() => {
     document.title = "Partners | ALMARA";
@@ -95,7 +102,7 @@ const Partners = () => {
       </section>
       
       {/* Section 2: Institutional Partners */}
-      <section className="h-screen flex items-center justify-center px-12 py-20 bg-[hsl(var(--almara-light-text))] partners-gradient-bg animate-fade-in">
+      <section ref={institutionalRef} className={`h-screen flex items-center justify-center px-12 py-20 bg-[hsl(var(--almara-light-text))] partners-gradient-bg transition-all duration-700 ${institutionalVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
         <div className="max-w-6xl mx-auto text-center relative z-10">
           <div className="mb-16">
             <h2 className="font-museo-moderno text-[32px] lg:text-[36px] text-[#364b56] mb-6">Institutional Partners</h2>
@@ -168,7 +175,7 @@ const Partners = () => {
       </section>
 
       {/* Section 3: Technology Partners */}
-      <section className="h-screen flex items-center justify-center px-12 py-20 bg-[hsl(var(--almara-light-text))] partners-gradient-bg">
+      <section ref={technologyRef} className={`h-screen flex items-center justify-center px-12 py-20 bg-[hsl(var(--almara-light-text))] partners-gradient-bg transition-all duration-700 ${technologyVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
         <div className="max-w-4xl mx-auto text-center relative z-10">
           <div className="mb-16">
             <h2 className="font-museo-moderno text-[32px] lg:text-[36px] text-[#364b56] mb-6">Technology Partners</h2>
@@ -208,7 +215,7 @@ const Partners = () => {
       </section>
 
       {/* Section 4: Project Partners */}
-      <section className="h-screen flex items-center justify-center px-12 py-20 bg-[hsl(var(--almara-light-text))] partners-gradient-bg">
+      <section ref={projectRef} className={`h-screen flex items-center justify-center px-12 py-20 bg-[hsl(var(--almara-light-text))] partners-gradient-bg transition-all duration-700 ${projectVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
         <div className="max-w-6xl mx-auto text-center relative z-10">
           <div className="mb-16">
             <h2 className="font-museo-moderno text-[32px] lg:text-[36px] text-[#364b56] mb-6">Project Partners</h2>
@@ -278,16 +285,16 @@ const Partners = () => {
       </section>
 
       {/* Section 5: Call to Action */}
-      <section className="h-screen flex items-center justify-center px-12 py-20 bg-[hsl(var(--almara-light-text))] partners-gradient-bg">
-        <div className="max-w-4xl mx-auto text-center space-y-12 relative z-10">
-          <div className="space-y-8">
-            <h2 className="font-long-cang sm:text-[36px] md:text-[40px] lg:text-[46px] text-[#364b56] tracking-[0.05em] opacity-90 leading-tight font-thin text-5xl uppercase rotate-[3deg]">
+      <section ref={ctaRef} className={`h-screen flex items-center justify-center px-12 py-20 bg-[hsl(var(--almara-light-text))] partners-gradient-bg transition-all duration-700 ${ctaVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
+        <div className="max-w-4xl mx-auto text-center space-y-12 relative z-50">
+          <div className="space-y-8 relative z-50">
+            <h2 className="font-long-cang sm:text-[36px] md:text-[40px] lg:text-[46px] text-[#364b56] tracking-[0.05em] opacity-90 leading-tight font-thin text-5xl uppercase rotate-[3deg] relative z-50">
               Tell us what you're building,<br />
               we'll assemble the right team
             </h2>
           </div>
-          <div className="pt-8">
-            <Button variant="call-footer" size="call" className="font-helvetica-now relative z-10">
+          <div className="pt-8 relative z-50">
+            <Button variant="call-footer" size="call" className="font-helvetica-now relative z-50">
               request a call
             </Button>
           </div>
