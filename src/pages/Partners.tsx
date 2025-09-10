@@ -96,7 +96,7 @@ const Partners = () => {
       
       {/* Section 2: Institutional Partners */}
       <section className="h-screen flex items-center justify-center px-12 py-20 bg-[hsl(var(--almara-light-text))] partners-gradient-bg animate-fade-in">
-        <div className="max-w-4xl mx-auto text-center relative z-10">
+        <div className="max-w-6xl mx-auto text-center relative z-10">
           <div className="mb-16">
             <h2 className="font-museo-moderno text-[32px] lg:text-[36px] text-[#364b56] mb-6">Institutional Partners</h2>
             <p className="font-helvetica-now text-[#363636] text-base max-w-[70%] mx-auto">
@@ -104,14 +104,17 @@ const Partners = () => {
             </p>
           </div>
 
-          <div className="grid gap-12 grid-cols-2 max-w-2xl mx-auto mb-8">
-            {/* First row - 2 items */}
+          <div className="grid gap-8 grid-cols-3 max-w-3xl mx-auto mb-8">
+            {/* Top row - 3 items */}
             {[{
               name: "Beonti",
               longDesc: "Beonti is a consulting boutique in Luxembourg, advising firms across the alternative investment industry."
             }, {
               name: "Kyros Capital", 
               longDesc: "Kyros Capital provides structured investment solutions from Singapore, offering bankable and non-bankable products to global investors."
+            }, {
+              name: "UBP",
+              longDesc: "Geneva-based UBP specializes in wealth and asset management, serving private and institutional clients worldwide."
             }].map(p => (
               <div key={p.name} className="relative group">
                 <button className="bg-transparent text-[#f4eada] rounded-xl almara-call-btn relative z-[100] transition-all px-8 py-12 text-center w-full">
@@ -133,33 +136,7 @@ const Partners = () => {
             ))}
           </div>
           
-          <div className="grid gap-12 grid-cols-1 max-w-2xl mx-auto mb-8">
-            {/* Middle row - 1 item */}
-            {[{
-              name: "UBP",
-              longDesc: "Geneva-based UBP specializes in wealth and asset management, serving private and institutional clients worldwide."
-            }].map(p => (
-              <div key={p.name} className="relative group mx-auto max-w-[50%]">
-                <button className="bg-transparent text-[#f4eada] rounded-xl almara-call-btn relative z-[100] transition-all px-8 py-12 text-center w-full">
-                  <img src={logos[p.name]} alt={`${p.name} logo`} loading="lazy" className="mx-auto h-16 object-contain" />
-                </button>
-                
-                {/* Hover Overlay */}
-                <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-all duration-300 z-[200] p-6 flex flex-col justify-center" style={{
-                  background: 'rgba(244, 234, 218, 0.14)',
-                  borderRadius: '16px',
-                  boxShadow: '0 4px 30px rgba(0, 0, 0, 0.1)',
-                  backdropFilter: 'blur(13.2px)',
-                  WebkitBackdropFilter: 'blur(13.2px)'
-                }}>
-                  <h3 className="font-helvetica-now font-bold text-[#363636] text-sm mb-4 tracking-wide">{p.name}</h3>
-                  <p className="font-helvetica-now text-[#363636] text-xs leading-relaxed">{p.longDesc}</p>
-                </div>
-              </div>
-            ))}
-          </div>
-          
-          <div className="grid gap-12 grid-cols-2 max-w-2xl mx-auto">
+          <div className="grid gap-8 grid-cols-2 max-w-lg mx-auto">
             {/* Bottom row - 2 items */}
             {[{
               name: "CIGP",
@@ -232,7 +209,7 @@ const Partners = () => {
 
       {/* Section 4: Project Partners */}
       <section className="h-screen flex items-center justify-center px-12 py-20 bg-[hsl(var(--almara-light-text))] partners-gradient-bg">
-        <div className="max-w-4xl mx-auto text-center relative z-10">
+        <div className="max-w-6xl mx-auto text-center relative z-10">
           <div className="mb-16">
             <h2 className="font-museo-moderno text-[32px] lg:text-[36px] text-[#364b56] mb-6">Project Partners</h2>
             <p className="font-helvetica-now text-[#363636] text-base max-w-[85%] mx-auto">
@@ -240,8 +217,8 @@ const Partners = () => {
             </p>
           </div>
 
-          <div className="grid gap-12 grid-cols-2 max-w-2xl mx-auto mb-8">
-            {/* Top row - 2 items */}
+          <div className="grid gap-8 grid-cols-2 max-w-lg mx-auto mb-8">
+            {/* Top row - 3 items */}
             {[{
               name: "Aquitara",
               longDesc: "Aquitara (via 5I2 Capital) invests in remediating Agent Orange–contaminated land in Vietnam and developing renewable-energy eco-parks."
@@ -269,7 +246,7 @@ const Partners = () => {
             ))}
           </div>
           
-          <div className="grid gap-12 grid-cols-2 max-w-2xl mx-auto">
+          <div className="grid gap-8 grid-cols-2 max-w-lg mx-auto">
             {/* Bottom row - 2 items */}
             {[{
               name: "Geneva Technologies",
