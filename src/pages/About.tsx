@@ -63,8 +63,11 @@ const About = () => {
 
               </p>
                 
-                <div className="text-base opacity-75">
-                  <p className="text-[#f4eada] leading-relaxed">Prior to Almara Capital, Tom founded a corporate services business in London and Luxembourg. Before that he ran a family office advisory firm in Hong Kong. From 2002 to 2012 he was the Managing Director of a significant Single Family Office with presence in New York, Luxembourg, Monaco and Hong Kong, focused on Hedge Funds, Private Equity and Litigation Funding. He started his professional life in Private and Merchant Banking in Luxembourg and Brussels.</p>
+                <div className="space-y-3 text-base opacity-75">
+                  <p className="text-[#f4eada]">Background info 01</p>
+                  <p className="text-[#f4eada]">Background info 02</p>
+                  <p className="text-[#f4eada]">Background info 03</p>
+                  <p className="text-[#f4eada]">Background info 04</p>
                 </div>
                 
                 <p className="leading-relaxed text-base text-[#363636]">Tom has lived and worked in Brussels, Luxembourg, Monaco, London, Hong Kong, and Lisbon, cultivating a global network and local fluency in the world’s key financial and cultural hubs. Almara reflects his belief in discreet, holistic advisory, where trust, excellence, and long-term perspective drive every decision.</p>
