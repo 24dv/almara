@@ -102,7 +102,10 @@ const Services = () => {
       <section className="h-screen bg-almara-light-text/20 flex items-start justify-center px-8 lg:px-12 mission-section-gradient">
         <div className="max-w-6xl mx-auto pt-48 pb-16">
           {/* Interactive Circles */}
-          <div className="flex items-center justify-center mb-16">
+          <div className="flex items-center justify-center mb-16 reveal-up" style={{
+            animationDelay: '0.2s',
+            animationFillMode: 'both'
+          }}>
             {services.map((service, index) => <div key={service.id} className="flex items-center">
                 <button onClick={() => setActiveService(service.id)} className="flex-shrink-0 relative z-20" style={{
                 width: '56px',
@@ -137,7 +140,10 @@ const Services = () => {
           </div>
 
           {/* Service Content */}
-          <div className="relative min-h-[300px]">
+          <div className="relative min-h-[300px] reveal-up" style={{
+            animationDelay: '0.4s',
+            animationFillMode: 'both'
+          }}>
             <div className="absolute left-0 w-full" style={{
               marginLeft: 'calc(50% - 400px)',
               maxWidth: '800px'
@@ -219,10 +225,16 @@ const Services = () => {
         }} loading="lazy" />
         
         <div className="max-w-5xl mx-auto relative z-10">
-          <div className="text-center mb-16">
+          <div className="text-center mb-16 reveal-up" style={{
+            animationDelay: '0.2s',
+            animationFillMode: 'both'
+          }}>
             <h2 className="font-museo-moderno text-[28px] lg:text-[32px] text-[#f4eada]">How We Work</h2>
           </div>
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-12 font-helvetica-now text-white/70 mb-16">
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-12 font-helvetica-now text-white/70 mb-16 reveal-up" style={{
+            animationDelay: '0.4s',
+            animationFillMode: 'both'
+          }}>
             <article className="space-y-4">
               <h3 className="font-helvetica-now text-xl tracking-wider font-bold text-[#b3bacb] mb-4">ongoing counsel</h3>
               <p className="text-[#f4eada] leading-relaxed text-base">
@@ -242,7 +254,10 @@ const Services = () => {
               </p>
             </article>
           </div>
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-12 font-helvetica-now">
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-12 font-helvetica-now reveal-up" style={{
+            animationDelay: '0.6s',
+            animationFillMode: 'both'
+          }}>
             <article className="space-y-4">
               <h3 className="font-helvetica-now text-xl tracking-wider font-bold text-[#b3bacb] mb-4">who we work with</h3>
               <p className="text-[#f4eada] leading-relaxed text-base">
