@@ -88,41 +88,32 @@ const Mission = () => {
 
       {/* Section 3 — Our Vision */}
       <section className="h-screen flex items-center justify-center px-8 lg:px-12 mission-section-gradient">
-        <div className="max-w-4xl mx-auto text-center space-y-12">
-          <div className="space-y-8">
-            <h2 className="font-museo-moderno text-[32px] lg:text-[36px] text-[#f4eada] tracking-[0.05em] opacity-90 leading-tight">Our Vision</h2>
-            <div className="space-y-6 font-helvetica-now text-[#f4eada] max-w-3xl mx-auto">
-              <p className="text-lg leading-relaxed">
-                We envision a future where alternative investing is guided by depth, 
-                not speed—where every decision reflects care for both returns and impact.
-              </p>
-              <p className="text-base leading-relaxed opacity-90">
-                In this world, investors partner with advisors who understand that true wealth 
-                encompasses financial growth, personal values, and lasting positive change. 
-                Together, we build portfolios that don't just perform—they endure.
-              </p>
-            </div>
-          </div>
-          
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-16">
-            <div className="text-center space-y-4">
-              <div className="w-16 h-16 mx-auto rounded-full bg-gradient-to-br from-[#f4eada]/20 to-[#b3bacb]/10 flex items-center justify-center mb-4">
-                <div className="w-8 h-8 rounded-full bg-[#f4eada]/30"></div>
+        <div className="max-w-5xl mx-auto">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center h-full">
+            {/* Image */}
+            <div className="flex justify-center lg:justify-start">
+              <div className="max-w-md relative">
+                <img 
+                  src="/lovable-uploads/fe0b2a63-c52e-44e6-a466-c220fb652c1e.png" 
+                  alt="Misty mountain landscape" 
+                  className="w-full h-auto rounded-lg shadow-lg"
+                />
               </div>
-              <h3 className="font-helvetica-now text-xl font-bold text-[#b3bacb] tracking-wider">sustainable growth</h3>
-              <p className="text-base text-[#f4eada] leading-relaxed">
-                Building wealth that serves multiple generations, not just quarters.
-              </p>
             </div>
             
-            <div className="text-center space-y-4">
-              <div className="w-16 h-16 mx-auto rounded-full bg-gradient-to-br from-[#f4eada]/20 to-[#b3bacb]/10 flex items-center justify-center mb-4">
-                <div className="w-8 h-8 rounded-full bg-[#f4eada]/30"></div>
+            {/* Quote */}
+            <div className="space-y-8 max-w-xl">
+              <div className="space-y-6">
+                <h2 className="font-museo-moderno text-[32px] lg:text-[36px] text-[#f4eada] tracking-[0.05em] opacity-90 leading-tight">Our Vision</h2>
+                <blockquote className="space-y-4">
+                  <p className="font-helvetica-now text-lg lg:text-xl leading-relaxed text-[#f4eada] italic">
+                    "The experience of art allows us to confront and transcend the harsh realities of existence through beauty and creativity."
+                  </p>
+                  <cite className="font-helvetica-now text-base text-[#b3bacb] not-italic tracking-wider">
+                    — Friedrich Nietzsche
+                  </cite>
+                </blockquote>
               </div>
-              <h3 className="font-helvetica-now text-xl font-bold text-[#b3bacb] tracking-wider">purposeful partnerships</h3>
-              <p className="text-base text-[#f4eada] leading-relaxed">
-                Creating relationships built on trust, transparency, and shared vision.
-              </p>
             </div>
           </div>
         </div>
