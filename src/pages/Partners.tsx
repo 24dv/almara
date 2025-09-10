@@ -111,7 +111,7 @@ const Partners = () => {
               longDesc: "Beonti is a consulting boutique in Luxembourg, advising firms across the alternative investment industry."
             }, {
               name: "Kyros Capital", 
-              longDesc: "Kyros provides structured investment solutions from Singapore, offering bankable and non-bankable products to global investors."
+              longDesc: "Kyros provides structured investment solutions, offering bankable and non-bankable products to global investors."
             }, {
               name: "UBP",
               longDesc: "Geneva-based UBP specializes in wealth and asset management, serving private and institutional clients worldwide."
