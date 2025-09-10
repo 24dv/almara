@@ -8,7 +8,7 @@ const LegalNotice = () => {
 
   return (
     <PageLayout title="Legal Notice">
-      <section className="min-h-screen flex items-center justify-center px-12 py-20">
+      <section className="min-h-screen flex items-start justify-center px-12 pt-32 pb-20">
         <div className="max-w-4xl mx-auto space-y-8">
           {/* Title */}
           <div ref={titleRef} className={`transition-all duration-1000 ease-out ${titleVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
