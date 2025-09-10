@@ -7,8 +7,8 @@ export const Footer = () => {
       <div className="flex items-center justify-between max-w-7xl mx-auto relative z-10">
         {/* Left Side - Lorem Ipsum */}
         <div className="flex-1">
-          <p className="text-xs text-[#363636] max-w-sm leading-relaxed font-helvetica-now">
-            For informational purposes only. Not financial advice. Disclaimer
+          <p className="text-sm text-[#363636] hover:text-[#363636]/70 transition-colors duration-300 font-helvetica-now max-w-sm leading-relaxed">
+            For informational purposes only. Not financial advice.
           </p>
         </div>
         
