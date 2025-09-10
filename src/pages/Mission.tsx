@@ -86,40 +86,7 @@ const Mission = () => {
         </div>
       </section>
 
-      {/* Section 3 — Our Vision */}
-      <section className="h-screen flex items-center justify-center px-8 lg:px-12 mission-section-gradient">
-        <div className="max-w-5xl mx-auto">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center h-full">
-            {/* Image */}
-            <div className="flex justify-center lg:justify-start">
-              <div className="max-w-md relative">
-                <img 
-                  src="/lovable-uploads/fe0b2a63-c52e-44e6-a466-c220fb652c1e.png" 
-                  alt="Misty mountain landscape" 
-                  className="w-full h-auto rounded-lg shadow-lg"
-                />
-              </div>
-            </div>
-            
-            {/* Quote */}
-            <div className="space-y-8 max-w-xl">
-              <div className="space-y-6">
-                <h2 className="font-museo-moderno text-[32px] lg:text-[36px] text-[#f4eada] tracking-[0.05em] opacity-90 leading-tight">Our Vision</h2>
-                <blockquote className="space-y-4">
-                  <p className="font-helvetica-now text-lg lg:text-xl leading-relaxed text-[#f4eada] italic">
-                    "The experience of art allows us to confront and transcend the harsh realities of existence through beauty and creativity."
-                  </p>
-                  <cite className="font-helvetica-now text-base text-[#b3bacb] not-italic tracking-wider">
-                    — Friedrich Nietzsche
-                  </cite>
-                </blockquote>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Section 4 — In Practice */}
+      {/* Section 3 — In Practice */}
       <section className="h-screen flex items-center justify-center px-8 lg:px-12 mission-section-gradient">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
