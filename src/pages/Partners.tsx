@@ -283,7 +283,7 @@ const Partners = () => {
           {/* Image */}
           <div className="flex justify-center mb-12">
             <div className="max-w-md relative">
-              <img src="/lovable-uploads/84035acf-8642-463c-a4ad-1969d0e188e8.png" alt="Landscape view" className="w-full h-auto rounded-lg shadow-lg relative z-0" />
+              <img src="/lovable-uploads/e6020ce3-a98d-4292-ab18-065b767f30f7.png" alt="Landscape view" className="w-full h-auto rounded-lg shadow-lg relative z-0" />
             </div>
           </div>
           <div className="space-y-8">
