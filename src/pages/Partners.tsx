@@ -280,12 +280,6 @@ const Partners = () => {
       {/* Section 5: Call to Action */}
       <section className="h-screen flex items-center justify-center px-12 py-20 bg-[hsl(var(--almara-light-text))] partners-gradient-bg">
         <div className="max-w-4xl mx-auto text-center space-y-12 relative z-10">
-          {/* Image */}
-          <div className="flex justify-center mb-12">
-            <div className="max-w-md relative">
-              <img src="/lovable-uploads/e6020ce3-a98d-4292-ab18-065b767f30f7.png" alt="Landscape view" className="w-full h-auto rounded-lg shadow-lg relative z-0" />
-            </div>
-          </div>
           <div className="space-y-8">
             <h2 className="font-long-cang sm:text-[36px] md:text-[40px] lg:text-[46px] text-[#364b56] tracking-[0.05em] opacity-90 leading-tight font-thin text-5xl uppercase rotate-[3deg]">
               Tell us what you're building,<br />
