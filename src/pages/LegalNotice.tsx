@@ -1,17 +1,24 @@
 import { PageLayout } from "@/components/PageLayout";
+import { useScrollReveal } from "@/hooks/useScrollReveal";
 
 const LegalNotice = () => {
+  // Scroll reveal animations
+  const { ref: titleRef, isVisible: titleVisible } = useScrollReveal(0.1, 100);
+  const { ref: contentRef, isVisible: contentVisible } = useScrollReveal(0.1, 200);
+
   return (
     <PageLayout title="Legal Notice">
       <section className="min-h-screen flex items-center justify-center px-12 py-20">
         <div className="max-w-4xl mx-auto space-y-8">
           {/* Title */}
-          <h1 className="font-museo-moderno text-[32px] lg:text-[36px] text-[#f4eada] tracking-[0.05em] opacity-90 leading-tight text-center mb-12">
-            Legal Notice
-          </h1>
+          <div ref={titleRef} className={`transition-all duration-1000 ease-out ${titleVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
+            <h1 className="font-museo-moderno text-[32px] lg:text-[36px] text-[#f4eada] tracking-[0.05em] opacity-90 leading-tight text-center mb-12">
+              Legal Notice
+            </h1>
+          </div>
           
           {/* Content */}
-          <div className="space-y-6 text-[#363636] font-helvetica-now leading-relaxed text-base">
+          <div ref={contentRef} className={`space-y-6 text-[#363636] font-helvetica-now leading-relaxed text-base transition-all duration-1000 ease-out ${contentVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
             <p>
               The information provided on this website is for general informational purposes only. Almara Capital does not provide personalized financial, investment, tax, legal, or other professional advice through this site. Any reliance you place on the information presented here is strictly at your own risk.
             </p>

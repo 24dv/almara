@@ -1,17 +1,24 @@
 import { PageLayout } from "@/components/PageLayout";
+import { useScrollReveal } from "@/hooks/useScrollReveal";
 
 const Privacy = () => {
+  // Scroll reveal animations
+  const { ref: titleRef, isVisible: titleVisible } = useScrollReveal(0.1, 100);
+  const { ref: contentRef, isVisible: contentVisible } = useScrollReveal(0.1, 200);
+
   return (
     <PageLayout title="Privacy Policy">
       <section className="min-h-screen flex items-center justify-center px-12 py-20">
         <div className="max-w-4xl mx-auto space-y-8">
           {/* Title */}
-          <h1 className="font-museo-moderno text-[32px] lg:text-[36px] text-[#f4eada] tracking-[0.05em] opacity-90 leading-tight text-center mb-12">
-            Privacy Policy
-          </h1>
+          <div ref={titleRef} className={`transition-all duration-1000 ease-out ${titleVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
+            <h1 className="font-museo-moderno text-[32px] lg:text-[36px] text-[#f4eada] tracking-[0.05em] opacity-90 leading-tight text-center mb-12">
+              Privacy Policy
+            </h1>
+          </div>
           
           {/* Content */}
-          <div className="space-y-6 text-[#363636] font-helvetica-now leading-relaxed text-base">
+          <div ref={contentRef} className={`space-y-6 text-[#363636] font-helvetica-now leading-relaxed text-base transition-all duration-1000 ease-out ${contentVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
             <div className="space-y-4">
               <h2 className="font-helvetica-now text-xl tracking-wider font-bold text-[#364b56]">information we collect</h2>
               <p>
