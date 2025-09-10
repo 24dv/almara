@@ -104,7 +104,7 @@ const Partners = () => {
             </p>
           </div>
 
-          <div className="grid gap-8 grid-cols-3 max-w-3xl mx-auto mb-8">
+          <div className="grid gap-12 grid-cols-3 max-w-2xl mx-auto mb-8">
             {/* Top row - 3 items */}
             {[{
               name: "Beonti",
@@ -136,7 +136,7 @@ const Partners = () => {
             ))}
           </div>
           
-          <div className="grid gap-8 grid-cols-2 max-w-lg mx-auto">
+          <div className="grid gap-12 grid-cols-2 max-w-2xl mx-auto">
             {/* Bottom row - 2 items */}
             {[{
               name: "CIGP",
