@@ -39,7 +39,7 @@ const Partners = () => {
   }, []);
 
   const logos: Record<string, string> = {
-    "Beonti": "/lovable-uploads/738ada40-cf48-472c-9a72-79a8f6833f80.png",
+    "Beonti": "/lovable-uploads/ee8615d4-ce98-4f1c-a704-916cc74548ab.png",
     "Kyros Capital": "/lovable-uploads/23cd3e92-dac8-4dfb-b8a1-891f9ca070ef.png",
     "UBP": "/lovable-uploads/75ca8d5a-9e04-492e-8048-83b8e15d144d.png",
     "CIGP": "/lovable-uploads/820b3f6d-6998-45f0-ae8e-b47197131b55.png",
