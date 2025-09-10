@@ -6,12 +6,12 @@ const LegalNotice = () => {
       <section className="min-h-screen flex items-center justify-center px-12 py-20">
         <div className="max-w-4xl mx-auto space-y-8">
           {/* Title */}
-          <h1 className="font-long-cang text-4xl lg:text-5xl text-[#f4eada] text-center mb-12">
+          <h1 className="font-museo-moderno text-[32px] lg:text-[36px] text-[#f4eada] tracking-[0.05em] opacity-90 leading-tight text-center mb-12">
             Legal Notice
           </h1>
           
           {/* Content */}
-          <div className="space-y-6 text-[#f4eada] font-helvetica-now leading-relaxed text-base">
+          <div className="space-y-6 text-[#363636] font-helvetica-now leading-relaxed text-base">
             <p>
               The information provided on this website is for general informational purposes only. Almara Capital does not provide personalized financial, investment, tax, legal, or other professional advice through this site. Any reliance you place on the information presented here is strictly at your own risk.
             </p>
