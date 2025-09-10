@@ -3,7 +3,14 @@ import { Footer } from "@/components/Footer";
 import { Link } from "react-router-dom";
 import { MobileMenu } from "@/components/MobileMenu";
 import { useEffect } from "react";
+import { useScrollReveal } from "@/hooks/useScrollReveal";
 const Mission = () => {
+  // Scroll reveal animations
+  const { ref: pillarsHeaderRef, isVisible: pillarsHeaderVisible } = useScrollReveal(0.1, 100);
+  const { ref: pillarsContentRef, isVisible: pillarsContentVisible } = useScrollReveal(0.1, 200);
+  const { ref: practiceHeaderRef, isVisible: practiceHeaderVisible } = useScrollReveal(0.1, 100);
+  const { ref: practiceGridRef, isVisible: practiceGridVisible } = useScrollReveal(0.1, 200);
+
   // SEO
   useEffect(() => {
     document.title = "Mission | ALMARA";
@@ -62,10 +69,10 @@ const Mission = () => {
       {/* Section 2 — Our Pillars */}
       <section className="h-screen flex items-center justify-center px-8 lg:px-12 mission-section-gradient">
         <div className="max-w-5xl mx-auto bg-gradient-to-r from-transparent via-gray-600/30 to-gray-700/60 rounded-3xl px-[120px] py-[58px] backdrop-blur-sm">
-          <div className="text-center mb-8">
+          <div ref={pillarsHeaderRef} className={`text-center mb-8 transition-all duration-1000 ease-out ${pillarsHeaderVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
             <h2 className="font-museo-moderno text-[32px] lg:text-[36px] text-[#f4eada] tracking-[0.05em] opacity-90 leading-tight mb-8">Our Pillars</h2>
           </div>
-          <div className="space-y-8 font-helvetica-now text-[#f4eada]">
+          <div ref={pillarsContentRef} className={`space-y-8 font-helvetica-now text-[#f4eada] transition-all duration-1000 ease-out ${pillarsContentVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
             <article className="text-center space-y-4">
               <h3 className="font-helvetica-now text-xl tracking-wider font-bold text-[#b3bacb]">wisdom</h3>
               <p className="text-base leading-relaxed max-w-sm mx-auto">Experience distilled into judgment. We prioritise signal over noise and the long term over the immediate.</p>
@@ -89,10 +96,10 @@ const Mission = () => {
       {/* Section 3 — In Practice */}
       <section className="h-screen flex items-center justify-center px-8 lg:px-12 mission-section-gradient">
         <div className="max-w-6xl mx-auto">
-          <div className="text-center mb-16">
+          <div ref={practiceHeaderRef} className={`text-center mb-16 transition-all duration-1000 ease-out ${practiceHeaderVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
             <h2 className="font-museo-moderno text-[32px] lg:text-[36px] text-[#f4eada] tracking-[0.05em] opacity-90 leading-tight">In Practice</h2>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-12 font-helvetica-now text-[#f4eada]">
+          <div ref={practiceGridRef} className={`grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-12 font-helvetica-now text-[#f4eada] transition-all duration-1000 ease-out ${practiceGridVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
             <div className="flex items-start space-x-4">
               <div className="flex-shrink-0 mt-1" style={{
                 width: '56px',
