@@ -64,10 +64,54 @@ const About = () => {
               </p>
                 
                 <div className="space-y-3 text-base opacity-75">
-                  <p className="text-[#f4eada]">Founded and led a corporate services firm in London and Luxembourg.</p>
-                  <p className="text-[#f4eada]">Established a family office advisory practice in Hong Kong.</p>
-                  <p className="text-[#f4eada]">2002–2012: Served as Managing Director of a significant Single Family Office spanning New York, Luxembourg, Monaco, and Hong Kong, with a focus on hedge funds, private equity, and litigation funding.</p>
-                  <p className="text-[#f4eada]">Began his career in private and merchant banking in Luxembourg and Brussels.</p>
+                  <div className="flex items-start space-x-3">
+                    <div className="flex-shrink-0 mt-2">
+                      <div style={{
+                        width: '0',
+                        height: '0',
+                        borderLeft: '8px solid #f4eada',
+                        borderTop: '6px solid transparent',
+                        borderBottom: '6px solid transparent'
+                      }} />
+                    </div>
+                    <p className="text-[#f4eada] leading-relaxed">Founded and led a corporate services firm in London and Luxembourg.</p>
+                  </div>
+                  <div className="flex items-start space-x-3">
+                    <div className="flex-shrink-0 mt-2">
+                      <div style={{
+                        width: '0',
+                        height: '0',
+                        borderLeft: '8px solid #f4eada',
+                        borderTop: '6px solid transparent',
+                        borderBottom: '6px solid transparent'
+                      }} />
+                    </div>
+                    <p className="text-[#f4eada] leading-relaxed">Established a family office advisory practice in Hong Kong.</p>
+                  </div>
+                  <div className="flex items-start space-x-3">
+                    <div className="flex-shrink-0 mt-2">
+                      <div style={{
+                        width: '0',
+                        height: '0',
+                        borderLeft: '8px solid #f4eada',
+                        borderTop: '6px solid transparent',
+                        borderBottom: '6px solid transparent'
+                      }} />
+                    </div>
+                    <p className="text-[#f4eada] leading-relaxed">2002–2012: Served as Managing Director of a significant Single Family Office spanning New York, Luxembourg, Monaco, and Hong Kong, with a focus on hedge funds, private equity, and litigation funding.</p>
+                  </div>
+                  <div className="flex items-start space-x-3">
+                    <div className="flex-shrink-0 mt-2">
+                      <div style={{
+                        width: '0',
+                        height: '0',
+                        borderLeft: '8px solid #f4eada',
+                        borderTop: '6px solid transparent',
+                        borderBottom: '6px solid transparent'
+                      }} />
+                    </div>
+                    <p className="text-[#f4eada] leading-relaxed">Began his career in private and merchant banking in Luxembourg and Brussels.</p>
+                  </div>
                 </div>
                 
                 <p className="leading-relaxed text-base text-[#363636]">Tom has lived and worked in Brussels, Luxembourg, Monaco, London, Hong Kong, and Lisbon, cultivating a global network and local fluency in the world’s key financial and cultural hubs. Almara reflects his belief in discreet, holistic advisory, where trust, excellence, and long-term perspective drive every decision.</p>
