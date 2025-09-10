@@ -223,8 +223,8 @@ const Partners = () => {
               name: "Aquitara",
               longDesc: "Aquitara (via 5I2 Capital) invests in remediating Agent Orange–contaminated land in Vietnam and developing renewable-energy eco-parks."
             }, {
-              name: "Firgun",
-              longDesc: "Venture / innovation initiatives"
+              name: "Firgun Ventures",
+              longDesc: "A $250M VC firm investing in series A/B Quantum Scaleups."
             }].map(p => (
               <div key={p.name} className="relative group">
                 <button className="bg-transparent text-[#f4eada] rounded-xl almara-call-btn relative z-[100] transition-all px-8 py-12 text-center w-full">
