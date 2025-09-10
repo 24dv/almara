@@ -117,8 +117,8 @@ const Partners = () => {
               longDesc: "Geneva-based UBP specializes in wealth and asset management, serving private and institutional clients worldwide."
             }].map(p => (
               <div key={p.name} className="relative group">
-                <button className="bg-transparent text-[#f4eada] rounded-xl almara-call-btn relative z-[100] transition-all px-8 py-12 text-center w-full h-32 flex items-center justify-center">
-                  <img src={logos[p.name]} alt={`${p.name} logo`} loading="lazy" className={`mx-auto object-contain ${p.name === 'Beonti' ? 'h-20' : 'h-16'}`} />
+                <button className="bg-transparent text-[#f4eada] rounded-xl almara-call-btn relative z-[100] transition-all px-8 py-12 text-center w-full">
+                  <img src={logos[p.name]} alt={`${p.name} logo`} loading="lazy" className="mx-auto h-16 object-contain" />
                 </button>
                 
                 {/* Hover Overlay */}
