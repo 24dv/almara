@@ -108,10 +108,10 @@ const Partners = () => {
             {/* Top row - 3 items */}
             {[{
               name: "Beonti",
-              longDesc: "Innovative financial technology solutions and digital banking services."
+              longDesc: "Beonti is a consulting boutique in Luxembourg, advising firms across the alternative investment industry."
             }, {
               name: "Kyros Capital", 
-              longDesc: "Investment management and financial advisory services with a focus on institutional clients."
+              longDesc: "Kyros Capital provides structured investment solutions from Singapore, offering bankable and non-bankable products to global investors."
             }, {
               name: "UBP",
               longDesc: "Geneva-based UBP specializes in wealth and asset management, serving private and institutional clients worldwide."
