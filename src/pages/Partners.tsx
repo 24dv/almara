@@ -108,14 +108,14 @@ const Partners = () => {
       {/* Section 2: Institutional Partners */}
       <section className="h-screen flex items-center justify-center px-12 py-20 bg-[hsl(var(--almara-light-text))] partners-gradient-bg">
         <div className="max-w-6xl mx-auto text-center relative z-10">
-          <div ref={instHeaderRef} className={`mb-16 transition-all duration-300 ease-out ${instHeaderVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
+          <div ref={instHeaderRef} className={`mb-16 transition-all duration-1000 ease-out ${instHeaderVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
             <h2 className="font-museo-moderno text-[32px] lg:text-[36px] text-[#364b56] mb-6">Institutional Partners</h2>
             <p className="font-helvetica-now text-[#363636] text-base max-w-[70%] mx-auto">
               Banking and investment relationships that enable execution with discretion.
             </p>
           </div>
 
-          <div ref={instGridRef} className={`transition-all duration-300 ease-out ${instGridVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
+          <div ref={instGridRef} className={`transition-all duration-1000 ease-out ${instGridVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
             <div className="grid gap-12 grid-cols-3 max-w-2xl mx-auto mb-8">
               {/* Top row - 3 items */}
               {[{
@@ -183,14 +183,14 @@ const Partners = () => {
       {/* Section 3: Technology Partners */}
       <section className="h-screen flex items-center justify-center px-12 py-20 bg-[hsl(var(--almara-light-text))] partners-gradient-bg">
         <div className="max-w-4xl mx-auto text-center relative z-10">
-          <div ref={techHeaderRef} className={`mb-16 transition-all duration-300 ease-out ${techHeaderVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
+          <div ref={techHeaderRef} className={`mb-16 transition-all duration-1000 ease-out ${techHeaderVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
             <h2 className="font-museo-moderno text-[32px] lg:text-[36px] text-[#364b56] mb-6">Technology Partners</h2>
             <p className="font-helvetica-now text-[#363636] text-base max-w-[85%] mx-auto">
               Infrastructure for secure sourcing, governance, and reporting.
             </p>
           </div>
 
-          <div ref={techGridRef} className={`grid gap-12 grid-cols-2 max-w-2xl mx-auto transition-all duration-300 ease-out ${techGridVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
+          <div ref={techGridRef} className={`grid gap-12 grid-cols-2 max-w-2xl mx-auto transition-all duration-1000 ease-out ${techGridVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
             {[{
               name: "Delio",
               longDesc: "Delio offers a white-label platform that helps financial firms digitise and distribute private market investments."
@@ -223,14 +223,14 @@ const Partners = () => {
       {/* Section 4: Project Partners */}
       <section className="h-screen flex items-center justify-center px-12 py-20 bg-[hsl(var(--almara-light-text))] partners-gradient-bg">
         <div className="max-w-6xl mx-auto text-center relative z-10">
-          <div ref={projHeaderRef} className={`mb-16 transition-all duration-300 ease-out ${projHeaderVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
+          <div ref={projHeaderRef} className={`mb-16 transition-all duration-1000 ease-out ${projHeaderVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
             <h2 className="font-museo-moderno text-[32px] lg:text-[36px] text-[#364b56] mb-6">Project Partners</h2>
             <p className="font-helvetica-now text-[#363636] text-base max-w-[85%] mx-auto">
               Specialists we mobilise for specific mandates.
             </p>
           </div>
 
-          <div ref={projGridRef} className={`transition-all duration-300 ease-out ${projGridVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
+          <div ref={projGridRef} className={`transition-all duration-1000 ease-out ${projGridVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
             <div className="grid gap-8 grid-cols-2 max-w-lg mx-auto mb-8">
               {/* Top row - 2 items */}
               {[{
@@ -295,13 +295,13 @@ const Partners = () => {
       {/* Section 5: Call to Action */}
       <section className="h-screen flex items-center justify-center px-12 py-20 bg-[hsl(var(--almara-light-text))] partners-gradient-bg">
         <div className="max-w-4xl mx-auto text-center space-y-12 relative z-50">
-          <div ref={ctaHeaderRef} className={`space-y-8 relative z-50 transition-all duration-300 ease-out ${ctaHeaderVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
+          <div ref={ctaHeaderRef} className={`space-y-8 relative z-50 transition-all duration-1000 ease-out ${ctaHeaderVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
             <h2 className="font-long-cang sm:text-[36px] md:text-[40px] lg:text-[46px] text-[#364b56] tracking-[0.05em] opacity-90 leading-tight font-thin text-5xl uppercase rotate-[3deg] relative z-50">
               Tell us what you're building,<br />
               we'll assemble the right team
             </h2>
           </div>
-          <div ref={ctaButtonRef} className={`pt-8 relative z-50 transition-all duration-300 ease-out ${ctaButtonVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
+          <div ref={ctaButtonRef} className={`pt-8 relative z-50 transition-all duration-1000 ease-out ${ctaButtonVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
             <Button variant="call-footer" size="call" className="font-helvetica-now relative z-50">
               request a call
             </Button>
