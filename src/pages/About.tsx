@@ -1,6 +1,10 @@
 import { PageLayout } from "@/components/PageLayout";
 import { Button } from "@/components/ui/button";
+import { useScrollReveal } from "@/hooks/useScrollReveal";
 const About = () => {
+  const { ref: sectionRef, isVisible: sectionVisible } = useScrollReveal<HTMLElement>(0.3);
+  const { ref: imageRef, isVisible: imageVisible } = useScrollReveal<HTMLDivElement>(0.3, 200);
+  const { ref: contentRef, isVisible: contentVisible } = useScrollReveal<HTMLDivElement>(0.3, 400);
   return <PageLayout title="About">
       {/* Main Content Section - Full Height */}
       <section className="h-screen flex items-center justify-center px-12 py-20">
@@ -32,11 +36,15 @@ const About = () => {
       </section>
 
       {/* Founder Section - Full Height */}
-      <section className="h-screen bg-almara-light-text/20 flex items-center justify-center px-12 py-20 reveal-up" style={{ animationDelay: '0.4s', animationFillMode: 'both' }}>
+      <section ref={sectionRef} className="h-screen bg-almara-light-text/20 flex items-center justify-center px-12 py-20">
         <div className="max-w-7xl mx-auto w-full">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center h-full">
             {/* Founder Image */}
-            <div className="flex justify-center lg:justify-end">
+            <div ref={imageRef} className={`flex justify-center lg:justify-end transition-all duration-1000 ease-out ${
+              imageVisible 
+                ? 'translate-x-0 opacity-100' 
+                : '-translate-x-16 opacity-0'
+            }`}>
               <div className="max-w-md relative">
                 <img src="/lovable-uploads/3f98f6a2-7c73-465b-89c1-9ffd619f5b8f.png" alt="Tom Meganck - Founder" className="w-full h-auto rounded-lg shadow-lg relative z-0" />
                 <div className="absolute inset-0 rounded-lg z-10 pointer-events-none" style={{
@@ -50,7 +58,11 @@ const About = () => {
             </div>
             
             {/* Founder Info */}
-            <div className="space-y-8 max-w-xl">
+            <div ref={contentRef} className={`space-y-8 max-w-xl transition-all duration-1000 ease-out ${
+              contentVisible 
+                ? 'translate-y-0 opacity-100' 
+                : 'translate-y-8 opacity-0'
+            }`}>
               <div className="space-y-2">
                 <h2 className="font-museo-moderno text-[32px] lg:text-[36px] text-[#363636]">
                   Tom Meganck
