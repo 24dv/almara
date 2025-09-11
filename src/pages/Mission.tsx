@@ -42,23 +42,23 @@ const Mission = () => {
       {/* Main Content */}
       <main className="relative z-10 min-h-[calc(100vh-200px)]">
       {/* Section 1 — Our Mission (includes header) */}
-      <section className="h-screen flex flex-col px-8 lg:px-12 mission-section-gradient">
+      <section className="min-h-screen flex flex-col px-4 sm:px-6 md:px-8 lg:px-12 mission-section-gradient py-16 sm:py-20">
         <header className="relative z-50 hidden lg:flex items-center justify-center pt-8 pb-4">
           <Link to="/" className="transition-opacity hover:opacity-80">
             <img src="/lovable-uploads/889a0efd-ed5b-448b-a911-54ea486f744c.png" alt="ALMARA" className="h-7 sm:h-8 md:h-9 opacity-90" />
           </Link>
         </header>
         <div className="flex-1 flex items-center justify-center">
-          <div className="max-w-lg text-center space-y-8 reveal-up" style={{
+          <div className="max-w-lg text-center space-y-6 sm:space-y-8 reveal-up" style={{
             animationDelay: '0.2s',
             animationFillMode: 'both'
           }}>
-            <h1 className="font-museo-moderno text-[32px] lg:text-[36px] text-[#f4eada] tracking-[0.05em] opacity-90 leading-tight">Our Mission</h1>
-            <div className="space-y-6">
-              <p className="leading-relaxed text-sm lg:text-base text-[#f4eada] font-helvetica-now">
+            <h1 className="font-museo-moderno text-[28px] sm:text-[32px] lg:text-[36px] text-[#f4eada] tracking-[0.05em] opacity-90 leading-tight">Our Mission</h1>
+            <div className="space-y-4 sm:space-y-6">
+              <p className="leading-relaxed text-sm sm:text-base lg:text-base text-[#f4eada] font-helvetica-now">
                 We bring intention, vision and clarity to foster balanced growth, with kindness and compassion.
               </p>
-              <p className="leading-relaxed text-sm lg:text-base text-[#f4eada] font-helvetica-now">
+              <p className="leading-relaxed text-sm sm:text-base lg:text-base text-[#f4eada] font-helvetica-now">
                 Almara pairs wisdom with execution: grounded judgment, simple structures, and a quiet, steady core that guides how we steward capital, culture, and relationships.
               </p>
             </div>
@@ -67,39 +67,39 @@ const Mission = () => {
       </section>
 
       {/* Section 2 — Our Pillars */}
-      <section className="h-screen flex items-center justify-center px-8 lg:px-12 mission-section-gradient">
-        <div className="max-w-5xl mx-auto bg-gradient-to-r from-transparent via-gray-600/30 to-gray-700/60 rounded-3xl px-[120px] py-[58px] backdrop-blur-sm">
-          <div ref={pillarsHeaderRef} className={`text-center mb-8 transition-all duration-1000 ease-out ${pillarsHeaderVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
-            <h2 className="font-museo-moderno text-[32px] lg:text-[36px] text-[#f4eada] tracking-[0.05em] opacity-90 leading-tight mb-8">Our Pillars</h2>
+      <section className="min-h-screen flex items-center justify-center px-4 sm:px-6 md:px-8 lg:px-12 mission-section-gradient py-16 sm:py-20">
+        <div className="max-w-5xl mx-auto bg-gradient-to-r from-transparent via-gray-600/30 to-gray-700/60 rounded-3xl px-6 sm:px-12 md:px-16 lg:px-[120px] py-8 sm:py-12 md:py-[58px] backdrop-blur-sm">
+          <div ref={pillarsHeaderRef} className={`text-center mb-6 sm:mb-8 transition-all duration-1000 ease-out ${pillarsHeaderVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
+            <h2 className="font-museo-moderno text-[28px] sm:text-[32px] lg:text-[36px] text-[#f4eada] tracking-[0.05em] opacity-90 leading-tight mb-6 sm:mb-8">Our Pillars</h2>
           </div>
-          <div ref={pillarsContentRef} className={`space-y-8 font-helvetica-now text-[#f4eada] transition-all duration-1000 ease-out ${pillarsContentVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
-            <article className="text-center space-y-4">
-              <h3 className="font-helvetica-now text-xl tracking-wider font-bold text-[#b3bacb]">wisdom</h3>
-              <p className="text-base leading-relaxed max-w-sm mx-auto">Experience distilled into judgment. We prioritise signal over noise and the long term over the immediate.</p>
+          <div ref={pillarsContentRef} className={`space-y-6 sm:space-y-8 font-helvetica-now text-[#f4eada] transition-all duration-1000 ease-out ${pillarsContentVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
+            <article className="text-center space-y-3 sm:space-y-4">
+              <h3 className="font-helvetica-now text-lg sm:text-xl tracking-wider font-bold text-[#b3bacb]">wisdom</h3>
+              <p className="text-sm sm:text-base leading-relaxed max-w-xs sm:max-w-sm mx-auto">Experience distilled into judgment. We prioritise signal over noise and the long term over the immediate.</p>
             </article>
-            <article className="text-center space-y-4">
-              <h3 className="font-helvetica-now text-xl tracking-wider font-bold text-[#b3bacb]">grounded</h3>
-              <p className="text-base leading-relaxed max-w-sm mx-auto">Calm, practical, reality-first. We work with what is, then shape what can be.</p>
+            <article className="text-center space-y-3 sm:space-y-4">
+              <h3 className="font-helvetica-now text-lg sm:text-xl tracking-wider font-bold text-[#b3bacb]">grounded</h3>
+              <p className="text-sm sm:text-base leading-relaxed max-w-xs sm:max-w-sm mx-auto">Calm, practical, reality-first. We work with what is, then shape what can be.</p>
             </article>
-            <article className="text-center space-y-4">
-              <h3 className="font-helvetica-now text-xl tracking-wider font-bold text-[#b3bacb]">simple</h3>
-              <p className="text-base leading-relaxed max-w-sm mx-auto">Clarity is a discipline. We focus on the essence and remove what doesn't serve.</p>
+            <article className="text-center space-y-3 sm:space-y-4">
+              <h3 className="font-helvetica-now text-lg sm:text-xl tracking-wider font-bold text-[#b3bacb]">simple</h3>
+              <p className="text-sm sm:text-base leading-relaxed max-w-xs sm:max-w-sm mx-auto">Clarity is a discipline. We focus on the essence and remove what doesn't serve.</p>
             </article>
-            <article className="text-center space-y-4">
-              <h3 className="font-helvetica-now text-xl tracking-wider font-bold text-[#b3bacb]">spirituality</h3>
-              <p className="text-base leading-relaxed max-w-sm mx-auto">Meaning and care in action. Compassion and responsibility inform decisions.</p>
+            <article className="text-center space-y-3 sm:space-y-4">
+              <h3 className="font-helvetica-now text-lg sm:text-xl tracking-wider font-bold text-[#b3bacb]">spirituality</h3>
+              <p className="text-sm sm:text-base leading-relaxed max-w-xs sm:max-w-sm mx-auto">Meaning and care in action. Compassion and responsibility inform decisions.</p>
             </article>
           </div>
         </div>
       </section>
 
       {/* Section 3 — In Practice */}
-      <section className="h-screen flex items-center justify-center px-8 lg:px-12 mission-section-gradient">
+      <section className="min-h-screen flex items-center justify-center px-4 sm:px-6 md:px-8 lg:px-12 mission-section-gradient py-16 sm:py-20">
         <div className="max-w-6xl mx-auto">
-          <div ref={practiceHeaderRef} className={`text-center mb-16 transition-all duration-1000 ease-out ${practiceHeaderVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
-            <h2 className="font-museo-moderno text-[32px] lg:text-[36px] text-[#f4eada] tracking-[0.05em] opacity-90 leading-tight">In Practice</h2>
+          <div ref={practiceHeaderRef} className={`text-center mb-12 sm:mb-16 transition-all duration-1000 ease-out ${practiceHeaderVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
+            <h2 className="font-museo-moderno text-[28px] sm:text-[32px] lg:text-[36px] text-[#f4eada] tracking-[0.05em] opacity-90 leading-tight">In Practice</h2>
           </div>
-          <div ref={practiceGridRef} className={`grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-12 font-helvetica-now text-[#f4eada] transition-all duration-1000 ease-out ${practiceGridVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
+          <div ref={practiceGridRef} className={`grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 lg:gap-12 font-helvetica-now text-[#f4eada] transition-all duration-1000 ease-out ${practiceGridVisible ? 'opacity-100 translate-y-0' : 'opacity-0 transform translate-y-8'}`}>
             <div className="flex items-start space-x-4">
               <div className="flex-shrink-0 mt-1" style={{
                 width: '56px',

@@ -73,7 +73,7 @@ const Partners = () => {
       <MobileMenu />
       
       {/* Section 1: Our Partners - Hero with extended background including header */}
-      <section className="h-screen flex flex-col bg-[hsl(var(--almara-light-text))] partners-gradient-bg relative">
+      <section className="min-h-screen flex flex-col bg-[hsl(var(--almara-light-text))] partners-gradient-bg relative py-16 sm:py-20">
         {/* Header with logo - now part of the section */}
         <header className="relative z-50 hidden lg:flex items-center justify-center pt-8 pb-4">
           <Link to="/" className="transition-opacity hover:opacity-80 relative z-50">
@@ -82,21 +82,21 @@ const Partners = () => {
         </header>
         
         {/* Background Circle */}
-        <img src="/lovable-uploads/a58a04a2-6cc9-41d7-a8c1-bd70d0c8df8f.png" alt="Circle background" className="absolute w-[60vw] h-[60vw] max-w-[600px] max-h-[600px] min-w-[320px] min-h-[320px] object-cover bg-transparent top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-[5] reveal-fade" style={{ animationDelay: '0.1s', animationFillMode: 'both' }} />
+        <img src="/lovable-uploads/a58a04a2-6cc9-41d7-a8c1-bd70d0c8df8f.png" alt="Circle background" className="absolute w-[70vw] h-[70vw] sm:w-[60vw] sm:h-[60vw] max-w-[600px] max-h-[600px] min-w-[280px] min-h-[280px] object-cover bg-transparent top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-[5] reveal-fade" style={{ animationDelay: '0.1s', animationFillMode: 'both' }} />
         
         {/* Main Content - Better centered in remaining space */}
-        <div className="flex-1 flex items-center justify-center px-12 relative z-10" style={{ marginTop: '-60px' }}>
+        <div className="flex-1 flex items-center justify-center px-4 sm:px-6 md:px-8 lg:px-12 relative z-10">
           <div className="max-w-lg text-center relative z-10 reveal-up" style={{ animationDelay: '0.3s', animationFillMode: 'both' }}>
             {/* Content */}
-            <div className="space-y-6">
-              <h1 className="font-museo-moderno text-[32px] lg:text-[36px] text-almara-light-text tracking-[0.05em] opacity-90 leading-tight">
+            <div className="space-y-4 sm:space-y-6">
+              <h1 className="font-museo-moderno text-[28px] sm:text-[32px] lg:text-[36px] text-almara-light-text tracking-[0.05em] opacity-90 leading-tight">
                 Our Partners
               </h1>
-              <h2 className="font-helvetica-now text-xl tracking-wider font-bold text-[#364b56] mb-6">
+              <h2 className="font-helvetica-now text-lg sm:text-xl tracking-wider font-bold text-[#364b56] mb-4 sm:mb-6">
                 a curated network that amplifies outcomes
               </h2>
-              <div className="mx-auto max-w-[85%]">
-                <p className="leading-relaxed text-sm lg:text-base text-[#363636] font-helvetica-now">
+              <div className="mx-auto max-w-[90%] sm:max-w-[85%]">
+                <p className="leading-relaxed text-sm sm:text-base lg:text-base text-[#363636] font-helvetica-now">
                   We collaborate with leading institutions, technology platforms, and project specialists—activated selectively, and only when it serves the mandate.
                 </p>
               </div>
@@ -106,17 +106,17 @@ const Partners = () => {
       </section>
       
       {/* Section 2: Institutional Partners */}
-      <section className="h-screen flex items-center justify-center px-12 py-20 bg-[hsl(var(--almara-light-text))] partners-gradient-bg">
+      <section className="min-h-screen flex items-center justify-center px-4 sm:px-6 md:px-8 lg:px-12 py-16 sm:py-20 bg-[hsl(var(--almara-light-text))] partners-gradient-bg">
         <div className="max-w-6xl mx-auto text-center relative z-10">
-          <div ref={instHeaderRef} className={`mb-16 transition-all duration-1000 ease-out ${instHeaderVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
-            <h2 className="font-museo-moderno text-[32px] lg:text-[36px] text-[#364b56] mb-6">Institutional Partners</h2>
-            <p className="font-helvetica-now text-[#363636] text-base max-w-[70%] mx-auto">
+          <div ref={instHeaderRef} className={`mb-12 sm:mb-16 transition-all duration-1000 ease-out ${instHeaderVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
+            <h2 className="font-museo-moderno text-[28px] sm:text-[32px] lg:text-[36px] text-[#364b56] mb-4 sm:mb-6">Institutional Partners</h2>
+            <p className="font-helvetica-now text-[#363636] text-sm sm:text-base max-w-[85%] sm:max-w-[70%] mx-auto">
               Banking and investment relationships that enable execution with discretion.
             </p>
           </div>
 
           <div ref={instGridRef} className={`transition-all duration-1000 ease-out ${instGridVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
-            <div className="grid gap-12 grid-cols-3 max-w-2xl mx-auto mb-8">
+            <div className="grid gap-6 sm:gap-8 lg:gap-12 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 max-w-2xl mx-auto mb-6 sm:mb-8">
               {/* Top row - 3 items */}
               {[{
                 name: "Beonti",
@@ -129,8 +129,8 @@ const Partners = () => {
                 longDesc: "Geneva-based UBP specializes in wealth and asset management, serving private and institutional clients worldwide."
               }].map(p => (
                 <div key={p.name} className="relative group">
-                  <button className="bg-transparent text-[#f4eada] rounded-xl almara-call-btn relative z-[100] transition-all px-8 py-12 text-center w-full">
-                    <img src={logos[p.name]} alt={`${p.name} logo`} loading="lazy" className={`mx-auto h-16 object-contain ${p.name === 'Beonti' ? 'scale-[2.36]' : p.name === 'Kyros Capital' ? 'scale-[2.25]' : ''}`} />
+                  <button className="bg-transparent text-[#f4eada] rounded-xl almara-call-btn relative z-[100] transition-all px-6 sm:px-8 py-8 sm:py-12 text-center w-full">
+                    <img src={logos[p.name]} alt={`${p.name} logo`} loading="lazy" className={`mx-auto h-12 sm:h-16 object-contain ${p.name === 'Beonti' ? 'scale-[2.36]' : p.name === 'Kyros Capital' ? 'scale-[2.25]' : ''}`} />
                   </button>
                   
                   {/* Hover Overlay */}
@@ -148,7 +148,7 @@ const Partners = () => {
               ))}
             </div>
             
-            <div className="grid gap-12 grid-cols-2 max-w-2xl mx-auto">
+            <div className="grid gap-6 sm:gap-8 lg:gap-12 grid-cols-1 sm:grid-cols-2 max-w-2xl mx-auto">
               {/* Bottom row - 2 items */}
               {[{
                 name: "CIGP",
@@ -158,8 +158,8 @@ const Partners = () => {
                 longDesc: "Antarctica Asset Management delivers hedge fund and private equity solutions for institutions, family offices, and private banks."
               }].map(p => (
                 <div key={p.name} className="relative group">
-                  <button className="bg-transparent text-[#f4eada] rounded-xl almara-call-btn relative z-[100] transition-all px-8 py-12 text-center w-full">
-                    <img src={logos[p.name]} alt={`${p.name} logo`} loading="lazy" className="mx-auto h-16 object-contain" />
+                  <button className="bg-transparent text-[#f4eada] rounded-xl almara-call-btn relative z-[100] transition-all px-6 sm:px-8 py-8 sm:py-12 text-center w-full">
+                    <img src={logos[p.name]} alt={`${p.name} logo`} loading="lazy" className="mx-auto h-12 sm:h-16 object-contain" />
                   </button>
                   
                   {/* Hover Overlay */}
