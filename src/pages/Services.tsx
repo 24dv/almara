@@ -258,7 +258,7 @@ const Services = () => {
             </div>
 
             {/* Mobile Service Content */}
-            <div className="relative min-h-[500px] px-8 py-6">
+            <div className="relative min-h-[500px] px-4 py-6">
               {services.map(service => (
                 <div 
                   key={service.id} 
@@ -276,7 +276,7 @@ const Services = () => {
                   {(service.id === 'family-office' || service.id === 'art-advisory' || service.id === 'capital-ma' || service.id === 'alternatives') ? (
                     <div className="space-y-6">
                       {/* Image */}
-                      <div className="w-full max-w-md mx-auto relative mb-6">
+                      <div className="w-full max-w-lg mx-auto relative mb-8">
                         <img 
                           src={
                             service.id === 'family-office' ? "/lovable-uploads/0fb235b5-0ef7-4a23-b23c-a09271d1c1ee.png" 
@@ -302,14 +302,14 @@ const Services = () => {
                       </div>
                       
                       {/* Content */}
-                      <div className="text-center space-y-6 px-6">
+                      <div className="text-center space-y-6 px-2">
                         <h3 className="font-helvetica-now almara-h3-mobile tracking-wider font-bold text-[#b3bacb]">
                           {service.title}
                         </h3>
-                        <p className="text-[#f4eada] leading-relaxed almara-body-mobile max-w-lg mx-auto">
+                        <p className="text-[#f4eada] leading-relaxed almara-body-mobile max-w-xl mx-auto">
                           {service.description}
                         </p>
-                        <div className="space-y-4 max-w-lg mx-auto">
+                        <div className="space-y-4 max-w-xl mx-auto">
                           {service.points.map((point, index) => (
                             <div key={index} className="flex items-start space-x-3 text-left">
                               <div className="flex-shrink-0 mt-2">
@@ -329,7 +329,7 @@ const Services = () => {
                     </div>
                   ) : (
                     /* Service without image */
-                    <div className="text-center space-y-4 max-w-lg mx-auto">
+                    <div className="text-center space-y-6 max-w-xl mx-auto px-2">
                       <h3 className="font-helvetica-now almara-h3-mobile tracking-wider font-bold text-[#b3bacb]">
                         {service.title}
                       </h3>
