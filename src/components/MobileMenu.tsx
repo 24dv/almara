@@ -15,7 +15,7 @@ export const MobileMenu = () => {
   const location = useLocation();
 
   return (
-    <header className="xl:hidden fixed top-0 left-0 right-0 z-[60]">
+    <header className="xl:hidden absolute top-0 left-0 right-0 z-[60]">
       <div className="px-4 py-3">
         <div className="flex items-center justify-between">
           <Link to="/" aria-label="ALMARA home" className="transition-opacity hover:opacity-80">
