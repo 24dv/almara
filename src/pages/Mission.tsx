@@ -55,10 +55,10 @@ const Mission = () => {
           }}>
             <h1 className="font-museo-moderno almara-h1-mobile text-[#f4eada] tracking-[0.05em] opacity-90 leading-tight">Our Mission</h1>
             <div className="space-y-3 sm:space-y-4 lg:space-y-6">
-              <p className="leading-relaxed almara-body-mobile text-[#f4eada] font-helvetica-now">
+              <p className="leading-relaxed almara-body-mobile lg:text-base text-[#f4eada] font-helvetica-now">
                 We bring intention, vision and clarity to foster balanced growth, with kindness and compassion.
               </p>
-              <p className="leading-relaxed almara-body-mobile text-[#f4eada] font-helvetica-now">
+              <p className="leading-relaxed almara-body-mobile lg:text-base text-[#f4eada] font-helvetica-now">
                 Almara pairs wisdom with execution: grounded judgment, simple structures, and a quiet, steady core that guides how we steward capital, culture, and relationships.
               </p>
             </div>
