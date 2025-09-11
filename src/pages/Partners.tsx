@@ -85,7 +85,7 @@ const Partners = () => {
         <img src="/lovable-uploads/a58a04a2-6cc9-41d7-a8c1-bd70d0c8df8f.png" alt="Circle background" className="absolute w-[70vw] h-[70vw] max-w-[600px] max-h-[600px] min-w-[380px] min-h-[380px] object-cover bg-transparent top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-[5] reveal-fade" style={{ animationDelay: '0.1s', animationFillMode: 'both' }} />
         
         {/* Main Content - Better centered in remaining space */}
-        <div className="flex-1 flex items-center justify-center px-4 sm:px-6 lg:px-12 relative z-10" style={{ marginTop: '-60px' }}>
+        <div className="flex-1 flex items-center justify-center px-4 sm:px-6 lg:px-12 relative z-10 lg:-mt-[60px]">
           <div className="max-w-lg text-center relative z-10 reveal-up" style={{ animationDelay: '0.3s', animationFillMode: 'both' }}>
             {/* Content */}
             <div className="space-y-3 sm:space-y-4 lg:space-y-6">
