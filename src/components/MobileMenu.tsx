@@ -31,32 +31,28 @@ export const MobileMenu = () => {
           </Link>
 
           <div className="ml-auto">
+            <Button
+              variant="ghost"
+              size="icon"
+              aria-label={isOpen ? "Close menu" : "Open menu"}
+              className="hover:bg-transparent p-0 w-10 h-10"
+              onClick={() => setIsOpen(!isOpen)}
+            >
+              <div 
+                className="cursor-pointer"
+                style={{
+                  width: '40px',
+                  height: '40px',
+                  borderRadius: '50%',
+                  backgroundColor: isOpen ? 'hsl(var(--almara-carmine))' : 'transparent',
+                  boxShadow: 'inset -4px -4px 8px rgba(255,255,255,0.0), inset 2px 2px 4px rgba(0,0,0,0.7)',
+                  transition: 'background-color 0.4s cubic-bezier(0.4, 0, 0.2, 1), transform 0.2s ease-out',
+                  transform: isOpen ? 'scale(1.05)' : 'scale(1)'
+                }}
+              />
+            </Button>
+
             <Sheet open={isOpen} onOpenChange={setIsOpen}>
-              <SheetTrigger asChild>
-                <Button
-                  variant="ghost"
-                  size="icon"
-                  aria-label={isOpen ? "Close menu" : "Open menu"}
-                  className="hover:bg-transparent p-0 w-10 h-10"
-                  onClick={(e) => {
-                    e.preventDefault();
-                    setIsOpen(!isOpen);
-                  }}
-                >
-                  <div 
-                    className="cursor-pointer"
-                    style={{
-                      width: '40px',
-                      height: '40px',
-                      borderRadius: '50%',
-                      backgroundColor: isOpen ? 'hsl(var(--almara-carmine))' : 'transparent',
-                      boxShadow: 'inset -4px -4px 8px rgba(255,255,255,0.0), inset 2px 2px 4px rgba(0,0,0,0.7)',
-                      transition: 'background-color 0.4s cubic-bezier(0.4, 0, 0.2, 1), transform 0.2s ease-out',
-                      transform: isOpen ? 'scale(1.05)' : 'scale(1)'
-                    }}
-                  />
-                </Button>
-              </SheetTrigger>
 
             <SheetContent
               side="right"
