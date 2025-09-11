@@ -196,9 +196,16 @@ All colors MUST be HSL.
     left: 0;
     right: 0;
     bottom: 0;
-    background: linear-gradient(to right, hsl(var(--almara-light-text)) 0%, transparent 50%);
+    background: linear-gradient(to right, transparent 0%, hsl(var(--almara-light-text)) 25%, transparent 50%);
     opacity: 1;
     z-index: 1;
+  }
+  
+  /* Desktop gradient override */
+  @media (min-width: 1024px) {
+    .almara-gradient-bg::after {
+      background: linear-gradient(to right, hsl(var(--almara-light-text)) 0%, transparent 50%);
+    }
   }
   
   /* Remove overlay for Mission page */
