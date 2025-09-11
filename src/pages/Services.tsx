@@ -89,13 +89,13 @@ const Services = () => {
             }}>
           <h1 className="font-museo-moderno almara-h1-mobile text-[#f4eada] tracking-[0.05em] opacity-90 leading-tight">Our Services</h1>
           <div className="space-y-1 sm:space-y-2">
-            <p className="leading-relaxed almara-body-mobile text-[#f4eada] font-helvetica-now">
+            <p className="leading-relaxed almara-body-mobile lg:text-[14px] xl:text-[15px] 2xl:text-[16px] text-[#f4eada] font-helvetica-now">
               Family office, alternatives, M&A, and art advisory,
             </p>
-            <p className="leading-relaxed almara-body-mobile text-[#f4eada] font-helvetica-now">
+            <p className="leading-relaxed almara-body-mobile lg:text-[14px] xl:text-[15px] 2xl:text-[16px] text-[#f4eada] font-helvetica-now">
               delivered through ongoing counsel
             </p>
-            <p className="leading-relaxed almara-body-mobile text-[#f4eada] font-helvetica-now">
+            <p className="leading-relaxed almara-body-mobile lg:text-[14px] xl:text-[15px] 2xl:text-[16px] text-[#f4eada] font-helvetica-now">
               and mandate-led execution.
             </p>
           </div>
