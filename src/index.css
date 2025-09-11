@@ -207,6 +207,22 @@ All colors MUST be HSL.
     position: relative;
   }
   
+  .almara-gradient-bg-no-mobile::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-image: url('/lovable-uploads/08276971-f3d6-48ef-af4b-9d930d4ced96.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0.8;
+    z-index: 2;
+    pointer-events: none;
+  }
+  
   .almara-gradient-bg-no-mobile::after {
     content: '';
     position: absolute;
