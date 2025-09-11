@@ -223,24 +223,28 @@ const Services = () => {
           </div>
 
           {/* Mobile Layout - Interactive Service Selection */}
-          <div className="lg:hidden">
+          <div className="lg:hidden px-4 py-8">
             {/* Mobile Service Navigation */}
-            <div className="flex flex-wrap justify-center gap-2 mb-8 reveal-up" style={{ animationDelay: '0.3s', animationFillMode: 'both' }}>
+            <div className="flex flex-wrap justify-center gap-3 mb-12 reveal-up" style={{ animationDelay: '0.3s', animationFillMode: 'both' }}>
               {services.map((service) => (
                 <button
                   key={service.id}
                   onClick={() => setActiveService(service.id)}
-                  className={`flex items-center px-3 py-2 rounded-full transition-all duration-300 ${
+                  className={`flex items-center px-4 py-3 rounded-full transition-all duration-300 ${
                     activeService === service.id 
-                      ? 'bg-[#364b56] text-[#f4eada]' 
-                      : 'bg-transparent text-[#b3bacb] border border-[#364b56]/30'
+                      ? 'bg-[#364b56]/20 text-[#f4eada]' 
+                      : 'bg-transparent text-[#b3bacb]'
                   }`}
                 >
                   <div 
-                    className="w-6 h-6 rounded-full mr-2 flex-shrink-0"
+                    className="flex-shrink-0 mr-3"
                     style={{
-                      backgroundColor: activeService === service.id ? '#f4eada' : '#364b56',
-                      boxShadow: 'inset -2px -2px 4px rgba(255,255,255,0.0), inset 1px 1px 2px rgba(0,0,0,0.7)',
+                      width: '40px',
+                      height: '40px',
+                      borderRadius: '50%',
+                      backgroundColor: activeService === service.id ? '#364b56' : 'transparent',
+                      boxShadow: 'inset -4px -4px 8px rgba(255,255,255,0.0), inset 2px 2px 4px rgba(0,0,0,0.7)',
+                      transition: 'background-color 0.4s cubic-bezier(0.4, 0, 0.2, 1)',
                     }}
                   />
                   <span className="text-sm font-medium whitespace-nowrap">{service.title}</span>
@@ -249,7 +253,7 @@ const Services = () => {
             </div>
 
             {/* Mobile Service Content */}
-            <div className="relative min-h-[400px]">
+            <div className="relative min-h-[400px] px-6 py-4">
               {services.map(service => (
                 <div 
                   key={service.id} 
@@ -267,7 +271,7 @@ const Services = () => {
                   {(service.id === 'family-office' || service.id === 'art-advisory' || service.id === 'capital-ma' || service.id === 'alternatives') ? (
                     <div className="space-y-6">
                       {/* Image */}
-                      <div className="w-full max-w-sm mx-auto relative">
+                      <div className="w-full max-w-sm mx-auto relative mb-6">
                         <img 
                           src={
                             service.id === 'family-office' ? "/lovable-uploads/0fb235b5-0ef7-4a23-b23c-a09271d1c1ee.png" 
@@ -293,14 +297,14 @@ const Services = () => {
                       </div>
                       
                       {/* Content */}
-                      <div className="text-center space-y-4">
+                      <div className="text-center space-y-6 px-4">
                         <h3 className="font-helvetica-now almara-h3-mobile tracking-wider font-bold text-[#b3bacb]">
                           {service.title}
                         </h3>
                         <p className="text-[#f4eada] leading-relaxed almara-body-mobile max-w-md mx-auto">
                           {service.description}
                         </p>
-                        <div className="space-y-3 max-w-md mx-auto">
+                        <div className="space-y-4 max-w-md mx-auto">
                           {service.points.map((point, index) => (
                             <div key={index} className="flex items-start space-x-3 text-left">
                               <div className="flex-shrink-0 mt-2">
