@@ -262,10 +262,10 @@ const Services = () => {
               {services.map(service => (
                 <div 
                   key={service.id} 
-                  className={`transition-all duration-500 ease-in-out ${
+                  className={`transition-all duration-700 ease-in-out ${
                     activeService === service.id 
                       ? 'opacity-100 transform translate-y-0 relative z-10' 
-                      : 'opacity-0 transform translate-y-4 absolute top-0 pointer-events-none z-0'
+                      : 'opacity-0 transform translate-y-2 absolute top-0 left-0 right-0 pointer-events-none z-0'
                   }`}
                   style={{
                     transitionProperty: 'opacity, transform',
@@ -276,7 +276,7 @@ const Services = () => {
                   {(service.id === 'family-office' || service.id === 'art-advisory' || service.id === 'capital-ma' || service.id === 'alternatives') ? (
                     <div className="space-y-6">
                       {/* Image */}
-                      <div className="w-full max-w-sm mx-auto relative mb-6">
+                      <div className="w-full max-w-md mx-auto relative mb-6">
                         <img 
                           src={
                             service.id === 'family-office' ? "/lovable-uploads/0fb235b5-0ef7-4a23-b23c-a09271d1c1ee.png" 
@@ -306,10 +306,10 @@ const Services = () => {
                         <h3 className="font-helvetica-now almara-h3-mobile tracking-wider font-bold text-[#b3bacb]">
                           {service.title}
                         </h3>
-                        <p className="text-[#f4eada] leading-relaxed almara-body-mobile max-w-md mx-auto">
+                        <p className="text-[#f4eada] leading-relaxed almara-body-mobile max-w-lg mx-auto">
                           {service.description}
                         </p>
-                        <div className="space-y-4 max-w-md mx-auto">
+                        <div className="space-y-4 max-w-lg mx-auto">
                           {service.points.map((point, index) => (
                             <div key={index} className="flex items-start space-x-3 text-left">
                               <div className="flex-shrink-0 mt-2">
@@ -329,7 +329,7 @@ const Services = () => {
                     </div>
                   ) : (
                     /* Service without image */
-                    <div className="text-center space-y-4 max-w-md mx-auto">
+                    <div className="text-center space-y-4 max-w-lg mx-auto">
                       <h3 className="font-helvetica-now almara-h3-mobile tracking-wider font-bold text-[#b3bacb]">
                         {service.title}
                       </h3>
