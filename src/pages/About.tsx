@@ -127,6 +127,11 @@ const About = () => {
                 </div>
                 
                 <p className="leading-relaxed almara-body-mobile text-[#363636]">Tom has lived and worked in Brussels, Luxembourg, Monaco, London, Hong Kong, and Lisbon, cultivating a global network and local fluency in the world's key financial and cultural hubs. Almara reflects his belief in discreet, holistic advisory, where trust, excellence, and long-term perspective drive every decision.</p>
+                
+                {/* Desktop only button */}
+                <div className="hidden lg:block pt-6">
+                  <Button variant="call" size="call" className="font-helvetica-now text-xs sm:text-sm">request a call</Button>
+                </div>
               </div>
               
             </div>

@@ -300,6 +300,11 @@ const Partners = () => {
               Tell us what you're building,<br />
               we'll assemble the right team
             </h2>
+            
+            {/* Desktop only button */}
+            <div className="hidden lg:block pt-6">
+              <Button variant="call" size="call" className="font-helvetica-now text-xs sm:text-sm">request a call</Button>
+            </div>
           </div>
         </div>
       </section>
