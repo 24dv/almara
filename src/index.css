@@ -201,6 +201,17 @@ All colors MUST be HSL.
     z-index: 1;
   }
   
+  /* Hide gradient on About page for mobile only */
+  body:has([title="About"]) .almara-gradient-bg::after {
+    display: none;
+  }
+  
+  @media (min-width: 1024px) {
+    body:has([title="About"]) .almara-gradient-bg::after {
+      display: block;
+    }
+  }
+  
   /* Remove overlay for Mission page */
   .almara-gradient-bg.no-overlay::after {
     display: none;
