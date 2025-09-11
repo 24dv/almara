@@ -20,12 +20,12 @@ const About = () => {
           
           {/* Description Text */}
           <div className="space-y-4 sm:space-y-6 lg:space-y-8 text-almara-dark-text/80 font-helvetica-now max-w-2xl mx-auto px-2 sm:px-4 lg:px-[40px]">
-            <p className="leading-relaxed almara-body-mobile text-[#f4eada]">
+            <p className="leading-relaxed almara-body-mobile lg:text-[14px] xl:text-[15px] 2xl:text-[16px] text-[#f4eada]">
               At ALMARA, we guide passionate investors through the world of 
               alternative assets: from hedge funds and private equity to real 
               estate, litigation finance and art.
             </p>
-            <p className="leading-relaxed almara-body-mobile text-[#f4eada]">
+            <p className="leading-relaxed almara-body-mobile lg:text-[14px] xl:text-[15px] 2xl:text-[16px] text-[#f4eada]">
               Blending deep market expertise with a creative spark, we build 
               strategies as unique as you are. With our network of specialist 
               partners and top-tier advisors, we uncover distinct opportunities 
