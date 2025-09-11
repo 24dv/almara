@@ -18,7 +18,18 @@ export const MobileMenu = () => {
     <>
       <header className="xl:hidden absolute top-0 left-0 right-0 z-[60]">
         <div className="px-4 py-3">
-        <div className="flex items-center justify-end">
+        <div className="flex items-center justify-between">
+          <Link to="/" aria-label="ALMARA home" className={cn(
+            "transition-opacity hover:opacity-80",
+            location.pathname === "/" && "hidden"
+          )}>
+            <img
+              src="/lovable-uploads/889a0efd-ed5b-448b-a911-54ea486f744c.png"
+              alt="ALMARA logo"
+              className="h-7 sm:h-8 opacity-90"
+            />
+          </Link>
+
           <div className="ml-auto">
               <Button
                 variant="ghost"
