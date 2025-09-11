@@ -18,7 +18,7 @@ const Privacy = () => {
           </div>
           
           {/* Content */}
-          <div ref={contentRef} className={`space-y-6 text-[#363636] font-helvetica-now leading-relaxed text-sm sm:text-base transition-all duration-1000 ease-out ${contentVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
+          <div ref={contentRef} className={`space-y-6 text-[#363636] font-helvetica-now leading-relaxed text-base transition-all duration-1000 ease-out ${contentVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
             <div className="space-y-4">
               <h2 className="font-helvetica-now text-xl tracking-wider font-bold text-[#364b56]">information we collect</h2>
               <p>

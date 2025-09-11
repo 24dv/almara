@@ -7,45 +7,45 @@ const About = () => {
   const { ref: contentRef, isVisible: contentVisible } = useScrollReveal<HTMLDivElement>(0.1, 500);
   return <PageLayout title="About">
       {/* Main Content Section - Full Height */}
-      <section className="min-h-screen flex items-center justify-center px-4 sm:px-6 md:px-8 lg:px-12 py-16 sm:py-20">
-        <div className="max-w-3xl text-center space-y-8 sm:space-y-12 md:space-y-16 reveal-up" style={{
+      <section className="h-screen flex items-center justify-center px-12 py-20">
+        <div className="max-w-3xl text-center space-y-16 reveal-up" style={{
         animationDelay: '0.2s',
         animationFillMode: 'both'
       }}>
-           {/* Main Tagline */}
-           <h1 className="font-long-cang text-[22px] xs:text-[26px] sm:text-[30px] md:text-[36px] lg:text-[40px] xl:text-[44px] text-almara-subtitle-text tracking-[0.05em] opacity-90 leading-tight font-thin">
-             IN A SEA OF OPPORTUNITIES,<br />
-             DISCERNMENT IS THE TRUE COMPASS
-           </h1>
-           
-           {/* Description Text */}
-           <div className="space-y-6 sm:space-y-8 text-almara-dark-text/80 font-helvetica-now max-w-2xl mx-auto px-4 sm:px-6 md:px-8 lg:px-[40px]">
-             <p className="leading-relaxed text-[#f4eada] text-sm sm:text-base">
-               At ALMARA, we guide passionate investors through the world of 
-               alternative assets: from hedge funds and private equity to real 
-               estate, litigation finance and art.
-             </p>
-             <p className="leading-relaxed text-sm sm:text-base text-[#f4eada]">
-               Blending deep market expertise with a creative spark, we build 
-               strategies as unique as you are. With our network of specialist 
-               partners and top-tier advisors, we uncover distinct opportunities 
-               and drive lasting portfolio value.
-             </p>
-           </div>
+          {/* Main Tagline */}
+          <h1 className="font-long-cang sm:text-[36px] md:text-[40px] lg:text-[44px] text-almara-subtitle-text tracking-[0.05em] opacity-90 leading-tight font-thin text-5xl">
+            IN A SEA OF OPPORTUNITIES,<br />
+            DISCERNMENT IS THE TRUE COMPASS
+          </h1>
+          
+          {/* Description Text */}
+          <div className="space-y-8 text-almara-dark-text/80 font-helvetica-now max-w-2xl mx-auto px-[40px]">
+            <p className="leading-relaxed px-0 text-[#f4eada] text-base">
+              At ALMARA, we guide passionate investors through the world of 
+              alternative assets: from hedge funds and private equity to real 
+              estate, litigation finance and art.
+            </p>
+            <p className="leading-relaxed text-base px-0 text-[#f4eada]">
+              Blending deep market expertise with a creative spark, we build 
+              strategies as unique as you are. With our network of specialist 
+              partners and top-tier advisors, we uncover distinct opportunities 
+              and drive lasting portfolio value.
+            </p>
+          </div>
         </div>
       </section>
 
       {/* Founder Section - Full Height */}
-      <section ref={sectionRef} className="min-h-screen bg-almara-light-text/20 flex items-center justify-center px-4 sm:px-6 md:px-8 lg:px-12 py-16 sm:py-20">
+      <section ref={sectionRef} className="h-screen bg-almara-light-text/20 flex items-center justify-center px-12 py-20">
         <div className="max-w-7xl mx-auto w-full">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-12 lg:gap-16 items-center">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center h-full">
             {/* Founder Image */}
-            <div ref={imageRef} className={`flex justify-center lg:justify-end transition-all duration-1000 ease-out order-1 lg:order-1 ${
+            <div ref={imageRef} className={`flex justify-center lg:justify-end transition-all duration-1000 ease-out ${
               imageVisible 
                 ? 'translate-x-0 opacity-100' 
                 : '-translate-x-8 opacity-0'
             }`}>
-              <div className="max-w-sm sm:max-w-md relative">
+              <div className="max-w-md relative">
                 <img src="/lovable-uploads/3f98f6a2-7c73-465b-89c1-9ffd619f5b8f.png" alt="Tom Meganck - Founder" className="w-full h-auto rounded-lg shadow-lg relative z-0" />
                 <div className="absolute inset-0 rounded-lg z-10 pointer-events-none" style={{
                   backgroundImage: 'url("/lovable-uploads/08276971-f3d6-48ef-af4b-9d930d4ced96.png")',
@@ -58,35 +58,35 @@ const About = () => {
             </div>
             
             {/* Founder Info */}
-            <div ref={contentRef} className={`space-y-6 sm:space-y-8 max-w-xl mx-auto lg:mx-0 transition-all duration-1000 ease-out order-2 lg:order-2 ${
+            <div ref={contentRef} className={`space-y-8 max-w-xl transition-all duration-1000 ease-out ${
               contentVisible 
                 ? 'translate-y-0 opacity-100' 
                 : 'translate-y-8 opacity-0'
             }`}>
-               <div className="space-y-2 text-center lg:text-left">
-                 <h2 className="font-museo-moderno text-[22px] sm:text-[26px] md:text-[30px] lg:text-[34px] xl:text-[36px] text-[#363636]">
-                   Tom Meganck
-                 </h2>
-                 <h3 className="font-helvetica-now text-base sm:text-lg md:text-xl tracking-wider font-bold text-[#364b56]">founder</h3>
-               </div>
+              <div className="space-y-2">
+                <h2 className="font-museo-moderno text-[32px] lg:text-[36px] text-[#363636]">
+                  Tom Meganck
+                </h2>
+                <h3 className="font-helvetica-now text-xl tracking-wider font-bold text-[#364b56]">founder</h3>
+              </div>
               
-              <div className="space-y-4 sm:space-y-6 text-almara-dark-text/80 font-helvetica-now text-center lg:text-left">
-                <p className="leading-relaxed text-sm sm:text-base text-[#363636]">With a career spanning over two decades, Tom Meganck has guided ultra-high-net-worth families, entrepreneurs, and institutions across complex financial landscapes. His expertise blends private banking, alternative investments, and multi-jurisdictional structuring with a uniquely personal approach.
+              <div className="space-y-6 text-almara-dark-text/80 font-helvetica-now">
+                <p className="leading-relaxed text-base text-[#363636]">With a career spanning over two decades, Tom Meganck has guided ultra-high-net-worth families, entrepreneurs, and institutions across complex financial landscapes. His expertise blends private banking, alternative investments, and multi-jurisdictional structuring with a uniquely personal approach.
 
               </p>
                 
-                <div className="space-y-3 text-sm sm:text-base opacity-75">
+                <div className="space-y-3 text-base opacity-75">
                   <div className="flex items-start space-x-3">
                     <div className="flex-shrink-0 mt-2">
                       <div style={{
                         width: '0',
                         height: '0',
-                        borderLeft: '6px solid #f4eada',
-                        borderTop: '4px solid transparent',
-                        borderBottom: '4px solid transparent'
+                        borderLeft: '8px solid #f4eada',
+                        borderTop: '6px solid transparent',
+                        borderBottom: '6px solid transparent'
                       }} />
                     </div>
-                    <p className="text-[#f4eada] leading-relaxed text-sm sm:text-base">Founded and led a corporate services firm in London and Luxembourg.</p>
+                    <p className="text-[#f4eada] leading-relaxed">Founded and led a corporate services firm in London and Luxembourg.</p>
                   </div>
                   <div className="flex items-start space-x-3">
                     <div className="flex-shrink-0 mt-2">
@@ -98,7 +98,7 @@ const About = () => {
                         borderBottom: '6px solid transparent'
                       }} />
                     </div>
-                    <p className="text-[#f4eada] leading-relaxed text-sm sm:text-base">Established a family office advisory practice in Hong Kong.</p>
+                    <p className="text-[#f4eada] leading-relaxed">Established a family office advisory practice in Hong Kong.</p>
                   </div>
                   <div className="flex items-start space-x-3">
                     <div className="flex-shrink-0 mt-2">
@@ -110,7 +110,7 @@ const About = () => {
                         borderBottom: '6px solid transparent'
                       }} />
                     </div>
-                    <p className="text-[#f4eada] leading-relaxed text-sm sm:text-base">2002–2012: Served as Managing Director of a significant Single Family Office spanning New York, Luxembourg, Monaco, and Hong Kong, with a focus on hedge funds, private equity, and litigation funding.</p>
+                    <p className="text-[#f4eada] leading-relaxed">2002–2012: Served as Managing Director of a significant Single Family Office spanning New York, Luxembourg, Monaco, and Hong Kong, with a focus on hedge funds, private equity, and litigation funding.</p>
                   </div>
                   <div className="flex items-start space-x-3">
                     <div className="flex-shrink-0 mt-2">
@@ -122,17 +122,17 @@ const About = () => {
                         borderBottom: '6px solid transparent'
                       }} />
                     </div>
-                    <p className="text-[#f4eada] leading-relaxed text-sm sm:text-base">Began his career in private and merchant banking in Luxembourg and Brussels.</p>
+                    <p className="text-[#f4eada] leading-relaxed">Began his career in private and merchant banking in Luxembourg and Brussels.</p>
                   </div>
                 </div>
                 
                 <p className="leading-relaxed text-base text-[#363636]">Tom has lived and worked in Brussels, Luxembourg, Monaco, London, Hong Kong, and Lisbon, cultivating a global network and local fluency in the world’s key financial and cultural hubs. Almara reflects his belief in discreet, holistic advisory, where trust, excellence, and long-term perspective drive every decision.</p>
               </div>
               
-               {/* Call to Action */}
-               <div className="pt-6">
-                 <Button variant="call" size="call" className="font-helvetica-now text-sm sm:text-base">get in touch</Button>
-               </div>
+              {/* Call to Action */}
+              <div className="pt-6">
+                <Button variant="call" size="call" className="font-helvetica-now">get in touch</Button>
+              </div>
             </div>
           </div>
         </div>
