@@ -1,8 +1,8 @@
 import { Sheet, SheetContent, SheetTrigger, SheetClose } from "@/components/ui/sheet";
 import { Button } from "@/components/ui/button";
-import { Menu } from "lucide-react";
 import { Link, useLocation } from "react-router-dom";
 import { cn } from "@/lib/utils";
+import { useState } from "react";
 
 const navigationItems = [
   { label: "about", href: "/about" },
@@ -13,6 +13,7 @@ const navigationItems = [
 
 export const MobileMenu = () => {
   const location = useLocation();
+  const [isOpen, setIsOpen] = useState(false);
 
   return (
     <header className="xl:hidden absolute top-0 left-0 right-0 z-[60]">
@@ -30,15 +31,26 @@ export const MobileMenu = () => {
           </Link>
 
           <div className="ml-auto">
-            <Sheet>
+            <Sheet onOpenChange={setIsOpen}>
               <SheetTrigger asChild>
                 <Button
                   variant="ghost"
                   size="icon"
                   aria-label="Open menu"
-                  className="hover:bg-transparent hover:opacity-70 transition-opacity duration-300 p-2"
+                  className="hover:bg-transparent p-0 w-10 h-10"
                 >
-                  <Menu className="h-6 w-6 text-almara-subtitle-text opacity-90" strokeWidth={1.5} />
+                  <div 
+                    className="cursor-pointer"
+                    style={{
+                      width: '40px',
+                      height: '40px',
+                      borderRadius: '50%',
+                      backgroundColor: isOpen ? 'hsl(var(--almara-carmine))' : 'transparent',
+                      boxShadow: 'inset -4px -4px 8px rgba(255,255,255,0.0), inset 2px 2px 4px rgba(0,0,0,0.7)',
+                      transition: 'background-color 0.4s cubic-bezier(0.4, 0, 0.2, 1), transform 0.2s ease-out',
+                      transform: isOpen ? 'scale(1.05)' : 'scale(1)'
+                    }}
+                  />
                 </Button>
               </SheetTrigger>
 
