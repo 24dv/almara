@@ -65,6 +65,12 @@ const Services = () => {
       
       {/* Main Content */}
       <main className="relative z-10 min-h-[calc(100vh-200px)]">
+      {/* Logo Section */}
+      <section className="absolute top-8 left-1/2 transform -translate-x-1/2 z-20">
+        <Link to="/" className="transition-opacity hover:opacity-80">
+          <img src="/lovable-uploads/889a0efd-ed5b-448b-a911-54ea486f744c.png" alt="ALMARA" className="h-7 sm:h-8 md:h-9 opacity-90" loading="eager" fetchPriority="high" />
+        </Link>
+      </section>
 
       {/* Hero Section */}
       <section className="h-screen flex items-center justify-center px-4 sm:px-6 lg:px-12 mission-section-gradient relative overflow-hidden">
