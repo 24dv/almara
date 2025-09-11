@@ -35,8 +35,8 @@ const About = () => {
         </div>
       </section>
 
-      {/* Founder Section - Full Height */}
-      <section ref={sectionRef} className="h-screen bg-almara-light-text/20 flex items-center justify-center px-4 sm:px-6 lg:px-12 py-16 sm:py-20">
+      {/* Founder Section - Flexible Height for Mobile */}
+      <section ref={sectionRef} className="min-h-screen lg:h-screen bg-almara-light-text/20 flex items-center justify-center px-4 sm:px-6 lg:px-12 py-16 sm:py-20">
         <div className="max-w-7xl mx-auto w-full">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-8 lg:gap-16 items-center h-full">
             {/* Founder Image */}
@@ -126,7 +126,7 @@ const About = () => {
                   </div>
                 </div>
                 
-                <p className="leading-relaxed text-base text-[#363636]">Tom has lived and worked in Brussels, Luxembourg, Monaco, London, Hong Kong, and Lisbon, cultivating a global network and local fluency in the world’s key financial and cultural hubs. Almara reflects his belief in discreet, holistic advisory, where trust, excellence, and long-term perspective drive every decision.</p>
+                <p className="leading-relaxed almara-body-mobile text-[#363636]">Tom has lived and worked in Brussels, Luxembourg, Monaco, London, Hong Kong, and Lisbon, cultivating a global network and local fluency in the world's key financial and cultural hubs. Almara reflects his belief in discreet, holistic advisory, where trust, excellence, and long-term perspective drive every decision.</p>
               </div>
               
               {/* Call to Action */}
