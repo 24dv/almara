@@ -5,12 +5,14 @@ import { MobileMenu } from "@/components/MobileMenu";
 interface PageLayoutProps {
   title: string;
   children: React.ReactNode;
+  noGradientOnMobile?: boolean;
 }
 export const PageLayout = ({
   title,
-  children
+  children,
+  noGradientOnMobile = false
 }: PageLayoutProps) => {
-  return <div className="relative w-full min-h-screen almara-gradient-bg animate-fade-in">
+  return <div className={`relative w-full min-h-screen ${noGradientOnMobile ? 'almara-gradient-bg-no-mobile' : 'almara-gradient-bg'} animate-fade-in`}>
       {/* Navigation - fixed positioned at same height as home page */}
       <Navigation positioning="fixed" />
 
