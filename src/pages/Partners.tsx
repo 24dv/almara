@@ -96,7 +96,7 @@ const Partners = () => {
                   a curated network that amplifies outcomes
                 </h2>
                 <div className="mx-auto max-w-[85%]">
-                  <p className="leading-relaxed almara-body-mobile text-[#363636] font-helvetica-now">
+                  <p className="leading-relaxed almara-body-mobile lg:text-base text-[#363636] font-helvetica-now">
                     We collaborate with leading institutions, technology platforms, and project specialists—activated selectively, and only when it serves the mandate.
                   </p>
               </div>
