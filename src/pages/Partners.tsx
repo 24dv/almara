@@ -92,7 +92,7 @@ const Partners = () => {
                 <h1 className="font-museo-moderno almara-h1-mobile text-almara-light-text tracking-[0.05em] opacity-90 leading-tight">
                   Our Partners
                 </h1>
-                <h2 className="font-helvetica-now almara-h3-mobile tracking-wider font-bold text-[#364b56] mb-3 sm:mb-4 lg:mb-6">
+                <h2 className="font-helvetica-now text-[16px] xs:text-[17px] sm:text-[18px] lg:text-xl tracking-wider font-bold text-[#364b56] mb-3 sm:mb-4 lg:mb-6">
                   a curated network that amplifies outcomes
                 </h2>
                 <div className="mx-auto max-w-[85%]">
