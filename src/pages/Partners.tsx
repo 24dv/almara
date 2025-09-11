@@ -85,18 +85,18 @@ const Partners = () => {
         <img src="/lovable-uploads/a58a04a2-6cc9-41d7-a8c1-bd70d0c8df8f.png" alt="Circle background" className="absolute w-[60vw] h-[60vw] max-w-[600px] max-h-[600px] min-w-[320px] min-h-[320px] object-cover bg-transparent top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-[5] reveal-fade" style={{ animationDelay: '0.1s', animationFillMode: 'both' }} />
         
         {/* Main Content - Better centered in remaining space */}
-        <div className="flex-1 flex items-center justify-center px-4 sm:px-8 lg:px-12 relative z-10" style={{ marginTop: '-60px' }}>
+        <div className="flex-1 flex items-center justify-center px-4 sm:px-6 lg:px-12 relative z-10" style={{ marginTop: '-60px' }}>
           <div className="max-w-lg text-center relative z-10 reveal-up" style={{ animationDelay: '0.3s', animationFillMode: 'both' }}>
             {/* Content */}
-            <div className="space-y-4 lg:space-y-6">
-              <h1 className="font-museo-moderno text-[24px] sm:text-[28px] lg:text-[32px] xl:text-[36px] text-almara-light-text tracking-[0.05em] opacity-90 leading-tight">
+            <div className="space-y-3 sm:space-y-4 lg:space-y-6">
+              <h1 className="font-museo-moderno text-[18px] xs:text-[20px] sm:text-[24px] md:text-[28px] lg:text-[32px] xl:text-[36px] text-almara-light-text tracking-[0.05em] opacity-90 leading-tight">
                 Our Partners
               </h1>
-              <h2 className="font-helvetica-now text-lg sm:text-xl tracking-wider font-bold text-[#364b56] mb-4 lg:mb-6">
+              <h2 className="font-helvetica-now text-[16px] xs:text-[17px] sm:text-[18px] lg:text-xl tracking-wider font-bold text-[#364b56] mb-3 sm:mb-4 lg:mb-6">
                 a curated network that amplifies outcomes
               </h2>
               <div className="mx-auto max-w-[85%]">
-                <p className="leading-relaxed text-xs sm:text-sm lg:text-base text-[#363636] font-helvetica-now">
+                <p className="leading-relaxed text-[12px] xs:text-[13px] sm:text-[14px] lg:text-base text-[#363636] font-helvetica-now">
                   We collaborate with leading institutions, technology platforms, and project specialists—activated selectively, and only when it serves the mandate.
                 </p>
               </div>
@@ -106,11 +106,11 @@ const Partners = () => {
       </section>
       
       {/* Section 2: Institutional Partners */}
-      <section className="h-screen flex items-center justify-center px-4 sm:px-8 lg:px-12 py-20 bg-[hsl(var(--almara-light-text))] partners-gradient-bg">
+      <section className="h-screen flex items-center justify-center px-4 sm:px-6 lg:px-12 py-16 sm:py-20 bg-[hsl(var(--almara-light-text))] partners-gradient-bg">
         <div className="max-w-6xl mx-auto text-center relative z-10">
-          <div ref={instHeaderRef} className={`mb-12 lg:mb-16 transition-all duration-1000 ease-out ${instHeaderVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
-            <h2 className="font-museo-moderno text-[22px] sm:text-[26px] lg:text-[32px] xl:text-[36px] text-[#364b56] mb-4 lg:mb-6">Institutional Partners</h2>
-            <p className="font-helvetica-now text-[#363636] text-sm sm:text-base max-w-[70%] mx-auto">
+          <div ref={instHeaderRef} className={`mb-8 sm:mb-12 lg:mb-16 transition-all duration-1000 ease-out ${instHeaderVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
+            <h2 className="font-museo-moderno text-[18px] xs:text-[20px] sm:text-[24px] md:text-[26px] lg:text-[32px] xl:text-[36px] text-[#364b56] mb-3 sm:mb-4 lg:mb-6">Institutional Partners</h2>
+            <p className="font-helvetica-now text-[#363636] text-[13px] xs:text-[14px] sm:text-[15px] lg:text-base max-w-[70%] mx-auto">
               Banking and investment relationships that enable execution with discretion.
             </p>
           </div>
@@ -181,11 +181,11 @@ const Partners = () => {
       </section>
 
       {/* Section 3: Technology Partners */}
-      <section className="h-screen flex items-center justify-center px-4 sm:px-8 lg:px-12 py-20 bg-[hsl(var(--almara-light-text))] partners-gradient-bg">
+      <section className="h-screen flex items-center justify-center px-4 sm:px-6 lg:px-12 py-16 sm:py-20 bg-[hsl(var(--almara-light-text))] partners-gradient-bg">
         <div className="max-w-4xl mx-auto text-center relative z-10">
-          <div ref={techHeaderRef} className={`mb-12 lg:mb-16 transition-all duration-1000 ease-out ${techHeaderVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
-            <h2 className="font-museo-moderno text-[22px] sm:text-[26px] lg:text-[32px] xl:text-[36px] text-[#364b56] mb-4 lg:mb-6">Technology Partners</h2>
-            <p className="font-helvetica-now text-[#363636] text-sm sm:text-base max-w-[85%] mx-auto">
+          <div ref={techHeaderRef} className={`mb-8 sm:mb-12 lg:mb-16 transition-all duration-1000 ease-out ${techHeaderVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
+            <h2 className="font-museo-moderno text-[18px] xs:text-[20px] sm:text-[24px] md:text-[26px] lg:text-[32px] xl:text-[36px] text-[#364b56] mb-3 sm:mb-4 lg:mb-6">Technology Partners</h2>
+            <p className="font-helvetica-now text-[#363636] text-[13px] xs:text-[14px] sm:text-[15px] lg:text-base max-w-[85%] mx-auto">
               Infrastructure for secure sourcing, governance, and reporting.
             </p>
           </div>
@@ -221,11 +221,11 @@ const Partners = () => {
       </section>
 
       {/* Section 4: Project Partners */}
-      <section className="h-screen flex items-center justify-center px-4 sm:px-8 lg:px-12 py-20 bg-[hsl(var(--almara-light-text))] partners-gradient-bg">
+      <section className="h-screen flex items-center justify-center px-4 sm:px-6 lg:px-12 py-16 sm:py-20 bg-[hsl(var(--almara-light-text))] partners-gradient-bg">
         <div className="max-w-6xl mx-auto text-center relative z-10">
-          <div ref={projHeaderRef} className={`mb-12 lg:mb-16 transition-all duration-1000 ease-out ${projHeaderVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
-            <h2 className="font-museo-moderno text-[22px] sm:text-[26px] lg:text-[32px] xl:text-[36px] text-[#364b56] mb-4 lg:mb-6">Project Partners</h2>
-            <p className="font-helvetica-now text-[#363636] text-sm sm:text-base max-w-[85%] mx-auto">
+          <div ref={projHeaderRef} className={`mb-8 sm:mb-12 lg:mb-16 transition-all duration-1000 ease-out ${projHeaderVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
+            <h2 className="font-museo-moderno text-[18px] xs:text-[20px] sm:text-[24px] md:text-[26px] lg:text-[32px] xl:text-[36px] text-[#364b56] mb-3 sm:mb-4 lg:mb-6">Project Partners</h2>
+            <p className="font-helvetica-now text-[#363636] text-[13px] xs:text-[14px] sm:text-[15px] lg:text-base max-w-[85%] mx-auto">
               Specialists we mobilise for specific mandates.
             </p>
           </div>
@@ -293,10 +293,10 @@ const Partners = () => {
       </section>
 
       {/* Section 5: Call to Action */}
-      <section className="h-screen flex items-center justify-center px-4 sm:px-8 lg:px-12 py-20 bg-[hsl(var(--almara-light-text))] partners-gradient-bg">
-        <div className="max-w-4xl mx-auto text-center space-y-8 lg:space-y-12 relative z-50">
-          <div ref={ctaHeaderRef} className={`space-y-6 lg:space-y-8 relative z-50 transition-all duration-1000 ease-out ${ctaHeaderVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
-            <h2 className="font-long-cang text-[28px] xs:text-[32px] sm:text-[36px] md:text-[40px] lg:text-[46px] xl:text-5xl text-[#364b56] tracking-[0.05em] opacity-90 leading-tight font-thin uppercase rotate-[3deg] relative z-50">
+      <section className="h-screen flex items-center justify-center px-4 sm:px-6 lg:px-12 py-16 sm:py-20 bg-[hsl(var(--almara-light-text))] partners-gradient-bg">
+        <div className="max-w-4xl mx-auto text-center space-y-6 sm:space-y-8 lg:space-y-12 relative z-50">
+          <div ref={ctaHeaderRef} className={`space-y-4 sm:space-y-6 lg:space-y-8 relative z-50 transition-all duration-1000 ease-out ${ctaHeaderVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
+            <h2 className="font-long-cang text-[20px] xs:text-[24px] sm:text-[28px] md:text-[32px] lg:text-[36px] xl:text-[40px] 2xl:text-5xl text-[#364b56] tracking-[0.05em] opacity-90 leading-tight font-thin uppercase rotate-[3deg] relative z-50">
               Tell us what you're building,<br />
               we'll assemble the right team
             </h2>

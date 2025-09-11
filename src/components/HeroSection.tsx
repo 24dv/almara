@@ -9,8 +9,8 @@ export const HeroSection = () => {
       </div>
       
       {/* Text - Positioned below the circle */}
-      <div className="relative z-10 flex items-center justify-center mt-8 px-4 reveal-up" style={{ animationDelay: '0.6s', animationFillMode: 'both' }}>
-        <h1 className="font-long-cang text-[24px] xs:text-[28px] sm:text-[32px] md:text-[36px] lg:text-[40px] text-almara-subtitle-text tracking-[0em] opacity-90 font-thin text-center">
+      <div className="relative z-10 flex items-center justify-center mt-6 sm:mt-8 px-4 reveal-up" style={{ animationDelay: '0.6s', animationFillMode: 'both' }}>
+        <h1 className="font-long-cang text-[20px] xs:text-[24px] sm:text-[28px] md:text-[32px] lg:text-[36px] xl:text-[40px] text-almara-subtitle-text tracking-[0em] opacity-90 font-thin text-center">
           A SEA OF OPPORTUNITY
         </h1>
       </div>

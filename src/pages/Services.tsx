@@ -73,28 +73,28 @@ const Services = () => {
       </section>
 
       {/* Hero Section */}
-      <section className="h-screen flex items-center justify-center px-4 sm:px-8 lg:px-12 mission-section-gradient relative overflow-hidden">
+      <section className="h-screen flex items-center justify-center px-4 sm:px-6 lg:px-12 mission-section-gradient relative overflow-hidden">
         {/* Background Circle - Spans from header to bottom of section */}
         <img src="/lovable-uploads/a58a04a2-6cc9-41d7-a8c1-bd70d0c8df8f.png" alt="Circle background" className="absolute w-[120vh] h-[120vh] min-w-[800px] min-h-[800px] max-w-[1200px] max-h-[1200px] object-cover bg-transparent top-0 right-0 transform translate-x-[25%] -translate-y-[10%] z-[1] opacity-80 reveal-fade" style={{
           animationDelay: '0.1s',
           animationFillMode: 'both'
         }} loading="eager" fetchPriority="high" />
         
-        <div className="w-full max-w-7xl mx-auto px-4 sm:px-8 lg:px-12 relative z-10">
+        <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-12 relative z-10">
           <div className="w-full flex justify-end">
-            <div className="max-w-6xl text-right space-y-6 lg:space-y-8 reveal-up" style={{
+            <div className="max-w-6xl text-right space-y-4 sm:space-y-6 lg:space-y-8 reveal-up" style={{
               animationDelay: '0.2s',
               animationFillMode: 'both'
             }}>
-          <h1 className="font-museo-moderno text-[24px] sm:text-[28px] lg:text-[32px] xl:text-[36px] text-[#f4eada] tracking-[0.05em] opacity-90 leading-tight">Our Services</h1>
-          <div className="space-y-2">
-            <p className="leading-relaxed text-xs sm:text-sm lg:text-base text-[#f4eada] font-helvetica-now">
+          <h1 className="font-museo-moderno text-[18px] xs:text-[20px] sm:text-[24px] md:text-[28px] lg:text-[32px] xl:text-[36px] text-[#f4eada] tracking-[0.05em] opacity-90 leading-tight">Our Services</h1>
+          <div className="space-y-1 sm:space-y-2">
+            <p className="leading-relaxed text-[12px] xs:text-[13px] sm:text-[14px] lg:text-base text-[#f4eada] font-helvetica-now">
               Family office, alternatives, M&A, and art advisory,
             </p>
-            <p className="leading-relaxed text-xs sm:text-sm lg:text-base text-[#f4eada] font-helvetica-now">
+            <p className="leading-relaxed text-[12px] xs:text-[13px] sm:text-[14px] lg:text-base text-[#f4eada] font-helvetica-now">
               delivered through ongoing counsel
             </p>
-            <p className="leading-relaxed text-xs sm:text-sm lg:text-base text-[#f4eada] font-helvetica-now">
+            <p className="leading-relaxed text-[12px] xs:text-[13px] sm:text-[14px] lg:text-base text-[#f4eada] font-helvetica-now">
               and mandate-led execution.
             </p>
           </div>
@@ -107,8 +107,8 @@ const Services = () => {
       </section>
 
       {/* Interactive Services Section */}
-      <section className="h-screen bg-almara-light-text/20 flex items-start justify-center px-4 sm:px-8 lg:px-12 mission-section-gradient">
-        <div className="max-w-6xl mx-auto pt-32 lg:pt-48 pb-16">
+      <section className="h-screen bg-almara-light-text/20 flex items-start justify-center px-4 sm:px-6 lg:px-12 mission-section-gradient">
+        <div className="max-w-6xl mx-auto pt-24 sm:pt-32 lg:pt-48 pb-16">
           {/* Interactive Circles */}
           <div ref={circlesRef} className={`flex items-center justify-center mb-16 transition-all duration-1000 ease-out ${circlesVisible ? 'opacity-100 transform translate-y-0' : 'opacity-0 transform translate-y-8'}`}>
             {services.map((service, index) => <div key={service.id} className="flex items-center">
@@ -168,10 +168,10 @@ const Services = () => {
                     }} />
                       </div>
                       <div className="w-1/2">
-                        <h3 className="font-helvetica-now text-lg sm:text-xl tracking-wider font-bold mb-4 lg:mb-6 text-[#b3bacb]">
+                        <h3 className="font-helvetica-now text-[16px] xs:text-[17px] sm:text-[18px] lg:text-xl tracking-wider font-bold mb-3 sm:mb-4 lg:mb-6 text-[#b3bacb]">
                           {service.title}
                         </h3>
-                        <p className="text-[#f4eada] leading-relaxed mb-4 lg:mb-6 text-sm sm:text-base">
+                        <p className="text-[#f4eada] leading-relaxed mb-3 sm:mb-4 lg:mb-6 text-[14px] xs:text-[15px] sm:text-[16px]">
                           {service.description}
                         </p>
                         <div className="space-y-3">
@@ -185,7 +185,7 @@ const Services = () => {
                             borderBottom: '6px solid transparent'
                           }} />
                               </div>
-                              <p className="text-[#f4eada] text-sm sm:text-base leading-relaxed">{point}</p>
+                              <p className="text-[#f4eada] text-[13px] xs:text-[14px] sm:text-[15px] leading-relaxed">{point}</p>
                             </div>)}
                         </div>
                       </div>
@@ -193,10 +193,10 @@ const Services = () => {
                 <div style={{
                   maxWidth: '28rem'
                 }}>
-                      <h3 className="font-helvetica-now text-lg sm:text-xl tracking-wider font-bold text-[#f4eada] mb-4 lg:mb-6">
+                      <h3 className="font-helvetica-now text-[16px] xs:text-[17px] sm:text-[18px] lg:text-xl tracking-wider font-bold text-[#f4eada] mb-3 sm:mb-4 lg:mb-6">
                         {service.title}
                       </h3>
-                      <p className="text-[#f4eada] leading-relaxed mb-4 lg:mb-6 text-sm sm:text-base">
+                      <p className="text-[#f4eada] leading-relaxed mb-3 sm:mb-4 lg:mb-6 text-[14px] xs:text-[15px] sm:text-[16px]">
                         {service.description}
                       </p>
                       <div className="space-y-3">
@@ -210,7 +210,7 @@ const Services = () => {
                           borderBottom: '6px solid transparent'
                         }} />
                             </div>
-                            <p className="text-[#f4eada] text-sm sm:text-base leading-relaxed">{point}</p>
+                            <p className="text-[#f4eada] text-[13px] xs:text-[14px] sm:text-[15px] leading-relaxed">{point}</p>
                           </div>)}
                       </div>
                     </div>)}
@@ -221,7 +221,7 @@ const Services = () => {
       </section>
 
       {/* How We Work Section */}
-      <section className="relative h-screen flex items-center justify-center px-4 sm:px-8 lg:px-12 mission-section-gradient overflow-hidden">
+      <section className="relative h-screen flex items-center justify-center px-4 sm:px-6 lg:px-12 mission-section-gradient overflow-hidden">
         {/* Background Circle - Centered and sized to touch top/bottom borders */}
         <img src="/lovable-uploads/a58a04a2-6cc9-41d7-a8c1-bd70d0c8df8f.png" alt="Circle background" className="absolute w-[90vh] h-[90vh] object-cover bg-transparent top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-[1] opacity-60 reveal-fade" style={{
           animationDelay: '0.1s',
@@ -229,45 +229,45 @@ const Services = () => {
         }} loading="lazy" />
         
         <div className="max-w-5xl mx-auto relative z-10">
-          <div ref={titleRef} className={`text-center mb-12 lg:mb-16 transition-all duration-1000 ease-out ${titleVisible ? 'opacity-100 transform translate-y-0' : 'opacity-0 transform translate-y-8'}`}>
-            <h2 className="font-museo-moderno text-[22px] sm:text-[26px] lg:text-[28px] xl:text-[32px] text-[#f4eada]">How We Work</h2>
+          <div ref={titleRef} className={`text-center mb-8 sm:mb-12 lg:mb-16 transition-all duration-1000 ease-out ${titleVisible ? 'opacity-100 transform translate-y-0' : 'opacity-0 transform translate-y-8'}`}>
+            <h2 className="font-museo-moderno text-[18px] xs:text-[20px] sm:text-[24px] md:text-[26px] lg:text-[28px] xl:text-[32px] text-[#f4eada]">How We Work</h2>
           </div>
-          <div ref={topGridRef} className={`grid grid-cols-1 lg:grid-cols-3 gap-8 lg:gap-12 font-helvetica-now text-white/70 mb-12 lg:mb-16 transition-all duration-1000 ease-out ${topGridVisible ? 'opacity-100 transform translate-y-0' : 'opacity-0 transform translate-y-8'}`}>
-            <article className="space-y-3 lg:space-y-4">
-              <h3 className="font-helvetica-now text-lg sm:text-xl tracking-wider font-bold text-[#b3bacb] mb-3 lg:mb-4">ongoing counsel</h3>
-              <p className="text-[#f4eada] leading-relaxed text-sm sm:text-base">
+          <div ref={topGridRef} className={`grid grid-cols-1 lg:grid-cols-3 gap-6 sm:gap-8 lg:gap-12 font-helvetica-now text-white/70 mb-8 sm:mb-12 lg:mb-16 transition-all duration-1000 ease-out ${topGridVisible ? 'opacity-100 transform translate-y-0' : 'opacity-0 transform translate-y-8'}`}>
+            <article className="space-y-2 sm:space-y-3 lg:space-y-4">
+              <h3 className="font-helvetica-now text-[16px] xs:text-[17px] sm:text-[18px] lg:text-xl tracking-wider font-bold text-[#b3bacb] mb-2 sm:mb-3 lg:mb-4">ongoing counsel</h3>
+              <p className="text-[#f4eada] leading-relaxed text-[14px] xs:text-[15px] sm:text-[16px]">
                 We stay close to your world, anticipating needs, coordinating specialists, and maintaining oversight.
               </p>
             </article>
-            <article className="space-y-3 lg:space-y-4">
-              <h3 className="font-helvetica-now text-lg sm:text-xl tracking-wider font-bold text-[#b3bacb] mb-3 lg:mb-4">mandate-led execution</h3>
-              <p className="text-[#f4eada] leading-relaxed text-sm sm:text-base">
+            <article className="space-y-2 sm:space-y-3 lg:space-y-4">
+              <h3 className="font-helvetica-now text-[16px] xs:text-[17px] sm:text-[18px] lg:text-xl tracking-wider font-bold text-[#b3bacb] mb-2 sm:mb-3 lg:mb-4">mandate-led execution</h3>
+              <p className="text-[#f4eada] leading-relaxed text-[14px] xs:text-[15px] sm:text-[16px]">
                 When opportunities arise, we mobilise the right people and drive transactions to completion.
               </p>
             </article>
-            <article className="space-y-3 lg:space-y-4">
-              <h3 className="font-helvetica-now text-lg sm:text-xl tracking-wider font-bold text-[#b3bacb] mb-3 lg:mb-4">orchestrated network</h3>
-              <p className="text-[#f4eada] leading-relaxed text-sm sm:text-base">
+            <article className="space-y-2 sm:space-y-3 lg:space-y-4">
+              <h3 className="font-helvetica-now text-[16px] xs:text-[17px] sm:text-[18px] lg:text-xl tracking-wider font-bold text-[#b3bacb] mb-2 sm:mb-3 lg:mb-4">orchestrated network</h3>
+              <p className="text-[#f4eada] leading-relaxed text-[14px] xs:text-[15px] sm:text-[16px]">
                 Discreet access to private banks, boutiques, legal/tax advisors, researchers, and art-world experts, curated and managed by us.
               </p>
             </article>
           </div>
-          <div ref={bottomGridRef} className={`grid grid-cols-1 lg:grid-cols-3 gap-8 lg:gap-12 font-helvetica-now transition-all duration-1000 ease-out ${bottomGridVisible ? 'opacity-100 transform translate-y-0' : 'opacity-0 transform translate-y-8'}`}>
-            <article className="space-y-3 lg:space-y-4">
-              <h3 className="font-helvetica-now text-lg sm:text-xl tracking-wider font-bold text-[#b3bacb] mb-3 lg:mb-4">who we work with</h3>
-              <p className="text-[#f4eada] leading-relaxed text-sm sm:text-base">
+          <div ref={bottomGridRef} className={`grid grid-cols-1 lg:grid-cols-3 gap-6 sm:gap-8 lg:gap-12 font-helvetica-now transition-all duration-1000 ease-out ${bottomGridVisible ? 'opacity-100 transform translate-y-0' : 'opacity-0 transform translate-y-8'}`}>
+            <article className="space-y-2 sm:space-y-3 lg:space-y-4">
+              <h3 className="font-helvetica-now text-[16px] xs:text-[17px] sm:text-[18px] lg:text-xl tracking-wider font-bold text-[#b3bacb] mb-2 sm:mb-3 lg:mb-4">who we work with</h3>
+              <p className="text-[#f4eada] leading-relaxed text-[14px] xs:text-[15px] sm:text-[16px]">
                 Principals & families · Entrepreneurial investors · Fund managers
               </p>
             </article>
-            <article className="space-y-3 lg:space-y-4">
-              <h3 className="font-helvetica-now text-lg sm:text-xl tracking-wider font-bold text-[#b3bacb] mb-3 lg:mb-4">perspective</h3>
-              <p className="text-[#f4eada] leading-relaxed text-sm sm:text-base">
+            <article className="space-y-2 sm:space-y-3 lg:space-y-4">
+              <h3 className="font-helvetica-now text-[16px] xs:text-[17px] sm:text-[18px] lg:text-xl tracking-wider font-bold text-[#b3bacb] mb-2 sm:mb-3 lg:mb-4">perspective</h3>
+              <p className="text-[#f4eada] leading-relaxed text-[14px] xs:text-[15px] sm:text-[16px]">
                 Research-led and culture-aware, with ties to London Business School and the Sorbonne. We support democracy, the rule of law, European integration, and contemporary visual and performance art.
               </p>
             </article>
-            <article className="space-y-3 lg:space-y-4">
-              <h3 className="font-helvetica-now text-lg sm:text-xl tracking-wider font-bold text-[#b3bacb] mb-3 lg:mb-4">discretion & access</h3>
-              <p className="text-[#f4eada] leading-relaxed text-sm sm:text-base">
+            <article className="space-y-2 sm:space-y-3 lg:space-y-4">
+              <h3 className="font-helvetica-now text-[16px] xs:text-[17px] sm:text-[18px] lg:text-xl tracking-wider font-bold text-[#b3bacb] mb-2 sm:mb-3 lg:mb-4">discretion & access</h3>
+              <p className="text-[#f4eada] leading-relaxed text-[14px] xs:text-[15px] sm:text-[16px]">
                 We collaborate with leading institutions and boutiques. References available on request.
               </p>
             </article>
