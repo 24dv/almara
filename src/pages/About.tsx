@@ -12,26 +12,26 @@ const About = () => {
         animationDelay: '0.2s',
         animationFillMode: 'both'
       }}>
-          {/* Main Tagline */}
-          <h1 className="font-long-cang text-[28px] xs:text-[32px] sm:text-[36px] md:text-[40px] lg:text-[44px] text-almara-subtitle-text tracking-[0.05em] opacity-90 leading-tight font-thin">
-            IN A SEA OF OPPORTUNITIES,<br />
-            DISCERNMENT IS THE TRUE COMPASS
-          </h1>
-          
-          {/* Description Text */}
-          <div className="space-y-6 sm:space-y-8 text-almara-dark-text/80 font-helvetica-now max-w-2xl mx-auto px-2 sm:px-4 md:px-8 lg:px-[40px]">
-            <p className="leading-relaxed text-[#f4eada] text-sm sm:text-base">
-              At ALMARA, we guide passionate investors through the world of 
-              alternative assets: from hedge funds and private equity to real 
-              estate, litigation finance and art.
-            </p>
-            <p className="leading-relaxed text-sm sm:text-base text-[#f4eada]">
-              Blending deep market expertise with a creative spark, we build 
-              strategies as unique as you are. With our network of specialist 
-              partners and top-tier advisors, we uncover distinct opportunities 
-              and drive lasting portfolio value.
-            </p>
-          </div>
+           {/* Main Tagline */}
+           <h1 className="font-long-cang text-[22px] xs:text-[26px] sm:text-[30px] md:text-[36px] lg:text-[40px] xl:text-[44px] text-almara-subtitle-text tracking-[0.05em] opacity-90 leading-tight font-thin">
+             IN A SEA OF OPPORTUNITIES,<br />
+             DISCERNMENT IS THE TRUE COMPASS
+           </h1>
+           
+           {/* Description Text */}
+           <div className="space-y-6 sm:space-y-8 text-almara-dark-text/80 font-helvetica-now max-w-2xl mx-auto px-4 sm:px-6 md:px-8 lg:px-[40px]">
+             <p className="leading-relaxed text-[#f4eada] text-sm sm:text-base">
+               At ALMARA, we guide passionate investors through the world of 
+               alternative assets: from hedge funds and private equity to real 
+               estate, litigation finance and art.
+             </p>
+             <p className="leading-relaxed text-sm sm:text-base text-[#f4eada]">
+               Blending deep market expertise with a creative spark, we build 
+               strategies as unique as you are. With our network of specialist 
+               partners and top-tier advisors, we uncover distinct opportunities 
+               and drive lasting portfolio value.
+             </p>
+           </div>
         </div>
       </section>
 
@@ -63,12 +63,12 @@ const About = () => {
                 ? 'translate-y-0 opacity-100' 
                 : 'translate-y-8 opacity-0'
             }`}>
-              <div className="space-y-2 text-center lg:text-left">
-                <h2 className="font-museo-moderno text-[28px] sm:text-[32px] lg:text-[36px] text-[#363636]">
-                  Tom Meganck
-                </h2>
-                <h3 className="font-helvetica-now text-lg sm:text-xl tracking-wider font-bold text-[#364b56]">founder</h3>
-              </div>
+               <div className="space-y-2 text-center lg:text-left">
+                 <h2 className="font-museo-moderno text-[22px] sm:text-[26px] md:text-[30px] lg:text-[34px] xl:text-[36px] text-[#363636]">
+                   Tom Meganck
+                 </h2>
+                 <h3 className="font-helvetica-now text-base sm:text-lg md:text-xl tracking-wider font-bold text-[#364b56]">founder</h3>
+               </div>
               
               <div className="space-y-4 sm:space-y-6 text-almara-dark-text/80 font-helvetica-now text-center lg:text-left">
                 <p className="leading-relaxed text-sm sm:text-base text-[#363636]">With a career spanning over two decades, Tom Meganck has guided ultra-high-net-worth families, entrepreneurs, and institutions across complex financial landscapes. His expertise blends private banking, alternative investments, and multi-jurisdictional structuring with a uniquely personal approach.
@@ -129,10 +129,10 @@ const About = () => {
                 <p className="leading-relaxed text-base text-[#363636]">Tom has lived and worked in Brussels, Luxembourg, Monaco, London, Hong Kong, and Lisbon, cultivating a global network and local fluency in the world’s key financial and cultural hubs. Almara reflects his belief in discreet, holistic advisory, where trust, excellence, and long-term perspective drive every decision.</p>
               </div>
               
-              {/* Call to Action */}
-              <div className="pt-6">
-                <Button variant="call" size="call" className="font-helvetica-now">get in touch</Button>
-              </div>
+               {/* Call to Action */}
+               <div className="pt-6">
+                 <Button variant="call" size="call" className="font-helvetica-now text-sm sm:text-base">get in touch</Button>
+               </div>
             </div>
           </div>
         </div>

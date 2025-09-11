@@ -86,20 +86,20 @@ const Services = () => {
               animationDelay: '0.2s',
               animationFillMode: 'both'
             }}>
-          <h1 className="font-museo-moderno text-[28px] sm:text-[32px] lg:text-[36px] text-[#f4eada] tracking-[0.05em] opacity-90 leading-tight">Our Services</h1>
+          <h1 className="font-museo-moderno text-[24px] sm:text-[28px] md:text-[32px] lg:text-[36px] text-[#f4eada] tracking-[0.05em] opacity-90 leading-tight">Our Services</h1>
           <div className="space-y-2">
-            <p className="leading-relaxed text-sm sm:text-base lg:text-base text-[#f4eada] font-helvetica-now">
+            <p className="leading-relaxed text-sm sm:text-base text-[#f4eada] font-helvetica-now">
               Family office, alternatives, M&A, and art advisory,
             </p>
-            <p className="leading-relaxed text-sm sm:text-base lg:text-base text-[#f4eada] font-helvetica-now">
+            <p className="leading-relaxed text-sm sm:text-base text-[#f4eada] font-helvetica-now">
               delivered through ongoing counsel
             </p>
-            <p className="leading-relaxed text-sm sm:text-base lg:text-base text-[#f4eada] font-helvetica-now">
+            <p className="leading-relaxed text-sm sm:text-base text-[#f4eada] font-helvetica-now">
               and mandate-led execution.
             </p>
           </div>
           <div className="pt-4 sm:pt-6">
-            <Button variant="call" size="call" className="font-helvetica-now">request a call</Button>
+            <Button variant="call" size="call" className="font-helvetica-now text-sm sm:text-base">request a call</Button>
           </div>
             </div>
           </div>
@@ -165,7 +165,7 @@ const Services = () => {
                     }} />
                       </div>
                       <div className="w-full md:w-1/2">
-                        <h3 className="font-helvetica-now text-lg sm:text-xl tracking-wider font-bold mb-4 sm:mb-6 text-[#b3bacb] text-center md:text-left">
+                        <h3 className="font-helvetica-now text-base sm:text-lg md:text-xl tracking-wider font-bold mb-4 sm:mb-6 text-[#b3bacb] text-center md:text-left">
                           {service.title}
                         </h3>
                         <p className="text-[#f4eada] leading-relaxed mb-4 sm:mb-6 text-sm sm:text-base text-center md:text-left">
@@ -225,46 +225,46 @@ const Services = () => {
         
         <div className="max-w-5xl mx-auto relative z-10">
           <div ref={titleRef} className={`text-center mb-12 sm:mb-16 transition-all duration-1000 ease-out ${titleVisible ? 'opacity-100 transform translate-y-0' : 'opacity-0 transform translate-y-8'}`}>
-            <h2 className="font-museo-moderno text-[24px] sm:text-[28px] lg:text-[32px] text-[#f4eada]">How We Work</h2>
+            <h2 className="font-museo-moderno text-[20px] sm:text-[24px] md:text-[28px] lg:text-[32px] text-[#f4eada]">How We Work</h2>
           </div>
           <div ref={topGridRef} className={`grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 sm:gap-10 lg:gap-12 font-helvetica-now text-white/70 mb-12 sm:mb-16 transition-all duration-1000 ease-out ${topGridVisible ? 'opacity-100 transform translate-y-0' : 'opacity-0 transform translate-y-8'}`}>
             <article className="space-y-3 sm:space-y-4 text-center md:text-left">
-              <h3 className="font-helvetica-now text-lg sm:text-xl tracking-wider font-bold text-[#b3bacb] mb-3 sm:mb-4">ongoing counsel</h3>
-              <p className="text-[#f4eada] leading-relaxed text-sm sm:text-base">
-                We stay close to your world, anticipating needs, coordinating specialists, and maintaining oversight.
-              </p>
+               <h3 className="font-helvetica-now text-base sm:text-lg md:text-xl tracking-wider font-bold text-[#b3bacb] mb-3 sm:mb-4">ongoing counsel</h3>
+               <p className="text-[#f4eada] leading-relaxed text-sm sm:text-base">
+                 We stay close to your world, anticipating needs, coordinating specialists, and maintaining oversight.
+               </p>
             </article>
             <article className="space-y-3 sm:space-y-4 text-center md:text-left">
-              <h3 className="font-helvetica-now text-lg sm:text-xl tracking-wider font-bold text-[#b3bacb] mb-3 sm:mb-4">mandate-led execution</h3>
-              <p className="text-[#f4eada] leading-relaxed text-sm sm:text-base">
-                When opportunities arise, we mobilise the right people and drive transactions to completion.
-              </p>
+               <h3 className="font-helvetica-now text-base sm:text-lg md:text-xl tracking-wider font-bold text-[#b3bacb] mb-3 sm:mb-4">mandate-led execution</h3>
+               <p className="text-[#f4eada] leading-relaxed text-sm sm:text-base">
+                 When opportunities arise, we mobilise the right people and drive transactions to completion.
+               </p>
             </article>
             <article className="space-y-3 sm:space-y-4 text-center md:text-left md:col-span-2 lg:col-span-1">
-              <h3 className="font-helvetica-now text-lg sm:text-xl tracking-wider font-bold text-[#b3bacb] mb-3 sm:mb-4">orchestrated network</h3>
-              <p className="text-[#f4eada] leading-relaxed text-sm sm:text-base">
-                Discreet access to private banks, boutiques, legal/tax advisors, researchers, and art-world experts, curated and managed by us.
-              </p>
+               <h3 className="font-helvetica-now text-base sm:text-lg md:text-xl tracking-wider font-bold text-[#b3bacb] mb-3 sm:mb-4">orchestrated network</h3>
+               <p className="text-[#f4eada] leading-relaxed text-sm sm:text-base">
+                 Discreet access to private banks, boutiques, legal/tax advisors, researchers, and art-world experts, curated and managed by us.
+               </p>
             </article>
           </div>
           <div ref={bottomGridRef} className={`grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 sm:gap-10 lg:gap-12 font-helvetica-now transition-all duration-1000 ease-out ${bottomGridVisible ? 'opacity-100 transform translate-y-0' : 'opacity-0 transform translate-y-8'}`}>
             <article className="space-y-3 sm:space-y-4 text-center md:text-left">
-              <h3 className="font-helvetica-now text-lg sm:text-xl tracking-wider font-bold text-[#b3bacb] mb-3 sm:mb-4">who we work with</h3>
-              <p className="text-[#f4eada] leading-relaxed text-sm sm:text-base">
-                Principals & families · Entrepreneurial investors · Fund managers
-              </p>
+               <h3 className="font-helvetica-now text-base sm:text-lg md:text-xl tracking-wider font-bold text-[#b3bacb] mb-3 sm:mb-4">who we work with</h3>
+               <p className="text-[#f4eada] leading-relaxed text-sm sm:text-base">
+                 Principals & families · Entrepreneurial investors · Fund managers
+               </p>
             </article>
             <article className="space-y-3 sm:space-y-4 text-center md:text-left">
-              <h3 className="font-helvetica-now text-lg sm:text-xl tracking-wider font-bold text-[#b3bacb] mb-3 sm:mb-4">perspective</h3>
-              <p className="text-[#f4eada] leading-relaxed text-sm sm:text-base">
-                Research-led and culture-aware, with ties to London Business School and the Sorbonne. We support democracy, the rule of law, European integration, and contemporary visual and performance art.
-              </p>
+               <h3 className="font-helvetica-now text-base sm:text-lg md:text-xl tracking-wider font-bold text-[#b3bacb] mb-3 sm:mb-4">perspective</h3>
+               <p className="text-[#f4eada] leading-relaxed text-sm sm:text-base">
+                 Research-led and culture-aware, with ties to London Business School and the Sorbonne. We support democracy, the rule of law, European integration, and contemporary visual and performance art.
+               </p>
             </article>
             <article className="space-y-3 sm:space-y-4 text-center md:text-left md:col-span-2 lg:col-span-1">
-              <h3 className="font-helvetica-now text-lg sm:text-xl tracking-wider font-bold text-[#b3bacb] mb-3 sm:mb-4">discretion & access</h3>
-              <p className="text-[#f4eada] leading-relaxed text-sm sm:text-base">
-                We collaborate with leading institutions and boutiques. References available on request.
-              </p>
+               <h3 className="font-helvetica-now text-base sm:text-lg md:text-xl tracking-wider font-bold text-[#b3bacb] mb-3 sm:mb-4">discretion & access</h3>
+               <p className="text-[#f4eada] leading-relaxed text-sm sm:text-base">
+                 We collaborate with leading institutions and boutiques. References available on request.
+               </p>
             </article>
           </div>
         </div>

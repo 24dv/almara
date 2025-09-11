@@ -15,14 +15,14 @@ export const MobileMenu = () => {
   const location = useLocation();
 
   return (
-    <header className="xl:hidden fixed top-0 left-0 right-0 z-[60]">
-      <div className="px-4 py-3">
+    <header className="xl:hidden fixed top-0 left-0 right-0 z-[60] bg-gradient-to-b from-[hsl(var(--almara-light-text))] to-transparent backdrop-blur-sm">
+      <div className="px-4 py-4 sm:py-5">
         <div className="flex items-center justify-between">
-          <Link to="/" aria-label="ALMARA home" className="transition-opacity hover:opacity-80">
+          <Link to="/" aria-label="ALMARA home" className="transition-all duration-300 hover:opacity-80 hover:scale-105">
             <img
               src="/lovable-uploads/889a0efd-ed5b-448b-a911-54ea486f744c.png"
               alt="ALMARA logo"
-              className="h-7 sm:h-8 opacity-90"
+              className="h-8 sm:h-9 opacity-90"
             />
           </Link>
 
@@ -32,7 +32,7 @@ export const MobileMenu = () => {
                 variant="ghost"
                 size="icon"
                 aria-label="Open menu"
-                className="hover-scale"
+                className="h-11 w-11 rounded-xl transition-all duration-300 hover:bg-[hsl(var(--almara-dark-blue))] hover:text-[hsl(var(--almara-light-text))] hover:scale-105 active:scale-95"
               >
                 <Menu className="h-6 w-6" />
               </Button>
@@ -40,33 +40,56 @@ export const MobileMenu = () => {
 
             <SheetContent
               side="right"
-              className="w-full sm:w-[420px] bg-background border-none"
+              className="w-full sm:w-[420px] bg-[hsl(var(--almara-light-text))] border-none backdrop-blur-xl"
             >
-              <nav className="mt-16 px-4">
-                <ul className="space-y-4">
-                  {navigationItems.map((item) => (
-                    <li key={item.href}>
+              <div className="absolute inset-0 bg-gradient-to-br from-[hsl(var(--almara-light-text))] via-[hsl(var(--almara-light-blue))]/30 to-[hsl(var(--almara-dark-blue))]/10" />
+              
+              <nav className="relative z-10 mt-20 px-6">
+                <ul className="space-y-6">
+                  {navigationItems.map((item, index) => (
+                    <li key={item.href} style={{ animationDelay: `${(index + 1) * 100}ms` }} className="animate-fade-in">
                       <SheetClose asChild>
                         <Link
                           to={item.href}
                           className={cn(
-                            "flex items-center px-1 py-2 text-xl sm:text-2xl font-helvetica-now tracking-wide text-foreground/90 transition-opacity hover:opacity-100",
-                            location.pathname === item.href && "text-foreground"
+                            "group flex items-center px-4 py-4 text-xl sm:text-2xl font-helvetica-now tracking-wide transition-all duration-300 rounded-xl min-h-[44px]",
+                            "hover:bg-[hsl(var(--almara-dark-blue))]/10 hover:translate-x-2 active:scale-95",
+                            location.pathname === item.href 
+                              ? "text-[hsl(var(--almara-dark-text))] bg-[hsl(var(--almara-dark-blue))]/15" 
+                              : "text-[hsl(var(--almara-dark-text))]/80 hover:text-[hsl(var(--almara-dark-text))]"
                           )}
                           aria-current={location.pathname === item.href ? "page" : undefined}
                         >
                           <span
                             className={cn(
-                              "mr-3 inline-block h-2.5 w-2.5 rounded-full border border-foreground/20",
-                              location.pathname === item.href && "bg-[hsl(var(--almara-carmine))] border-transparent"
+                              "mr-4 inline-block h-3 w-3 rounded-full border-2 transition-all duration-300 group-hover:scale-110",
+                              location.pathname === item.href 
+                                ? "bg-[hsl(var(--almara-carmine))] border-[hsl(var(--almara-carmine))] shadow-md" 
+                                : "border-[hsl(var(--almara-dark-blue))]/30 group-hover:border-[hsl(var(--almara-carmine))]/60"
                             )}
                           />
-                          <span className="opacity-90">{item.label}</span>
+                          <span className={cn(
+                            "transition-all duration-300",
+                            location.pathname === item.href ? "font-semibold" : "font-normal"
+                          )}>
+                            {item.label}
+                          </span>
                         </Link>
                       </SheetClose>
                     </li>
                   ))}
                 </ul>
+                
+                <div className="mt-12 px-4">
+                  <div className="h-px bg-gradient-to-r from-transparent via-[hsl(var(--almara-dark-blue))]/20 to-transparent mb-8" />
+                  <Button 
+                    variant="call" 
+                    size="call"
+                    className="w-full font-helvetica-now text-base py-4 min-h-[44px] hover:scale-105 active:scale-95 transition-all duration-300"
+                  >
+                    request a call
+                  </Button>
+                </div>
               </nav>
             </SheetContent>
           </Sheet>
