@@ -100,7 +100,7 @@ const Services = () => {
             </p>
           </div>
           <div className="pt-6">
-            <Button variant="call" size="call" className="font-helvetica-now">request a call</Button>
+            <Button variant="call" size="call" className="font-helvetica-now text-xs sm:text-sm">request a call</Button>
           </div>
             </div>
           </div>
