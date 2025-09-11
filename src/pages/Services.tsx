@@ -362,14 +362,15 @@ const Services = () => {
       </section>
 
       {/* How We Work Section */}
-      <section className="relative h-screen flex items-center justify-center px-4 sm:px-6 lg:px-12 mission-section-gradient overflow-hidden">
+      <section className="relative h-screen flex items-center justify-center px-4 sm:px-6 lg:px-12 mission-section-gradient overflow-hidden py-16 sm:py-24">
         {/* Background Circle - Centered and sized to touch top/bottom borders */}
         <img src="/lovable-uploads/a58a04a2-6cc9-41d7-a8c1-bd70d0c8df8f.png" alt="Circle background" className="absolute w-[90vh] h-[90vh] object-cover bg-transparent top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-[1] opacity-60 reveal-fade" style={{
           animationDelay: '0.1s',
           animationFillMode: 'both'
         }} loading="lazy" />
         
-        <div className="max-w-5xl mx-auto relative z-10">
+        <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-12 relative z-10">
+          <div className="max-w-5xl mx-auto">
           <div ref={titleRef} className={`text-center mb-8 sm:mb-12 lg:mb-16 transition-all duration-1000 ease-out ${titleVisible ? 'opacity-100 transform translate-y-0' : 'opacity-0 transform translate-y-8'}`}>
             <h2 className="font-museo-moderno text-[18px] xs:text-[20px] sm:text-[24px] md:text-[26px] lg:text-[28px] xl:text-[32px] text-[#f4eada]">How We Work</h2>
           </div>
@@ -412,6 +413,7 @@ const Services = () => {
                 We collaborate with leading institutions and boutiques. References available on request.
               </p>
             </article>
+          </div>
           </div>
         </div>
       </section>
