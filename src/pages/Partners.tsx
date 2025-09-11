@@ -116,7 +116,7 @@ const Partners = () => {
           </div>
 
           <div ref={instGridRef} className={`transition-all duration-1000 ease-out ${instGridVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
-            <div className="grid gap-6 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 max-w-2xl mx-auto mb-8">
+            <div className="grid gap-6 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 max-w-2xl mx-auto mb-8 px-8 sm:px-0">
               {/* Top row - 3 items */}
               {[{
                 name: "Beonti",
@@ -148,7 +148,7 @@ const Partners = () => {
               ))}
             </div>
             
-            <div className="grid gap-6 grid-cols-1 sm:grid-cols-2 max-w-2xl mx-auto">
+            <div className="grid gap-6 grid-cols-1 sm:grid-cols-2 max-w-2xl mx-auto px-8 sm:px-0">
               {/* Bottom row - 2 items */}
               {[{
                 name: "CIGP",
@@ -190,7 +190,7 @@ const Partners = () => {
             </p>
           </div>
 
-          <div ref={techGridRef} className={`grid gap-6 grid-cols-1 sm:grid-cols-2 max-w-2xl mx-auto transition-all duration-1000 ease-out ${techGridVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
+          <div ref={techGridRef} className={`grid gap-6 grid-cols-1 sm:grid-cols-2 max-w-2xl mx-auto transition-all duration-1000 ease-out px-8 sm:px-0 ${techGridVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
             {[{
               name: "Delio",
               longDesc: "Delio offers a white-label platform that helps financial firms digitise and distribute private market investments."
@@ -231,7 +231,7 @@ const Partners = () => {
           </div>
 
           <div ref={projGridRef} className={`transition-all duration-1000 ease-out ${projGridVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
-            <div className="grid gap-6 grid-cols-1 sm:grid-cols-2 max-w-lg mx-auto mb-8">
+            <div className="grid gap-6 grid-cols-1 sm:grid-cols-2 max-w-lg mx-auto mb-8 px-8 sm:px-0">
               {/* Top row - 2 items */}
               {[{
                 name: "Aquitara",
@@ -260,7 +260,7 @@ const Partners = () => {
               ))}
             </div>
             
-            <div className="grid gap-6 grid-cols-1 sm:grid-cols-2 max-w-lg mx-auto">
+            <div className="grid gap-6 grid-cols-1 sm:grid-cols-2 max-w-lg mx-auto px-8 sm:px-0">
               {/* Bottom row - 2 items */}
               {[{
                 name: "Geneva Technologies",
