@@ -223,9 +223,9 @@ const Services = () => {
           </div>
 
           {/* Mobile Layout - Interactive Service Selection */}
-          <div className="lg:hidden px-4 py-8">
+          <div className="lg:hidden px-6 py-12">
             {/* Mobile Service Navigation */}
-            <div className="flex justify-center gap-8 mb-12 reveal-up" style={{ animationDelay: '0.3s', animationFillMode: 'both' }}>
+            <div className="flex justify-center gap-8 mb-16 reveal-up" style={{ animationDelay: '0.3s', animationFillMode: 'both' }}>
               {services.map((service) => (
                 <button
                   key={service.id}
@@ -258,7 +258,7 @@ const Services = () => {
             </div>
 
             {/* Mobile Service Content */}
-            <div className="relative min-h-[400px] px-6 py-4">
+            <div className="relative min-h-[400px] px-8 py-6">
               {services.map(service => (
                 <div 
                   key={service.id} 
@@ -302,7 +302,7 @@ const Services = () => {
                       </div>
                       
                       {/* Content */}
-                      <div className="text-center space-y-6 px-4">
+                      <div className="text-center space-y-6 px-6">
                         <h3 className="font-helvetica-now almara-h3-mobile tracking-wider font-bold text-[#b3bacb]">
                           {service.title}
                         </h3>
