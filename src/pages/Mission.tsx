@@ -37,17 +37,17 @@ const Mission = () => {
       {/* Mobile Header/Menu */}
       <MobileMenu />
       
-      {/* Header with Logo (desktop only) - now part of first section */}
+      {/* Logo Section */}
+      <section className="absolute top-8 left-1/2 transform -translate-x-1/2 z-20">
+        <Link to="/" className="transition-opacity hover:opacity-80">
+          <img src="/lovable-uploads/889a0efd-ed5b-448b-a911-54ea486f744c.png" alt="ALMARA" className="h-7 sm:h-8 md:h-9 opacity-90" loading="eager" fetchPriority="high" />
+        </Link>
+      </section>
       
       {/* Main Content */}
       <main className="relative z-10 min-h-[calc(100vh-200px)]">
-       {/* Section 1 — Our Mission (includes header) */}
+       {/* Section 1 — Our Mission */}
        <section className="min-h-screen flex flex-col px-4 sm:px-6 md:px-8 lg:px-12 mission-section-gradient py-16 sm:py-20">
-         <header className="relative z-50 hidden lg:flex items-center justify-center pt-8 pb-4">
-           <Link to="/" className="transition-opacity hover:opacity-80">
-             <img src="/lovable-uploads/889a0efd-ed5b-448b-a911-54ea486f744c.png" alt="ALMARA" className="h-7 sm:h-8 md:h-9 opacity-90" />
-           </Link>
-         </header>
         <div className="flex-1 flex items-center justify-center">
           <div className="max-w-lg text-center space-y-6 sm:space-y-8 reveal-up" style={{
             animationDelay: '0.2s',
