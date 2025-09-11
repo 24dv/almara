@@ -5,7 +5,7 @@ const About = () => {
   const { ref: sectionRef, isVisible: sectionVisible } = useScrollReveal<HTMLElement>(0.1);
   const { ref: imageRef, isVisible: imageVisible } = useScrollReveal<HTMLDivElement>(0.1, 200);
   const { ref: contentRef, isVisible: contentVisible } = useScrollReveal<HTMLDivElement>(0.1, 500);
-  return <PageLayout title="About" noGradientOnMobile={true}>
+  return <PageLayout title="About">
       {/* Main Content Section - Full Height */}
       <section className="h-screen flex items-center justify-center px-4 sm:px-6 lg:px-12 py-16 sm:py-20">
         <div className="max-w-3xl text-center space-y-8 sm:space-y-12 lg:space-y-16 reveal-up" style={{
@@ -36,7 +36,7 @@ const About = () => {
       </section>
 
       {/* Founder Section - Flexible Height for Mobile */}
-      <section ref={sectionRef} className="min-h-screen lg:h-screen bg-almara-light-text/20 flex items-center justify-center px-4 sm:px-6 lg:px-12 py-24 sm:py-32">
+      <section ref={sectionRef} className="min-h-screen lg:h-screen bg-almara-light-text/20 flex items-center justify-center px-4 sm:px-6 lg:px-12 py-16 sm:py-20">
         <div className="max-w-7xl mx-auto w-full">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-8 lg:gap-16 items-center h-full">
             {/* Founder Image */}
