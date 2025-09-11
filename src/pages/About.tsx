@@ -64,7 +64,7 @@ const About = () => {
                 : 'translate-y-8 opacity-0'
             }`}>
               <div className="space-y-2">
-                <h2 className="font-museo-moderno almara-h2-mobile text-[#363636]">
+                <h2 className="font-museo-moderno almara-h1-mobile text-[#363636]">
                   Tom Meganck
                 </h2>
                 <h3 className="font-helvetica-now almara-h3-mobile tracking-wider font-bold text-[#364b56]">founder</h3>
