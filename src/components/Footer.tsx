@@ -16,9 +16,12 @@ export const Footer = () => {
         
         {/* Center - Request a Call Button */}
         <div className="flex-shrink-0 text-center lg:mx-8">
-          <Button variant="call-footer" size="call" className="text-xs sm:text-sm">
+          <a 
+            href="mailto:tom@almara.capital" 
+            className="inline-block bg-[hsl(var(--almara-dark-blue))] text-[hsl(var(--almara-light-text))] px-4 py-2 rounded-lg text-xs sm:text-sm font-helvetica-now transition-colors hover:bg-[hsl(var(--almara-dark-blue))]/90"
+          >
             request a call
-          </Button>
+          </a>
         </div>
         
         {/* Bottom/Right Side - Privacy and Legal Notice Links */}
