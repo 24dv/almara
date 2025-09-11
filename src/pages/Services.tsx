@@ -225,30 +225,35 @@ const Services = () => {
           {/* Mobile Layout - Interactive Service Selection */}
           <div className="lg:hidden px-4 py-8">
             {/* Mobile Service Navigation */}
-            <div className="flex flex-wrap justify-center gap-3 mb-12 reveal-up" style={{ animationDelay: '0.3s', animationFillMode: 'both' }}>
+            <div className="flex justify-center gap-8 mb-12 reveal-up" style={{ animationDelay: '0.3s', animationFillMode: 'both' }}>
               {services.map((service) => (
                 <button
                   key={service.id}
                   onClick={() => setActiveService(service.id)}
-                  className={`flex items-center px-4 py-3 rounded-full transition-all duration-300 ${
-                    activeService === service.id 
-                      ? 'bg-[#364b56]/20 text-[#f4eada]' 
-                      : 'bg-transparent text-[#b3bacb]'
-                  }`}
-                >
-                  <div 
-                    className="flex-shrink-0 mr-3"
-                    style={{
-                      width: '40px',
-                      height: '40px',
-                      borderRadius: '50%',
-                      backgroundColor: activeService === service.id ? '#364b56' : 'transparent',
-                      boxShadow: 'inset -4px -4px 8px rgba(255,255,255,0.0), inset 2px 2px 4px rgba(0,0,0,0.7)',
-                      transition: 'background-color 0.4s cubic-bezier(0.4, 0, 0.2, 1)',
-                    }}
-                  />
-                  <span className="text-sm font-medium whitespace-nowrap">{service.title}</span>
-                </button>
+                  className="flex-shrink-0"
+                  style={{
+                    width: '40px',
+                    height: '40px',
+                    borderRadius: '50%',
+                    backgroundColor: activeService === service.id ? '#364b56' : 'transparent',
+                    boxShadow: 'inset -4px -4px 8px rgba(255,255,255,0.0), inset 2px 2px 4px rgba(0,0,0,0.7)',
+                    transition: 'background-color 0.4s cubic-bezier(0.4, 0, 0.2, 1), transform 0.2s ease-out',
+                    transform: 'scale(1)'
+                  }}
+                  onTouchStart={(e) => {
+                    if (activeService !== service.id) {
+                      e.currentTarget.style.backgroundColor = '#364b56';
+                      e.currentTarget.style.transform = 'scale(1.05)';
+                    }
+                  }}
+                  onTouchEnd={(e) => {
+                    if (activeService !== service.id) {
+                      e.currentTarget.style.backgroundColor = 'transparent';
+                      e.currentTarget.style.transform = 'scale(1)';
+                    }
+                  }}
+                  aria-label={`Select ${service.title}`}
+                />
               ))}
             </div>
 
