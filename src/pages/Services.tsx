@@ -372,7 +372,7 @@ const Services = () => {
         <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-12 relative z-10">
           <div className="max-w-5xl mx-auto">
           <div ref={titleRef} className={`text-center mb-8 sm:mb-12 lg:mb-16 transition-all duration-1000 ease-out ${titleVisible ? 'opacity-100 transform translate-y-0' : 'opacity-0 transform translate-y-8'}`}>
-            <h2 className="font-museo-moderno text-[18px] xs:text-[20px] sm:text-[24px] md:text-[26px] lg:text-[28px] xl:text-[32px] text-[#f4eada]">How We Work</h2>
+            <h2 className="font-museo-moderno almara-h1-mobile text-[#f4eada]">How We Work</h2>
           </div>
           <div ref={topGridRef} className={`grid grid-cols-1 lg:grid-cols-3 gap-6 sm:gap-8 lg:gap-12 font-helvetica-now text-white/70 mb-8 sm:mb-12 lg:mb-16 transition-all duration-1000 ease-out ${topGridVisible ? 'opacity-100 transform translate-y-0' : 'opacity-0 transform translate-y-8'}`}>
             <article className="space-y-2 sm:space-y-3 lg:space-y-4">
