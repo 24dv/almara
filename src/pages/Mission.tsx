@@ -70,7 +70,7 @@ const Mission = () => {
       <section className="h-screen flex items-center justify-center px-4 sm:px-6 lg:px-12 mission-section-gradient">
         <div className="max-w-5xl mx-auto bg-gradient-to-r from-transparent via-gray-600/30 to-gray-700/60 rounded-3xl px-4 sm:px-6 md:px-12 lg:px-[120px] py-6 sm:py-8 md:py-12 lg:py-[58px] backdrop-blur-sm">
           <div ref={pillarsHeaderRef} className={`text-center mb-4 sm:mb-6 lg:mb-8 transition-all duration-1000 ease-out ${pillarsHeaderVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
-            <h2 className="font-museo-moderno almara-h2-mobile text-[#f4eada] tracking-[0.05em] opacity-90 leading-tight mb-4 sm:mb-6 lg:mb-8">Our Pillars</h2>
+            <h2 className="font-museo-moderno almara-h1-mobile text-[#f4eada] tracking-[0.05em] opacity-90 leading-tight mb-4 sm:mb-6 lg:mb-8">Our Pillars</h2>
           </div>
           <div ref={pillarsContentRef} className={`space-y-4 sm:space-y-6 lg:space-y-8 font-helvetica-now text-[#f4eada] transition-all duration-1000 ease-out ${pillarsContentVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
             <article className="text-center space-y-2 sm:space-y-3 lg:space-y-4">
@@ -97,7 +97,7 @@ const Mission = () => {
       <section className="h-screen flex items-center justify-center px-4 sm:px-6 lg:px-12 mission-section-gradient">
         <div className="max-w-6xl mx-auto">
           <div ref={practiceHeaderRef} className={`text-center mb-8 sm:mb-12 lg:mb-16 transition-all duration-1000 ease-out ${practiceHeaderVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
-            <h2 className="font-museo-moderno text-[18px] xs:text-[20px] sm:text-[24px] md:text-[26px] lg:text-[32px] xl:text-[36px] text-[#f4eada] tracking-[0.05em] opacity-90 leading-tight">In Practice</h2>
+            <h2 className="font-museo-moderno almara-h1-mobile text-[#f4eada] tracking-[0.05em] opacity-90 leading-tight">In Practice</h2>
           </div>
           <div ref={practiceGridRef} className={`grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 lg:gap-8 xl:gap-12 font-helvetica-now text-[#f4eada] transition-all duration-1000 ease-out ${practiceGridVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
             <div className="flex items-start space-x-4">
