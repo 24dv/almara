@@ -18,19 +18,8 @@ export const MobileMenu = () => {
     <>
       <header className="xl:hidden absolute top-0 left-0 right-0 z-[60]">
         <div className="px-4 py-3">
-          <div className="flex items-center justify-between">
-            <Link to="/" aria-label="ALMARA home" className={cn(
-              "transition-opacity hover:opacity-80",
-              location.pathname === "/" && "hidden"
-            )}>
-              <img
-                src="/lovable-uploads/889a0efd-ed5b-448b-a911-54ea486f744c.png"
-                alt="ALMARA logo"
-                className="h-7 sm:h-8 opacity-90"
-              />
-            </Link>
-
-            <div className="ml-auto">
+        <div className="flex items-center justify-end">
+          <div className="ml-auto">
               <Button
                 variant="ghost"
                 size="icon"
@@ -61,7 +50,7 @@ export const MobileMenu = () => {
         <div className="fixed inset-0 z-50 xl:hidden">
           <div className="fixed inset-0 bg-black/50" onClick={() => setIsOpen(false)} />
           <div className="fixed right-0 top-0 h-full w-full sm:w-[420px] almara-gradient-bg">
-            <nav className="mt-16 px-4 relative z-10">
+            <nav className="mt-24 px-4 relative z-10">
               <ul className="space-y-4">
                 {navigationItems.map((item) => (
                   <li key={item.href}>
