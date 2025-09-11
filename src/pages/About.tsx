@@ -86,7 +86,7 @@ const About = () => {
                         borderBottom: '4px solid transparent'
                       }} />
                     </div>
-                    <p className="text-[#f4eada] leading-relaxed">Founded and led a corporate services firm in London and Luxembourg.</p>
+                    <p className="text-[#f4eada] leading-relaxed text-sm sm:text-base">Founded and led a corporate services firm in London and Luxembourg.</p>
                   </div>
                   <div className="flex items-start space-x-3">
                     <div className="flex-shrink-0 mt-2">
@@ -98,7 +98,7 @@ const About = () => {
                         borderBottom: '6px solid transparent'
                       }} />
                     </div>
-                    <p className="text-[#f4eada] leading-relaxed">Established a family office advisory practice in Hong Kong.</p>
+                    <p className="text-[#f4eada] leading-relaxed text-sm sm:text-base">Established a family office advisory practice in Hong Kong.</p>
                   </div>
                   <div className="flex items-start space-x-3">
                     <div className="flex-shrink-0 mt-2">
@@ -110,7 +110,7 @@ const About = () => {
                         borderBottom: '6px solid transparent'
                       }} />
                     </div>
-                    <p className="text-[#f4eada] leading-relaxed">2002–2012: Served as Managing Director of a significant Single Family Office spanning New York, Luxembourg, Monaco, and Hong Kong, with a focus on hedge funds, private equity, and litigation funding.</p>
+                    <p className="text-[#f4eada] leading-relaxed text-sm sm:text-base">2002–2012: Served as Managing Director of a significant Single Family Office spanning New York, Luxembourg, Monaco, and Hong Kong, with a focus on hedge funds, private equity, and litigation funding.</p>
                   </div>
                   <div className="flex items-start space-x-3">
                     <div className="flex-shrink-0 mt-2">
@@ -122,7 +122,7 @@ const About = () => {
                         borderBottom: '6px solid transparent'
                       }} />
                     </div>
-                    <p className="text-[#f4eada] leading-relaxed">Began his career in private and merchant banking in Luxembourg and Brussels.</p>
+                    <p className="text-[#f4eada] leading-relaxed text-sm sm:text-base">Began his career in private and merchant banking in Luxembourg and Brussels.</p>
                   </div>
                 </div>
                 
