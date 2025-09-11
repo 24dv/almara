@@ -16,7 +16,7 @@ export const MobileMenu = () => {
 
   return (
     <>
-      <header className="xl:hidden absolute top-0 left-0 right-0 z-[60]">
+      <header className="lg:hidden absolute top-0 left-0 right-0 z-[60]">
         <div className="px-4 py-3">
         <div className="flex items-center justify-between">
           <Link to="/" aria-label="ALMARA home" className={cn(
@@ -58,7 +58,7 @@ export const MobileMenu = () => {
 
       {/* Mobile Menu Overlay */}
       {isOpen && (
-        <div className="fixed inset-0 z-50 xl:hidden">
+        <div className="fixed inset-0 z-50 lg:hidden">
           <div className="fixed inset-0 bg-black/50" onClick={() => setIsOpen(false)} />
           <div className="fixed right-0 top-0 h-full w-full sm:w-[420px] almara-gradient-bg">
             <nav className="mt-24 px-4 relative z-10">

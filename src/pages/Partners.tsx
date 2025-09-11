@@ -75,7 +75,7 @@ const Partners = () => {
       {/* Section 1: Our Partners - Hero with extended background including header */}
       <section className="h-screen flex flex-col bg-[hsl(var(--almara-light-text))] partners-gradient-bg relative">
         {/* Header with logo - now part of the section */}
-        <header className="relative z-50 hidden xl:flex items-center justify-center pt-8 pb-4">
+        <header className="relative z-50 hidden lg:flex items-center justify-center pt-8 pb-4">
           <Link to="/" className="transition-opacity hover:opacity-80 relative z-50">
             <img src="/lovable-uploads/889a0efd-ed5b-448b-a911-54ea486f744c.png" alt="ALMARA" className="h-7 sm:h-8 md:h-9 opacity-90" />
           </Link>
