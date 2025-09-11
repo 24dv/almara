@@ -110,65 +110,120 @@ const Services = () => {
       {/* Interactive Services Section */}
       <section className="h-screen bg-almara-light-text/20 flex items-start justify-center px-4 sm:px-6 lg:px-12 mission-section-gradient">
         <div className="max-w-6xl mx-auto pt-24 sm:pt-32 lg:pt-48 pb-16">
-          {/* Interactive Circles */}
-          <div ref={circlesRef} className={`flex items-center justify-center mb-16 transition-all duration-1000 ease-out ${circlesVisible ? 'opacity-100 transform translate-y-0' : 'opacity-0 transform translate-y-8'}`}>
-            {services.map((service, index) => <div key={service.id} className="flex items-center">
-                <button onClick={() => setActiveService(service.id)} className="flex-shrink-0 relative z-30" style={{
-                width: '56px',
-                height: '56px',
-                borderRadius: '50%',
-                backgroundColor: activeService === service.id ? '#364b56' : 'transparent',
-                boxShadow: 'inset -4px -4px 8px rgba(255,255,255,0.0), inset 2px 2px 4px rgba(0,0,0,0.7)',
-                transition: 'background-color 0.4s cubic-bezier(0.4, 0, 0.2, 1), transform 0.2s ease-out',
-                transform: 'scale(1)',
-                position: 'relative',
-                zIndex: 30
-              }} onMouseEnter={e => {
-                if (activeService !== service.id) {
-                  e.currentTarget.style.backgroundColor = '#364b56';
-                  e.currentTarget.style.transform = 'scale(1.05)';
-                }
-              }} onMouseLeave={e => {
-                if (activeService !== service.id) {
-                  e.currentTarget.style.backgroundColor = 'transparent';
-                  e.currentTarget.style.transform = 'scale(1)';
-                }
-              }} aria-label={`Select ${service.title}`} />
+          {/* Interactive Circles - Desktop Only */}
+          <div ref={circlesRef} className={`hidden lg:flex items-center justify-center mb-16 transition-all duration-1000 ease-out ${circlesVisible ? 'opacity-100 transform translate-y-0' : 'opacity-0 transform translate-y-8'}`}>
+            {services.map((service, index) => (
+              <div key={service.id} className="flex items-center">
+                <button 
+                  onClick={() => setActiveService(service.id)} 
+                  className="flex-shrink-0 relative z-30" 
+                  style={{
+                    width: '56px',
+                    height: '56px',
+                    borderRadius: '50%',
+                    backgroundColor: activeService === service.id ? '#364b56' : 'transparent',
+                    boxShadow: 'inset -4px -4px 8px rgba(255,255,255,0.0), inset 2px 2px 4px rgba(0,0,0,0.7)',
+                    transition: 'background-color 0.4s cubic-bezier(0.4, 0, 0.2, 1), transform 0.2s ease-out',
+                    transform: 'scale(1)',
+                    position: 'relative',
+                    zIndex: 30
+                  }} 
+                  onMouseEnter={(e) => {
+                    if (activeService !== service.id) {
+                      e.currentTarget.style.backgroundColor = '#364b56';
+                      e.currentTarget.style.transform = 'scale(1.05)';
+                    }
+                  }} 
+                  onMouseLeave={(e) => {
+                    if (activeService !== service.id) {
+                      e.currentTarget.style.backgroundColor = 'transparent';
+                      e.currentTarget.style.transform = 'scale(1)';
+                    }
+                  }} 
+                  aria-label={`Select ${service.title}`} 
+                />
                 {/* Arrow after each circle except the last */}
-                {index < services.length - 1 && <div className="flex items-center justify-center" style={{
-                width: '192px'
-              }}>
-                    {activeService === service.id && <span className="text-3xl" style={{
-                  color: '#f4eada'
-                }}>
+                {index < services.length - 1 && (
+                  <div className="flex items-center justify-center" style={{ width: '192px' }}>
+                    {activeService === service.id && (
+                      <span className="text-3xl" style={{ color: '#f4eada' }}>
                         ➤
-                      </span>}
-                  </div>}
-              </div>)}
+                      </span>
+                    )}
+                  </div>
+                )}
+              </div>
+            ))}
+          </div>
+
+          {/* Mobile Service Tabs */}
+          <div className="lg:hidden mb-8">
+            <div className="flex flex-wrap gap-2 justify-center">
+              {services.map((service) => (
+                <button
+                  key={service.id}
+                  onClick={() => setActiveService(service.id)}
+                  className={`px-3 py-2 rounded-full text-[12px] xs:text-[13px] font-helvetica-now transition-all duration-300 ${
+                    activeService === service.id 
+                      ? 'bg-[#364b56] text-[#f4eada] border border-[#364b56]' 
+                      : 'bg-transparent text-[#b3bacb] border border-[#b3bacb]/30'
+                  }`}
+                >
+                  {service.title}
+                </button>
+              ))}
+            </div>
           </div>
 
           {/* Service Content */}
-          <div ref={contentRef} className={`relative min-h-[300px] transition-all duration-1000 ease-out ${contentVisible ? 'opacity-100 transform translate-y-0' : 'opacity-0 transform translate-y-8'}`}>
-            <div className="absolute left-0 w-full" style={{
-              marginLeft: 'calc(50% - 400px)',
-              maxWidth: '800px'
+          <div ref={contentRef} className={`relative min-h-[300px] lg:min-h-[300px] transition-all duration-1000 ease-out ${contentVisible ? 'opacity-100 transform translate-y-0' : 'opacity-0 transform translate-y-8'}`}>
+            <div className="lg:absolute lg:left-0 w-full lg:max-w-[800px]" style={{
+              marginLeft: 'calc(50% - 400px)'
             }}>
-              {services.map(service => <div key={service.id} className={`transition-all duration-700 ease-in-out ${activeService === service.id ? 'opacity-100 transform translate-y-0 relative z-10' : 'opacity-0 transform translate-y-2 absolute top-0 pointer-events-none z-0'}`} style={{
-                transitionProperty: 'opacity, transform',
-                willChange: 'opacity, transform'
-              }}>
+              {services.map(service => (
+                <div 
+                  key={service.id} 
+                  className={`transition-all duration-700 ease-in-out ${
+                    activeService === service.id 
+                      ? 'opacity-100 transform translate-y-0 relative z-10' 
+                      : 'opacity-0 transform translate-y-2 lg:absolute lg:top-0 lg:pointer-events-none z-0 hidden lg:block'
+                  }`} 
+                  style={{
+                    transitionProperty: 'opacity, transform',
+                    willChange: 'opacity, transform'
+                  }}
+                >
                   {/* Services with images - Family Office, Art Advisory, Capital M&A, and Alternatives */}
-                  {service.id === 'family-office' || service.id === 'art-advisory' || service.id === 'capital-ma' || service.id === 'alternatives' ? <div className="flex items-start space-x-12">
-                      <div className="w-1/2 flex-shrink-0 relative">
-                        <img src={service.id === 'family-office' ? "/lovable-uploads/0fb235b5-0ef7-4a23-b23c-a09271d1c1ee.png" : service.id === 'art-advisory' ? "/lovable-uploads/24427e5c-c5b4-462c-8320-f420776f39d1.png" : service.id === 'capital-ma' ? "/lovable-uploads/4c877114-c7bc-42b2-aa3d-5cf4f2df46b6.png" : "/lovable-uploads/402e0eb5-ac60-45a4-b299-85280c71cb6d.png"} alt={service.id === 'family-office' ? "Family Office" : service.id === 'art-advisory' ? "Art Advisory" : service.id === 'capital-ma' ? "Capital Introduction & M&A" : "Alternatives"} className="w-full aspect-square object-cover rounded-lg relative z-0" loading="lazy" />
-                        <div className="absolute inset-0 rounded-lg z-0" style={{
-                      background: 'rgba(54, 75, 86, 0.44)',
-                      boxShadow: '0 4px 30px rgba(0, 0, 0, 0.1)',
-                      backdropFilter: 'blur(0px)',
-                      WebkitBackdropFilter: 'blur(0px)'
-                    }} />
+                  {(service.id === 'family-office' || service.id === 'art-advisory' || service.id === 'capital-ma' || service.id === 'alternatives') ? (
+                    <div className="flex flex-col lg:flex-row items-start space-y-4 lg:space-y-0 lg:space-x-12">
+                      <div className="w-full lg:w-1/2 flex-shrink-0 relative">
+                        <img 
+                          src={
+                            service.id === 'family-office' ? "/lovable-uploads/0fb235b5-0ef7-4a23-b23c-a09271d1c1ee.png" :
+                            service.id === 'art-advisory' ? "/lovable-uploads/24427e5c-c5b4-462c-8320-f420776f39d1.png" :
+                            service.id === 'capital-ma' ? "/lovable-uploads/4c877114-c7bc-42b2-aa3d-5cf4f2df46b6.png" :
+                            "/lovable-uploads/402e0eb5-ac60-45a4-b299-85280c71cb6d.png"
+                          } 
+                          alt={
+                            service.id === 'family-office' ? "Family Office" :
+                            service.id === 'art-advisory' ? "Art Advisory" :
+                            service.id === 'capital-ma' ? "Capital Introduction & M&A" :
+                            "Alternatives"
+                          } 
+                          className="w-full aspect-square object-cover rounded-lg relative z-0" 
+                          loading="lazy" 
+                        />
+                        <div 
+                          className="absolute inset-0 rounded-lg z-0" 
+                          style={{
+                            background: 'rgba(54, 75, 86, 0.44)',
+                            boxShadow: '0 4px 30px rgba(0, 0, 0, 0.1)',
+                            backdropFilter: 'blur(0px)',
+                            WebkitBackdropFilter: 'blur(0px)'
+                          }} 
+                        />
                       </div>
-                      <div className="w-1/2">
+                      <div className="w-full lg:w-1/2">
                         <h3 className="font-helvetica-now text-[16px] xs:text-[17px] sm:text-[18px] lg:text-xl tracking-wider font-bold mb-3 sm:mb-4 lg:mb-6 text-[#b3bacb]">
                           {service.title}
                         </h3>
@@ -176,24 +231,26 @@ const Services = () => {
                           {service.description}
                         </p>
                         <div className="space-y-3">
-                          {service.points.map((point, index) => <div key={index} className="flex items-start space-x-3">
+                          {service.points.map((point, index) => (
+                            <div key={index} className="flex items-start space-x-3">
                               <div className="flex-shrink-0 mt-2">
                                 <div style={{
-                            width: '0',
-                            height: '0',
-                            borderLeft: '8px solid #f4eada',
-                            borderTop: '6px solid transparent',
-                            borderBottom: '6px solid transparent'
-                          }} />
+                                  width: '0',
+                                  height: '0',
+                                  borderLeft: '8px solid #f4eada',
+                                  borderTop: '6px solid transparent',
+                                  borderBottom: '6px solid transparent'
+                                }} />
                               </div>
                               <p className="text-[#f4eada] text-[13px] xs:text-[14px] sm:text-[15px] leading-relaxed">{point}</p>
-                            </div>)}
+                            </div>
+                          ))}
                         </div>
                       </div>
-                    </div> : (/* Other services - original layout */
-                <div style={{
-                  maxWidth: '28rem'
-                }}>
+                    </div>
+                  ) : (
+                    /* Other services - original layout */
+                    <div style={{ maxWidth: '28rem' }}>
                       <h3 className="font-helvetica-now text-[16px] xs:text-[17px] sm:text-[18px] lg:text-xl tracking-wider font-bold text-[#f4eada] mb-3 sm:mb-4 lg:mb-6">
                         {service.title}
                       </h3>
@@ -201,21 +258,25 @@ const Services = () => {
                         {service.description}
                       </p>
                       <div className="space-y-3">
-                        {service.points.map((point, index) => <div key={index} className="flex items-start space-x-3">
+                        {service.points.map((point, index) => (
+                          <div key={index} className="flex items-start space-x-3">
                             <div className="flex-shrink-0 mt-2">
                               <div style={{
-                          width: '0',
-                          height: '0',
-                          borderLeft: '8px solid #f4eada',
-                          borderTop: '6px solid transparent',
-                          borderBottom: '6px solid transparent'
-                        }} />
+                                width: '0',
+                                height: '0',
+                                borderLeft: '8px solid #f4eada',
+                                borderTop: '6px solid transparent',
+                                borderBottom: '6px solid transparent'
+                              }} />
                             </div>
                             <p className="text-[#f4eada] text-[13px] xs:text-[14px] sm:text-[15px] leading-relaxed">{point}</p>
-                          </div>)}
+                          </div>
+                        ))}
                       </div>
-                    </div>)}
-                </div>)}
+                    </div>
+                  )}
+                </div>
+              ))}
             </div>
           </div>
         </div>
