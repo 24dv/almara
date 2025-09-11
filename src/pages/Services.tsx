@@ -222,51 +222,132 @@ const Services = () => {
             </div>
           </div>
 
-          {/* Mobile Layout - Vertical Stack with Circles as Indicators */}
-          <div className="lg:hidden space-y-8 reveal-up" style={{ animationDelay: '0.3s', animationFillMode: 'both' }}>
-            {services.map((service, index) => (
-              <div key={service.id} className="relative">
-                {/* Service Header with Circle */}
-                <div className="flex items-center mb-4">
+          {/* Mobile Layout - Interactive Service Selection */}
+          <div className="lg:hidden">
+            {/* Mobile Service Navigation */}
+            <div className="flex flex-wrap justify-center gap-2 mb-8 reveal-up" style={{ animationDelay: '0.3s', animationFillMode: 'both' }}>
+              {services.map((service) => (
+                <button
+                  key={service.id}
+                  onClick={() => setActiveService(service.id)}
+                  className={`flex items-center px-3 py-2 rounded-full transition-all duration-300 ${
+                    activeService === service.id 
+                      ? 'bg-[#364b56] text-[#f4eada]' 
+                      : 'bg-transparent text-[#b3bacb] border border-[#364b56]/30'
+                  }`}
+                >
                   <div 
-                    className="flex-shrink-0 mr-4"
+                    className="w-6 h-6 rounded-full mr-2 flex-shrink-0"
                     style={{
-                      width: '40px',
-                      height: '40px',
-                      borderRadius: '50%',
-                      backgroundColor: '#364b56',
-                      boxShadow: 'inset -4px -4px 8px rgba(255,255,255,0.0), inset 2px 2px 4px rgba(0,0,0,0.7)',
+                      backgroundColor: activeService === service.id ? '#f4eada' : '#364b56',
+                      boxShadow: 'inset -2px -2px 4px rgba(255,255,255,0.0), inset 1px 1px 2px rgba(0,0,0,0.7)',
                     }}
                   />
-                  <h3 className="font-helvetica-now almara-h3-mobile tracking-wider font-bold text-[#b3bacb]">
-                    {service.title}
-                  </h3>
-                </div>
+                  <span className="text-sm font-medium whitespace-nowrap">{service.title}</span>
+                </button>
+              ))}
+            </div>
 
-                {/* Service Content */}
-                <div className="pl-14">
-                  <p className="text-[#f4eada] leading-relaxed mb-4 almara-body-mobile">
-                    {service.description}
-                  </p>
-                  <div className="space-y-2">
-                    {service.points.map((point, pointIndex) => (
-                      <div key={pointIndex} className="flex items-start space-x-3">
-                        <div className="flex-shrink-0 mt-2">
-                          <div style={{
-                            width: '0',
-                            height: '0',
-                            borderLeft: '6px solid #f4eada',
-                            borderTop: '4px solid transparent',
-                            borderBottom: '4px solid transparent'
-                          }} />
-                        </div>
-                        <p className="text-[#f4eada] almara-body-small-mobile leading-relaxed">{point}</p>
+            {/* Mobile Service Content */}
+            <div className="relative min-h-[400px]">
+              {services.map(service => (
+                <div 
+                  key={service.id} 
+                  className={`transition-all duration-500 ease-in-out ${
+                    activeService === service.id 
+                      ? 'opacity-100 transform translate-y-0 relative z-10' 
+                      : 'opacity-0 transform translate-y-4 absolute top-0 pointer-events-none z-0'
+                  }`}
+                  style={{
+                    transitionProperty: 'opacity, transform',
+                    willChange: 'opacity, transform'
+                  }}
+                >
+                  {/* Service with image */}
+                  {(service.id === 'family-office' || service.id === 'art-advisory' || service.id === 'capital-ma' || service.id === 'alternatives') ? (
+                    <div className="space-y-6">
+                      {/* Image */}
+                      <div className="w-full max-w-sm mx-auto relative">
+                        <img 
+                          src={
+                            service.id === 'family-office' ? "/lovable-uploads/0fb235b5-0ef7-4a23-b23c-a09271d1c1ee.png" 
+                            : service.id === 'art-advisory' ? "/lovable-uploads/24427e5c-c5b4-462c-8320-f420776f39d1.png" 
+                            : service.id === 'capital-ma' ? "/lovable-uploads/4c877114-c7bc-42b2-aa3d-5cf4f2df46b6.png" 
+                            : "/lovable-uploads/402e0eb5-ac60-45a4-b299-85280c71cb6d.png"
+                          } 
+                          alt={
+                            service.id === 'family-office' ? "Family Office" 
+                            : service.id === 'art-advisory' ? "Art Advisory" 
+                            : service.id === 'capital-ma' ? "Capital Introduction & M&A" 
+                            : "Alternatives"
+                          } 
+                          className="w-full aspect-square object-cover rounded-lg" 
+                          loading="lazy" 
+                        />
+                        <div className="absolute inset-0 rounded-lg" style={{
+                          background: 'rgba(54, 75, 86, 0.44)',
+                          boxShadow: '0 4px 30px rgba(0, 0, 0, 0.1)',
+                          backdropFilter: 'blur(0px)',
+                          WebkitBackdropFilter: 'blur(0px)'
+                        }} />
                       </div>
-                    ))}
-                  </div>
+                      
+                      {/* Content */}
+                      <div className="text-center space-y-4">
+                        <h3 className="font-helvetica-now almara-h3-mobile tracking-wider font-bold text-[#b3bacb]">
+                          {service.title}
+                        </h3>
+                        <p className="text-[#f4eada] leading-relaxed almara-body-mobile max-w-md mx-auto">
+                          {service.description}
+                        </p>
+                        <div className="space-y-3 max-w-md mx-auto">
+                          {service.points.map((point, index) => (
+                            <div key={index} className="flex items-start space-x-3 text-left">
+                              <div className="flex-shrink-0 mt-2">
+                                <div style={{
+                                  width: '0',
+                                  height: '0',
+                                  borderLeft: '6px solid #f4eada',
+                                  borderTop: '4px solid transparent',
+                                  borderBottom: '4px solid transparent'
+                                }} />
+                              </div>
+                              <p className="text-[#f4eada] almara-body-small-mobile leading-relaxed">{point}</p>
+                            </div>
+                          ))}
+                        </div>
+                      </div>
+                    </div>
+                  ) : (
+                    /* Service without image */
+                    <div className="text-center space-y-4 max-w-md mx-auto">
+                      <h3 className="font-helvetica-now almara-h3-mobile tracking-wider font-bold text-[#b3bacb]">
+                        {service.title}
+                      </h3>
+                      <p className="text-[#f4eada] leading-relaxed almara-body-mobile">
+                        {service.description}
+                      </p>
+                      <div className="space-y-3">
+                        {service.points.map((point, index) => (
+                          <div key={index} className="flex items-start space-x-3 text-left">
+                            <div className="flex-shrink-0 mt-2">
+                              <div style={{
+                                width: '0',
+                                height: '0',
+                                borderLeft: '6px solid #f4eada',
+                                borderTop: '4px solid transparent',
+                                borderBottom: '4px solid transparent'
+                              }} />
+                            </div>
+                            <p className="text-[#f4eada] almara-body-small-mobile leading-relaxed">{point}</p>
+                          </div>
+                        ))}
+                      </div>
+                    </div>
+                  )}
                 </div>
-              </div>
-            ))}
+              ))}
+            </div>
           </div>
         </div>
       </section>
