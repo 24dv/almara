@@ -31,13 +31,14 @@ export const MobileMenu = () => {
           </Link>
 
           <div className="ml-auto">
-            <Sheet onOpenChange={setIsOpen}>
+            <Sheet open={isOpen} onOpenChange={setIsOpen}>
               <SheetTrigger asChild>
                 <Button
                   variant="ghost"
                   size="icon"
-                  aria-label="Open menu"
+                  aria-label={isOpen ? "Close menu" : "Open menu"}
                   className="hover:bg-transparent p-0 w-10 h-10"
+                  onClick={() => setIsOpen(!isOpen)}
                 >
                   <div 
                     className="cursor-pointer"
