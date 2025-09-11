@@ -72,19 +72,20 @@ const Partners = () => {
       {/* Mobile Header/Menu */}
       <MobileMenu />
       
-      {/* Section 1: Our Partners - Hero with extended background including header */}
+      {/* Logo Section */}
+      <section className="absolute top-8 left-1/2 transform -translate-x-1/2 z-20">
+        <Link to="/" className="transition-opacity hover:opacity-80">
+          <img src="/lovable-uploads/889a0efd-ed5b-448b-a911-54ea486f744c.png" alt="ALMARA" className="h-7 sm:h-8 md:h-9 opacity-90" loading="eager" fetchPriority="high" />
+        </Link>
+      </section>
+
+      {/* Section 1: Our Partners - Hero */}
       <section className="min-h-screen flex flex-col bg-[hsl(var(--almara-light-text))] partners-gradient-bg relative py-16 sm:py-20">
-        {/* Header with logo - now part of the section */}
-        <header className="relative z-50 hidden lg:flex items-center justify-center pt-8 pb-4">
-          <Link to="/" className="transition-opacity hover:opacity-80 relative z-50">
-            <img src="/lovable-uploads/889a0efd-ed5b-448b-a911-54ea486f744c.png" alt="ALMARA" className="h-7 sm:h-8 md:h-9 opacity-90" />
-          </Link>
-        </header>
         
         {/* Background Circle */}
         <img src="/lovable-uploads/a58a04a2-6cc9-41d7-a8c1-bd70d0c8df8f.png" alt="Circle background" className="absolute w-[70vw] h-[70vw] sm:w-[60vw] sm:h-[60vw] max-w-[600px] max-h-[600px] min-w-[280px] min-h-[280px] object-cover bg-transparent top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-[5] reveal-fade" style={{ animationDelay: '0.1s', animationFillMode: 'both' }} />
         
-        {/* Main Content - Better centered in remaining space */}
+        {/* Main Content */}
         <div className="flex-1 flex items-center justify-center px-4 sm:px-6 md:px-8 lg:px-12 relative z-10">
           <div className="max-w-lg text-center relative z-10 reveal-up" style={{ animationDelay: '0.3s', animationFillMode: 'both' }}>
             {/* Content */}
