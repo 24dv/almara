@@ -16,9 +16,9 @@ export const Footer = () => {
         
         {/* Center - Request a Call Button */}
         <div className="flex-shrink-0 text-center lg:mx-8">
-          <Button variant="call-footer" size="call" className="text-xs sm:text-sm">
+          <a href="mailto:tom@almara.capital" className="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0 bg-transparent text-[#f4eada] lowercase rounded-[1px] almara-call-btn relative z-[100] transition-all px-[3rem] py-[0.85rem] font-helvetica-now tracking-wider font-bold h-auto text-xs sm:text-sm">
             request a call
-          </Button>
+          </a>
         </div>
         
         {/* Bottom/Right Side - Privacy and Legal Notice Links */}
