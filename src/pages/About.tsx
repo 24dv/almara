@@ -67,7 +67,7 @@ const About = () => {
                 <h2 className="font-museo-moderno almara-h1-mobile text-[#363636]">
                   Tom Meganck
                 </h2>
-                <h3 className="font-helvetica-now almara-h3-mobile tracking-wider font-bold text-[#364b56]">founder</h3>
+                <h3 className="font-helvetica-now almara-h3-mobile lg:text-xl tracking-wider font-bold text-[#364b56]">founder</h3>
               </div>
               
               <div className="space-y-3 sm:space-y-4 lg:space-y-6 text-almara-dark-text/80 font-helvetica-now">
