@@ -303,7 +303,7 @@ const Services = () => {
                       
                       {/* Content */}
                       <div className="text-center space-y-6 px-2">
-                        <h3 className="font-helvetica-now almara-h3-mobile tracking-wider font-bold text-[#b3bacb]">
+                        <h3 className="font-helvetica-now text-[16px] xs:text-[17px] sm:text-[18px] lg:text-xl tracking-wider font-bold text-[#b3bacb]">
                           {service.title}
                         </h3>
                         <p className="text-[#f4eada] leading-relaxed almara-body-mobile max-w-xl mx-auto">
@@ -330,7 +330,7 @@ const Services = () => {
                   ) : (
                     /* Service without image */
                     <div className="text-center space-y-6 max-w-xl mx-auto px-2">
-                      <h3 className="font-helvetica-now almara-h3-mobile tracking-wider font-bold text-[#b3bacb]">
+                      <h3 className="font-helvetica-now text-[16px] xs:text-[17px] sm:text-[18px] lg:text-xl tracking-wider font-bold text-[#b3bacb]">
                         {service.title}
                       </h3>
                       <p className="text-[#f4eada] leading-relaxed almara-body-mobile">
