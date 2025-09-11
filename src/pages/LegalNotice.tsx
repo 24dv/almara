@@ -18,7 +18,7 @@ const LegalNotice = () => {
           </div>
           
           {/* Content */}
-          <div ref={contentRef} className={`space-y-6 text-[#363636] font-helvetica-now leading-relaxed text-base transition-all duration-1000 ease-out ${contentVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
+          <div ref={contentRef} className={`space-y-6 text-[#363636] font-helvetica-now leading-relaxed text-sm sm:text-base transition-all duration-1000 ease-out ${contentVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
             <p>
               The information provided on this website is for general informational purposes only. Almara Capital does not provide personalized financial, investment, tax, legal, or other professional advice through this site. Any reliance you place on the information presented here is strictly at your own risk.
             </p>
