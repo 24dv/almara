@@ -108,7 +108,7 @@ const Services = () => {
       </section>
 
       {/* Interactive Services Section */}
-      <section className="h-screen bg-almara-light-text/20 flex items-start justify-center px-4 sm:px-6 lg:px-12 mission-section-gradient">
+      <section className="min-h-screen lg:h-screen bg-almara-light-text/20 flex items-start justify-center px-4 sm:px-6 lg:px-12 mission-section-gradient">
         <div className="max-w-6xl mx-auto pt-24 sm:pt-32 lg:pt-48 pb-16">
           
           {/* Desktop Layout - Interactive Circles */}
@@ -258,7 +258,7 @@ const Services = () => {
             </div>
 
             {/* Mobile Service Content */}
-            <div className="relative min-h-[400px] px-8 py-6">
+            <div className="relative min-h-[500px] px-8 py-6">
               {services.map(service => (
                 <div 
                   key={service.id} 
