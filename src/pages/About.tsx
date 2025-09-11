@@ -13,19 +13,19 @@ const About = () => {
         animationFillMode: 'both'
       }}>
           {/* Main Tagline */}
-          <h1 className="font-long-cang text-[20px] xs:text-[24px] sm:text-[28px] md:text-[32px] lg:text-[36px] xl:text-[40px] 2xl:text-5xl text-almara-subtitle-text tracking-[0.05em] opacity-90 leading-tight font-thin">
+          <h1 className="font-long-cang almara-h1-mobile text-almara-subtitle-text tracking-[0.05em] opacity-90 leading-tight font-thin">
             IN A SEA OF OPPORTUNITIES,<br />
             DISCERNMENT IS THE TRUE COMPASS
           </h1>
           
           {/* Description Text */}
           <div className="space-y-4 sm:space-y-6 lg:space-y-8 text-almara-dark-text/80 font-helvetica-now max-w-2xl mx-auto px-2 sm:px-4 lg:px-[40px]">
-            <p className="leading-relaxed text-[14px] xs:text-[15px] sm:text-[16px] text-[#f4eada]">
+            <p className="leading-relaxed almara-body-mobile text-[#f4eada]">
               At ALMARA, we guide passionate investors through the world of 
               alternative assets: from hedge funds and private equity to real 
               estate, litigation finance and art.
             </p>
-            <p className="leading-relaxed text-[14px] xs:text-[15px] sm:text-[16px] text-[#f4eada]">
+            <p className="leading-relaxed almara-body-mobile text-[#f4eada]">
               Blending deep market expertise with a creative spark, we build 
               strategies as unique as you are. With our network of specialist 
               partners and top-tier advisors, we uncover distinct opportunities 
@@ -64,18 +64,18 @@ const About = () => {
                 : 'translate-y-8 opacity-0'
             }`}>
               <div className="space-y-2">
-                <h2 className="font-museo-moderno text-[18px] xs:text-[20px] sm:text-[24px] md:text-[28px] lg:text-[32px] xl:text-[36px] text-[#363636]">
+                <h2 className="font-museo-moderno almara-h2-mobile text-[#363636]">
                   Tom Meganck
                 </h2>
-                <h3 className="font-helvetica-now text-[16px] xs:text-[17px] sm:text-[18px] lg:text-xl tracking-wider font-bold text-[#364b56]">founder</h3>
+                <h3 className="font-helvetica-now almara-h3-mobile tracking-wider font-bold text-[#364b56]">founder</h3>
               </div>
               
               <div className="space-y-3 sm:space-y-4 lg:space-y-6 text-almara-dark-text/80 font-helvetica-now">
-                <p className="leading-relaxed text-[14px] xs:text-[15px] sm:text-[16px] text-[#363636]">With a career spanning over two decades, Tom Meganck has guided ultra-high-net-worth families, entrepreneurs, and institutions across complex financial landscapes. His expertise blends private banking, alternative investments, and multi-jurisdictional structuring with a uniquely personal approach.
+                <p className="leading-relaxed almara-body-mobile text-[#363636]">With a career spanning over two decades, Tom Meganck has guided ultra-high-net-worth families, entrepreneurs, and institutions across complex financial landscapes. His expertise blends private banking, alternative investments, and multi-jurisdictional structuring with a uniquely personal approach.
 
               </p>
                 
-                <div className="space-y-2 sm:space-y-3 text-[13px] xs:text-[14px] sm:text-[15px] opacity-75">
+                <div className="space-y-2 sm:space-y-3 almara-body-small-mobile opacity-75">
                   <div className="flex items-start space-x-3">
                     <div className="flex-shrink-0 mt-2">
                       <div style={{

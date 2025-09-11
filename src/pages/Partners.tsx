@@ -89,16 +89,16 @@ const Partners = () => {
           <div className="max-w-lg text-center relative z-10 reveal-up" style={{ animationDelay: '0.3s', animationFillMode: 'both' }}>
             {/* Content */}
             <div className="space-y-3 sm:space-y-4 lg:space-y-6">
-              <h1 className="font-museo-moderno text-[18px] xs:text-[20px] sm:text-[24px] md:text-[28px] lg:text-[32px] xl:text-[36px] text-almara-light-text tracking-[0.05em] opacity-90 leading-tight">
-                Our Partners
-              </h1>
-              <h2 className="font-helvetica-now text-[16px] xs:text-[17px] sm:text-[18px] lg:text-xl tracking-wider font-bold text-[#364b56] mb-3 sm:mb-4 lg:mb-6">
-                a curated network that amplifies outcomes
-              </h2>
-              <div className="mx-auto max-w-[85%]">
-                <p className="leading-relaxed text-[12px] xs:text-[13px] sm:text-[14px] lg:text-base text-[#363636] font-helvetica-now">
-                  We collaborate with leading institutions, technology platforms, and project specialists—activated selectively, and only when it serves the mandate.
-                </p>
+                <h1 className="font-museo-moderno almara-h1-mobile text-almara-light-text tracking-[0.05em] opacity-90 leading-tight">
+                  Our Partners
+                </h1>
+                <h2 className="font-helvetica-now almara-h3-mobile tracking-wider font-bold text-[#364b56] mb-3 sm:mb-4 lg:mb-6">
+                  a curated network that amplifies outcomes
+                </h2>
+                <div className="mx-auto max-w-[85%]">
+                  <p className="leading-relaxed almara-body-mobile text-[#363636] font-helvetica-now">
+                    We collaborate with leading institutions, technology platforms, and project specialists—activated selectively, and only when it serves the mandate.
+                  </p>
               </div>
             </div>
           </div>

@@ -53,12 +53,12 @@ const Mission = () => {
             animationDelay: '0.2s',
             animationFillMode: 'both'
           }}>
-            <h1 className="font-museo-moderno text-[18px] xs:text-[20px] sm:text-[24px] md:text-[28px] lg:text-[32px] xl:text-[36px] text-[#f4eada] tracking-[0.05em] opacity-90 leading-tight">Our Mission</h1>
+            <h1 className="font-museo-moderno almara-h1-mobile text-[#f4eada] tracking-[0.05em] opacity-90 leading-tight">Our Mission</h1>
             <div className="space-y-3 sm:space-y-4 lg:space-y-6">
-              <p className="leading-relaxed text-[12px] xs:text-[13px] sm:text-[14px] lg:text-base text-[#f4eada] font-helvetica-now">
+              <p className="leading-relaxed almara-body-mobile text-[#f4eada] font-helvetica-now">
                 We bring intention, vision and clarity to foster balanced growth, with kindness and compassion.
               </p>
-              <p className="leading-relaxed text-[12px] xs:text-[13px] sm:text-[14px] lg:text-base text-[#f4eada] font-helvetica-now">
+              <p className="leading-relaxed almara-body-mobile text-[#f4eada] font-helvetica-now">
                 Almara pairs wisdom with execution: grounded judgment, simple structures, and a quiet, steady core that guides how we steward capital, culture, and relationships.
               </p>
             </div>
@@ -70,7 +70,7 @@ const Mission = () => {
       <section className="h-screen flex items-center justify-center px-4 sm:px-6 lg:px-12 mission-section-gradient">
         <div className="max-w-5xl mx-auto bg-gradient-to-r from-transparent via-gray-600/30 to-gray-700/60 rounded-3xl px-4 sm:px-6 md:px-12 lg:px-[120px] py-6 sm:py-8 md:py-12 lg:py-[58px] backdrop-blur-sm">
           <div ref={pillarsHeaderRef} className={`text-center mb-4 sm:mb-6 lg:mb-8 transition-all duration-1000 ease-out ${pillarsHeaderVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
-            <h2 className="font-museo-moderno text-[18px] xs:text-[20px] sm:text-[24px] md:text-[26px] lg:text-[32px] xl:text-[36px] text-[#f4eada] tracking-[0.05em] opacity-90 leading-tight mb-4 sm:mb-6 lg:mb-8">Our Pillars</h2>
+            <h2 className="font-museo-moderno almara-h2-mobile text-[#f4eada] tracking-[0.05em] opacity-90 leading-tight mb-4 sm:mb-6 lg:mb-8">Our Pillars</h2>
           </div>
           <div ref={pillarsContentRef} className={`space-y-4 sm:space-y-6 lg:space-y-8 font-helvetica-now text-[#f4eada] transition-all duration-1000 ease-out ${pillarsContentVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
             <article className="text-center space-y-2 sm:space-y-3 lg:space-y-4">

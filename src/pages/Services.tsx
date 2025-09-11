@@ -87,15 +87,15 @@ const Services = () => {
               animationDelay: '0.2s',
               animationFillMode: 'both'
             }}>
-          <h1 className="font-museo-moderno text-[18px] xs:text-[20px] sm:text-[24px] md:text-[28px] lg:text-[32px] xl:text-[36px] text-[#f4eada] tracking-[0.05em] opacity-90 leading-tight">Our Services</h1>
+          <h1 className="font-museo-moderno almara-h1-mobile text-[#f4eada] tracking-[0.05em] opacity-90 leading-tight">Our Services</h1>
           <div className="space-y-1 sm:space-y-2">
-            <p className="leading-relaxed text-[12px] xs:text-[13px] sm:text-[14px] lg:text-base text-[#f4eada] font-helvetica-now">
+            <p className="leading-relaxed almara-body-mobile text-[#f4eada] font-helvetica-now">
               Family office, alternatives, M&A, and art advisory,
             </p>
-            <p className="leading-relaxed text-[12px] xs:text-[13px] sm:text-[14px] lg:text-base text-[#f4eada] font-helvetica-now">
+            <p className="leading-relaxed almara-body-mobile text-[#f4eada] font-helvetica-now">
               delivered through ongoing counsel
             </p>
-            <p className="leading-relaxed text-[12px] xs:text-[13px] sm:text-[14px] lg:text-base text-[#f4eada] font-helvetica-now">
+            <p className="leading-relaxed almara-body-mobile text-[#f4eada] font-helvetica-now">
               and mandate-led execution.
             </p>
           </div>
