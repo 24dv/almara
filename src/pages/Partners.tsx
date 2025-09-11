@@ -231,7 +231,7 @@ const Partners = () => {
           </div>
 
           <div ref={projGridRef} className={`transition-all duration-1000 ease-out ${projGridVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
-            <div className="grid gap-4 sm:gap-6 md:gap-8 grid-cols-1 sm:grid-cols-2 max-w-3xl mx-auto mb-6 sm:mb-8">
+            <div className="grid gap-4 sm:gap-6 md:gap-8 grid-cols-1 sm:grid-cols-2 max-w-lg mx-auto mb-6 sm:mb-8">
               {/* Top row - 2 items */}
               {[{
                 name: "Aquitara",
@@ -241,7 +241,7 @@ const Partners = () => {
                 longDesc: "A $250M VC firm investing in series A/B Quantum Scaleups."
               }].map(p => (
                 <div key={p.name} className="relative group">
-                  <button className="bg-transparent text-[#f4eada] rounded-xl almara-call-btn relative z-[100] transition-all px-4 sm:px-6 md:px-8 py-6 sm:py-8 md:py-12 text-center w-full min-h-[120px] sm:min-h-[140px] hover:scale-105 active:scale-95">
+                  <button className="bg-transparent text-[#f4eada] rounded-xl almara-call-btn relative z-[100] transition-all px-4 sm:px-6 md:px-8 py-6 sm:py-8 md:py-12 text-center w-full hover:scale-105 active:scale-95">
                     <img src={logos[p.name]} alt={`${p.name} logo`} loading="lazy" className="mx-auto h-10 sm:h-12 md:h-16 object-contain" />
                   </button>
                   
@@ -260,7 +260,7 @@ const Partners = () => {
               ))}
             </div>
             
-            <div className="grid gap-4 sm:gap-6 md:gap-8 grid-cols-1 sm:grid-cols-2 max-w-3xl mx-auto">
+            <div className="grid gap-4 sm:gap-6 md:gap-8 grid-cols-1 sm:grid-cols-2 max-w-lg mx-auto">
               {/* Bottom row - 2 items */}
               {[{
                 name: "Geneva Technologies",
@@ -270,7 +270,7 @@ const Partners = () => {
                 longDesc: "Golborne Capital offers secured private credit to SMEs and growth firms, often as first institutional lender, focused on preservation and niche opportunities."
               }].map(p => (
                 <div key={p.name} className="relative group">
-                  <button className="bg-transparent text-[#f4eada] rounded-xl almara-call-btn relative z-[100] transition-all px-4 sm:px-6 md:px-8 py-6 sm:py-8 md:py-12 text-center w-full min-h-[120px] sm:min-h-[140px] hover:scale-105 active:scale-95">
+                  <button className="bg-transparent text-[#f4eada] rounded-xl almara-call-btn relative z-[100] transition-all px-4 sm:px-6 md:px-8 py-6 sm:py-8 md:py-12 text-center w-full hover:scale-105 active:scale-95">
                     <img src={logos[p.name]} alt={`${p.name} logo`} loading="lazy" className="mx-auto h-10 sm:h-12 md:h-16 object-contain" />
                   </button>
                   
