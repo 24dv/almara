@@ -60,8 +60,8 @@ export const MobileMenu = () => {
       {isOpen && (
         <div className="fixed inset-0 z-50 xl:hidden">
           <div className="fixed inset-0 bg-black/50" onClick={() => setIsOpen(false)} />
-          <div className="fixed right-0 top-0 h-full w-full sm:w-[420px] bg-background border-none">
-            <nav className="mt-16 px-4">
+          <div className="fixed right-0 top-0 h-full w-full sm:w-[420px] almara-gradient-bg">
+            <nav className="mt-16 px-4 relative z-10">
               <ul className="space-y-4">
                 {navigationItems.map((item) => (
                   <li key={item.href}>
@@ -69,17 +69,11 @@ export const MobileMenu = () => {
                       to={item.href}
                       onClick={() => setIsOpen(false)}
                       className={cn(
-                        "flex items-center px-1 py-2 text-xl sm:text-2xl font-helvetica-now tracking-wide text-foreground/90 transition-opacity hover:opacity-100",
-                        location.pathname === item.href && "text-foreground"
+                        "flex items-center px-1 py-2 font-helvetica-now tracking-wide text-base text-almara-dark-text opacity-80 hover:opacity-100 transition-opacity duration-300",
+                        location.pathname === item.href && "text-almara-dark-text opacity-100"
                       )}
                       aria-current={location.pathname === item.href ? "page" : undefined}
                     >
-                      <span
-                        className={cn(
-                          "mr-3 inline-block h-2.5 w-2.5 rounded-full border border-foreground/20",
-                          location.pathname === item.href && "bg-[hsl(var(--almara-carmine))] border-transparent"
-                        )}
-                      />
                       <span className="opacity-90">{item.label}</span>
                     </Link>
                   </li>
