@@ -13,7 +13,7 @@ const About = () => {
         animationFillMode: 'both'
       }}>
           {/* Main Tagline */}
-          <h1 className="font-long-cang almara-h1-mobile text-almara-subtitle-text tracking-[0.05em] opacity-90 leading-tight font-thin">
+          <h1 className="font-long-cang text-[28px] xs:text-[32px] sm:text-[36px] md:text-[32px] lg:text-[36px] xl:text-[40px] 2xl:text-5xl text-almara-subtitle-text tracking-[0.05em] opacity-90 leading-tight font-thin">
             IN A SEA OF OPPORTUNITIES,<br />
             DISCERNMENT IS THE TRUE COMPASS
           </h1>
