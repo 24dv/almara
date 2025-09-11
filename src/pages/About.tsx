@@ -36,7 +36,7 @@ const About = () => {
       </section>
 
       {/* Founder Section - Flexible Height for Mobile */}
-      <section ref={sectionRef} className="min-h-screen lg:h-screen bg-almara-light-text/20 flex items-center justify-center px-4 sm:px-6 lg:px-12 py-16 sm:py-20">
+      <section ref={sectionRef} className="min-h-screen lg:h-screen bg-almara-light-text/20 flex items-center justify-center px-4 sm:px-6 lg:px-12 py-24 sm:py-32">
         <div className="max-w-7xl mx-auto w-full">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-8 lg:gap-16 items-center h-full">
             {/* Founder Image */}
