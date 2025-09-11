@@ -29,17 +29,18 @@ export const MobileMenu = () => {
             />
           </Link>
 
-          <Sheet>
-            <SheetTrigger asChild>
-              <Button
-                variant="ghost"
-                size="icon"
-                aria-label="Open menu"
-                className="hover-scale"
-              >
-                <Menu className="h-6 w-6" />
-              </Button>
-            </SheetTrigger>
+          <div className="ml-auto">
+            <Sheet>
+              <SheetTrigger asChild>
+                <Button
+                  variant="ghost"
+                  size="icon"
+                  aria-label="Open menu"
+                  className="hover:bg-transparent hover:opacity-70 transition-opacity duration-300 p-2"
+                >
+                  <Menu className="h-6 w-6 text-almara-subtitle-text opacity-90" strokeWidth={1.5} />
+                </Button>
+              </SheetTrigger>
 
             <SheetContent
               side="right"
@@ -73,6 +74,7 @@ export const MobileMenu = () => {
               </nav>
             </SheetContent>
           </Sheet>
+          </div>
         </div>
       </div>
     </header>
