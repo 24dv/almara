@@ -71,7 +71,7 @@ const About = () => {
               </div>
               
               <div className="space-y-3 sm:space-y-4 lg:space-y-6 text-almara-dark-text/80 font-helvetica-now">
-                <p className="leading-relaxed almara-body-mobile text-[#363636]">With a career spanning over two decades, Tom Meganck has guided ultra-high-net-worth families, entrepreneurs, and institutions across complex financial landscapes. His expertise blends private banking, alternative investments, and multi-jurisdictional structuring with a uniquely personal approach.
+                <p className="leading-relaxed almara-body-mobile lg:text-[14px] xl:text-[15px] 2xl:text-[16px] text-[#363636]">With a career spanning over two decades, Tom Meganck has guided ultra-high-net-worth families, entrepreneurs, and institutions across complex financial landscapes. His expertise blends private banking, alternative investments, and multi-jurisdictional structuring with a uniquely personal approach.
 
               </p>
                 
@@ -126,7 +126,7 @@ const About = () => {
                   </div>
                 </div>
                 
-                <p className="leading-relaxed almara-body-mobile text-[#363636]">Tom has lived and worked in Brussels, Luxembourg, Monaco, London, Hong Kong, and Lisbon, cultivating a global network and local fluency in the world's key financial and cultural hubs. Almara reflects his belief in discreet, holistic advisory, where trust, excellence, and long-term perspective drive every decision.</p>
+                <p className="leading-relaxed almara-body-mobile lg:text-[14px] xl:text-[15px] 2xl:text-[16px] text-[#363636]">Tom has lived and worked in Brussels, Luxembourg, Monaco, London, Hong Kong, and Lisbon, cultivating a global network and local fluency in the world's key financial and cultural hubs. Almara reflects his belief in discreet, holistic advisory, where trust, excellence, and long-term perspective drive every decision.</p>
                 
                 {/* Desktop only button */}
                 <div className="hidden lg:block pt-6">
