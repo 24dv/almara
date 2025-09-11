@@ -109,7 +109,7 @@ const Partners = () => {
       <section className="h-screen flex items-center justify-center px-4 sm:px-6 lg:px-12 py-16 sm:py-20 bg-[hsl(var(--almara-light-text))] partners-gradient-bg">
         <div className="max-w-6xl mx-auto text-center relative z-10">
           <div ref={instHeaderRef} className={`mb-8 sm:mb-12 lg:mb-16 transition-all duration-1000 ease-out ${instHeaderVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
-            <h2 className="font-museo-moderno text-[18px] xs:text-[20px] sm:text-[24px] md:text-[26px] lg:text-[32px] xl:text-[36px] text-[#364b56] mb-3 sm:mb-4 lg:mb-6">Institutional Partners</h2>
+            <h2 className="font-museo-moderno almara-h1-mobile text-[#364b56] mb-3 sm:mb-4 lg:mb-6">Institutional Partners</h2>
             <p className="font-helvetica-now text-[#363636] text-[13px] xs:text-[14px] sm:text-[15px] lg:text-base max-w-[70%] mx-auto">
               Banking and investment relationships that enable execution with discretion.
             </p>
@@ -184,7 +184,7 @@ const Partners = () => {
       <section className="h-screen flex items-center justify-center px-4 sm:px-6 lg:px-12 py-16 sm:py-20 bg-[hsl(var(--almara-light-text))] partners-gradient-bg">
         <div className="max-w-4xl mx-auto text-center relative z-10">
           <div ref={techHeaderRef} className={`mb-8 sm:mb-12 lg:mb-16 transition-all duration-1000 ease-out ${techHeaderVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
-            <h2 className="font-museo-moderno text-[18px] xs:text-[20px] sm:text-[24px] md:text-[26px] lg:text-[32px] xl:text-[36px] text-[#364b56] mb-3 sm:mb-4 lg:mb-6">Technology Partners</h2>
+            <h2 className="font-museo-moderno almara-h1-mobile text-[#364b56] mb-3 sm:mb-4 lg:mb-6">Technology Partners</h2>
             <p className="font-helvetica-now text-[#363636] text-[13px] xs:text-[14px] sm:text-[15px] lg:text-base max-w-[85%] mx-auto">
               Infrastructure for secure sourcing, governance, and reporting.
             </p>
@@ -224,7 +224,7 @@ const Partners = () => {
       <section className="h-screen flex items-center justify-center px-4 sm:px-6 lg:px-12 py-16 sm:py-20 bg-[hsl(var(--almara-light-text))] partners-gradient-bg">
         <div className="max-w-6xl mx-auto text-center relative z-10">
           <div ref={projHeaderRef} className={`mb-8 sm:mb-12 lg:mb-16 transition-all duration-1000 ease-out ${projHeaderVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
-            <h2 className="font-museo-moderno text-[18px] xs:text-[20px] sm:text-[24px] md:text-[26px] lg:text-[32px] xl:text-[36px] text-[#364b56] mb-3 sm:mb-4 lg:mb-6">Project Partners</h2>
+            <h2 className="font-museo-moderno almara-h1-mobile text-[#364b56] mb-3 sm:mb-4 lg:mb-6">Project Partners</h2>
             <p className="font-helvetica-now text-[#363636] text-[13px] xs:text-[14px] sm:text-[15px] lg:text-base max-w-[85%] mx-auto">
               Specialists we mobilise for specific mandates.
             </p>
