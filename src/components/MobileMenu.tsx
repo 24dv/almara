@@ -38,7 +38,10 @@ export const MobileMenu = () => {
                   size="icon"
                   aria-label={isOpen ? "Close menu" : "Open menu"}
                   className="hover:bg-transparent p-0 w-10 h-10"
-                  onClick={() => setIsOpen(!isOpen)}
+                  onClick={(e) => {
+                    e.preventDefault();
+                    setIsOpen(!isOpen);
+                  }}
                 >
                   <div 
                     className="cursor-pointer"
