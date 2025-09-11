@@ -100,12 +100,7 @@ const Services = () => {
             </p>
           </div>
           <div className="pt-6">
-            <a 
-              href="mailto:tom@almara.capital" 
-              className="inline-block bg-[hsl(var(--almara-dark-blue))] text-[hsl(var(--almara-light-text))] px-6 py-3 rounded-lg font-helvetica-now text-xs sm:text-sm transition-colors hover:bg-[hsl(var(--almara-dark-blue))]/90"
-            >
-              request a call
-            </a>
+            <Button variant="call" size="call" className="font-helvetica-now text-xs sm:text-sm">request a call</Button>
           </div>
             </div>
           </div>
