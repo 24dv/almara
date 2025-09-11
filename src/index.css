@@ -366,12 +366,12 @@ All colors MUST be HSL.
   
   /* Body text - readable and consistent */
   .almara-body-mobile {
-    font-size: 16px;
+    font-size: 14px;
     line-height: 1.6;
   }
   
   .almara-body-small-mobile {
-    font-size: 14px;
+    font-size: 13px;
     line-height: 1.5;
   }
   
@@ -394,7 +394,7 @@ All colors MUST be HSL.
   /* Responsive breakpoints - maintain desktop sizes on larger screens */
   @media (min-width: 640px) {
     .almara-body-mobile {
-      font-size: 16px;
+      font-size: 14px;
     }
     .almara-h1-mobile {
       font-size: 28px;
