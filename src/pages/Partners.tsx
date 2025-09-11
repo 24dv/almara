@@ -116,7 +116,7 @@ const Partners = () => {
           </div>
 
           <div ref={instGridRef} className={`transition-all duration-1000 ease-out ${instGridVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
-            <div className="grid gap-12 grid-cols-3 max-w-2xl mx-auto mb-8">
+            <div className="grid gap-6 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 max-w-2xl mx-auto mb-8">
               {/* Top row - 3 items */}
               {[{
                 name: "Beonti",
@@ -129,26 +129,26 @@ const Partners = () => {
                 longDesc: "Geneva-based UBP specializes in wealth and asset management, serving private and institutional clients worldwide."
               }].map(p => (
                 <div key={p.name} className="relative group">
-                  <button className="bg-transparent text-[#f4eada] rounded-xl almara-call-btn relative z-[100] transition-all px-8 py-12 text-center w-full">
+                  <button className="bg-transparent text-[#f4eada] rounded-xl almara-call-btn relative z-[100] transition-all px-6 py-8 lg:px-8 lg:py-12 text-center w-full">
                     <img src={logos[p.name]} alt={`${p.name} logo`} loading="lazy" className={`mx-auto h-16 object-contain ${p.name === 'Beonti' ? 'scale-[2.36]' : p.name === 'Kyros Capital' ? 'scale-[2.25]' : ''}`} />
                   </button>
                   
                   {/* Hover Overlay */}
-                  <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-all duration-300 z-[200] p-6 flex flex-col justify-center" style={{
+                  <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-all duration-300 z-[200] p-4 lg:p-6 flex flex-col justify-center" style={{
                     background: 'rgba(244, 234, 218, 0.14)',
                     borderRadius: '16px',
                     boxShadow: '0 4px 30px rgba(0, 0, 0, 0.1)',
                     backdropFilter: 'blur(13.2px)',
                     WebkitBackdropFilter: 'blur(13.2px)'
                   }}>
-                    <h3 className="font-helvetica-now font-bold text-[#363636] text-sm mb-4 tracking-wide">{p.name}</h3>
-                    <p className="font-helvetica-now text-[#363636] text-xs leading-relaxed">{p.longDesc}</p>
+                    <h3 className="font-helvetica-now font-bold text-[#363636] text-sm lg:text-sm mb-3 lg:mb-4 tracking-wide">{p.name}</h3>
+                    <p className="font-helvetica-now text-[#363636] text-xs lg:text-xs leading-relaxed">{p.longDesc}</p>
                   </div>
                 </div>
               ))}
             </div>
             
-            <div className="grid gap-12 grid-cols-2 max-w-2xl mx-auto">
+            <div className="grid gap-6 grid-cols-1 sm:grid-cols-2 max-w-2xl mx-auto">
               {/* Bottom row - 2 items */}
               {[{
                 name: "CIGP",
@@ -158,20 +158,20 @@ const Partners = () => {
                 longDesc: "Antarctica Asset Management delivers hedge fund and private equity solutions for institutions, family offices, and private banks."
               }].map(p => (
                 <div key={p.name} className="relative group">
-                  <button className="bg-transparent text-[#f4eada] rounded-xl almara-call-btn relative z-[100] transition-all px-8 py-12 text-center w-full">
+                  <button className="bg-transparent text-[#f4eada] rounded-xl almara-call-btn relative z-[100] transition-all px-6 py-8 lg:px-8 lg:py-12 text-center w-full">
                     <img src={logos[p.name]} alt={`${p.name} logo`} loading="lazy" className="mx-auto h-16 object-contain" />
                   </button>
                   
                   {/* Hover Overlay */}
-                  <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-all duration-300 z-[200] p-6 flex flex-col justify-center" style={{
+                  <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-all duration-300 z-[200] p-4 lg:p-6 flex flex-col justify-center" style={{
                     background: 'rgba(244, 234, 218, 0.14)',
                     borderRadius: '16px',
                     boxShadow: '0 4px 30px rgba(0, 0, 0, 0.1)',
                     backdropFilter: 'blur(13.2px)',
                     WebkitBackdropFilter: 'blur(13.2px)'
                   }}>
-                    <h3 className="font-helvetica-now font-bold text-[#363636] text-sm mb-4 tracking-wide">{p.name}</h3>
-                    <p className="font-helvetica-now text-[#363636] text-xs leading-relaxed">{p.longDesc}</p>
+                    <h3 className="font-helvetica-now font-bold text-[#363636] text-sm lg:text-sm mb-3 lg:mb-4 tracking-wide">{p.name}</h3>
+                    <p className="font-helvetica-now text-[#363636] text-xs lg:text-xs leading-relaxed">{p.longDesc}</p>
                   </div>
                 </div>
               ))}
@@ -190,7 +190,7 @@ const Partners = () => {
             </p>
           </div>
 
-          <div ref={techGridRef} className={`grid gap-12 grid-cols-2 max-w-2xl mx-auto transition-all duration-1000 ease-out ${techGridVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
+          <div ref={techGridRef} className={`grid gap-6 grid-cols-1 sm:grid-cols-2 max-w-2xl mx-auto transition-all duration-1000 ease-out ${techGridVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
             {[{
               name: "Delio",
               longDesc: "Delio offers a white-label platform that helps financial firms digitise and distribute private market investments."
@@ -199,20 +199,20 @@ const Partners = () => {
               longDesc: "Abbove provides a wealth-planning platform that consolidates client data into a single, structured view."
             }].map(p => (
               <div key={p.name} className="relative group">
-                <button className="bg-transparent text-[#f4eada] rounded-xl almara-call-btn relative z-[100] transition-all px-8 py-12 text-center w-full">
+                <button className="bg-transparent text-[#f4eada] rounded-xl almara-call-btn relative z-[100] transition-all px-6 py-8 lg:px-8 lg:py-12 text-center w-full">
                   <img src={logos[p.name]} alt={`${p.name} logo`} loading="lazy" className="mx-auto h-16 object-contain" />
                 </button>
                 
                 {/* Hover Overlay */}
-                <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-all duration-300 z-[200] p-6 flex flex-col justify-center" style={{
+                <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-all duration-300 z-[200] p-4 lg:p-6 flex flex-col justify-center" style={{
                   background: 'rgba(244, 234, 218, 0.14)',
                   borderRadius: '16px',
                   boxShadow: '0 4px 30px rgba(0, 0, 0, 0.1)',
                   backdropFilter: 'blur(13.2px)',
                   WebkitBackdropFilter: 'blur(13.2px)'
                 }}>
-                  <h3 className="font-helvetica-now font-bold text-[#363636] text-sm mb-4 tracking-wide">{p.name}</h3>
-                  <p className="font-helvetica-now text-[#363636] text-xs leading-relaxed">{p.longDesc}</p>
+                  <h3 className="font-helvetica-now font-bold text-[#363636] text-sm lg:text-sm mb-3 lg:mb-4 tracking-wide">{p.name}</h3>
+                  <p className="font-helvetica-now text-[#363636] text-xs lg:text-xs leading-relaxed">{p.longDesc}</p>
                 </div>
               </div>
             ))}
@@ -231,7 +231,7 @@ const Partners = () => {
           </div>
 
           <div ref={projGridRef} className={`transition-all duration-1000 ease-out ${projGridVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
-            <div className="grid gap-8 grid-cols-2 max-w-lg mx-auto mb-8">
+            <div className="grid gap-6 grid-cols-1 sm:grid-cols-2 max-w-lg mx-auto mb-8">
               {/* Top row - 2 items */}
               {[{
                 name: "Aquitara",
@@ -241,26 +241,26 @@ const Partners = () => {
                 longDesc: "A $250M VC firm investing in series A/B Quantum Scaleups."
               }].map(p => (
                 <div key={p.name} className="relative group">
-                  <button className="bg-transparent text-[#f4eada] rounded-xl almara-call-btn relative z-[100] transition-all px-8 py-12 text-center w-full">
+                  <button className="bg-transparent text-[#f4eada] rounded-xl almara-call-btn relative z-[100] transition-all px-6 py-8 lg:px-8 lg:py-12 text-center w-full">
                     <img src={logos[p.name]} alt={`${p.name} logo`} loading="lazy" className="mx-auto h-16 object-contain" />
                   </button>
                   
                   {/* Hover Overlay */}
-                  <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-all duration-300 z-[200] p-6 flex flex-col justify-center" style={{
+                  <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-all duration-300 z-[200] p-4 lg:p-6 flex flex-col justify-center" style={{
                     background: 'rgba(244, 234, 218, 0.14)',
                     borderRadius: '16px',
                     boxShadow: '0 4px 30px rgba(0, 0, 0, 0.1)',
                     backdropFilter: 'blur(13.2px)',
                     WebkitBackdropFilter: 'blur(13.2px)'
                   }}>
-                    <h3 className="font-helvetica-now font-bold text-[#363636] text-sm mb-4 tracking-wide">{p.name}</h3>
-                    <p className="font-helvetica-now text-[#363636] text-xs leading-relaxed">{p.longDesc}</p>
+                    <h3 className="font-helvetica-now font-bold text-[#363636] text-sm lg:text-sm mb-3 lg:mb-4 tracking-wide">{p.name}</h3>
+                    <p className="font-helvetica-now text-[#363636] text-xs lg:text-xs leading-relaxed">{p.longDesc}</p>
                   </div>
                 </div>
               ))}
             </div>
             
-            <div className="grid gap-8 grid-cols-2 max-w-lg mx-auto">
+            <div className="grid gap-6 grid-cols-1 sm:grid-cols-2 max-w-lg mx-auto">
               {/* Bottom row - 2 items */}
               {[{
                 name: "Geneva Technologies",
@@ -270,20 +270,20 @@ const Partners = () => {
                 longDesc: "Golborne Capital offers secured private credit to SMEs and growth firms, often as first institutional lender, focused on preservation and niche opportunities."
               }].map(p => (
                 <div key={p.name} className="relative group">
-                  <button className="bg-transparent text-[#f4eada] rounded-xl almara-call-btn relative z-[100] transition-all px-8 py-12 text-center w-full">
+                  <button className="bg-transparent text-[#f4eada] rounded-xl almara-call-btn relative z-[100] transition-all px-6 py-8 lg:px-8 lg:py-12 text-center w-full">
                     <img src={logos[p.name]} alt={`${p.name} logo`} loading="lazy" className="mx-auto h-16 object-contain" />
                   </button>
                   
                   {/* Hover Overlay */}
-                  <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-all duration-300 z-[200] p-6 flex flex-col justify-center" style={{
+                  <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-all duration-300 z-[200] p-4 lg:p-6 flex flex-col justify-center" style={{
                     background: 'rgba(244, 234, 218, 0.14)',
                     borderRadius: '16px',
                     boxShadow: '0 4px 30px rgba(0, 0, 0, 0.1)',
                     backdropFilter: 'blur(13.2px)',
                     WebkitBackdropFilter: 'blur(13.2px)'
                   }}>
-                    <h3 className="font-helvetica-now font-bold text-[#363636] text-sm mb-4 tracking-wide">{p.name}</h3>
-                    <p className="font-helvetica-now text-[#363636] text-xs leading-relaxed">{p.longDesc}</p>
+                    <h3 className="font-helvetica-now font-bold text-[#363636] text-sm lg:text-sm mb-3 lg:mb-4 tracking-wide">{p.name}</h3>
+                    <p className="font-helvetica-now text-[#363636] text-xs lg:text-xs leading-relaxed">{p.longDesc}</p>
                   </div>
                 </div>
               ))}
