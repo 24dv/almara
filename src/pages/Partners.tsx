@@ -293,7 +293,7 @@ const Partners = () => {
       </section>
 
       {/* Section 5: Call to Action */}
-      <section className="h-screen flex items-center justify-center px-4 sm:px-6 lg:px-12 py-16 sm:py-20 bg-[hsl(var(--almara-light-text))] partners-gradient-bg">
+      <section className="h-[50vh] lg:h-screen flex items-center justify-center px-4 sm:px-6 lg:px-12 py-16 sm:py-20 bg-[hsl(var(--almara-light-text))] partners-gradient-bg">
         <div className="max-w-4xl mx-auto text-center space-y-6 sm:space-y-8 lg:space-y-12 relative z-50">
           <div ref={ctaHeaderRef} className={`space-y-4 sm:space-y-6 lg:space-y-8 relative z-50 transition-all duration-1000 ease-out ${ctaHeaderVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
             <h2 className="font-long-cang text-[20px] xs:text-[24px] sm:text-[28px] md:text-[32px] lg:text-[36px] xl:text-[40px] 2xl:text-5xl text-[#364b56] tracking-[0.05em] opacity-90 leading-tight font-thin uppercase rotate-[3deg] relative z-50">
@@ -302,7 +302,7 @@ const Partners = () => {
             </h2>
           </div>
           <div ref={ctaButtonRef} className={`pt-8 relative z-50 transition-all duration-1000 ease-out ${ctaButtonVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
-            <Button variant="call-footer" size="call" className="font-helvetica-now relative z-50">
+            <Button variant="call-footer" size="call" className="font-helvetica-now relative z-50 text-xs sm:text-sm lg:text-base">
               request a call
             </Button>
           </div>
