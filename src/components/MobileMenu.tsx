@@ -21,7 +21,7 @@ export const MobileMenu = () => {
         <div className="flex items-center justify-between">
           <Link to="/" aria-label="ALMARA home" className={cn(
             "transition-opacity hover:opacity-80",
-            location.pathname === "/" && "hidden"
+            (location.pathname === "/" || isOpen) && "hidden"
           )}>
             <img
               src="/lovable-uploads/889a0efd-ed5b-448b-a911-54ea486f744c.png"
