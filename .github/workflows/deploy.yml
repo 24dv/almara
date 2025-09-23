@@ -38,6 +38,11 @@ jobs:
         with:
           path: './dist'
 
+
+- name: Create SPA fallback
+  run: cp dist/index.html dist/404.html
+
+
   deploy:
     environment:
       name: github-pages
