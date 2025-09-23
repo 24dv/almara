@@ -64,7 +64,7 @@ All colors MUST be HSL.
     --almara-light-blue: 220 15% 74%;    /* #B3BACB */
     --almara-dark-text: 0 0% 21%;        /* #363636 */
     --almara-light-text: 43 42% 89%;     /* #F4EADA */
-    --almara-subtitle-text: 0 0% 0%;     /* #000000 */
+    --almara-subtitle-text: 43 42% 89%;  /* #F4EADA */
     --carmine-red: 342 92% 32%;          /* #A60047 */
     --almara-carmine: 342 92% 32%;       /* #A60047 */
     
