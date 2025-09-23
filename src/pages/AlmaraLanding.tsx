@@ -37,8 +37,10 @@ const AlmaraLanding = () => {
       {/* Hero Section - Full viewport height */}
       <HeroSection />
       
-      {/* Footer - Only visible when scrolling */}
-      <Footer />
+      {/* Footer - Hidden on mobile, visible on desktop */}
+      <div className="hidden sm:block">
+        <Footer />
+      </div>
     </div>
   );
 };
