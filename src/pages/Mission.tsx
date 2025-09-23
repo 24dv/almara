@@ -11,10 +11,10 @@ const Mission = () => {
   const { ref: practiceHeaderRef, isVisible: practiceHeaderVisible } = useScrollReveal(0.1, 100);
   const { ref: practiceGridRef, isVisible: practiceGridVisible } = useScrollReveal(0.1, 200);
 
-  // SEO
+  // SEO meta tags for Mission page
   useEffect(() => {
-    document.title = "Mission | ALMARA";
-    const desc = "We bring intention, vision and clarity to foster balanced growth—with kindness and compassion.";
+    document.title = "Our Mission | ALMARA Alternative Asset Investment";
+    const desc = "Our mission: Providing tailored alternative asset investment solutions with expertise, integrity, and a long-term perspective. Discover our core pillars and approach.";
     let meta = document.querySelector('meta[name="description"]') as HTMLMetaElement | null;
     if (!meta) {
       meta = document.createElement("meta");
@@ -22,13 +22,14 @@ const Mission = () => {
       document.head.appendChild(meta);
     }
     meta.content = desc;
-    let link = document.querySelector('link[rel="canonical"]') as HTMLLinkElement | null;
-    if (!link) {
-      link = document.createElement("link");
-      link.rel = "canonical";
-      document.head.appendChild(link);
+    
+    let canonical = document.querySelector('link[rel="canonical"]') as HTMLLinkElement | null;
+    if (!canonical) {
+      canonical = document.createElement("link");
+      canonical.rel = "canonical";
+      document.head.appendChild(canonical);
     }
-    link.href = window.location.href;
+    canonical.href = window.location.href;
   }, []);
   return <div className="relative w-full min-h-screen almara-gradient-bg no-overlay animate-fade-in">
       {/* Navigation - fixed positioned at same height as home page */}

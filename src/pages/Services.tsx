@@ -37,10 +37,10 @@ const Services = () => {
     points: ["Acquisition & valuation: market intelligence, authenticity, pricing", "Conservation & succession: preservation strategies, estate integration", "Placement & financing: loans, insurance, art lending, gallery/museum relationships", "Infrastructure: collection-management systems and bespoke reporting"]
   }];
 
-  // Basic SEO for this page
+  // SEO meta tags for Services page
   useEffect(() => {
-    document.title = "Services | ALMARA";
-    const desc = "Family office, alternatives, M&A, and art advisory, delivered through ongoing counsel and mandate-led execution.";
+    document.title = "Our Services | ALMARA Alternative Asset Investment";
+    const desc = "Family office advisory, alternative investments, M&A capital introduction, and art advisory services. Delivered through ongoing counsel and mandate-led execution.";
     let meta = document.querySelector('meta[name="description"]') as HTMLMetaElement | null;
     if (!meta) {
       meta = document.createElement("meta");
@@ -48,13 +48,14 @@ const Services = () => {
       document.head.appendChild(meta);
     }
     meta.content = desc;
-    let link = document.querySelector('link[rel="canonical"]') as HTMLLinkElement | null;
-    if (!link) {
-      link = document.createElement("link");
-      link.rel = "canonical";
-      document.head.appendChild(link);
+    
+    let canonical = document.querySelector('link[rel="canonical"]') as HTMLLinkElement | null;
+    if (!canonical) {
+      canonical = document.createElement("link");
+      canonical.rel = "canonical";
+      document.head.appendChild(canonical);
     }
-    link.href = window.location.href;
+    canonical.href = window.location.href;
   }, []);
   return <div className="relative w-full min-h-screen almara-gradient-bg no-overlay animate-fade-in">
       {/* Navigation - fixed positioned at same height as home page */}

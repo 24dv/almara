@@ -1,14 +1,24 @@
-User-agent: Googlebot
-Allow: /
-
-User-agent: Bingbot
-Allow: /
-
-User-agent: Twitterbot
-Allow: /
-
-User-agent: facebookexternalhit
-Allow: /
-
 User-agent: *
 Allow: /
+
+# Block access to unnecessary files
+Disallow: /src/
+Disallow: /*.tsx$
+Disallow: /*.ts$
+Disallow: /*.css$
+Disallow: /*.js$
+Disallow: /node_modules/
+Disallow: /dist/
+Disallow: /.git/
+
+# Allow important resources
+Allow: /*.css$
+Allow: /*.js$
+Allow: /lovable-uploads/
+Allow: /assets/
+
+# Sitemap location
+Sitemap: https://almara.capital/sitemap.xml
+
+# Crawl delay (optional)
+Crawl-delay: 1

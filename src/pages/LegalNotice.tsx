@@ -1,10 +1,31 @@
 import { PageLayout } from "@/components/PageLayout";
 import { useScrollReveal } from "@/hooks/useScrollReveal";
+import { useEffect } from "react";
 
 const LegalNotice = () => {
-  // Scroll reveal animations
-  const { ref: titleRef, isVisible: titleVisible } = useScrollReveal(0.1, 100);
-  const { ref: contentRef, isVisible: contentVisible } = useScrollReveal(0.1, 200);
+  const { ref: titleRef, isVisible: titleVisible } = useScrollReveal<HTMLHeadingElement>(0.1);
+  const { ref: contentRef, isVisible: contentVisible } = useScrollReveal<HTMLDivElement>(0.1, 200);
+  
+  // SEO meta tags for Legal Notice page
+  useEffect(() => {
+    document.title = "Legal Notice | ALMARA Alternative Asset Investment";
+    const desc = "Legal notice and terms for ALMARA alternative asset investment services. Important legal information about our financial advisory services.";
+    let meta = document.querySelector('meta[name="description"]') as HTMLMetaElement | null;
+    if (!meta) {
+      meta = document.createElement("meta");
+      meta.name = "description";
+      document.head.appendChild(meta);
+    }
+    meta.content = desc;
+    
+    let canonical = document.querySelector('link[rel="canonical"]') as HTMLLinkElement | null;
+    if (!canonical) {
+      canonical = document.createElement("link");
+      canonical.rel = "canonical";
+      document.head.appendChild(canonical);
+    }
+    canonical.href = window.location.href;
+  }, []);
 
   return (
     <PageLayout title="Legal Notice">

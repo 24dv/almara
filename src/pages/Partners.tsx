@@ -29,10 +29,10 @@ const Partners = () => {
   const { ref: ctaHeaderRef, isVisible: ctaHeaderVisible } = useScrollReveal(0.1, 100);
   const { ref: ctaButtonRef, isVisible: ctaButtonVisible } = useScrollReveal(0.1, 200);
 
-  // Basic SEO
+  // SEO meta tags for Partners page
   useEffect(() => {
-    document.title = "Partners | ALMARA";
-    const desc = "A curated network that amplifies outcomes. Institutional, technology, and project partners—activated selectively when it serves the mandate.";
+    document.title = "Our Partners | ALMARA Alternative Asset Investment";
+    const desc = "Our trusted network of specialist partners and top-tier advisors who help us uncover distinct opportunities and drive lasting portfolio value in alternative assets.";
     let meta = document.querySelector('meta[name="description"]') as HTMLMetaElement | null;
     if (!meta) {
       meta = document.createElement("meta");
@@ -40,13 +40,14 @@ const Partners = () => {
       document.head.appendChild(meta);
     }
     meta.content = desc;
-    let link = document.querySelector('link[rel="canonical"]') as HTMLLinkElement | null;
-    if (!link) {
-      link = document.createElement("link");
-      link.rel = "canonical";
-      document.head.appendChild(link);
+    
+    let canonical = document.querySelector('link[rel="canonical"]') as HTMLLinkElement | null;
+    if (!canonical) {
+      canonical = document.createElement("link");
+      canonical.rel = "canonical";
+      document.head.appendChild(canonical);
     }
-    link.href = window.location.href;
+    canonical.href = window.location.href;
   }, []);
 
   const logos: Record<string, string> = {

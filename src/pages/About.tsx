@@ -1,10 +1,32 @@
 import { PageLayout } from "@/components/PageLayout";
 import { Button } from "@/components/ui/button";
 import { useScrollReveal } from "@/hooks/useScrollReveal";
+import { useEffect } from "react";
 const About = () => {
   const { ref: sectionRef, isVisible: sectionVisible } = useScrollReveal<HTMLElement>(0.1);
   const { ref: imageRef, isVisible: imageVisible } = useScrollReveal<HTMLDivElement>(0.1, 200);
   const { ref: contentRef, isVisible: contentVisible } = useScrollReveal<HTMLDivElement>(0.1, 500);
+  
+  // SEO meta tags for About page
+  useEffect(() => {
+    document.title = "About Tom Meganck | ALMARA Alternative Asset Investment";
+    const desc = "Meet Tom Meganck, founder of ALMARA. Over two decades of expertise in alternative investments, family office advisory, and wealth management across global markets.";
+    let meta = document.querySelector('meta[name="description"]') as HTMLMetaElement | null;
+    if (!meta) {
+      meta = document.createElement("meta");
+      meta.name = "description";
+      document.head.appendChild(meta);
+    }
+    meta.content = desc;
+    
+    let canonical = document.querySelector('link[rel="canonical"]') as HTMLLinkElement | null;
+    if (!canonical) {
+      canonical = document.createElement("link");
+      canonical.rel = "canonical";
+      document.head.appendChild(canonical);
+    }
+    canonical.href = window.location.href;
+  }, []);
   return <PageLayout title="About" noGradientOnMobile={true}>
       {/* Main Content Section - Full Height */}
       <section className="h-screen flex items-center justify-center px-4 sm:px-6 lg:px-12 py-16 sm:py-20">

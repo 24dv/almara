@@ -1,10 +1,31 @@
 import { PageLayout } from "@/components/PageLayout";
 import { useScrollReveal } from "@/hooks/useScrollReveal";
+import { useEffect } from "react";
 
 const Privacy = () => {
-  // Scroll reveal animations
-  const { ref: titleRef, isVisible: titleVisible } = useScrollReveal(0.1, 100);
-  const { ref: contentRef, isVisible: contentVisible } = useScrollReveal(0.1, 200);
+  const { ref: titleRef, isVisible: titleVisible } = useScrollReveal<HTMLHeadingElement>(0.1);
+  const { ref: contentRef, isVisible: contentVisible } = useScrollReveal<HTMLDivElement>(0.1, 200);
+  
+  // SEO meta tags for Privacy page
+  useEffect(() => {
+    document.title = "Privacy Policy | ALMARA Alternative Asset Investment";
+    const desc = "ALMARA's privacy policy. Learn how we collect, use, and protect your personal information in our alternative asset investment services.";
+    let meta = document.querySelector('meta[name="description"]') as HTMLMetaElement | null;
+    if (!meta) {
+      meta = document.createElement("meta");
+      meta.name = "description";
+      document.head.appendChild(meta);
+    }
+    meta.content = desc;
+    
+    let canonical = document.querySelector('link[rel="canonical"]') as HTMLLinkElement | null;
+    if (!canonical) {
+      canonical = document.createElement("link");
+      canonical.rel = "canonical";
+      document.head.appendChild(canonical);
+    }
+    canonical.href = window.location.href;
+  }, []);
 
   return (
     <PageLayout title="Privacy Policy">
