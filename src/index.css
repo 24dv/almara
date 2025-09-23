@@ -306,7 +306,7 @@ All colors MUST be HSL.
     left: 0;
     width: 100vw;
     height: 100vh;
-    background-image: url('/lovable-uploads/08276971-f3d6-48ef-af4b-9d930d4ced96.png');
+    background-image: url('./assets/noise.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -341,7 +341,7 @@ All colors MUST be HSL.
     left: 0;
     right: 0;
     bottom: 0;
-    background-image: url('/lovable-uploads/08276971-f3d6-48ef-af4b-9d930d4ced96.png');
+    background-image: url('./assets/noise.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -369,7 +369,7 @@ All colors MUST be HSL.
     left: 0;
     right: 0;
     bottom: 0;
-    background-image: url('/lovable-uploads/08276971-f3d6-48ef-af4b-9d930d4ced96.png');
+    background-image: url('./assets/noise.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -385,7 +385,7 @@ All colors MUST be HSL.
     left: 0;
     right: 0;
     bottom: 0;
-    background-image: url('/lovable-uploads/08276971-f3d6-48ef-af4b-9d930d4ced96.png');
+    background-image: url('./assets/noise.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
