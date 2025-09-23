@@ -24,6 +24,19 @@ const AlmaraLanding = () => {
       document.head.appendChild(canonical);
     }
     canonical.href = window.location.href;
+
+    // Prevent scrolling on mobile for home page
+    const isMobile = window.innerWidth < 640;
+    if (isMobile) {
+      document.body.style.overflow = 'hidden';
+      document.documentElement.style.overflow = 'hidden';
+    }
+
+    // Cleanup function to restore scrolling when leaving the page
+    return () => {
+      document.body.style.overflow = '';
+      document.documentElement.style.overflow = '';
+    };
   }, []);
 
   return (
