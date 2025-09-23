@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  
+  <!-- Homepage -->
+  <url>
+    <loc>https://almara.capital/</loc>
+    <lastmod>2024-01-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://almara.capital/lovable-uploads/889a0efd-ed5b-448b-a911-54ea486f744c.png</image:loc>
+      <image:title>ALMARA Alternative Asset Investment</image:title>
+      <image:caption>A Sea of Opportunity in Alternative Asset Investment</image:caption>
+    </image:image>
+  </url>
+  
+  <!-- About Page -->
+  <url>
+    <loc>https://almara.capital/about</loc>
+    <lastmod>2024-01-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://almara.capital/lovable-uploads/3f98f6a2-7c73-465b-89c1-9ffd619f5b8f.png</image:loc>
+      <image:title>Tom Meganck - Founder of ALMARA</image:title>
+      <image:caption>Tom Meganck, founder of ALMARA Alternative Asset Investment</image:caption>
+    </image:image>
+  </url>
+  
+  <!-- Services Page -->
+  <url>
+    <loc>https://almara.capital/services</loc>
+    <lastmod>2024-01-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://almara.capital/lovable-uploads/0fb235b5-0ef7-4a23-b23c-a09271d1c1ee.png</image:loc>
+      <image:title>Family Office Services</image:title>
+      <image:caption>Family office advisory services by ALMARA</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://almara.capital/lovable-uploads/402e0eb5-ac60-45a4-b299-85280c71cb6d.png</image:loc>
+      <image:title>Alternative Investment Services</image:title>
+      <image:caption>Alternative asset investment services</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://almara.capital/lovable-uploads/4c877114-c7bc-42b2-aa3d-5cf4f2df46b6.png</image:loc>
+      <image:title>Capital Introduction and M&A</image:title>
+      <image:caption>Capital introduction and M&A advisory services</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://almara.capital/lovable-uploads/24427e5c-c5b4-462c-8320-f420776f39d1.png</image:loc>
+      <image:title>Art Advisory Services</image:title>
+      <image:caption>Art advisory and collection management services</image:caption>
+    </image:image>
+  </url>
+  
+  <!-- Mission Page -->
+  <url>
+    <loc>https://almara.capital/mission</loc>
+    <lastmod>2024-01-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <!-- Partners Page -->
+  <url>
+    <loc>https://almara.capital/partners</loc>
+    <lastmod>2024-01-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <!-- Privacy Policy -->
+  <url>
+    <loc>https://almara.capital/privacy</loc>
+    <lastmod>2024-01-01</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  
+  <!-- Legal Notice -->
+  <url>
+    <loc>https://almara.capital/legal-notice</loc>
+    <lastmod>2024-01-01</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  
+</urlset>
