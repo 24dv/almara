@@ -31,9 +31,7 @@ jobs:
         run: npm ci
 
       - name: Build
-        run: npm run build
-        env:
-          VITE_BASE: /almara/
+        run: npm run build -- --base=/almara/
 
       - name: List build output
         run: |
