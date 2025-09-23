@@ -2,6 +2,7 @@ import { PageLayout } from "@/components/PageLayout";
 import { Button } from "@/components/ui/button";
 import { useScrollReveal } from "@/hooks/useScrollReveal";
 import { useEffect } from "react";
+import noise from "@/assets/noise.png";
 const About = () => {
   const { ref: sectionRef, isVisible: sectionVisible } = useScrollReveal<HTMLElement>(0.1);
   const { ref: imageRef, isVisible: imageVisible } = useScrollReveal<HTMLDivElement>(0.1, 200);
@@ -68,9 +69,9 @@ const About = () => {
                 : '-translate-x-8 opacity-0'
             }`}>
               <div className="max-w-md relative">
-                <img src="/lovable-uploads/3f98f6a2-7c73-465b-89c1-9ffd619f5b8f.png" alt="Tom Meganck - Founder" className="w-full h-auto rounded-lg shadow-lg relative z-0" />
+                <img src={`${import.meta.env.BASE_URL}lovable-uploads/3f98f6a2-7c73-465b-89c1-9ffd619f5b8f.png`} alt="Tom Meganck - Founder" className="w-full h-auto rounded-lg shadow-lg relative z-0" />
                 <div className="absolute inset-0 rounded-lg z-10 pointer-events-none" style={{
-                  backgroundImage: 'url("/lovable-uploads/08276971-f3d6-48ef-af4b-9d930d4ced96.png")',
+                  backgroundImage: `url(${noise})`,
                   backgroundSize: 'cover',
                   backgroundPosition: 'center',
                   backgroundRepeat: 'no-repeat',

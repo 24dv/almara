@@ -22,7 +22,7 @@ export const PageLayout = ({
       {/* Header with Logo (desktop only) */}
       <header className="relative z-10 hidden lg:flex items-center justify-center pt-8 pb-4">
         <Link to="/" className="transition-opacity hover:opacity-80">
-          <img src="/lovable-uploads/889a0efd-ed5b-448b-a911-54ea486f744c.png" alt="ALMARA" className="h-7 sm:h-8 md:h-9 opacity-90" loading="eager" fetchPriority="high" />
+          <img src={`${import.meta.env.BASE_URL}lovable-uploads/889a0efd-ed5b-448b-a911-54ea486f744c.png`} alt="ALMARA" className="h-7 sm:h-8 md:h-9 opacity-90" loading="eager" fetchPriority="high" />
         </Link>
       </header>
       

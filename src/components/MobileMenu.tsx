@@ -24,7 +24,7 @@ export const MobileMenu = () => {
             (location.pathname === "/" || isOpen) && "hidden"
           )}>
             <img
-              src="/lovable-uploads/889a0efd-ed5b-448b-a911-54ea486f744c.png"
+              src={`${import.meta.env.BASE_URL}lovable-uploads/889a0efd-ed5b-448b-a911-54ea486f744c.png`}
               alt="ALMARA logo"
               className="h-7 sm:h-8 opacity-90"
             />

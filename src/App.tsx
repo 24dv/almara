@@ -20,9 +20,9 @@ const App = () => (
       <Toaster />
       <Sonner />
       <ImagePreloader images={[
-        "/lovable-uploads/889a0efd-ed5b-448b-a911-54ea486f744c.png",
-        "/lovable-uploads/2c678d11-20a8-496a-9604-16c61d8ae172.png", 
-        "/lovable-uploads/a58a04a2-6cc9-41d7-a8c1-bd70d0c8df8f.png"
+        `${import.meta.env.BASE_URL}lovable-uploads/889a0efd-ed5b-448b-a911-54ea486f744c.png`,
+        `${import.meta.env.BASE_URL}lovable-uploads/2c678d11-20a8-496a-9604-16c61d8ae172.png`, 
+        `${import.meta.env.BASE_URL}lovable-uploads/a58a04a2-6cc9-41d7-a8c1-bd70d0c8df8f.png`
       ]} />
       <HashRouter>
         <ScrollToTop />

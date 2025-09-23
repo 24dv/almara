@@ -51,18 +51,18 @@ const Partners = () => {
   }, []);
 
   const logos: Record<string, string> = {
-    "Beonti": "/lovable-uploads/ee8615d4-ce98-4f1c-a704-916cc74548ab.png",
-    "Kyros Capital": "/lovable-uploads/7ca2ceb4-fa85-48a5-bdcf-a9354ea750a6.png",
-    "UBP": "/lovable-uploads/75ca8d5a-9e04-492e-8048-83b8e15d144d.png",
-    "CIGP": "/lovable-uploads/820b3f6d-6998-45f0-ae8e-b47197131b55.png",
-    "Antarctica": "/lovable-uploads/21882ea6-ceb9-4b1c-a053-99616dc103cc.png",
-    "Delio": "/lovable-uploads/3fc3d753-d5ff-4595-bce7-6272f9f9ccac.png",
-    "Abbove": "/lovable-uploads/b10b396d-3422-4a4e-a8d6-106ce903a97e.png",
-    "Aquitara": "/lovable-uploads/8ae18207-d04e-40bf-8988-daf09a9004ec.png",
+    "Beonti": `${import.meta.env.BASE_URL}lovable-uploads/ee8615d4-ce98-4f1c-a704-916cc74548ab.png`,
+    "Kyros Capital": `${import.meta.env.BASE_URL}lovable-uploads/7ca2ceb4-fa85-48a5-bdcf-a9354ea750a6.png`,
+    "UBP": `${import.meta.env.BASE_URL}lovable-uploads/75ca8d5a-9e04-492e-8048-83b8e15d144d.png`,
+    "CIGP": `${import.meta.env.BASE_URL}lovable-uploads/820b3f6d-6998-45f0-ae8e-b47197131b55.png`,
+    "Antarctica": `${import.meta.env.BASE_URL}lovable-uploads/21882ea6-ceb9-4b1c-a053-99616dc103cc.png`,
+    "Delio": `${import.meta.env.BASE_URL}lovable-uploads/3fc3d753-d5ff-4595-bce7-6272f9f9ccac.png`,
+    "Abbove": `${import.meta.env.BASE_URL}lovable-uploads/b10b396d-3422-4a4e-a8d6-106ce903a97e.png`,
+    "Aquitara": `${import.meta.env.BASE_URL}lovable-uploads/8ae18207-d04e-40bf-8988-daf09a9004ec.png`,
     
-    "Firgun Ventures": "/lovable-uploads/3e7ad95e-31d6-499c-86ae-69fbdaa5c3fb.png",
-    "Geneva Technologies": "/lovable-uploads/fb70fc12-73d6-4b1a-966c-d2e15456ca28.png",
-    "Golborne": "/lovable-uploads/5a2ca5d0-c530-438f-a901-3963ba8f89a7.png",
+    "Firgun Ventures": `${import.meta.env.BASE_URL}lovable-uploads/3e7ad95e-31d6-499c-86ae-69fbdaa5c3fb.png`,
+    "Geneva Technologies": `${import.meta.env.BASE_URL}lovable-uploads/fb70fc12-73d6-4b1a-966c-d2e15456ca28.png`,
+    "Golborne": `${import.meta.env.BASE_URL}lovable-uploads/5a2ca5d0-c530-438f-a901-3963ba8f89a7.png`,
   };
 
   return (
@@ -78,12 +78,12 @@ const Partners = () => {
         {/* Header with logo - now part of the section */}
         <header className="relative z-50 hidden lg:flex items-center justify-center pt-8 pb-4">
           <Link to="/" className="transition-opacity hover:opacity-80 relative z-50">
-            <img src="/lovable-uploads/889a0efd-ed5b-448b-a911-54ea486f744c.png" alt="ALMARA" className="h-7 sm:h-8 md:h-9 opacity-90" />
+            <img src={`${import.meta.env.BASE_URL}lovable-uploads/889a0efd-ed5b-448b-a911-54ea486f744c.png`} alt="ALMARA" className="h-7 sm:h-8 md:h-9 opacity-90" />
           </Link>
         </header>
         
         {/* Background Circle */}
-        <img src="/lovable-uploads/a58a04a2-6cc9-41d7-a8c1-bd70d0c8df8f.png" alt="Circle background" className="absolute w-[70vw] h-[70vw] max-w-[600px] max-h-[600px] min-w-[380px] min-h-[380px] object-cover bg-transparent top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-[5] reveal-fade" style={{ animationDelay: '0.1s', animationFillMode: 'both' }} />
+        <img src={`${import.meta.env.BASE_URL}lovable-uploads/a58a04a2-6cc9-41d7-a8c1-bd70d0c8df8f.png`} alt="Circle background" className="absolute w-[70vw] h-[70vw] max-w-[600px] max-h-[600px] min-w-[380px] min-h-[380px] object-cover bg-transparent top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-[5] reveal-fade" style={{ animationDelay: '0.1s', animationFillMode: 'both' }} />
         
         {/* Main Content - Better centered in remaining space */}
         <div className="flex-1 flex items-center justify-center px-4 sm:px-6 lg:px-12 relative z-10 lg:-mt-[60px]">

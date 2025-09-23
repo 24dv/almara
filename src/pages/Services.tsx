@@ -70,14 +70,14 @@ const Services = () => {
       {/* Logo Section - Hidden on mobile */}
       <section className="hidden xl:block absolute top-8 left-1/2 transform -translate-x-1/2 z-20">
         <Link to="/" className="transition-opacity hover:opacity-80">
-          <img src="/lovable-uploads/889a0efd-ed5b-448b-a911-54ea486f744c.png" alt="ALMARA" className="h-7 sm:h-8 md:h-9 opacity-90" loading="eager" fetchPriority="high" />
+          <img src={`${import.meta.env.BASE_URL}lovable-uploads/889a0efd-ed5b-448b-a911-54ea486f744c.png`} alt="ALMARA" className="h-7 sm:h-8 md:h-9 opacity-90" loading="eager" fetchPriority="high" />
         </Link>
       </section>
 
       {/* Hero Section */}
       <section className="h-screen flex items-center justify-center px-4 sm:px-6 lg:px-12 mission-section-gradient relative overflow-hidden">
         {/* Background Circle - Spans from header to bottom of section */}
-        <img src="/lovable-uploads/a58a04a2-6cc9-41d7-a8c1-bd70d0c8df8f.png" alt="Circle background" className="absolute w-[120vh] h-[120vh] min-w-[800px] min-h-[800px] max-w-[1200px] max-h-[1200px] object-cover bg-transparent top-0 right-0 transform translate-x-[25%] -translate-y-[10%] z-[1] opacity-80 reveal-fade" style={{
+        <img src={`${import.meta.env.BASE_URL}lovable-uploads/a58a04a2-6cc9-41d7-a8c1-bd70d0c8df8f.png`} alt="Circle background" className="absolute w-[120vh] h-[120vh] min-w-[800px] min-h-[800px] max-w-[1200px] max-h-[1200px] object-cover bg-transparent top-0 right-0 transform translate-x-[25%] -translate-y-[10%] z-[1] opacity-80 reveal-fade" style={{
           animationDelay: '0.1s',
           animationFillMode: 'both'
         }} loading="eager" fetchPriority="high" />
@@ -165,7 +165,7 @@ const Services = () => {
                     {/* Services with images - Family Office, Art Advisory, Capital M&A, and Alternatives */}
                     {service.id === 'family-office' || service.id === 'art-advisory' || service.id === 'capital-ma' || service.id === 'alternatives' ? <div className="flex items-start space-x-12">
                         <div className="w-1/2 flex-shrink-0 relative">
-                          <img src={service.id === 'family-office' ? "/lovable-uploads/0fb235b5-0ef7-4a23-b23c-a09271d1c1ee.png" : service.id === 'art-advisory' ? "/lovable-uploads/24427e5c-c5b4-462c-8320-f420776f39d1.png" : service.id === 'capital-ma' ? "/lovable-uploads/4c877114-c7bc-42b2-aa3d-5cf4f2df46b6.png" : "/lovable-uploads/402e0eb5-ac60-45a4-b299-85280c71cb6d.png"} alt={service.id === 'family-office' ? "Family Office" : service.id === 'art-advisory' ? "Art Advisory" : service.id === 'capital-ma' ? "Capital Introduction & M&A" : "Alternatives"} className="w-full aspect-square object-cover rounded-lg relative z-0" loading="lazy" />
+                          <img src={service.id === 'family-office' ? `${import.meta.env.BASE_URL}lovable-uploads/0fb235b5-0ef7-4a23-b23c-a09271d1c1ee.png` : service.id === 'art-advisory' ? `${import.meta.env.BASE_URL}lovable-uploads/24427e5c-c5b4-462c-8320-f420776f39d1.png` : service.id === 'capital-ma' ? `${import.meta.env.BASE_URL}lovable-uploads/4c877114-c7bc-42b2-aa3d-5cf4f2df46b6.png` : `${import.meta.env.BASE_URL}lovable-uploads/402e0eb5-ac60-45a4-b299-85280c71cb6d.png`} alt={service.id === 'family-office' ? "Family Office" : service.id === 'art-advisory' ? "Art Advisory" : service.id === 'capital-ma' ? "Capital Introduction & M&A" : "Alternatives"} className="w-full aspect-square object-cover rounded-lg relative z-0" loading="lazy" />
                           <div className="absolute inset-0 rounded-lg z-0" style={{
                         background: 'rgba(54, 75, 86, 0.44)',
                         boxShadow: '0 4px 30px rgba(0, 0, 0, 0.1)',
@@ -282,10 +282,10 @@ const Services = () => {
                       <div className="w-full max-w-lg mx-auto relative mb-8">
                         <img 
                           src={
-                            service.id === 'family-office' ? "/lovable-uploads/0fb235b5-0ef7-4a23-b23c-a09271d1c1ee.png" 
-                            : service.id === 'art-advisory' ? "/lovable-uploads/24427e5c-c5b4-462c-8320-f420776f39d1.png" 
-                            : service.id === 'capital-ma' ? "/lovable-uploads/4c877114-c7bc-42b2-aa3d-5cf4f2df46b6.png" 
-                            : "/lovable-uploads/402e0eb5-ac60-45a4-b299-85280c71cb6d.png"
+                            service.id === 'family-office' ? `${import.meta.env.BASE_URL}lovable-uploads/0fb235b5-0ef7-4a23-b23c-a09271d1c1ee.png` 
+                            : service.id === 'art-advisory' ? `${import.meta.env.BASE_URL}lovable-uploads/24427e5c-c5b4-462c-8320-f420776f39d1.png` 
+                            : service.id === 'capital-ma' ? `${import.meta.env.BASE_URL}lovable-uploads/4c877114-c7bc-42b2-aa3d-5cf4f2df46b6.png` 
+                            : `${import.meta.env.BASE_URL}lovable-uploads/402e0eb5-ac60-45a4-b299-85280c71cb6d.png`
                           } 
                           alt={
                             service.id === 'family-office' ? "Family Office" 
