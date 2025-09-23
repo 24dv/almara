@@ -255,6 +255,7 @@ All colors MUST be HSL.
     left: 0;
     width: 100vw;
     height: 100vh;
+    height: 100dvh; /* Use dynamic viewport height for mobile */
     background-image: url('./assets/noise.png');
     background-size: cover;
     background-position: center;
@@ -262,6 +263,7 @@ All colors MUST be HSL.
     opacity: 0.8;
     z-index: 2;
     pointer-events: none;
+    will-change: auto; /* Optimize for mobile performance */
   }
   
   .font-long-cang {
@@ -301,11 +303,11 @@ All colors MUST be HSL.
   
   .almara-partners-gradient-bg::before {
     content: '';
-    position: fixed;
+    position: absolute;
     top: 0;
     left: 0;
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
+    height: 100%;
     background-image: url('./assets/noise.png');
     background-size: cover;
     background-position: center;
@@ -354,12 +356,32 @@ All colors MUST be HSL.
   .partners-gradient-bg {
     background: radial-gradient(ellipse at center, #5d717b 0%, rgba(255, 255, 255, 0) 70%);
     position: relative;
+    min-height: 100vh;
+    min-height: 100dvh; /* Dynamic viewport height for mobile */
+  }
+  
+  /* Mobile-specific adjustments for Partners page */
+  @media (max-width: 1023px) {
+    .partners-gradient-bg {
+      min-height: 100vh;
+      height: auto;
+    }
   }
   
   /* Soft elliptical radial gradient for Mission page sections */
   .mission-section-gradient {
     background: radial-gradient(ellipse at center, #364b56 0%, transparent 70%);
     position: relative;
+    min-height: 100vh;
+    min-height: 100dvh; /* Dynamic viewport height for mobile */
+  }
+  
+  /* Mobile-specific adjustments for Mission page */
+  @media (max-width: 1023px) {
+    .mission-section-gradient {
+      min-height: 100vh;
+      height: auto;
+    }
   }
 
   .mission-section-gradient::after {

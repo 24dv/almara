@@ -43,7 +43,7 @@ const Mission = () => {
       {/* Main Content */}
       <main className="relative z-10 min-h-[calc(100vh-200px)]">
       {/* Section 1 — Our Mission (includes header) */}
-      <section className="h-screen flex flex-col px-4 sm:px-6 lg:px-12 mission-section-gradient">
+      <section className="min-h-screen lg:h-screen flex flex-col px-4 sm:px-6 lg:px-12 mission-section-gradient">
         <header className="relative z-50 hidden lg:flex items-center justify-center pt-8 pb-4">
           <Link to="/" className="transition-opacity hover:opacity-80">
             <img src={`${import.meta.env.BASE_URL}lovable-uploads/889a0efd-ed5b-448b-a911-54ea486f744c.png`} alt="ALMARA" className="h-7 sm:h-8 md:h-9 opacity-90" />
@@ -68,7 +68,7 @@ const Mission = () => {
       </section>
 
       {/* Section 2 — Our Pillars */}
-      <section className="h-screen flex items-center justify-center px-4 sm:px-6 lg:px-12 mission-section-gradient">
+      <section className="min-h-screen lg:h-screen flex items-center justify-center px-4 sm:px-6 lg:px-12 mission-section-gradient">
         <div className="max-w-5xl mx-auto bg-gradient-to-r from-transparent via-gray-600/30 to-gray-700/60 rounded-3xl px-4 sm:px-6 md:px-12 lg:px-[120px] py-6 sm:py-8 md:py-12 lg:py-[58px] backdrop-blur-sm">
           <div ref={pillarsHeaderRef} className={`text-center mb-4 sm:mb-6 lg:mb-8 transition-all duration-1000 ease-out ${pillarsHeaderVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
             <h2 className="font-museo-moderno almara-h1-mobile text-[#f4eada] tracking-[0.05em] opacity-90 leading-tight mb-4 sm:mb-6 lg:mb-8">Our Pillars</h2>
@@ -95,7 +95,7 @@ const Mission = () => {
       </section>
 
       {/* Section 3 — In Practice */}
-      <section className="h-screen flex items-center justify-center px-4 sm:px-6 lg:px-12 mission-section-gradient">
+      <section className="min-h-screen lg:h-screen flex items-center justify-center px-4 sm:px-6 lg:px-12 mission-section-gradient">
         <div className="max-w-6xl mx-auto">
           <div ref={practiceHeaderRef} className={`text-center mb-8 sm:mb-12 lg:mb-16 transition-all duration-1000 ease-out ${practiceHeaderVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
             <h2 className="font-museo-moderno almara-h1-mobile text-[#f4eada] tracking-[0.05em] opacity-90 leading-tight">In Practice</h2>

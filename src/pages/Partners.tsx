@@ -74,7 +74,7 @@ const Partners = () => {
       <MobileMenu />
       
       {/* Section 1: Our Partners - Hero with extended background including header */}
-      <section className="h-screen flex flex-col bg-[hsl(var(--almara-light-text))] partners-gradient-bg relative">
+      <section className="min-h-screen lg:h-screen flex flex-col bg-[hsl(var(--almara-light-text))] partners-gradient-bg relative">
         {/* Header with logo - now part of the section */}
         <header className="relative z-50 hidden lg:flex items-center justify-center pt-8 pb-4">
           <Link to="/" className="transition-opacity hover:opacity-80 relative z-50">
@@ -107,7 +107,7 @@ const Partners = () => {
       </section>
       
       {/* Section 2: Institutional Partners */}
-      <section className="h-screen flex items-center justify-center px-4 sm:px-6 lg:px-12 py-16 sm:py-20 bg-[hsl(var(--almara-light-text))] partners-gradient-bg">
+      <section className="min-h-screen lg:h-screen flex items-center justify-center px-4 sm:px-6 lg:px-12 py-16 sm:py-20 bg-[hsl(var(--almara-light-text))] partners-gradient-bg">
         <div className="max-w-6xl mx-auto text-center relative z-10">
           <div ref={instHeaderRef} className={`mb-8 sm:mb-12 lg:mb-16 transition-all duration-1000 ease-out ${instHeaderVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
             <h2 className="font-museo-moderno almara-h1-mobile text-[#364b56] mb-3 sm:mb-4 lg:mb-6">Institutional Partners</h2>
@@ -182,7 +182,7 @@ const Partners = () => {
       </section>
 
       {/* Section 3: Technology Partners */}
-      <section className="h-screen flex items-center justify-center px-4 sm:px-6 lg:px-12 py-16 sm:py-20 bg-[hsl(var(--almara-light-text))] partners-gradient-bg">
+      <section className="min-h-screen lg:h-screen flex items-center justify-center px-4 sm:px-6 lg:px-12 py-16 sm:py-20 bg-[hsl(var(--almara-light-text))] partners-gradient-bg">
         <div className="max-w-4xl mx-auto text-center relative z-10">
           <div ref={techHeaderRef} className={`mb-8 sm:mb-12 lg:mb-16 transition-all duration-1000 ease-out ${techHeaderVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
             <h2 className="font-museo-moderno almara-h1-mobile text-[#364b56] mb-3 sm:mb-4 lg:mb-6">Technology Partners</h2>
@@ -222,7 +222,7 @@ const Partners = () => {
       </section>
 
       {/* Section 4: Project Partners */}
-      <section className="h-screen flex items-center justify-center px-4 sm:px-6 lg:px-12 py-16 sm:py-20 bg-[hsl(var(--almara-light-text))] partners-gradient-bg">
+      <section className="min-h-screen lg:h-screen flex items-center justify-center px-4 sm:px-6 lg:px-12 py-16 sm:py-20 bg-[hsl(var(--almara-light-text))] partners-gradient-bg">
         <div className="max-w-6xl mx-auto text-center relative z-10">
           <div ref={projHeaderRef} className={`mb-8 sm:mb-12 lg:mb-16 transition-all duration-1000 ease-out ${projHeaderVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
             <h2 className="font-museo-moderno almara-h1-mobile text-[#364b56] mb-3 sm:mb-4 lg:mb-6">Project Partners</h2>
