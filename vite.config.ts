@@ -4,10 +4,9 @@ import react from "@vitejs/plugin-react-swc";
 import path from "path";
 import { componentTagger } from "lovable-tagger";
 
-// https://vitejs.dev/config/
 export default defineConfig(({ mode }) => ({
-  // 👇 Required for GitHub Pages project site at /almara/
-  base: "/almara/",
+  // ✅ Default to "/" for Lovable, override with env var in GitHub Actions
+  base: process.env.VITE_BASE || "/",
   server: {
     host: "::",
     port: 8080,
